@@ -6,6 +6,9 @@
     "lightbox2": "~2.8.1",
     "masonry": "~3.3.2",
     "modernizr": "~2.8.1",
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "skrollr": "~0.6.30",
+    "skrollr-colors": "~1.0.0",
+    "skrollr-menu": "~1.0.3"
   }
 }
