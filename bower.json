@@ -1,0 +1,11 @@
+{
+  "name": "skullmasher-io",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "lightbox2": "~2.8.1",
+    "masonry": "~3.3.2",
+    "modernizr": "~2.8.1",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
