@@ -16,7 +16,6 @@ jQuery(document).ready(function() {
     $('.slide').height( $(window).height() );
 
   });
-
   // Getting my age dynamically
   var myAge = function() {
     
@@ -32,7 +31,10 @@ jQuery(document).ready(function() {
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
-    columnWidth: 200
+    columnWidth: 200,
+    isFitWidth: true,
+    gutter: 10,
+    transitionDuration: '1s'
   });
 
 
