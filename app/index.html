@@ -2,8 +2,9 @@
 <html class="no-js" lang="fr">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Florian 'Skullmasher' Ledru website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Skullmasher</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -11,7 +12,6 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/lightbox2/dist/css/lightbox.css" />
     <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -29,80 +29,50 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="slide bio">
-      <header>
-        <img src="images/logo-ledru.svg" class="img-ledru">
-        <ul class="header-menu">
-          <li><a href="#bio" class="header-menu-link"><img src="images/profile.svg"></a></li>
-          <li><a href="#watido"class="header-menu-link"><img src="images/target.svg"></a></li>
-          <li><a href="#contact"class="header-menu-link"><img src="images/ontheweb.svg"></a></li>
-        </ul>
-      </header>
-      <section id="bio" class="bio-container">
+    <div class="wrapper">
+      <section class="main">
         <p>Florian 'Skullmasher' Ledru <span class="skullAge"></span></p>
         <p>Gamer, <a href="https://heartlessgaming.com">heartlessgaming.com</a></p>
         <p>WebDev & Sysadmin pour <a href="http://i-breed.fr">i-breed.fr</a></p>
+
+        <div class="grid">
+          <div class="grid-item">
+              <a class="grid-link" href="mailto:skullmasher@heartlessgaming.com?subject=Hello There">
+                  <img class="grid-image" src="images/logo-mail.svg">
+                  <span class="grid-link-label">Mail</span>
+              </a>
+          </div>
+          <div class="grid-item">
+              <a class="grid-link" href="https://github.com/SkullMasher">
+                <img class="grid-image" src="images/logo-github.svg">
+                <span class="grid-link-label">Github</span>
+              </a>
+          </div>
+          <div class="grid-item">
+              <a class="grid-link" href="https://www.reddit.com/user/SkullMasher">
+                  <img class="grid-image" src="images/logo-reddit.svg">
+                  <span class="grid-link-label">Reddit</span>
+              </a>
+          </div>
+          <div class="grid-item">
+              <a class="grid-link" href="https://twitter.com/skullm4sher">
+                <img class="grid-image" src="images/logo-twitter.svg">
+                <span class="grid-link-label">Twitter</span>
+              </a>
+          </div>
+          <div class="grid-item">
+              <a class="grid-link" href="https://steamcommunity.com/id/skullmasher">
+                  <img class="grid-image" src="images/logo-steam.svg">
+                  <span class="grid-link-label">Steam</span>
+              </a>
+          </div>
+        </div>
       </section>
-
-      <div class="arrow-down">
-        <img src="images/arrow-down.svg">
-      </div>
-
     </div>
-    <div class="slide watido">
-      <div class="grid">
-        <div class="grid-item">
-          <img src="images/img150.jpg" height="150" width="150" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-        <div class="grid-item">
-          <img src="images/img150.jpg" alt="">
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="slide contact"></div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/lightbox2/dist/js/lightbox.js"></script>
     <script src="/bower_components/masonry/dist/masonry.pkgd.js"></script>
-    <script src="/bower_components/skrollr/src/skrollr.js"></script>
-    <script src="/bower_components/skrollr-colors/src/skrollr-colors.js"></script>
-    <script src="/bower_components/skrollr-menu/src/skrollr.menu.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

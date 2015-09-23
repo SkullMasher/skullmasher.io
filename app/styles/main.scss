@@ -2,6 +2,22 @@
 // endbower
 
 @import 'variables';
+@import 'helpers';
+
+// The box sizing
+html {
+  box-sizing : border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing : inherit;
+}
+
+body {
+  background-color: #161513;
+}
 
 .browserupgrade {
   margin     : .2em 0;
@@ -19,55 +35,21 @@ a {
   }
 }
 
+.wrapper {
+  background-image: url('/images/abstract1.jpg');
+  background-size: cover;
+}
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
-
   background-color: rgba(0, 0, 0, .50);
-
-  img {
-    display: inline-block;
-    padding: 10px 20px;
-    vertical-align: middle;
-  }
-
+  z-index: 1;
 
 }
 
-// Header menu
-.header-menu {
-
-  display: relative;
-  right: 0;
-  margin: 0;
-  vertical-align: middle;
-
-  li { display: inline-block; }
-}
-
-.header-menu-link {
-
-  display: block;
-  padding: 10px px;
-  color: #fff;
-  text-transform: uppercase;
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.img-ledru { display: none; }
-
-// Slide
-.slide { background-size: cover; }
-
-// Slide Bio
-.bio { background-image: url('/images/abstract1.jpg'); }
-
-.bio-container {
+.main {
   padding-top : 150px;
   color       : #fff;
   font-family : $hack;
@@ -76,31 +58,12 @@ header {
   text-shadow : 0 0 5px #000;
 
   p {
-    margin : 0;
-    line-height: 3em;
+    margin      : 0;
   }
 
   a {
     font-family: $hackbold;
   }
-}
-
-.arrow-down {
-  display    : block;
-  width      : 70px;
-  margin     : 0 auto;
-  margin-top : 100px;
-
-  img {
-    width  : 100%;
-    height : 100%;
-  }
-}
-
-// Slide watIdo
-.watido {
-  overflow: auto;
-  background-image: url('/images/abstract2.jpg');
 }
 
 .grid {
@@ -109,25 +72,67 @@ header {
 }
 
 .grid-item {
-  width         : 200px;
-  height        : 250px;
+  position: relative;
+  width         : 75px;
   margin-bottom: 10px;
-  border        : 3px solid #fff;
-  border-radius : 5px;
 }
 
-.contact {
-  background-image: url('/images/abstract3.jpg');
+.grid-image {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.grid-link {
+
+  display: block;
+
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.grid-link-label {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
+  .main {
+    padding-top: 40px;
+    font-size: 1em;
+  }
+
+  .grid-link-label {
+    display: block;
+
+  }
+
+  .grid-item {
+    height: 125px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+  .main {
+    padding-top: 175px;
+    font-size: 1.8em;
+  }
+
+  .grid-link {
+    font-size: 1rem;
+  }
 }
 
 /* Medium Devices, Desktops */

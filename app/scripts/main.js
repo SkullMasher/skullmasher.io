@@ -1,43 +1,49 @@
 jQuery(document).ready(function() {
+  'use strict';
+
+  console.log('  XXXXX  ');
+  console.log(' XXXXXXX ');
+  console.log('XXXXXXXXX');
+  console.log('X  XXX  X');
+  console.log('X   X   X');
+  console.log('XXXXXXXXX');
+  console.log(' XXX XXX');
+  console.log(' XXXXXXX');
+  console.log(' X X X X');
+
   console.log('Hello There !');
 
-  // Get viewport width & height
-  var $viewportHeight = $(window).width(); // jshint ignore:line
-  var $viewportWidth = $(window).height(); // jshint ignore:line
-
   // Set viewport width & height on load
-  $('.slide').width( $(window).width() );
-  $('.slide').height( $(window).height() );
+  $('.wrapper').width( $(window).width() );
+  $('.wrapper').height( $(window).height() );
 
   // Set viewport width & height on window resize
   $(window).resize(function(){
 
-    $('.slide').width( $(window).width() );
-    $('.slide').height( $(window).height() );
+    $('.wrapper').width( $(window).width() );
+    $('.wrapper').height( $(window).height() );
 
   });
   // Getting my age dynamically
   var myAge = function() {
-    
+
     var myBirthday = new Date('March 18, 1992 00:45:00');
     var today = new Date();
 
     return ( today.getFullYear() - myBirthday.getFullYear() );
 
   };
-  
+
   $('.skullAge').append( myAge() + ' ans.' );
 
+  // Init Masonry
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
-    columnWidth: 200,
     isFitWidth: true,
     gutter: 10,
     transitionDuration: '1s'
   });
 
 
-
 });
-
