@@ -3,6 +3,7 @@
 
 @import 'variables';
 @import 'helpers';
+@import 'hack';
 
 // The box sizing
 html {
@@ -36,7 +37,7 @@ a {
 }
 
 .wrapper {
-  background-image: url('/images/abstract1.jpg');
+  background-image: url('../images/abstract1.jpg');
   background-size: cover;
 }
 
