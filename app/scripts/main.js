@@ -7,23 +7,12 @@ jQuery(document).ready(function() {
   console.log('X  XXX  X');
   console.log('X   X   X');
   console.log('XXXXXXXXX');
-  console.log(' XXX XXX');
-  console.log(' XXXXXXX');
-  console.log(' X X X X');
+  console.log(' XXX XXX ');
+  console.log(' XXXXXXX ');
+  console.log(' X X X X ');
 
   console.log('Hello There !');
 
-  // Set viewport width & height on load
-  $('.wrapper').width( $(window).width() );
-  $('.wrapper').height( $(window).height() );
-
-  // Set viewport width & height on window resize
-  $(window).resize(function(){
-
-    $('.wrapper').width( $(window).width() );
-    $('.wrapper').height( $(window).height() );
-
-  });
   // Getting my age dynamically
   var myAge = function() {
 
