@@ -69,7 +69,6 @@ header {
 
   p {
     margin: 0;
-    line-height: 2em;
   }
 
   a {
@@ -78,10 +77,25 @@ header {
 }
 
 .the-guy {
-
+  font-size: 1.6em;
+  padding-bottom: 10px;
+  line-height: 2;
 }
+
+.nickname {
+  display: none;
+}
+
 .professional-status {
   text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 1.4em;
+  line-height: 2;
+}
+
+.professional-activities {
+  line-height: 1.4;
+  font-size: 1.2em;
 }
 
 .contact-me {
