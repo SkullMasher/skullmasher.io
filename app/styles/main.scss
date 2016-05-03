@@ -104,7 +104,7 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: ce7nter;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -149,6 +149,13 @@ header {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+  .wrapper {
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+  }
+
   .main {
     font-size: 1.8em;
   }
@@ -167,4 +174,10 @@ header {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
+  .wrapper {
+    top: 25px;
+    bottom: 25px;
+    right: 25px;
+    left: 25px;
+  }
 }
