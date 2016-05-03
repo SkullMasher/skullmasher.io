@@ -23,12 +23,4 @@ jQuery(document).ready(function () {
 
   $('.skullAge').append(myAge() + ' ans.')
 
-  // Init Masonry
-  $('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    isFitWidth: true,
-    gutter: 10,
-    transitionDuration: '1s'
-  })
 })
