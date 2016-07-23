@@ -18,7 +18,7 @@ html {
 
 body {
   height: 100vh;
-  background: linear-gradient(to bottom, #111 0%,#000 100%);
+  background: linear-gradient(to bottom, #333 0%,#000 100%);
 }
 
 .browserupgrade {
@@ -104,7 +104,7 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: ce7nter;
+  align-items: flex-end;
   justify-content: space-between;
   margin: 0 auto;
 }
