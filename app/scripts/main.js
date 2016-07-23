@@ -10,8 +10,10 @@ jQuery(document).ready(function () {
   console.log(' XXX XXX ')
   console.log(' XXXXXXX ')
   console.log(' X X X X ')
-
+  console.log('')
   console.log('Hello There !')
+  console.log('Allons boire une bière !')
+  console.log('florian@skullmasher.io')
 
   // Getting my age dynamically
   var myAge = function () {
@@ -21,6 +23,8 @@ jQuery(document).ready(function () {
     return (today.getFullYear() - myBirthday.getFullYear())
   }
 
-  $('.skullAge').append(myAge() + ' ans.')
+  var $skullage = $('.skullAge')
 
+  $skullage.text('')
+  $skullage.append(myAge() + ' ans.')
 })
