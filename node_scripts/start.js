@@ -14,7 +14,7 @@ let log = console.log.bind(console)
 let appPath = {
   appFolderPath: '',
   cssFolderName: '',
-  sassFolderName: 'sass/',
+  sassFolderName: 'scss/',
   jsFolderName: 'js/',
   imgFolderName: 'img/'
 }
