@@ -504,18 +504,18 @@ html {
 
 body {
   font-size: 1.4rem;
-  background-color: #fff;
+  background-color: #161616;
   color: #000;
   font-family: sans-serif;
   line-height: 1.5;
 }
 
 a {
-  color: #333;
+  color: #44a340;
 }
 
 a:hover, a:focus, a:active {
-  color: #000;
+  color: #e71d36;
 }
 
 /* font-sizing for content */
