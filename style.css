@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*
 Theme Name: skullmasher.io
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/SkullMasher/skullmasher.io
 Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author URI: https://skullmasher.io
+Description: Wordpress theme for skullmasher.io based on underscores
 Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: skullmasher-io
 Tags:
 
@@ -17,8 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 skullmasher.io is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreations/KNACSS
 */
 /**
  * CONTENTS
@@ -505,7 +504,7 @@ html {
 body {
   font-size: 1.4rem;
   background-color: #161616;
-  color: #000;
+  color: #262626;
   font-family: sans-serif;
   line-height: 1.5;
 }
@@ -954,7 +953,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: #000;
+  color: #262626;
 }
 
 label {
