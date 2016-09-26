@@ -22,8 +22,10 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
 /**
  * CONTENTS
  *
- * LIBRARY..............Knacss is responsible for the global settings,
- *                      reset, helpers, grid...
+ * INCLUDES
+ * Font.................Includes the font used in the project.
+ * Knacss..............CSS on steroids by Alsacréations.
+ *
  * OBJECT
  * Wrapper..............Page constraint object.
  *
@@ -32,12 +34,12 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
  *
  */
 
-// LIBRARY
-@import "knacss/knacss.scss";
+// INCLUDES
+@import "font/lato";
+@import "knacss/knacss";
 
 // OBJECT
-@import "objects/objects.wrapper.scss";
+@import "objects/objects.wrapper";
 
 // COMPONENTS
-@import "components/components.buttons.scss";
-
+@import "components/components.buttons";

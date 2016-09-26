@@ -22,8 +22,10 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
 /**
  * CONTENTS
  *
- * LIBRARY..............Knacss is responsible for the global settings,
- *                      reset, helpers, grid...
+ * INCLUDES
+ * Font.................Includes the font used in the project.
+ * Knacss..............CSS on steroids by Alsacréations.
+ *
  * OBJECT
  * Wrapper..............Page constraint object.
  *
@@ -31,6 +33,28 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
  * Buttons..............
  *
  */
+/* Lato Font */
+@font-face {
+  font-family: 'lato';
+  src: url("font/lato-bold/lato-bold.woff2?#iefix") format("woff2"), url("font/lato-bold/lato-bold.woff") format("woff"), url("font/lato-bold/lato-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("font/lato-bold/lato-bold.woff2?#iefix") format("woff2"), url("font/lato-bold/lato-bold.woff") format("woff"), url("font/lato-bold/lato-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("font/lato-italic/lato-italic.woff2?#iefix") format("woff2"), url("font/lato-italic/lato-italic.woff") format("woff"), url("font/lato-italic/lato-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 /*!
 * www.KNACSS.com V6.0.0 (21 septembre 2016) @author: Alsacreations, Raphael Goetter
 * Licence WTFPL http://www.wtfpl.net/
@@ -505,7 +529,7 @@ body {
   font-size: 1.4rem;
   background-color: #161616;
   color: #262626;
-  font-family: sans-serif;
+  font-family: lato, sans-serif;
   line-height: 1.5;
 }
 
