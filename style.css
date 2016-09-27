@@ -24,13 +24,16 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
  *
  * INCLUDES
  * Font.................Includes the font used in the project.
- * Knacss..............CSS on steroids by Alsacréations.
+ * Knacss...............CSS on steroids by Alsacréations.
  *
  * OBJECT
  * Wrapper..............Page constraint object.
  *
  * COMPONENTS
  * Buttons..............
+ *
+ * UTILITIES
+ * Screen reader........
  *
  */
 /* Lato Font */
@@ -563,12 +566,12 @@ figure {
 
 h1, .h1-like {
   font-size: 3.2rem;
-  font-family: sans-serif;
+  font-family: lato, sans-serif;
 }
 
 h2, .h2-like {
   font-size: 2.8rem;
-  font-family: sans-serif;
+  font-family: lato, sans-serif;
 }
 
 h3, .h3-like {
@@ -2198,6 +2201,38 @@ ul.unstyled {
 
 .btn {
   background-color: chartreuse;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
 }
 
 /*# sourceMappingURL=style.map.css */

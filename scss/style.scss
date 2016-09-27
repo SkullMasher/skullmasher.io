@@ -24,13 +24,16 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
  *
  * INCLUDES
  * Font.................Includes the font used in the project.
- * Knacss..............CSS on steroids by Alsacréations.
+ * Knacss...............CSS on steroids by Alsacréations.
  *
  * OBJECT
  * Wrapper..............Page constraint object.
  *
  * COMPONENTS
  * Buttons..............
+ *
+ * UTILITIES
+ * Screen reader........
  *
  */
 
@@ -43,3 +46,6 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
 
 // COMPONENTS
 @import "components/components.buttons";
+
+// UTILITIES
+@import "utilities/utilities.screen-reader"
