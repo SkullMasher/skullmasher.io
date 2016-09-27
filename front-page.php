@@ -16,42 +16,43 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+        <?php
+          /*
+           * wp_get_recent_posts : codex.wordpress.org/Function_Reference/wp_get_recent_posts
+           */
+          global $post;
+          // Number of posts that gets shown on the front page.
+          $number_posts = 5;
+          $recent_posts_args = array(
+            'numberposts' => $number_posts,
+            'post_status' => publish
+          );
+          $recent_posts = wp_get_recent_posts($recent_posts_args, OBJECT);
 
-    <h1>Here's the Front Page</h1>
+          foreach( $recent_posts as $post ) : ?>
+
+          <?php
+            setup_postdata($post);
+            if ($post->post_status === 'publish') {
+              get_template_part( 'template-parts/content', get_post_format() );
+            }
+          ?>
+
+        <?php endforeach;
+        wp_reset_postdata(); ?>
+          <div class="latest-news">
+            <a href="<?php echo get_permalink(get_page_by_title('news')) ?>" class="latest-news__link">All News</a>
+          </div>
+        </main><!-- #main -->
+      </div><!-- #primary -->
 
     <?php
-    if ( have_posts() ) :
+      get_sidebar();
+    ?>
 
-      if ( is_home() && ! is_front_page() ) : ?>
-        <header>
-          <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-        </header>
-
-      <?php
-      endif;
-
-      /* Start the Loop */
-      while ( have_posts() ) : the_post();
-
-        /*
-         * Include the Post-Format-specific template for the content.
-         * If you want to override this in a child theme, then include a file
-         * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-         */
-        get_template_part( 'template-parts/content', get_post_format() );
-
-      endwhile;
-
-      the_posts_navigation();
-
-    else :
-
-      get_template_part( 'template-parts/content', 'none' );
-
-    endif; ?>
-
-    </main><!-- #main -->
-  </div><!-- #primary -->
+    <?php get_footer(); ?>
 
 <?php
 get_sidebar();

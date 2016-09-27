@@ -2203,6 +2203,10 @@ ul.unstyled {
   background-color: chartreuse;
 }
 
+.content-area {
+  background-color: #fafafa;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
