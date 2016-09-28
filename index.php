@@ -16,10 +16,8 @@ get_header(); ?>
     <div id="primary" class="content-area">
       <main id="main" class="site-main" role="main">
   <div class="o-wrapper">
-
-      <h1>Hello index.php</h1>
-
       <?php
+
       if ( have_posts() ) :
 
         if ( is_home() && ! is_front_page() ) : ?>

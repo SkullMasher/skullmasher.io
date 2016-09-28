@@ -39,8 +39,8 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
 /* Lato Font */
 @font-face {
   font-family: 'lato';
-  src: url("font/lato-bold/lato-bold.woff2?#iefix") format("woff2"), url("font/lato-bold/lato-bold.woff") format("woff"), url("font/lato-bold/lato-bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("font/lato-regular/lato-regular.woff2?#iefix") format("woff2"), url("font/lato-regular/lato-regular.woff") format("woff"), url("font/lato-regular/lato-regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -2201,6 +2201,46 @@ ul.unstyled {
 
 .btn {
   background-color: chartreuse;
+}
+
+/**
+ * NAVIGATION
+ *
+ * Styles for navigations & Wordpress menus
+ */
+.site-nav__home {
+  display: block;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: hack;
+  font-size: 2.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav__home:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  margin-top: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.menu-item > a {
+  display: block;
+  padding: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-item > a:hover {
+  text-decoration: underline;
+}
+
+.primary-menu {
+  font-size: 1.8rem;
 }
 
 .content-area {

@@ -1,0 +1,37 @@
+/* Hack Font */
+
+@font-face {
+    font-family: 'hack';
+    src: url('font/hack-regular/hack-regular.woff2?#iefix') format('woff2'),
+         url('font/hack-regular/hack-regular.woff') format('woff'),
+         url('font/hack-regular/hack-regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hack';
+    src: url('font/hack-bold/hack-bold.woff2?#iefix') format('woff2'),
+         url('font/hack-bold/hack-bold.woff') format('woff'),
+         url('font/hack-bold/hack-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hack';
+    src: url('font/hack-italic/hack-italic.woff2?#iefix') format('woff2'),
+         url('font/hack-italic/hack-italic.woff') format('woff'),
+         url('font/hack-italic/hack-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'hack';
+    src: url('font/hack-bolditalic/hack-bolditalic.woff2?#iefix') format('woff2'),
+         url('font/hack-bolditalic/hack-bolditalic.woff') format('woff'),
+         url('font/hack-bolditalic/hack-bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

@@ -20,29 +20,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
   <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skullmasher-io' ); ?></a>
-
-  <header id="masthead" class="page-header page-header--masthead" role="banner">
-    <div class="o-wrapper">
-      <nav id="site-navigation" class="main-navigation" role="navigation">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-      </nav>
-      <div class="site-branding">
-        <?php
-        if ( is_front_page() && is_home() ) : ?>
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <?php else : ?>
-          <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-        <?php
-        endif;
-
-        $description = get_bloginfo( 'description', 'display' );
-        if ( $description || is_customize_preview() ) : ?>
-          <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-        <?php
-        endif; ?>
-      </div><!-- .site-branding -->
+<?php if ( is_front_page() ) : ?>
+  <header id="top" class="o-wrapper page-header page-header--masthead" role="banner">
+<?php elseif ( is_home() ) : ?>
+  <header id="top" class="o-wrapper page-header" role="banner">
+<?php else : ?>
+  <header id="top" class="o-wrapper page-header" role="banner">
+<?php endif; ?>
+    <nav class="site-nav flex-container" role="navigation">
+      <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+      <?php wp_nav_menu(array(
+        'theme_location' => 'primary',
+        'menu_class' => 'menu flex-container primary-menu unstyled',
+        'container' => false,
+        'depth' => 1
+      )); ?>
+    </nav>
+    <div class="site-branding">
+    <?php
+    $description = get_bloginfo( 'description', 'display' );
+    if ( $description || is_customize_preview() ) : ?>
+      <h1 class="site-description"><?php echo $description; ?></h1>
+    <?php endif; ?>
     </div>
   </header>
 
