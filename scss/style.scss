@@ -45,10 +45,12 @@ CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreatio
 @import "objects/objects.wrapper";
 
 // COMPONENTS
+@import "components/components.pageheader";
 @import "components/components.buttons";
 @import "components/components.navigation";
 @import "components/components.branding";
 @import "components/components.tmp";
+@import "components/components.pagefooter";
 
 // UTILITIES
 @import "utilities/utilities.screen-reader";

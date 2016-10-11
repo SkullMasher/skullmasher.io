@@ -2199,6 +2199,18 @@ ul.unstyled {
   margin-left: auto;
 }
 
+/**
+ * PAGE HEADER
+ *
+ */
+.page-header {
+  background-image: url("img/skullmasherio-tile.png");
+}
+
+/**
+ * BUTTONS
+ *
+ */
 .btn {
   background-color: chartreuse;
 }
@@ -2257,6 +2269,10 @@ ul.unstyled {
  */
 .site-description {
   color: #fff;
+  margin: 0;
+  padding-top: 7rem;
+  padding-bottom: 9rem;
+  font-weight: normal;
 }
 
 .content-area {
