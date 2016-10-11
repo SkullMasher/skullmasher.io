@@ -2208,6 +2208,10 @@ ul.unstyled {
  *
  * Styles for navigations & Wordpress menus
  */
+.site.nav {
+  /*align-items: flex-end;*/
+}
+
 .site-nav__home {
   display: block;
   padding: 1rem;
@@ -2223,14 +2227,17 @@ ul.unstyled {
 }
 
 .menu {
-  margin-top: 0;
+  margin-top: 0.75rem;
   flex-grow: 1;
   justify-content: flex-end;
 }
 
 .menu-item > a {
   display: block;
-  padding: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.8rem;
+  padding-left: 1.4rem;
   color: #fff;
   text-decoration: none;
 }
@@ -2241,6 +2248,15 @@ ul.unstyled {
 
 .primary-menu {
   font-size: 1.8rem;
+}
+
+/**
+ * BRANDING
+ *
+ * Page description, title & tagline
+ */
+.site-description {
+  color: #fff;
 }
 
 .content-area {

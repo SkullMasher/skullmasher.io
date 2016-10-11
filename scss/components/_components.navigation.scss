@@ -3,6 +3,9 @@
  *
  * Styles for navigations & Wordpress menus
  */
+.site.nav {
+  /*align-items: flex-end;*/
+}
 
 // Specific Navigation styling
 .site-nav__home {
@@ -21,14 +24,17 @@
 
 // General Wordpress menu styling
 .menu {
-  margin-top: 0;
+  margin-top: 0.75rem;
   flex-grow: 1;
   justify-content: flex-end;
 }
 
 .menu-item > a {
   display: block;
-  padding: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.8rem;
+  padding-left: 1.4rem;
   color: $headings-color;
   text-decoration: none;
 
