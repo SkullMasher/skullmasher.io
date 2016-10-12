@@ -2223,8 +2223,10 @@ ul.unstyled {
  *
  * Styles for navigations & Wordpress menus
  */
-.site.nav {
-  /*align-items: flex-end;*/
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .site-nav__home {
@@ -2237,32 +2239,36 @@ ul.unstyled {
   text-decoration: none;
 }
 
-.site-nav__home:hover {
-  text-decoration: underline;
+.site-nav__site-name {
+  display: none;
 }
 
-.menu {
-  margin-top: 0.75rem;
-  flex-grow: 1;
-  justify-content: flex-end;
+.site-nav__logo {
+  vertical-align: middle;
 }
 
 .menu-item > a {
   display: block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1.8rem;
-  padding-left: 1.8rem;
+}
+
+.primary-menu {
+  display: flex;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.primary-menu .menu-item > a {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   color: #fff;
   text-decoration: none;
 }
 
-.menu-item > a:hover {
+.primary-menu .menu-item > a:hover {
   text-decoration: underline;
-}
-
-.primary-menu {
-  /*font-size: $h5-size;*/
 }
 
 /**

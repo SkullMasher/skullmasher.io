@@ -3,11 +3,13 @@
  *
  * Styles for navigations & Wordpress menus
  */
-.site.nav {
-  /*align-items: flex-end;*/
-}
 
 // Specific Navigation styling
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .site-nav__home {
   display: block;
   padding: 1rem;
@@ -16,34 +18,36 @@
   font-size: $h2-size;
   color: $headings-color;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+}
+.site-nav__site-name {
+  display: none;
+}
+.site-nav__logo {
+  vertical-align: middle;
 }
 
 // General Wordpress menu styling
-.menu {
-  margin-top: 0.75rem;
-  flex-grow: 1;
-  justify-content: flex-end;
-}
-
 .menu-item > a {
   display: block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1.8rem;
-  padding-left: 1.8rem;
-  color: $headings-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
-// Specific Wordpress Menu styling
+// Specific Wordpress menu styling
 .primary-menu {
-  /*font-size: $h5-size;*/
+  display: flex;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  .menu-item > a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: $headings-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

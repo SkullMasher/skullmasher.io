@@ -28,11 +28,11 @@
 <?php else : ?>
   <header id="top" class="page-header" role="banner">
 <?php endif; ?>
-      <nav class="o-wrapper site-nav flex-container" role="navigation">
-        <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg') ?></a>
+      <nav class="o-wrapper site-nav" role="navigation">
+        <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg')?><span class="site-nav__site-name"><?php bloginfo( 'name' ); ?></span></a>
         <?php wp_nav_menu(array(
           'theme_location' => 'primary',
-          'menu_class' => 'menu flex-container primary-menu unstyled',
+          'menu_class' => 'menu primary-menu unstyled',
           'container' => false,
           'depth' => 1
         )); ?>
