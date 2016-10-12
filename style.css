@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 skullmasher.io is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-CSS on steroids with KNACSS from Alsacreations :; https://github.com/alsacreations/KNACSS
+CSS on steroids with KNACSS from Alsacreations : https://github.com/alsacreations/KNACSS
 */
 /**
  * CONTENTS
@@ -529,7 +529,7 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   background-color: #161616;
   color: #262626;
   font-family: lato, sans-serif;
@@ -2192,9 +2192,12 @@ ul.unstyled {
  * WRAPPERS
  *
  * Page-level constraining and wrapping elements.
+ * Em for media queries based on https://zellwk.com/blog/media-query-units/
  */
+/*$wrapper-width: 1100px !default;*/
+/*$wrapper-width: 110rem !default;*/
 .o-wrapper {
-  max-width: 1100px;
+  max-width: 61.111em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2249,7 +2252,7 @@ ul.unstyled {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 1.8rem;
-  padding-left: 1.4rem;
+  padding-left: 1.8rem;
   color: #fff;
   text-decoration: none;
 }
@@ -2259,7 +2262,7 @@ ul.unstyled {
 }
 
 .primary-menu {
-  font-size: 1.8rem;
+  /*font-size: $h5-size;*/
 }
 
 /**

@@ -29,7 +29,7 @@
   <header id="top" class="page-header" role="banner">
 <?php endif; ?>
       <nav class="o-wrapper site-nav flex-container" role="navigation">
-        <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+        <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg') ?></a>
         <?php wp_nav_menu(array(
           'theme_location' => 'primary',
           'menu_class' => 'menu flex-container primary-menu unstyled',
