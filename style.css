@@ -565,12 +565,12 @@ figure {
 }
 
 h1, .h1-like {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-family: lato, sans-serif;
 }
 
 h2, .h2-like {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-family: lato, sans-serif;
 }
 
@@ -1060,28 +1060,30 @@ input[type="reset"].unstyled:focus {
 }
 
 /* Media object */
-@media (min-width: 545px) {
-  .o-media {
-    display: flex;
-    align-items: flex-start;
-  }
-  .o-media-content {
-    flex: 1;
-    min-width: 0;
-    /* avoid min-width:auto */
-  }
+.o-media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.o-media-content {
+  flex: 1;
+  min-width: 0;
+  /* avoid min-width:auto */
 }
 
 /* Media variants */
-@media (min-width: 545px) {
-  .o-media--reverse {
-    flex-direction: row-reverse;
-  }
-  .o-media-figure--center {
-    align-self: center;
-  }
+.o-media--reverse {
+  flex-direction: row-reverse;
 }
 
+.o-media-figure--center {
+  align-self: center;
+}
+
+/*
+@media (min-width: ($tiny + 1)) {
+}
+*/
 /* Autogrid object */
 @media (min-width: 545px) {
   [class^="autogrid"],
@@ -2211,14 +2213,6 @@ ul.unstyled {
 }
 
 /**
- * BUTTONS
- *
- */
-.btn {
-  background-color: chartreuse;
-}
-
-/**
  * NAVIGATION
  *
  * Styles for navigations & Wordpress menus
@@ -2234,7 +2228,7 @@ ul.unstyled {
   padding: 1rem;
   text-transform: uppercase;
   font-family: hack;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   color: #fff;
   text-decoration: none;
 }
@@ -2272,6 +2266,15 @@ ul.unstyled {
 }
 
 /**
+ * BAND
+ *
+ * Container that have diferent backgroung color based on the theme design
+ */
+.band--lightgrey {
+  background-color: #eeeeee;
+}
+
+/**
  * BRANDING
  *
  * Page description, title & tagline
@@ -2279,9 +2282,34 @@ ul.unstyled {
 .site-description {
   color: #fff;
   margin: 0;
-  padding-top: 7rem;
-  padding-bottom: 9rem;
+  padding-top: 0rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
   font-weight: normal;
+}
+
+.promotional-skills {
+  padding: 1rem;
+}
+
+.promotional-skills__header {
+  align-items: center;
+  hyphens: none;
+}
+
+.promotional-skills__title {
+  margin: 0;
+  padding-left: 1rem;
+  color: #44a340;
+}
+
+/**
+ * BUTTONS
+ *
+ */
+.btn {
+  background-color: chartreuse;
 }
 
 .content-area {

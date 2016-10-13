@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
 .site-nav__home {
   display: block;
   padding: 1rem;
@@ -19,9 +20,11 @@
   color: $headings-color;
   text-decoration: none;
 }
+
 .site-nav__site-name {
   display: none;
 }
+
 .site-nav__logo {
   vertical-align: middle;
 }

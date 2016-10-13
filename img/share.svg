@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-<line fill="#444444" stroke="#444444" stroke-width="4" stroke-miterlimit="10" x1="15.3" y1="52.8" x2="84.7" y2="24.6"/>
-<line fill="#444444" stroke="#444444" stroke-width="4" stroke-miterlimit="10" x1="15.3" y1="52.8" x2="64.1" y2="75.8"/>
-<circle fill="#444444" stroke="#444444" stroke-miterlimit="10" cx="15.3" cy="52.8" r="14.1"/>
-<circle fill="#444444" stroke="#444444" stroke-miterlimit="10" cx="84.7" cy="24.6" r="14.1"/>
-<circle fill="#444444" stroke="#444444" stroke-miterlimit="10" cx="64.1" cy="75.8" r="14.1"/>
-</svg>
+<svg class="promotional-skills__image" width="50px" height="50px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 52.8l69.4-28.2" fill="#444" stroke="#444" stroke-miterlimit="10" stroke-width="4"/><path d="m15.3 52.8l48.8 23" fill="#444" stroke="#444" stroke-miterlimit="10" stroke-width="4"/><circle cx="15.3" cy="52.8" fill="#444" r="14.1" stroke="#444" stroke-miterlimit="10"/><circle cx="84.7" cy="24.6" fill="#444" r="14.1" stroke="#444" stroke-miterlimit="10"/><circle cx="64.1" cy="75.8" fill="#444" r="14.1" stroke="#444" stroke-miterlimit="10"/></svg>

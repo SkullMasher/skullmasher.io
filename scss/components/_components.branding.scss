@@ -6,7 +6,24 @@
 .site-description {
   color: #fff;
   margin: 0;
-  padding-top: 7rem;
-  padding-bottom: 9rem;
+  padding-top: 0rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
   font-weight: normal;
+}
+
+// Promotional skills
+.promotional-skills {
+  padding: 1rem;
+}
+.promotional-skills__header {
+  align-items: center;
+  hyphens: none;
+}
+
+.promotional-skills__title {
+  margin: 0;
+  padding-left: 1rem;
+  color: $base-color-link;
 }
