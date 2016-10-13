@@ -12,6 +12,7 @@ Description: Reset styles for WordPress usage of KNACSS
 .current_page_item > a {
 }
 .current-menu-item > a {
+  color: $base-color-link-hover;
 }
 .current_page_ancestor > a {
 }
@@ -41,7 +42,10 @@ Description: Reset styles for WordPress usage of KNACSS
 
 // class in img elements
 .alignnone {
-  margin: .25em 1.5em 1.5em 0;
+  margin-top: .25em;
+  margin-right: 0;
+  margin-bottom: 1.5em;
+  margin-left: 0;
 }
 
 .aligncenter {
