@@ -85,14 +85,24 @@ add_action( 'after_setup_theme', 'skullmasher_io_content_width', 0 );
  */
 function skullmasher_io_widgets_init() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Sidebar', 'skullmasher-io' ),
-    'id'            => 'sidebar-1',
-    'description'   => esc_html__( 'Add widgets here.', 'skullmasher-io' ),
+    'id'            => 'homepage',
+    'name'          => esc_html__( 'Homepage', 'skullmasher-io' ),
+    'description'   => esc_html__( 'Homepage sidebar.', 'skullmasher-io' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h2 class="widget-title">',
     'after_title'   => '</h2>',
-  ) );
+  ));
+
+  register_sidebar( array(
+    'id'            => 'blog',
+    'name'          => esc_html__( 'Blog', 'skullmasher-io' ),
+    'description'   => esc_html__( 'Blog sidebar.', 'skullmasher-io' ),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ));
 }
 add_action( 'widgets_init', 'skullmasher_io_widgets_init' );
 
