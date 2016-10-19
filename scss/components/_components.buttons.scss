@@ -2,6 +2,15 @@
  * BUTTONS
  *
  */
+
 .btn {
-  background-color: chartreuse;
+  display: block;
+  text-align: center;
+  background-color: $base-color-link;
+  color: $alpha-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $alpha-color;
+  }
 }

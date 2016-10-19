@@ -2477,7 +2477,22 @@ img.wp-smiley {
  *
  */
 .btn {
-  background-color: chartreuse;
+  display: block;
+  text-align: center;
+  background-color: #44a340;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.sidebar-homepage {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 .content-area {
