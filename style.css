@@ -2488,6 +2488,24 @@ img.wp-smiley {
   color: #fff;
 }
 
+.skulled-separator {
+  display: flex;
+  align-items: center;
+}
+
+.skulled-separator__line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #262626;
+}
+
+.skulled-separator__image {
+  margin-top: 0;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
 .sidebar-homepage {
   display: flex;
   flex-direction: column;
