@@ -2493,6 +2493,14 @@ img.wp-smiley {
   border-radius: 3px;
 }
 
+.article-separator {
+  margin: 1.5em 0;
+}
+
+.article-separator:last-of-type {
+  display: none;
+}
+
 .skulled-separator {
   display: flex;
   align-items: center;
@@ -2525,6 +2533,8 @@ img.wp-smiley {
 .last-articles__heading-container {
   display: flex;
   align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .last-articles__heading {
@@ -2538,6 +2548,21 @@ img.wp-smiley {
   height: 2px;
   flex-grow: 1;
   background-color: #262626;
+}
+
+.last-articles__title {
+  margin: 0;
+  font-weight: normal;
+}
+
+.last-articles__title > a {
+  text-decoration: none;
+  font-weight: normal;
+  padding: 1rem 0;
+}
+
+.last-articles__title > a:hover {
+  text-decoration: underline;
 }
 
 .social {

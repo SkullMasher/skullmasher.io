@@ -1,3 +1,11 @@
+.article-separator {
+  margin: 1.5em 0;
+
+  &:last-of-type {
+    display: none;
+  }
+}
+
 .skulled-separator {
   display: flex;
   align-items: center;
