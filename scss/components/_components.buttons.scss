@@ -5,12 +5,16 @@
 
 .btn {
   display: block;
+  margin: 1rem;
+  padding: 1rem;
   text-align: center;
   background-color: $base-color-link;
   color: $alpha-color;
   text-decoration: none;
 
   &:hover {
+    background-color: darken($base-color-link, 5);
     color: $alpha-color;
+    font-weight: bold;
   }
 }
