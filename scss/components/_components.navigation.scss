@@ -17,7 +17,6 @@
   text-transform: uppercase;
   font-family: hack;
   font-size: $h2-size;
-  color: $headings-color;
   text-decoration: none;
 }
 
@@ -46,7 +45,7 @@
     padding-bottom: 2rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    color: $headings-color;
+    color: $alpha-color;
     text-decoration: none;
 
     &:hover {

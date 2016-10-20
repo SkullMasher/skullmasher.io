@@ -567,27 +567,39 @@ figure {
 h1, .h1-like {
   font-size: 3rem;
   font-family: lato, sans-serif;
+  color: #44a340;
+  font-weight: normal;
 }
 
 h2, .h2-like {
   font-size: 2.4rem;
   font-family: lato, sans-serif;
+  color: #44a340;
+  font-weight: normal;
 }
 
 h3, .h3-like {
   font-size: 2.4rem;
+  color: #44a340;
+  font-weight: normal;
 }
 
 h4, .h4-like {
   font-size: 2rem;
+  color: #44a340;
+  font-weight: normal;
 }
 
 h5, .h5-like {
   font-size: 1.8rem;
+  color: #44a340;
+  font-weight: normal;
 }
 
 h6, .h6-like {
   font-size: 1.6rem;
+  color: #44a340;
+  font-weight: normal;
 }
 
 /* alternate font-sizing */
@@ -2374,6 +2386,7 @@ img.wp-smiley {
  */
 .page-header {
   background-image: url("img/skullmasherio-tile.png");
+  color: #fff;
 }
 
 /**
@@ -2393,7 +2406,6 @@ img.wp-smiley {
   text-transform: uppercase;
   font-family: hack;
   font-size: 2.4rem;
-  color: #fff;
   text-decoration: none;
 }
 
@@ -2434,8 +2446,16 @@ img.wp-smiley {
  *
  * Container that have diferent backgroung color based on the theme design
  */
+.band {
+  background-color: #202020;
+}
+
 .band--lightgrey {
   background-color: #eeeeee;
+}
+
+.band--darkgrey {
+  background-color: #161616;
 }
 
 /**
@@ -2444,13 +2464,11 @@ img.wp-smiley {
  * Page description, title & tagline
  */
 .site-description {
-  color: #fff;
   margin: 0;
   padding-top: 0rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
-  font-weight: normal;
 }
 
 .promotional-skills {
@@ -2465,8 +2483,6 @@ img.wp-smiley {
 .promotional-skills__title {
   margin: 0;
   padding-left: 1rem;
-  color: #44a340;
-  font-weight: normal;
 }
 
 /**
@@ -2538,7 +2554,6 @@ img.wp-smiley {
 }
 
 .last-articles__heading {
-  font-weight: normal;
   margin: 0;
   padding-right: 1rem;
 }
@@ -2552,12 +2567,10 @@ img.wp-smiley {
 
 .last-articles__title {
   margin: 0;
-  font-weight: normal;
 }
 
 .last-articles__title > a {
   text-decoration: none;
-  font-weight: normal;
   padding: 1rem 0;
 }
 
@@ -2570,6 +2583,10 @@ img.wp-smiley {
   justify-content: space-around;
   align-items: center;
   margin: 1rem;
+}
+
+.page-footer {
+  color: #fff;
 }
 
 /* Text meant only for screen readers. */

@@ -5,9 +5,13 @@
  */
 
 .band {
-
+  background-color: $alpha-background;
 }
 
 .band--lightgrey {
   background-color: $beta-background;
+}
+
+.band--darkgrey {
+  background-color: $gamma-background;
 }
