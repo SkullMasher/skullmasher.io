@@ -28,10 +28,10 @@ $base-color-link-hover  : #e71d36 !default; // base hovered/focused links color
 $sreenreader-color      : #21759b !default; // text color for screen reader skip link
 
 // backgrounds
-$base-background         : #161616 !default; // body background color
+$content-background      : #fafafa !default; // page content background
+$base-background         : $content-background !default; // body background color
 $alpha-background        : #202020 !default; // primary elements background color
 $beta-background         : #eeeeee !default; // secondary elements background color
-$content-background      : #fafafa !default; // page content background
 $screenreader-background : #f1f1f1 !default; // background for screen reader skip link
 
 // spacings (choose unit you prefer)

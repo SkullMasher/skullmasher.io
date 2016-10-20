@@ -530,7 +530,7 @@ html {
 
 body {
   font-size: 1.8rem;
-  background-color: #161616;
+  background-color: #fafafa;
   color: #262626;
   font-family: lato, sans-serif;
   line-height: 1.5;
@@ -847,12 +847,12 @@ q:lang(fr),
 hr {
   display: block;
   clear: both;
-  height: 1px;
+  height: 2px;
   margin: 1em 0 2em;
   padding: 0;
   border: 0;
   color: #ccc;
-  background-color: #ccc;
+  background-color: #262626;
 }
 
 /* tables */
@@ -1080,10 +1080,6 @@ input[type="reset"].unstyled:focus {
   align-self: center;
 }
 
-/*
-@media (min-width: ($tiny + 1)) {
-}
-*/
 /* Autogrid object */
 @media (min-width: 545px) {
   [class^="autogrid"],
@@ -2492,6 +2488,10 @@ img.wp-smiley {
   font-weight: bold;
 }
 
+.btn--rounded {
+  border-radius: 3px;
+}
+
 .skulled-separator {
   display: flex;
   align-items: center;
@@ -2517,15 +2517,15 @@ img.wp-smiley {
   background-color: #fff;
 }
 
+.last-articles {
+  padding: 1rem;
+}
+
 .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 1rem;
-}
-
-.content-area {
-  background-color: #fafafa;
 }
 
 /* Text meant only for screen readers. */
