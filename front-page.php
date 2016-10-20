@@ -51,7 +51,7 @@ get_header(); ?>
    */
   global $post;
   // Number of posts that gets shown on the front page.
-  $number_posts = 1;
+  $number_posts = 10;
   $recent_posts_args = array(
     'numberposts' => $number_posts,
     'post_status' => publish
@@ -63,7 +63,7 @@ get_header(); ?>
 <?php
   setup_postdata($post);
   if ($post->post_status === 'publish') {
-    get_template_part( 'template-parts/content', get_post_format() );
+    get_template_part( 'template-parts/content-homepage', get_post_format() );
   }
 ?>
 
