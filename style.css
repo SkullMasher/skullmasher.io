@@ -847,7 +847,7 @@ q:lang(fr),
 hr {
   display: block;
   clear: both;
-  height: 2px;
+  height: 1px;
   margin: 1em 0 2em;
   padding: 0;
   border: 0;
@@ -2466,6 +2466,7 @@ img.wp-smiley {
   margin: 0;
   padding-left: 1rem;
   color: #44a340;
+  font-weight: normal;
 }
 
 /**
@@ -2519,6 +2520,24 @@ img.wp-smiley {
 
 .last-articles {
   padding: 1rem;
+}
+
+.last-articles__heading-container {
+  display: flex;
+  align-items: center;
+}
+
+.last-articles__heading {
+  font-weight: normal;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.last-articles__heading-trail {
+  display: none;
+  height: 2px;
+  flex-grow: 1;
+  background-color: #262626;
 }
 
 .social {

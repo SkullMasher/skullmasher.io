@@ -20,30 +20,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skullmasher-io' ); ?></a>
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skullmasher-io' ); ?></a>
 <?php if ( is_front_page() ) : ?>
-  <header id="top" class="page-header page-header--masthead" role="banner">
+<header id="top" class="page-header page-header--masthead" role="banner">
 <?php elseif ( is_home() ) : ?>
-  <header id="top" class="page-header" role="banner">
+<header id="top" class="page-header" role="banner">
 <?php else : ?>
-  <header id="top" class="page-header" role="banner">
+<header id="top" class="page-header" role="banner">
 <?php endif; ?>
-      <nav class="o-wrapper site-nav" role="navigation">
-        <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg')?><span class="site-nav__site-name"><?php bloginfo( 'name' ); ?></span></a>
-        <?php wp_nav_menu(array(
-          'theme_location' => 'primary',
-          'menu_class' => 'menu primary-menu unstyled',
-          'container' => false,
-          'depth' => 1
-        )); ?>
-      </nav>
-      <div class="o-wrapper site-branding">
-      <?php
-      $description = get_bloginfo( 'description', 'display' );
-      if ( $description || is_customize_preview() ) : ?>
-        <h1 class="site-description"><?php echo $description; ?></h1>
-      <?php endif; ?>
-      </div>
-  </header>
-
-  <div id="content" class="site-content">
+  <nav class="o-wrapper site-nav" role="navigation">
+    <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg')?><span class="site-nav__site-name"><?php bloginfo( 'name' ); ?></span></a>
+<?php wp_nav_menu(array(
+  'theme_location' => 'primary',
+  'menu_class' => 'menu primary-menu unstyled',
+  'container' => false,
+  'depth' => 1
+)); ?>
+  </nav>
+  <div class="o-wrapper site-branding">
+  <?php
+  $description = get_bloginfo( 'description', 'display' );
+if ( $description || is_customize_preview() ) : ?>
+  <h1 class="site-description"><?php echo $description; ?></h1>
+<?php endif; ?>
+  </div>
+</header>
+<div id="content" class="site-content">

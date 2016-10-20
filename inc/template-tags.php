@@ -44,14 +44,14 @@ if ( ! function_exists( 'skullmasher_io_post_date' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function skullmasher_io_post_date() {
-	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+	$time_string = '<time class="last-articles__date" datetime="%1$s">%2$s</time>';
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date('j F Y') )
 	);
 
-	echo '<div class="post-date">' . $time_string . '</div>'; // WPCS: XSS OK.
+	echo $time_string; // WPCS: XSS OK.
 
 }
 endif;

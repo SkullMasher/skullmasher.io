@@ -9,9 +9,9 @@
 
 ?>
 <article <?php post_class(); ?>>
-  <?php if ( 'post' === get_post_type() ) : ?>
-    <?php skullmasher_io_post_date(); ?>
-  <?php endif;
-  the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+<?php if ( 'post' === get_post_type() ) : ?>
+  <?php skullmasher_io_post_date(); ?>
+<?php endif; ?>
+<?php the_title( '<h3 class="last-articles__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
 </article>
 <hr>

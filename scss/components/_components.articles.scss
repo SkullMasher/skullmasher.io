@@ -1,3 +1,21 @@
 .last-articles {
   padding: 1rem;
 }
+
+.last-articles__heading-container {
+  display: flex;
+  align-items: center;
+}
+
+.last-articles__heading {
+  font-weight: normal;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.last-articles__heading-trail {
+  display: none;
+  height: 2px;
+  flex-grow: 1;
+  background-color: $base_color;
+}
