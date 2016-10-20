@@ -70,7 +70,7 @@ if ($post->post_status === 'publish') {
 
 endforeach; wp_reset_postdata(); ?>
   </div>
-    <a href="<?php echo get_permalink(get_page_by_title('blog')) ?>" class="btn btn--rounded">Consulter tous les articles</a>
+    <a href="<?php echo get_permalink(get_page_by_title('blog')) ?>" class="btn btn--rounded" role="button">Consulter tous les articles</a>
 </main>
 
 <?php

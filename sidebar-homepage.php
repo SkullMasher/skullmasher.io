@@ -6,7 +6,7 @@
     <span class="skulled-separator__line"></span>
   </p>
   <p>Vous souhaitez travailler avec moi ? Une question ? Envie d'aller boire une bière ? Je serais ravie d'échanger avec vous.</p>
-  <a href="#" class="btn">
+  <a href="#" class="btn" role="button">
     <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
     <p>florian@skullmasher.io</p>
   </a>
