@@ -12,6 +12,7 @@
 ?>
 </div><!-- #content -->
 <footer id="colophon" class="site-footer" role="contentinfo">
+  <p class="disclaimer"><strong>Skullmasher.io</strong> est une société basée en France affilié au régime de auto-entrepreneur. <strong>Numéro siren : 793553488</strong></p>
 	<div class="site-info">
 		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'skullmasher-io' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'skullmasher-io' ), 'WordPress' ); ?></a>
 		<span class="sep"> | </span>
