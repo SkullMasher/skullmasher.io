@@ -8,6 +8,7 @@
 /*$wrapper-width: 1100px !default;*/
 /*$wrapper-width: 110rem !default;*/
 $wrapper-width: 61.111em !default;
+$wrapper-width-large: 88.889em !default; // 1600px
 
 .o-wrapper {
   max-width: $wrapper-width;
@@ -16,3 +17,7 @@ $wrapper-width: 61.111em !default;
 }
 
 // Size Variants
+
+.o-wrapper--large {
+  max-width: $wrapper-width-large;
+}

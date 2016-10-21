@@ -2380,6 +2380,57 @@ img.wp-smiley {
   margin-left: auto;
 }
 
+.o-wrapper--large {
+  max-width: 88.889em;
+}
+
+/* ==========================================================================
+   #BOX
+   ========================================================================== */
+/**
+ * The box object simply boxes off content. Extend with cosmetic styles in the
+ * Components layer.
+ *
+ * 1. So we can apply the `.o-box` class to naturally-inline elements.
+ */
+.o-box {
+  display: block;
+  /* [1] */
+  padding: 1rem;
+}
+
+.o-box > :last-child {
+  margin-bottom: 0;
+}
+
+/* Size variants
+   ========================================================================== */
+.o-box--flush {
+  padding: 0;
+}
+
+.o-box--tiny {
+  padding: 0.5rem;
+}
+
+.o-box--small {
+  padding: 1rem;
+}
+
+.o-box--large {
+  padding: 4rem;
+}
+
+.o-box--huge {
+  padding: 16rem;
+}
+
+/* Color variants
+   ========================================================================== */
+.o-box--alpha-background {
+  background-color: #202020;
+}
+
 /**
  * PAGE HEADER
  *
