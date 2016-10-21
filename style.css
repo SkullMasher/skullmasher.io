@@ -1590,6 +1590,10 @@ Author: Geoffrey Crofte, Alsacréations
 Contributors: Automattic, Geoffrey Crofte
 Description: Reset styles for WordPress usage of KNACSS
 */
+.menu-item > a {
+  color: #fff;
+}
+
 .current-menu-item > a {
   color: #e71d36;
 }
@@ -2484,7 +2488,6 @@ img.wp-smiley {
   padding-bottom: 2rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  color: #fff;
   text-decoration: none;
 }
 

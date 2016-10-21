@@ -8,6 +8,11 @@ Contributors: Automattic, Geoffrey Crofte
 Description: Reset styles for WordPress usage of KNACSS
 */
 
+// Menu link color
+.menu-item > a {
+  color: $alpha-color;
+}
+
 // current menu elements
 .current_page_item > a {
 }
