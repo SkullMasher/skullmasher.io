@@ -1,4 +1,4 @@
-<aside class="sidebar-homepage o-wrapper">
+<aside class="sidebar o-wrapper">
   <p class="whoami">Je suis Florian "Skullmasher" Ledru et j'ai 24ans. Je suis un freelancer depuis juin 2016 qui exerce en région parisienne et partout sur la toile. Passionnée d'informatique, j'ai choisis de faire le web mon travail car c'est un outil très accessible et construit à partir de technologies libre à son coeur. Pour en savoir plus consulter la page à propos.</p>
   <p class="skulled-separator">
     <span class="skulled-separator__line"></span>

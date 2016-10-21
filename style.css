@@ -2609,7 +2609,7 @@ img.wp-smiley {
  *
  * Styles for sidebars & widgets
  */
-.sidebar-homepage {
+.sidebar {
   display: flex;
   flex-direction: column;
   padding: 1rem;
