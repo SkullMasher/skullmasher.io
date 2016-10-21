@@ -11,22 +11,22 @@
   align-items: center;
 }
 
-.site-nav__home {
-  display: block;
-  padding: 1rem;
-  text-transform: uppercase;
-  font-family: hack;
-  font-size: $h2-size;
-  text-decoration: none;
-}
+  .site-nav__home {
+    display: block;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: hack;
+    font-size: $h2-size;
+    text-decoration: none;
+  }
 
-.site-nav__site-name {
-  display: none;
-}
+  .site-nav__site-name {
+    display: none;
+  }
 
-.site-nav__logo {
-  vertical-align: middle;
-}
+  .site-nav__logo {
+    vertical-align: middle;
+  }
 
 // General Wordpress menu styling
 .menu-item > a {
@@ -51,5 +51,19 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.menu-keypages-container > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-keypages-container a {
+  padding: $tiny-value;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

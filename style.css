@@ -2492,6 +2492,20 @@ img.wp-smiley {
   text-decoration: underline;
 }
 
+.menu-keypages-container > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-keypages-container a {
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.menu-keypages-container a:hover {
+  text-decoration: underline;
+}
+
 /**
  * BAND
  *
@@ -2520,6 +2534,7 @@ img.wp-smiley {
   padding-right: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
+  color: #fff;
 }
 
 .promotional-skills {
@@ -2586,6 +2601,11 @@ img.wp-smiley {
   margin-left: 1rem;
 }
 
+/**
+ * Sidebars & Widget
+ *
+ * Styles for sidebars & widgets
+ */
 .sidebar-homepage {
   display: flex;
   flex-direction: column;
@@ -2638,6 +2658,10 @@ img.wp-smiley {
 
 .page-footer {
   color: #fff;
+}
+
+.disclaimer {
+  text-align: center;
 }
 
 /* Text meant only for screen readers. */

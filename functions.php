@@ -90,8 +90,8 @@ function skullmasher_io_widgets_init() {
     'description'   => esc_html__( 'Homepage sidebar.', 'skullmasher-io' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
+    'before_title'  => '<h4 class="widget-title">',
+    'after_title'   => '</h4>',
   ));
 
   register_sidebar( array(
@@ -100,18 +100,38 @@ function skullmasher_io_widgets_init() {
     'description'   => esc_html__( 'Blog sidebar.', 'skullmasher-io' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
+    'before_title'  => '<h4 class="widget-title">',
+    'after_title'   => '</h4>',
   ));
 
   register_sidebar( array(
-    'id'            => 'footer',
-    'name'          => esc_html__( 'Footer', 'skullmasher-io' ),
-    'description'   => esc_html__( 'Blog sidebar.', 'skullmasher-io' ),
-    'before_widget' => '<section id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
+    'id'            => 'keypages',
+    'name'          => esc_html__( 'Footer key pages', 'skullmasher-io' ),
+    'description'   => esc_html__( 'Footer key pages list.', 'skullmasher-io' ),
+    'before_widget' => '<div class="widget widget-keypages">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4 class="is-hidden">',
+    'after_title'   => '</h4>',
+  ));
+
+  register_sidebar( array(
+    'id'            => 'quote',
+    'name'          => esc_html__( 'Footer quote', 'skullmasher-io' ),
+    'description'   => esc_html__( 'Footer quote.', 'skullmasher-io' ),
+    'before_widget' => '<div class="widget widget-quote">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4 class="is-hidden">',
+    'after_title'   => '</h4>',
+  ));
+
+  register_sidebar( array(
+    'id'            => 'colophon',
+    'name'          => esc_html__( 'Footer colophon', 'skullmasher-io' ),
+    'description'   => esc_html__( 'Footer colophon.', 'skullmasher-io' ),
+    'before_widget' => '<div class="widget widget-colophon">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4 class="is-hidden">',
+    'after_title'   => '</h4>',
   ));
 }
 add_action( 'widgets_init', 'skullmasher_io_widgets_init' );
