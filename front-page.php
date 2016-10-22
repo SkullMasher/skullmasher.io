@@ -39,14 +39,14 @@ get_header(); ?>
         <?php echo file_get_contents(get_template_directory() .'/img/share.svg') ?>
         <h2 class="promotional-skills__title o-media-content">Former et Partager</h2>
       </header>
-      <p class="promotional-skills__text">Demanger une formation sur votre solution Wordpress. Découvrez votre site Wordpress par la pratique. Le web est composé de technologie libre et open-source en son coeur, le partage des connaissances en fait partis intégrante. Retrouvez toutes les astuces et tutoriaux web sur le blog.</p>
+      <p class="promotional-skills__text">Demander une formation sur votre solution Wordpress. Découvrez votre site Wordpress par la pratique. Le web est composé de technologie libre et open-source en son coeur, le partage des connaissances en fait partis intégrante. Retrouvez toutes les astuces et tutoriaux web sur le blog.</p>
     </div>
     <div class="promotional-skills">
       <header class="promotional-skills__header o-media">
         <?php echo file_get_contents(get_template_directory() .'/img/develop.svg') ?>
-        <h2 class="promotional-skills__title o-media-content">Devellopper</h2>
+        <h2 class="promotional-skills__title o-media-content">Développer</h2>
       </header>
-      <p class="promotional-skills__text">Adaptation des maquettes aux écran responsive pour refleter au mieux la vision du web designer. Devellopement back-office avec PHP et NodeJS. Application iOS et Android hybride avec Cordova (Phonegap). Instalation et déploiement de votre site web en Python, Ruby, PHP, NodeJS sur Linux. Contacter moi pour dicuter de votre projet.</p>
+      <p class="promotional-skills__text">Adaptation des maquettes aux écran responsive pour refleter au mieux la vision du web designer. Dévelopement back-office avec PHP et NodeJS. Application iOS et Android hybride avec Cordova (Phonegap). Instalation et déploiement de votre site web en Python, Ruby, PHP, NodeJS sur Linux. Contactez moi pour dicuter de votre projet.</p>
     </div>
     <div class="promotional-skills">
       <header class="promotional-skills__header o-media">

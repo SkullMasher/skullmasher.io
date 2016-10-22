@@ -23,8 +23,10 @@
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skullmasher-io' ); ?></a>
 <?php if ( is_front_page() ) : ?>
 <header id="top" class="page-header page-header--masthead" role="banner">
+<?php $description = get_bloginfo( 'description', 'display' ); ?>
 <?php elseif ( is_home() ) : ?>
 <header id="top" class="page-header" role="banner">
+<?php $description = 'Blogmasher'; ?>
 <?php else : ?>
 <header id="top" class="page-header" role="banner">
 <?php endif; ?>
@@ -39,7 +41,6 @@
   </nav>
   <div class="o-wrapper site-branding">
   <?php
-  $description = get_bloginfo( 'description', 'display' );
 if ( $description || is_customize_preview() ) : ?>
   <h1 class="site-description"><?php echo $description; ?></h1>
 <?php endif; ?>
