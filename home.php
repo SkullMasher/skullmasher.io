@@ -15,28 +15,24 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="o-wrapper o-box">
+      <div class="o-wrapper o-box post-list flex-container">
 <?php
 
 if ( have_posts() ) :
 
 /* Start the Loop */
 while ( have_posts() ) : the_post();
-  die(var_dump(is_single()));
-  if ( is_single() ) {
-    get_template_part( 'template-parts/content-blog-single', get_post_format() );
-  } else {
-    /*
-     * Include the Post-Format-specific template for the content.
-     * If you want to override this in a child theme, then include a file
-     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-     */
-    get_template_part( 'template-parts/content-blog', get_post_format() );
-  }
+
+  /*
+   * Include the Post-Format-specific template for the content.
+   * If you want to override this in a child theme, then include a file
+   * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+   */
+  get_template_part( 'template-parts/content-blog', get_post_format() );
 
 endwhile;
 
-the_posts_navigation();
+  the_posts_navigation();
 
 else :
 
@@ -45,6 +41,9 @@ else :
 endif; ?>
   </div>
 <?php
+  /**
+   * List the categories of the blog
+   */
   $cats = get_categories(['orderby'   => 'id']);
   if (is_array($cats)): ?>
     <nav class="o-wrapper o-box category-nav flex-container">
@@ -55,6 +54,9 @@ endif; ?>
     </nav>
 <?php endif ?>
 <?php
+  /**
+   * List the tags used on the blog
+   */
   $tags = get_tags(['orderby'   => 'id']);
   if (is_array($tags)): ?>
     <nav class="o-wrapper o-box tag-nav">

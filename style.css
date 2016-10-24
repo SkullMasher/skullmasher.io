@@ -2676,6 +2676,10 @@ img.wp-smiley {
   background-color: #fff;
 }
 
+.post-list {
+  display: flex;
+}
+
 .last-articles {
   padding: 1rem;
 }
