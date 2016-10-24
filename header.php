@@ -26,15 +26,7 @@
 <?php $description = get_bloginfo( 'description', 'display' ); ?>
 <?php elseif ( is_home() ) : ?>
 <header id="top" class="page-header" role="banner">
-<?php
-  $description = 'Blogmasher';
-  $cats = get_categories(['orderby'   => 'id']);
-  foreach ($cats as $key => $value) {
-    // var_dump($key);
-    // echo $value->term_id;
-    get_category_link($value->term_id);
-  }
-?>
+<?php $description = 'Blogmasher'; ?>
 <?php else : ?>
 <header id="top" class="page-header" role="banner">
 <?php endif; ?>
@@ -53,12 +45,5 @@ if ( $description || is_customize_preview() ) : ?>
   <h1 class="site-description"><?php echo $description; ?></h1>
 <?php endif; ?>
   </div>
-<?php if (isset($cats)): ?>
-    <nav class="o-wrapper category-nav flex-container">
-<?php foreach ($cats as $cat): ?>
-      <a class="category-nav__link" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
-<?php endforeach ?>
-    </nav>
-<?php endif ?>
 </header>
 <div id="content" class="site-content">

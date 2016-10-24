@@ -53,6 +53,44 @@
   }
 }
 
+// Blog Category list
+.category-nav {
+  background-color: $beta-background;
+}
+
+.category-nav__link {
+  display: block;
+}
+
+// Blog Tag list
+.tag-nav {
+  background-color: $beta-background;
+}
+
+.tag-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-nav__title {
+  padding-right: $small-value;
+  padding-left: $small-value;
+}
+
+.tag-nav__link {
+  display: inline-block;
+  padding: $small-value;
+  margin: $tiny-value;
+  background-color: $alpha-color;
+  color: $base-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $base-color-link;
+  }
+}
+
 .menu-keypages-container > ul {
   list-style: none;
   padding-left: 0;

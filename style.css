@@ -2495,6 +2495,42 @@ img.wp-smiley {
   text-decoration: underline;
 }
 
+.category-nav {
+  background-color: #eeeeee;
+}
+
+.category-nav__link {
+  display: block;
+}
+
+.tag-nav {
+  background-color: #eeeeee;
+}
+
+.tag-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-nav__title {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.tag-nav__link {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #262626;
+  text-decoration: none;
+}
+
+.tag-nav__link:hover {
+  color: #44a340;
+}
+
 .menu-keypages-container > ul {
   list-style: none;
   padding-left: 0;

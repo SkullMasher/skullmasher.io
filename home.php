@@ -47,10 +47,32 @@ get_header(); ?>
         get_template_part( 'template-parts/content', 'none' );
 
       endif; ?>
-
   </div>
-      </main><!-- #main -->
-    </div><!-- #primary -->
+<?php
+  $cats = get_categories(['orderby'   => 'id']);
+  if (is_array($cats)): ?>
+    <nav class="o-wrapper o-box category-nav flex-container">
+      <h3 class="category-nav__title">Listes des catégories</h3>
+<?php foreach ($cats as $cat): ?>
+      <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+<?php endforeach ?>
+    </nav>
+<?php endif ?>
+<?php
+  $tags = get_tags(['orderby'   => 'id']);
+  if (is_array($tags)): ?>
+    <nav class="o-wrapper o-box tag-nav">
+      <h3 class="tag-nav__title">Listes des tags</h3>
+      <div class="tag-nav__list">
+<?php foreach ($tags as $tag): ?>
+      <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+<?php endforeach ?>
+      </div>
+    </nav>
+<?php endif ?>
+
+    </main><!-- #main -->
+  </div><!-- #primary -->
 
 <?php
 get_sidebar('blog');
