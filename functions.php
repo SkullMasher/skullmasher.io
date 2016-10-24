@@ -40,6 +40,15 @@ function skullmasher_io_setup() {
    */
   add_theme_support( 'post-thumbnails' );
 
+  /*
+   * Enable support for Post formats on posts.
+   *
+   * @link https://codex.wordpress.org/Post_Formats
+   */
+  add_theme_support( 'post-formats', [
+    'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'
+  ]);
+
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'skullmasher-io' ),
