@@ -9,19 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-list__item'); ?>>
-		<?php
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) : ?>
-    <?php
-    endif; ?>
-
-		<div class="entry-meta">
-      <?php skullmasher_io_post_publish_date(); ?>
-    </div><!-- .entry-meta -->
-</article><!-- #post-## -->
+<article id="post-<?php the_ID(); ?>" <?php post_class('o-box post-list__item'); ?>>
+		<?php the_title( '<h2 class="post-list__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+		<div class="post-list__meta flex-container">
+      <span class="post-list__publish-date"><?php skullmasher_io_post_publish_date(); ?></span>
+      <span class="post-list__comments-count">42 commentaires</span>
+    </div>
+</article>
