@@ -15,7 +15,7 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="o-wrapper">
+      <div class="o-wrapper o-box">
 <?php
 
 if ( have_posts() ) :
@@ -28,7 +28,7 @@ while ( have_posts() ) : the_post();
    * If you want to override this in a child theme, then include a file
    * called content-___.php (where ___ is the Post Format name) and that will be used instead.
    */
-  get_template_part( 'template-parts/content', get_post_format() );
+  get_template_part( 'template-parts/content-blog', get_post_format() );
 
 endwhile;
 
@@ -36,7 +36,7 @@ the_posts_navigation();
 
 else :
 
-  get_template_part( 'template-parts/content', 'none' );
+  get_template_part( 'template-parts/content-blog', 'none' );
 
 endif; ?>
   </div>
