@@ -22,3 +22,28 @@
 .btn--rounded {
   border-radius: 3px;
 }
+
+// Color variant
+.btn--lightgrey {
+  background-color: $beta-background;
+
+  &:hover {
+    background-color: darken($beta-background, 5);
+  }
+}
+
+.btn--grey {
+  background-color: $alpha-background;
+
+  &:hover {
+    background-color: darken($alpha-background, 5);
+  }
+}
+
+.btn--darkgrey {
+  background-color: $gamma-background;
+
+  &:hover {
+    background-color: darken($gamma-background, 5);
+  }
+}

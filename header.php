@@ -15,10 +15,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skullmasher-io' ); ?></a>
 <?php if ( is_front_page() ) : ?>
@@ -26,7 +24,7 @@
 <?php $description = get_bloginfo( 'description', 'display' ); ?>
 <?php elseif ( is_home() ) : ?>
 <header id="top" class="page-header" role="banner">
-<?php $description = 'Blogmasher';?>
+<?php $description = 'Blogmasher'; ?>
 <?php else : ?>
 <header id="top" class="page-header" role="banner">
 <?php endif; ?>
@@ -40,9 +38,8 @@
 )); ?>
   </nav>
   <div class="o-wrapper site-branding">
-  <?php
-if ( $description || is_customize_preview() ) : ?>
-  <h1 class="site-description"><?php echo $description; ?></h1>
+<?php if ( $description || is_customize_preview() ) : ?>
+    <h1 class="site-description"><?php echo $description; ?></h1>
 <?php endif; ?>
   </div>
 </header>

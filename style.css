@@ -2614,6 +2614,30 @@ img.wp-smiley {
   border-radius: 3px;
 }
 
+.btn--lightgrey {
+  background-color: #eeeeee;
+}
+
+.btn--lightgrey:hover {
+  background-color: #e1e1e1;
+}
+
+.btn--grey {
+  background-color: #202020;
+}
+
+.btn--grey:hover {
+  background-color: #131313;
+}
+
+.btn--darkgrey {
+  background-color: #161616;
+}
+
+.btn--darkgrey:hover {
+  background-color: #090909;
+}
+
 .article-separator {
   margin: 1.5em 0;
 }
@@ -2697,10 +2721,6 @@ img.wp-smiley {
 
 .page-footer {
   color: #fff;
-}
-
-.disclaimer {
-  text-align: center;
 }
 
 /* Text meant only for screen readers. */
