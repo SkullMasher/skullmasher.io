@@ -2680,6 +2680,12 @@ img.wp-smiley {
   display: flex;
 }
 
+.post-list__item {
+  margin: 0;
+  padding: 1rem;
+  background-color: #e71d36;
+}
+
 .last-articles {
   padding: 1rem;
 }

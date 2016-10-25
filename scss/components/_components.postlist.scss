@@ -1,3 +1,9 @@
 .post-list {
   display: flex;
 }
+
+.post-list__item {
+  margin: 0;
+  padding: 1rem;
+  background-color: $base-color-link-hover;
+}
