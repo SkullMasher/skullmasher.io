@@ -1,0 +1,47 @@
+.pagination {
+  padding-top: $medium-value;
+  padding-right: $tiny-value;
+  padding-bottom: $medium-value;
+  padding-left: $tiny-value;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.page-numbers {
+  margin-left: $tiny-value;
+  padding: $tiny-value;
+  background-color: $base-color-link;
+  color: $alpha-color;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($base-color-link, 5);
+    color: $alpha-color;
+    font-weight: bold;
+  }
+}
+
+.prev:before {
+    content: '<';
+    padding-right: 2px;
+    font-weight: bold;
+}
+
+.next:after {
+    content: '>';
+    font-weight: bold;
+    padding-left: 2px;
+}
+.current, .dots {
+  background-color: transparent;
+  color: $base-color;
+
+  &:hover {
+    background-color: transparent;
+    color: $base-color;
+    font-weight: normal;
+  }
+}
