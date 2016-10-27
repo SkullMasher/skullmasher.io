@@ -9,7 +9,7 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('article o-wrapper'); ?>>
-  <header class="entry-header">
+  <header class="article__heading">
 		<div class="article__date">
 			<?php skullmasher_io_posted_on_single(); ?>
 		</div>
@@ -39,7 +39,23 @@ if ( has_post_thumbnail() ) : ?>
 		?>
 	</div>
 
-	<footer class="article__footer">
-		<?php skullmasher_io_entry_footer(); ?>
+	<footer class="article__footer o-box o-box--beta-background">
+    <?php
+      /**
+       * List the tags & category of the blog post
+       */
+      $tags = wp_get_post_tags(get_the_ID());
+      if (is_array($tags)): ?>
+        <nav class="o-wrapper tag-nav">
+          <p class=".tag-nav__list tag-nav__list--single"><span>Consulter les autres articles</span>
+    <?php foreach ($tags as $tag): ?>
+          <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+    <?php endforeach ?>
+          </p>
+        </nav>
+    <?php endif ?>
+
+    <?php // var_dump( wp_get_post_tags(get_the_ID()) ); ?>
+		<?php // skullmasher_io_entry_footer(); ?>
 	</footer>
 </article>

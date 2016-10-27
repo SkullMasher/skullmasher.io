@@ -1,6 +1,9 @@
 .article {
-  padding: $small-value;
 }
+
+  .article__heading, .article__content {
+    padding: $small-value;
+  }
 
   .article__date {
     font-size: 1.6rem;

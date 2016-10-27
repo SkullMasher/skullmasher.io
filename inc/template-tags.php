@@ -106,18 +106,17 @@ if ( ! function_exists( 'skullmasher_io_entry_footer' ) ) :
  */
 function skullmasher_io_entry_footer() {
 	// Hide category and tag text for pages.
-	if ( 'post' === get_post_type() ) {
+  if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'skullmasher-io' ) );
-		if ( $categories_list && skullmasher_io_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'skullmasher-io' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-		}
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'skullmasher-io' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( '', 'skullmasher-io' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'skullmasher-io' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tag-nav--single">' . esc_html__( 'Consulter les autres articles %1$s', 'skullmasher-io' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
+    /* translators: used between list items, there is a space after the comma */
+    $categories_list = get_the_category_list( esc_html__( ', ', 'skullmasher-io' ) );
+    if ( $categories_list && skullmasher_io_categorized_blog() ) {
+      printf( '<span class="category-nav--single">' . esc_html__( ' ou %1$s', 'skullmasher-io' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+    }
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {

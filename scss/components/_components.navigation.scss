@@ -58,6 +58,10 @@
   background-color: $beta-background;
 }
 
+.category-nav--single > a {
+
+}
+
 .category-nav__link {
   display: block;
 }
@@ -67,12 +71,21 @@
   background-color: $beta-background;
 }
 
+.tag-nav--single {
+
+}
+
 .tag-nav__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.tag-nav__list--single {
+  justify-content: flex-start;
+  line-height: 1;
+
+}
 .tag-nav__title {
   padding-right: $small-value;
   padding-left: $small-value;
@@ -91,6 +104,7 @@
   }
 }
 
+// Key pages navigation list
 .menu-keypages-container > ul {
   list-style: none;
   padding-left: 0;

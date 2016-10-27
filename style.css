@@ -2438,6 +2438,10 @@ img.wp-smiley {
   background-color: #202020;
 }
 
+.o-box--beta-background {
+  background-color: #eeeeee;
+}
+
 /**
  * PAGE HEADER
  *
@@ -2514,6 +2518,11 @@ img.wp-smiley {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.tag-nav__list--single {
+  justify-content: flex-start;
+  line-height: 1;
 }
 
 .tag-nav__title {
@@ -2757,7 +2766,7 @@ img.wp-smiley {
   font-weight: normal;
 }
 
-.article {
+.article__heading, .article__content {
   padding: 1rem;
 }
 
