@@ -13,7 +13,7 @@
 
   .site-nav__home {
     display: block;
-    padding: 1rem;
+    padding: $small-value;
     text-transform: uppercase;
     font-family: hack;
     font-size: $h2-size;
@@ -41,10 +41,10 @@
   justify-content: flex-end;
 
   .menu-item > a {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-top: $medium-value;
+    padding-bottom: $medium-value;
+    padding-right: $small-value;
+    padding-left: $small-value;
     text-decoration: none;
 
     &:hover {

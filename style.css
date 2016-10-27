@@ -2784,8 +2784,8 @@ img.wp-smiley {
 
 .last-articles__heading-trail {
   display: none;
-  height: 2px;
   flex-grow: 1;
+  height: 2px;
   background-color: #262626;
 }
 
@@ -2794,8 +2794,11 @@ img.wp-smiley {
 }
 
 .last-articles__title > a {
+  padding-top: 1rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0;
   text-decoration: none;
-  padding: 1rem 0;
 }
 
 .last-articles__title > a:hover {
