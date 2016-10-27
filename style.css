@@ -2845,4 +2845,11 @@ img.wp-smiley {
   outline: 0;
 }
 
+pre {
+  padding: 1rem;
+  background-color: #202020;
+  color: #fff;
+  border-radius: 3px;
+}
+
 /*# sourceMappingURL=style.map.css */
