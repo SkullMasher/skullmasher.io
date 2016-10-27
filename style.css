@@ -630,7 +630,7 @@ kbd {
   /* IE fix */
   white-space: pre-line;
   white-space: pre-wrap;
-  font-family: consolas, courier, monospace;
+  font-family: hack, consolas, courier, monospace;
   line-height: normal;
 }
 
@@ -2683,12 +2683,26 @@ img.wp-smiley {
 .post-list__item {
   margin: 0;
   padding: 1rem;
-  background-color: #e71d36;
+  background-color: transparent;
 }
 
-.has-post-thumbnail {
+.post-list__title a {
+  text-decoration: none;
+}
+
+.post-list .has-post-thumbnail {
   background-position: center;
   background-size: cover;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.post-list .has-post-thumbnail .post-list__title > a {
+  color: #fff;
+}
+
+.post-list .has-post-thumbnail .post-list__title > a:hover {
+  color: #e71d36;
 }
 
 .pagination {
