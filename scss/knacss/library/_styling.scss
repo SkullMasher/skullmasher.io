@@ -48,6 +48,8 @@ blockquote {
 }
 
 blockquote::before {
+  height: 30px;
+  overflow: hidden;
   content: "\201C";
   position: absolute;
   left: 0;
