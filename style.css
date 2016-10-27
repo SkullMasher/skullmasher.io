@@ -2686,6 +2686,11 @@ img.wp-smiley {
   background-color: #e71d36;
 }
 
+.has-post-thumbnail {
+  background-position: center;
+  background-size: cover;
+}
+
 .pagination {
   padding-top: 2rem;
   padding-right: 0.5rem;
