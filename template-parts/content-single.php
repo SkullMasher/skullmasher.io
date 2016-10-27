@@ -8,20 +8,23 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('article o-wrapper'); ?>>
   <header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' );
+		<div class="article__date">
+			<?php skullmasher_io_posted_on_single(); ?>
+		</div>
+    <?php the_title( '<h1 class="article__title">', '</h1>' ); ?>
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php skullmasher_io_post_publish_date(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
+<?php
+if ( has_post_thumbnail() ) : ?>
+  <div class="article__featured-image">
+    <?php the_post_thumbnail(); ?>
+  </div>
+<?php endif; ?>
 
-	<div class="entry-content">
+	</header>
+
+	<div class="article__content">
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
@@ -34,9 +37,9 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
-	<footer class="entry-footer">
+	<footer class="article__footer">
 		<?php skullmasher_io_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</footer>
+</article>

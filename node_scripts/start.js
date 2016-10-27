@@ -49,7 +49,7 @@ bs.watch(appPath.appFolderPath + '*.html').on('change', function () {
 })
 
 // Reload all browser on PHP change
-bs.watch(appPath.appFolderPath + '*.php').on('change', function () {
+bs.watch(appPath.appFolderPath + '**/*.php').on('change', function () {
   bs.reload()
 })
 

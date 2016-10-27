@@ -1,39 +1,11 @@
-.last-articles {
-  padding: 1rem;
+.article {
+  padding: $small-value;
 }
 
-  .last-articles__heading-container {
-    display: flex;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 2em;
-  }
+.article__date {
+  font-size: 1.6rem;
+}
 
-  .last-articles__heading {
-    margin: 0;
-    padding-right: 1rem;
-  }
-
-  .last-articles__heading-trail {
-    display: none;
-    height: 2px;
-    flex-grow: 1;
-    background-color: $base_color;
-  }
-
-  .last-articles__date {
-
-  }
-
-  .last-articles__title {
-    margin: 0;
-  }
-
-  .last-articles__title > a {
-    text-decoration: none;
-    padding: 1rem 0;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.article__title {
+  text-align: center;
+}

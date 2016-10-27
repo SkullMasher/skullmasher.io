@@ -2735,6 +2735,18 @@ img.wp-smiley {
   font-weight: normal;
 }
 
+.article {
+  padding: 1rem;
+}
+
+.article__date {
+  font-size: 1.6rem;
+}
+
+.article__title {
+  text-align: center;
+}
+
 .last-articles {
   padding: 1rem;
 }
