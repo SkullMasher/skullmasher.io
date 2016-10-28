@@ -39,23 +39,28 @@ if ( has_post_thumbnail() ) : ?>
 		?>
 	</div>
 
-	<footer class="article__footer o-box o-box--beta-background">
+	<footer class="article__footer">
     <?php
       /**
        * List the tags & category of the blog post
        */
-      $tags = wp_get_post_tags(get_the_ID());
-      if (is_array($tags)): ?>
-        <nav class="o-wrapper tag-nav">
-          <p class=".tag-nav__list tag-nav__list--single"><span>Consulter les autres articles</span>
-    <?php foreach ($tags as $tag): ?>
+      $tags = get_the_tags();
+      $cats = get_the_category();
+      if (!empty($tags) && !empty($cats)) {
+        // There is tag and categories defined for this post
+        foreach ($tags as $tag) : ?>
           <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
-    <?php endforeach ?>
-          </p>
-        </nav>
-    <?php endif ?>
+        <?php endforeach;
+        foreach ($cats as $cat) : ?>
+          <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+        <?php endforeach;
 
-    <?php // var_dump( wp_get_post_tags(get_the_ID()) ); ?>
-		<?php // skullmasher_io_entry_footer(); ?>
+      } elseif (empty($tags) && !empty($cats)) {
+        // print_r($cats);
+      }
+      // No tag or category define for this post
+      // var_dump($tags);
+      // var_dump($cats);
+      ?>
 	</footer>
 </article>
