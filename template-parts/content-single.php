@@ -73,5 +73,10 @@ else: ?>
        </p>
     </div>
 <?php endif; // No tags but there is categories ?>
+    <div class="article__share">
+      <p>Partager
+        <a href="https://twitter.com/intent/tweet?text=Hello%20World&url=http%3A%2F%2Fskullmasher.io&via=skullm4sher" target="_blank" title="Partager sur twitter"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
+      </p>
+    </div>
   </footer>
 </article>
