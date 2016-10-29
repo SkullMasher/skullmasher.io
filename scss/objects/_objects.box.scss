@@ -45,6 +45,10 @@
 /* Color variants
    ========================================================================== */
 
+.o-box--content-background {
+ background-color: $content-background;
+}
+
 .o-box--alpha-background {
  background-color: $alpha-background;
 }

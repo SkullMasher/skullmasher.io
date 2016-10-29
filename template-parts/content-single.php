@@ -68,15 +68,16 @@ foreach ($cats as $cat) : ?>
       <a class="btn btn--inline category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach;
 else: ?>
-      <p>Consulter les articles dans la catégories <a class="btn btn--inline category-nav__link <?php echo 'category-' . $cats[0]->slug ?>" href="<?php echo get_category_link($cats[0]->term_id) ?>"><?php echo $cats[0]->name ?></a>
+      <p>Consulter les articles dans la catégorie <a class="btn btn--inline category-nav__link <?php echo 'category-' . $cats[0]->slug ?>" href="<?php echo get_category_link($cats[0]->term_id) ?>"><?php echo $cats[0]->name ?></a>
 <?php endif; // categories only count ?>
-       </p>
+      </p>
+      <p class="article__share">Partager
+        <a href="https://twitter.com/intent/tweet?text=Hello%20World&url=http%3A%2F%2Fskullmasher.io&via=skullm4sher" target="blank" title="Partager sur twitter"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=skullmasher.io" target="blank">Facebook</a>
+      </p>
     </div>
 <?php endif; // No tags but there is categories ?>
-    <div class="article__share">
-      <p>Partager
-        <a href="https://twitter.com/intent/tweet?text=Hello%20World&url=http%3A%2F%2Fskullmasher.io&via=skullm4sher" target="_blank" title="Partager sur twitter"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
-      </p>
+    <div class="article__share o-box o-box--medium o-box--content-background">
     </div>
   </footer>
 </article>

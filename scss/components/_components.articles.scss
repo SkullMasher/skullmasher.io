@@ -1,4 +1,5 @@
 .article {
+  background-color: $alpha-color;
 }
 
   .article__heading {
@@ -25,4 +26,9 @@
 
   .article__share svg {
     vertical-align: middle;
+  }
+
+  .article__share a {
+    text-decoration: none;
+    padding-left: $small-value;
   }

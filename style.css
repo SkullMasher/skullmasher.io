@@ -2434,6 +2434,10 @@ img.wp-smiley {
 
 /* Color variants
    ========================================================================== */
+.o-box--content-background {
+  background-color: #fafafa;
+}
+
 .o-box--alpha-background {
   background-color: #202020;
 }
@@ -2771,6 +2775,10 @@ img.wp-smiley {
   font-weight: normal;
 }
 
+.article {
+  background-color: #fff;
+}
+
 .article__heading {
   padding-top: 1rem;
   padding-right: 1rem;
@@ -2795,6 +2803,11 @@ img.wp-smiley {
 
 .article__share svg {
   vertical-align: middle;
+}
+
+.article__share a {
+  text-decoration: none;
+  padding-left: 1rem;
 }
 
 .last-articles {
