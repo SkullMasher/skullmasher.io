@@ -2420,8 +2420,8 @@ img.wp-smiley {
   padding: 0.5rem;
 }
 
-.o-box--small {
-  padding: 1rem;
+.o-box--medium {
+  padding: 2rem;
 }
 
 .o-box--large {
@@ -2626,6 +2626,11 @@ img.wp-smiley {
   border-radius: 3px;
 }
 
+.btn--inline {
+  display: inline-block;
+  margin: 0;
+}
+
 .btn--lightgrey {
   background-color: #eeeeee;
 }
@@ -2766,16 +2771,26 @@ img.wp-smiley {
   font-weight: normal;
 }
 
-.article__heading, .article__content {
-  padding: 1rem;
-}
-
-.article__date {
-  font-size: 1.6rem;
+.article__heading {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
 }
 
 .article__title {
   text-align: center;
+}
+
+.article__content {
+  padding-top: 0;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+}
+
+.article__date {
+  font-size: 1.6rem;
 }
 
 .last-articles {

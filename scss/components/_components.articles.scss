@@ -1,14 +1,24 @@
 .article {
 }
 
-  .article__heading, .article__content {
-    padding: $small-value;
-  }
-
-  .article__date {
-    font-size: 1.6rem;
+  .article__heading {
+    padding-top: $small-value;
+    padding-right: $small-value;
+    padding-bottom: 0;
+    padding-left: $small-value;
   }
 
   .article__title {
     text-align: center;
+  }
+
+  .article__content {
+    padding-top: 0;
+    padding-right: $small-value;
+    padding-bottom: $large-value;
+    padding-left: $small-value;
+  }
+
+  .article__date {
+    font-size: 1.6rem;
   }

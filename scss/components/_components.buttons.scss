@@ -23,6 +23,11 @@
   border-radius: 3px;
 }
 
+.btn--inline {
+  display: inline-block;
+  margin: 0;
+}
+
 // Color variant
 .btn--lightgrey {
   background-color: $beta-background;
