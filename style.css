@@ -2880,6 +2880,10 @@ img.wp-smiley {
   color: rgba(68, 163, 64, 0.75);
 }
 
+.hire-me__link {
+  hyphens: initial;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);

@@ -82,5 +82,8 @@ else: ?>
         <a href="mailto:contact@example.com?&subject=<?php echo $encoded_article_title ?>&body=<?php echo $encoded_permalink ?>"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></a>
       </p>
     </div>
+    <div class="hire-me">
+      <a href="<?php echo get_permalink(get_page_by_title('contact')->ID ) ?>" class="hire-me__link btn btn--rounded">Vous avez aimé cet article ? Engagez moi !</a>
+    </div>
   </footer>
 </article>
