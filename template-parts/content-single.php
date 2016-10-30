@@ -74,10 +74,9 @@ else: ?>
       <p class="article__share">Partager
         <a href="https://twitter.com/intent/tweet?text=Hello%20World&url=http%3A%2F%2Fskullmasher.io&via=skullm4sher" target="blank" title="Partager sur twitter"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
         <a href="https://www.facebook.com/sharer/sharer.php?u=skullmasher.io" target="blank">Facebook</a>
+        <a href="mailto:contact@example.com?&subject=Hello World&body=https%3A//skullmasher.io"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></a>
       </p>
     </div>
 <?php endif; // No tags but there is categories ?>
-    <div class="article__share o-box o-box--medium o-box--content-background">
-    </div>
   </footer>
 </article>
