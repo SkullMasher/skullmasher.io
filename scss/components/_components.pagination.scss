@@ -4,12 +4,27 @@
   padding-bottom: $medium-value;
   padding-left: $tiny-value;
 }
-
-.nav-links {
+.pagination .nav-links {
   display: flex;
   justify-content: center;
 }
 
+/* Single post navigation */
+.post-navigation .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-navigation .nav-previous, .post-navigation .nav-next {
+  float: none;
+  width: auto;
+}
+
+.post-navigation .nav-next {
+  padding-top: $medium-value;
+}
+
+/* Blog page navigation */
 .page-numbers {
   margin-left: $tiny-value;
   padding: $tiny-value;

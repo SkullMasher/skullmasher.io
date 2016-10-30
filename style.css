@@ -2733,11 +2733,27 @@ img.wp-smiley {
   padding-left: 0.5rem;
 }
 
-.nav-links {
+.pagination .nav-links {
   display: flex;
   justify-content: center;
 }
 
+/* Single post navigation */
+.post-navigation .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-navigation .nav-previous, .post-navigation .nav-next {
+  float: none;
+  width: auto;
+}
+
+.post-navigation .nav-next {
+  padding-top: 2rem;
+}
+
+/* Blog page navigation */
 .page-numbers {
   margin-left: 0.5rem;
   padding: 0.5rem;
