@@ -2726,6 +2726,45 @@ img.wp-smiley {
   color: #e71d36;
 }
 
+.last-articles {
+  padding: 1rem;
+}
+
+.last-articles__heading-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.last-articles__heading {
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.last-articles__heading-trail {
+  display: none;
+  flex-grow: 1;
+  height: 2px;
+  background-color: #262626;
+}
+
+.last-articles__title {
+  margin: 0;
+}
+
+.last-articles__title > a {
+  padding-top: 1rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.last-articles__title > a:hover {
+  text-decoration: underline;
+}
+
 .pagination {
   padding-top: 2rem;
   padding-right: 0.5rem;
@@ -2826,50 +2865,33 @@ img.wp-smiley {
   padding-left: 1rem;
 }
 
-.last-articles {
-  padding: 1rem;
-}
-
-.last-articles__heading-container {
-  display: flex;
-  align-items: center;
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-.last-articles__heading {
-  margin: 0;
-  padding-right: 1rem;
-}
-
-.last-articles__heading-trail {
-  display: none;
-  flex-grow: 1;
-  height: 2px;
-  background-color: #262626;
-}
-
-.last-articles__title {
-  margin: 0;
-}
-
-.last-articles__title > a {
-  padding-top: 1rem;
-  padding-right: 0;
-  padding-bottom: 1rem;
-  padding-left: 0;
-  text-decoration: none;
-}
-
-.last-articles__title > a:hover {
-  text-decoration: underline;
-}
-
 .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 1rem;
+}
+
+.hire-me__link {
+  hyphens: initial;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.comment-list ul {
+  padding-left: 2em;
+  list-style-type: none;
+}
+
+.comment-list .odd {
+  background-color: #333;
+}
+
+.comment-list .even {
+  background-color: #666;
 }
 
 .page-footer {
@@ -2878,10 +2900,6 @@ img.wp-smiley {
 
 .page-footer blockquote:before {
   color: rgba(68, 163, 64, 0.75);
-}
-
-.hire-me__link {
-  hyphens: initial;
 }
 
 /* Text meant only for screen readers. */

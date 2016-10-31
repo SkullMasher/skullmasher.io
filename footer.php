@@ -17,7 +17,7 @@
       <div class="o-box o-box--alpha-background">
         <?php get_sidebar('keypages'); ?>
       </div>
-      <div class="o-box o-box--alpha-background">
+      <div id="citation" class="o-box o-box--alpha-background">
         <?php get_sidebar('quote'); ?>
       </div>
       <div class="o-box o-box--alpha-background">
