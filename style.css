@@ -819,19 +819,18 @@ sub {
 blockquote {
   position: relative;
   padding-left: 3em;
+  min-height: 2em;
 }
 
 blockquote::before {
-  height: 30px;
-  overflow: hidden;
   content: "\201C";
   position: absolute;
   left: 0;
   top: 0;
   font-family: georgia, serif;
   font-size: 5em;
-  line-height: 0.9;
-  color: rgba(68, 163, 64, 0.75);
+  height: .4em;
+  line-height: .9;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2872,8 +2871,18 @@ img.wp-smiley {
   margin: 1rem;
 }
 
+.hire-me {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .hire-me__link {
   hyphens: initial;
+}
+
+.comments-area {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .comment-list {
@@ -2886,12 +2895,30 @@ img.wp-smiley {
   list-style-type: none;
 }
 
-.comment-list .odd {
-  background-color: #333;
+.comment-body {
+  margin-bottom: 4rem;
 }
 
-.comment-list .even {
-  background-color: #666;
+.children .comment-body {
+  margin-bottom: 2rem;
+}
+
+.comment-respond {
+  padding-bottom: 4rem;
+}
+
+.comment-form textarea,
+.comment-form input {
+  border: 1px solid #666;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.form-submit > input {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #44a340;
+  color: #fff;
 }
 
 .page-footer {

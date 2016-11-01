@@ -1,3 +1,8 @@
+.comments-area {
+  padding-right: $small-value;
+  padding-left: $small-value;
+}
+
 .comment-list {
   list-style-type: none;
   padding-left: 0;
@@ -9,9 +14,35 @@
 }
 
 .comment-list .odd {
-  background-color: #333;
+  // background-color: #333;
 }
 
 .comment-list .even {
- background-color: #666;
+  // background-color: #666;
+}
+
+.comment-body {
+  margin-bottom: $large-value;
+}
+
+.children .comment-body {
+  margin-bottom: $medium-value;
+}
+
+.comment-respond {
+  padding-bottom: $large-value;
+}
+
+.comment-form textarea,
+.comment-form input {
+  border: 1px solid #666;
+  border-radius: 3px;
+  background-color: $alpha-color;
+}
+
+.form-submit > input {
+  margin-top: $medium-value;
+  padding: $small-value;
+  background-color: $base-color-link;
+  color: $alpha-color;
 }
