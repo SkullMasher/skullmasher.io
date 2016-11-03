@@ -83,7 +83,7 @@ else: ?>
       </p>
     </div>
     <div class="hire-me">
-      <a href="<?php echo get_permalink(get_page_by_title('contact')->ID ) ?>" class="hire-me__link btn btn--rounded">Vous avez aimé cet article ? Engagez moi !</a>
+      <a href="<?php echo get_permalink(get_page_by_title('contact')->ID ) ?>" class="hire-me__link btn btn--rounded">Vous avez aimé cet article ? <br>Engagez moi !</a>
     </div>
   </footer>
 </article>

@@ -2855,6 +2855,10 @@ img.wp-smiley {
   font-size: 1.6rem;
 }
 
+.article__share {
+  margin-top: 2rem;
+}
+
 .article__share svg {
   vertical-align: middle;
 }
