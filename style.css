@@ -2965,6 +2965,9 @@ img.wp-smiley {
   outline: 0;
 }
 
+/**
+ * When we want to show raw text or block of code
+ */
 pre {
   padding: 1rem;
   background-color: #202020;
