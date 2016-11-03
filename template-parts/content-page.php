@@ -10,11 +10,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<header class="page__header">
+		<?php the_title( '<h1 class="page__title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="page__content">
 		<?php
 			the_content();
 
@@ -26,7 +26,7 @@
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="page__footer">
 			<?php
 				edit_post_link(
 					sprintf(
@@ -34,8 +34,10 @@
 						esc_html__( 'Edit %s', 'skullmasher-io' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
-					'<span class="edit-link">',
-					'</span>'
+					'<span class="edit">',
+					'</span>',
+          '',
+          'edit__link btn btn--inline btn--rounded'
 				);
 			?>
 		</footer><!-- .entry-footer -->
