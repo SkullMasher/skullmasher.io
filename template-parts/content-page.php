@@ -9,10 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('o-box'); ?>>
 	<header class="page__header">
 		<?php the_title( '<h1 class="page__title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="page__content">
 		<?php
@@ -23,7 +23,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="page__footer">
@@ -40,6 +40,6 @@
           'edit__link btn btn--inline btn--rounded'
 				);
 			?>
-		</footer><!-- .entry-footer -->
+		</footer>
 	<?php endif; ?>
-</article><!-- #post-## -->
+</article>

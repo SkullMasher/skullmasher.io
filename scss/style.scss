@@ -17,6 +17,7 @@ skullmasher.io is based on Underscores http://underscores.me/, (C) 2012-2016 Aut
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 CSS on steroids with KNACSS from Alsacreations : https://github.com/alsacreations/KNACSS
+Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 */
 
 /**
@@ -52,14 +53,15 @@ CSS on steroids with KNACSS from Alsacreations : https://github.com/alsacreation
 @import "components/components.branding";
 @import "components/components.buttons";
 @import "components/components.separators";
+@import "components/components.social";
 @import "components/components.sidebars";
 @import "components/components.postlist";
 @import "components/components.lastarticles";
 @import "components/components.pagination";
 @import "components/components.articles";
-@import "components/components.social";
 @import "components/components.hireme";
 @import "components/components.comments";
+@import "components/components.pages";
 @import "components/components.pagefooter";
 
 // UTILITIES
