@@ -45,7 +45,7 @@ $tags = get_the_tags();
 $cats = get_the_category();
 ?>
     <div class="o-box o-box--medium o-box--beta-background">
-<?php the_post_navigation(); ?>
+<?php // the_post_navigation(); ?>
 <?php if (!empty($tags) && !empty($cats)) : ?>
       <p>Consulter les articles
 <?php foreach ($tags as $tag) : ?>

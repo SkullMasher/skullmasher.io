@@ -2631,7 +2631,7 @@ img.wp-smiley {
 
 .btn--inline {
   display: inline-block;
-  margin: 0;
+  margin: 0.5rem;
 }
 
 .btn--lightgrey {
