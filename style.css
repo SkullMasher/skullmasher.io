@@ -2466,6 +2466,12 @@ img.wp-smiley {
   align-items: center;
 }
 
+@media (min-width: 25em) {
+  .site-nav {
+    width: 350px;
+  }
+}
+
 .site-nav__home {
   display: block;
   padding: 1rem;

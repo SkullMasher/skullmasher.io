@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+@media (min-width: 25em) { // 400px
+  .site-nav {
+    width: 350px;
+  }
+}
+
   .site-nav__home {
     display: block;
     padding: $small-value;
