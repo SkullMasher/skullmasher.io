@@ -8,6 +8,21 @@
   padding-bottom: $medium-value;
 }
 
+@media (max-width: $small) and (min-width: ($tiny + 1)) {
+  .site-branding {
+    padding-top: $small-value;
+    padding-bottom: $medium-plus-value;
+  }
+}
+
+@media (min-width: $small) {
+  .site-branding {
+    padding-top: $medium-value;
+    padding-bottom: $large-value;
+  }
+}
+
+
 .site-description {
   margin-bottom: 0;
   margin-right: auto;
