@@ -48,6 +48,13 @@
 // Promotional skills
 @media (min-width: $tiny) {
   .promotional-skills {
+    padding-top: $small-value;
+    padding-bottom: $medium-value;
+  }
+}
+
+@media (min-width: $small) {
+  .promotional-skills {
     display: flex;
     flex-wrap: wrap;
   }
@@ -88,6 +95,12 @@
   .promotional-skill__header {
     align-items: center;
     hyphens: none;
+  }
+
+  @media (min-width: $medium) {
+    .promotional-skill__header {
+      height: 72px; // MAGIC NUMBER
+    }
   }
 
   .promotional-skill__title {

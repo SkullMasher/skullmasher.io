@@ -2655,6 +2655,13 @@ img.wp-smiley {
 
 @media (min-width: 544px) {
   .promotional-skills {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .promotional-skills {
     display: flex;
     flex-wrap: wrap;
   }
@@ -2696,6 +2703,12 @@ img.wp-smiley {
 .promotional-skill__header {
   align-items: center;
   hyphens: none;
+}
+
+@media (min-width: 1024px) {
+  .promotional-skill__header {
+    height: 72px;
+  }
 }
 
 .promotional-skill__title {
