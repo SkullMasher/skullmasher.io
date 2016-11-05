@@ -15,6 +15,12 @@
   }
 }
 
+@media (min-width: $tiny) {
+  .page-footer__item {
+    margin-bottom: 0;
+  }
+}
+
 .keypages__title {
   margin-bottom: $small-value;
 }

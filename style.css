@@ -2491,7 +2491,7 @@ img.wp-smiley {
 }
 
 .menu-item > a {
-  display: block;
+  display: inline-block;
 }
 
 .primary-menu {
@@ -3102,6 +3102,12 @@ img.wp-smiley {
 
 .page-footer__item:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 544px) {
+  .page-footer__item {
+    margin-bottom: 0;
+  }
 }
 
 .keypages__title {
