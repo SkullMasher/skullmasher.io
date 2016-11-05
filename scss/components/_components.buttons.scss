@@ -52,3 +52,8 @@
     background-color: darken($gamma-background, 5);
   }
 }
+
+.btn--show-all-articles {
+  margin-top: $large-value;
+  margin-bottom: $medium-value;
+}

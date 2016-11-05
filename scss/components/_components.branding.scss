@@ -46,6 +46,10 @@
 }
 
 // Promotional skills
+.promotional-skills {
+  padding-bottom: $medium-value;
+}
+
 @media (min-width: $tiny) {
   .promotional-skills {
     padding-top: $small-value;

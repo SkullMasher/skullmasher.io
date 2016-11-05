@@ -1,6 +1,13 @@
 .last-articles {
   padding: $small-value;
 }
+@media (min-width: $tiny) {
+  .last-articles {
+    padding-right: $large-value;
+    padding-left: $large-value;
+    padding-bottom: $small-value;
+  }
+}
 
   .last-articles__heading-container {
     display: flex;

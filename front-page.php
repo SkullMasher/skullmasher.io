@@ -25,7 +25,7 @@ $recent_posts_args = array(
 $recent_posts = wp_get_recent_posts($recent_posts_args, OBJECT);
 
 get_header(); ?>
-<main class="" role="main">
+<main role="main">
   <div class="band band--lightgrey promotional-skills">
     <div class="promotional-skill">
       <header class="promotional-skill__header o-media">
@@ -69,8 +69,8 @@ if ($post->post_status === 'publish') {
 }
 
 endforeach; wp_reset_postdata(); ?>
+    <a href="<?php echo get_permalink(get_page_by_title('blog')) ?>" class="btn btn--rounded btn--show-all-articles" role="button">Consulter tous les articles</a>
   </div>
-    <a href="<?php echo get_permalink(get_page_by_title('blog')) ?>" class="btn btn--rounded" role="button">Consulter tous les articles</a>
 </main>
 
 <?php

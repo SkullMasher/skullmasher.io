@@ -2653,6 +2653,10 @@ img.wp-smiley {
   }
 }
 
+.promotional-skills {
+  padding-bottom: 2rem;
+}
+
 @media (min-width: 544px) {
   .promotional-skills {
     padding-top: 1rem;
@@ -2769,6 +2773,11 @@ img.wp-smiley {
   background-color: #090909;
 }
 
+.btn--show-all-articles {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
 .article-separator {
   margin: 1.5em 0;
 }
@@ -2845,6 +2854,14 @@ img.wp-smiley {
 
 .last-articles {
   padding: 1rem;
+}
+
+@media (min-width: 544px) {
+  .last-articles {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .last-articles__heading-container {
