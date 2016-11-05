@@ -2835,8 +2835,6 @@ img.wp-smiley {
  * Styles for sidebars & widgets
  */
 .sidebar {
-  display: flex;
-  flex-direction: column;
   padding-top: 2rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -2848,6 +2846,12 @@ img.wp-smiley {
   .sidebar {
     padding-right: 4rem;
     padding-left: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-sidebar {
+    width: 400px;
   }
 }
 
@@ -3154,6 +3158,16 @@ pre {
   background-color: #202020;
   color: #fff;
   border-radius: 3px;
+}
+
+/**
+ * Put the content and the sidebar next to each other
+ * when enough screen spaces is available
+ */
+@media (min-width: 768px) {
+  .content-sidebar {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.map.css */

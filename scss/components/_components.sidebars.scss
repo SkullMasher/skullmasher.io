@@ -4,8 +4,6 @@
  * Styles for sidebars & widgets
  */
 .sidebar {
-  display: flex;
-  flex-direction: column;
   padding-top: $medium-value;
   padding-right: $small-value;
   padding-bottom: $small-value;
@@ -17,5 +15,11 @@
   .sidebar {
     padding-right: $large-value;
     padding-left: $large-value;
+  }
+}
+
+@media (min-width: $small) {
+  .main-sidebar {
+    width: 400px;
   }
 }

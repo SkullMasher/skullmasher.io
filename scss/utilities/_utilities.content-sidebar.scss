@@ -1,0 +1,10 @@
+/**
+ * Put the content and the sidebar next to each other
+ * when enough screen spaces is available
+ */
+
+@media (min-width: $small) {
+  .content-sidebar {
+    display: flex;
+  }
+}
