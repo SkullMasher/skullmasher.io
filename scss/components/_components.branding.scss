@@ -71,6 +71,20 @@
     padding: $small-plus-value;
   }
 }
+
+@media (min-width: $medium) {
+  .promotional-skill {
+    padding-right: $large-value;
+    padding-left: $large-value;
+  }
+}
+
+@media (min-width: $large) {
+  .promotional-skill {
+    width: 25%;
+    padding: $medium-value;
+  }
+}
   .promotional-skill__header {
     align-items: center;
     hyphens: none;

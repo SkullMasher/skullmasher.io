@@ -2679,6 +2679,20 @@ img.wp-smiley {
   }
 }
 
+@media (min-width: 1024px) {
+  .promotional-skill {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotional-skill {
+    width: 25%;
+    padding: 2rem;
+  }
+}
+
 .promotional-skill__header {
   align-items: center;
   hyphens: none;
