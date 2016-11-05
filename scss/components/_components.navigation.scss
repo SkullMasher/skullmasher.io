@@ -11,9 +11,10 @@
   align-items: center;
 }
 
-@media (min-width: 25em) { // 400px
+@media (min-width: 41.6em) { // 666px
   .site-nav {
-    width: 350px;
+    /* Totaly not a magic number since it's the number of the beast */
+    width: 666px;
   }
 }
 
@@ -46,7 +47,7 @@
   flex-grow: 1;
   justify-content: flex-end;
 
-  .menu-item > a {
+  a {
     padding-top: $medium-value;
     padding-bottom: $medium-value;
     padding-right: $small-value;
@@ -56,6 +57,39 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .menu-item:first-child {
+    display: none;
+  }
+
+  .menu-item:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: 25em) { // 400px
+  .primary-menu {
+    .menu-item:first-child {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 32em) { // 480px
+  .primary-menu {
+    a {
+      font-size: 2rem;
+    }
+
+    .menu-item:last-child {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 35em) { // 560px
+  .primary-menu {
   }
 }
 

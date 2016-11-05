@@ -39,6 +39,12 @@
   }
 }
 
+@media (min-width: $small) {
+  .site-description {
+    width: 370px;
+  }
+}
+
 // Promotional skills
 .promotional-skill {
   padding: $small-value;

@@ -2466,9 +2466,10 @@ img.wp-smiley {
   align-items: center;
 }
 
-@media (min-width: 25em) {
+@media (min-width: 41.6em) {
   .site-nav {
-    width: 350px;
+    /* Totaly not a magic number since it's the number of the beast */
+    width: 666px;
   }
 }
 
@@ -2500,7 +2501,7 @@ img.wp-smiley {
   justify-content: flex-end;
 }
 
-.primary-menu .menu-item > a {
+.primary-menu a {
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-right: 1rem;
@@ -2508,8 +2509,31 @@ img.wp-smiley {
   text-decoration: none;
 }
 
-.primary-menu .menu-item > a:hover {
+.primary-menu a:hover {
   text-decoration: underline;
+}
+
+.primary-menu .menu-item:first-child {
+  display: none;
+}
+
+.primary-menu .menu-item:last-child {
+  display: none;
+}
+
+@media (min-width: 25em) {
+  .primary-menu .menu-item:first-child {
+    display: block;
+  }
+}
+
+@media (min-width: 32em) {
+  .primary-menu a {
+    font-size: 2rem;
+  }
+  .primary-menu .menu-item:last-child {
+    display: block;
+  }
 }
 
 .category-nav {
@@ -2618,6 +2642,12 @@ img.wp-smiley {
 }
 
 @media (min-width: 370px) {
+  .site-description {
+    width: 370px;
+  }
+}
+
+@media (min-width: 768px) {
   .site-description {
     width: 370px;
   }
