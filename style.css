@@ -2819,7 +2819,10 @@ img.wp-smiley {
 .sidebar {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   background-color: #fff;
 }
 
