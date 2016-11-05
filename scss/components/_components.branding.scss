@@ -18,23 +18,34 @@
   color: $alpha-color;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 370px) { // 370px
   .site-description {
     width: 370px;
   }
 }
 
 // Promotional skills
-.promotional-skills {
+.promotional-skill {
   padding: $small-value;
 }
 
-  .promotional-skills__header {
+@media (min-width: $tiny) {
+  .promotional-skill {
+    width: 50%;
+  }
+}
+
+@media (min-width: $medium) {
+  .promotional-skill {
+    width: 25%;
+  }
+}
+  .promotional-skill__header {
     align-items: center;
     hyphens: none;
   }
 
-  .promotional-skills__title {
+  .promotional-skill__title {
     margin: 0;
     padding-left: $small-value;
   }

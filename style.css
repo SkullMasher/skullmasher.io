@@ -2609,16 +2609,28 @@ img.wp-smiley {
   }
 }
 
-.promotional-skills {
+.promotional-skill {
   padding: 1rem;
 }
 
-.promotional-skills__header {
+@media (min-width: 544px) {
+  .promotional-skill {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .promotional-skill {
+    width: 25%;
+  }
+}
+
+.promotional-skill__header {
   align-items: center;
   hyphens: none;
 }
 
-.promotional-skills__title {
+.promotional-skill__title {
   margin: 0;
   padding-left: 1rem;
 }
