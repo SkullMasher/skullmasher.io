@@ -2778,6 +2778,17 @@ img.wp-smiley {
   margin-bottom: 2rem;
 }
 
+.btn--contact-mail {
+  margin-top: 2rem;
+}
+
+@media (min-width: 544px) {
+  .btn--contact-mail {
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+}
+
 .article-separator {
   margin: 1.5em 0;
 }

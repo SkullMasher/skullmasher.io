@@ -57,3 +57,14 @@
   margin-top: $large-value;
   margin-bottom: $medium-value;
 }
+
+.btn--contact-mail {
+  margin-top: $medium-value;
+}
+
+@media (min-width: $tiny) {
+  .btn--contact-mail {
+    margin-right: $large-plus-value;
+    margin-left: $large-plus-value;
+  }
+}
