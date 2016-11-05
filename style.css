@@ -2826,6 +2826,13 @@ img.wp-smiley {
   background-color: #fff;
 }
 
+@media (min-width: 544px) {
+  .sidebar {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
 .post-list {
   display: flex;
 }

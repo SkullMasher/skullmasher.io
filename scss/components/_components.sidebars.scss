@@ -12,3 +12,10 @@
   padding-left: $small-value;
   background-color: $alpha-color;
 }
+
+@media (min-width: $tiny) {
+  .sidebar {
+    padding-right: $large-value;
+    padding-left: $large-value;
+  }
+}
