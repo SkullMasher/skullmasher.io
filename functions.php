@@ -119,7 +119,7 @@ function skullmasher_io_widgets_init() {
     'description'   => esc_html__( 'Footer key pages list.', 'skullmasher-io' ),
     'before_widget' => '<div class="widget widget-keypages">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h4 class="is-hidden">',
+    'before_title'  => '<h4 class="keypages__title">',
     'after_title'   => '</h4>',
   ));
 

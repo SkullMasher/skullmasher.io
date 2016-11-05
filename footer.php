@@ -12,19 +12,19 @@
 ?>
 </div><!-- #content -->
 <footer class="page-footer band--darkgrey" role="contentinfo">
-    <p class="o-box o-box--medium txtcenter"><strong>Skullmasher.io</strong> est une société basée en France affilié au régime auto-entrepreneur. <strong>Numéro siren : 793553488</strong></p>
+    <p class="nota-bene o-box o-box--medium txtcenter"><strong>Skullmasher.io</strong> est une société basée en France affilié au régime auto-entrepreneur. <strong>Numéro siren : 793553488</strong></p>
     <div class="autogrid has-gutter o-wrapper o-wrapper--large">
-      <div class="o-box o-box--alpha-background">
+      <div class="keypages page-footer__item o-box o-box--alpha-background">
         <?php get_sidebar('keypages'); ?>
       </div>
-      <div id="citation" class="o-box o-box--alpha-background">
+      <div id="citation" class="quote page-footer__item o-box o-box--alpha-background">
         <?php get_sidebar('quote'); ?>
       </div>
-      <div class="o-box o-box--alpha-background">
+      <div class="colophon page-footer__item o-box">
         <?php get_sidebar('colophon'); ?>
       </div>
     </div>
-    <span class="o-box txtcenter"><a class="btn back-to-top" href="#top">Retour en haut de page</a></span>
+    <a class="btn btn--back-to-top" href="#top">Retour en haut de page</a>
 </footer>
 
 <?php wp_footer(); ?>

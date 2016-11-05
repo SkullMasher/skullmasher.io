@@ -2789,6 +2789,13 @@ img.wp-smiley {
   }
 }
 
+.btn--back-to-top {
+  margin-top: 4rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
 .article-separator {
   margin: 1.5em 0;
 }
@@ -3081,10 +3088,24 @@ img.wp-smiley {
 
 .page-footer {
   color: #fff;
+  padding-bottom: 4rem;
 }
 
 .page-footer blockquote:before {
   color: rgba(68, 163, 64, 0.75);
+}
+
+.page-footer__item {
+  background-color: #202020;
+  margin-bottom: 2rem;
+}
+
+.page-footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.keypages__title {
+  margin-bottom: 1rem;
 }
 
 /* Text meant only for screen readers. */

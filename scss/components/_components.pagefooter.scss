@@ -1,7 +1,20 @@
 .page-footer {
   color: $alpha-color;
+  padding-bottom: $large-value;
 }
 
 .page-footer blockquote:before {
   color: rgba(68, 163, 64, .75);
+}
+
+.page-footer__item {
+  background-color: $alpha-background;
+  margin-bottom: $medium-value;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.keypages__title {
+  margin-bottom: $small-value;
 }
