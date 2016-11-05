@@ -2653,19 +2653,29 @@ img.wp-smiley {
   }
 }
 
+@media (min-width: 544px) {
+  .promotional-skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .promotional-skill {
   padding: 1rem;
 }
 
 @media (min-width: 544px) {
   .promotional-skill {
-    width: 50%;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .promotional-skill {
-    width: 25%;
+    width: 50%;
+    padding: 1.5rem;
   }
 }
 

@@ -25,8 +25,8 @@ $recent_posts_args = array(
 $recent_posts = wp_get_recent_posts($recent_posts_args, OBJECT);
 
 get_header(); ?>
-<main class="o-wrapper" role="main">
-  <div class="band band--lightgrey flex-container">
+<main class="" role="main">
+  <div class="band band--lightgrey promotional-skills">
     <div class="promotional-skill">
       <header class="promotional-skill__header o-media">
         <?php echo file_get_contents(get_template_directory() .'/img/develop.svg') ?>

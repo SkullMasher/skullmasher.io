@@ -46,19 +46,29 @@
 }
 
 // Promotional skills
+@media (min-width: $tiny) {
+  .promotional-skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .promotional-skill {
   padding: $small-value;
 }
 
 @media (min-width: $tiny) {
   .promotional-skill {
-    width: 50%;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
-@media (min-width: $medium) {
+@media (min-width: $small) {
   .promotional-skill {
-    width: 25%;
+    width: 50%;
+    padding: $small-plus-value;
   }
 }
   .promotional-skill__header {
