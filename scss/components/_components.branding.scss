@@ -3,13 +3,25 @@
  *
  * Page description, title & tagline
  */
+
+.site-branding {
+  padding-bottom: $medium-value;
+}
+
 .site-description {
-  margin: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 0rem;
   padding-right: $small-value;
-  padding-bottom: $medium-value;
   padding-left: $small-value;
   color: $alpha-color;
+}
+
+@media (min-width: 370px) {
+  .site-description {
+    width: 370px;
+  }
 }
 
 // Promotional skills
