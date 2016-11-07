@@ -48,6 +48,12 @@
     padding-right: $large-value;
   }
 
+  @media (min-width: $large) {
+    .last-articles__article-container {
+      padding-right: $extra-large-value;
+    }
+  }
+
   .last-articles__date {
 
   }

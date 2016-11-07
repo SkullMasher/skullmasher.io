@@ -2944,6 +2944,12 @@ img.wp-smiley {
   padding-right: 4rem;
 }
 
+@media (min-width: 1200px) {
+  .last-articles__article-container {
+    padding-right: 8rem;
+  }
+}
+
 .last-articles__title {
   margin: 0;
 }
