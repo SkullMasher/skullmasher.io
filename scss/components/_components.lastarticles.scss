@@ -46,6 +46,10 @@
 
   .last-articles__article-container {
     padding-right: $large-value;
+
+    &:last-of-type .article-separator {
+      display: none;
+    }
   }
 
   @media (min-width: $large) {
