@@ -57,17 +57,17 @@ if (count($cats) > 1): ?>
           dans la catégorie
 <?php endif;
 foreach ($cats as $cat) : ?>
-          <a class="btn btn--inline category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+          <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach; ?>
       </p>
 <?php elseif (empty($tags) && !empty($cats)) : ?>
 <?php if (count($cats) > 1): ?>
       <p>Consulter les articles dans les catégories
 <?php foreach ($cats as $cat) : ?>
-      <a class="btn btn--inline category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+      <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach;
 else: ?>
-      <p>Consulter les articles dans la catégorie <a class="btn btn--inline category-nav__link <?php echo 'category-' . $cats[0]->slug ?>" href="<?php echo get_category_link($cats[0]->term_id) ?>"><?php echo $cats[0]->name ?></a>
+      <p>Consulter les articles dans la catégorie <a class="btn category-nav__link <?php echo 'category-' . $cats[0]->slug ?>" href="<?php echo get_category_link($cats[0]->term_id) ?>"><?php echo $cats[0]->name ?></a>
 <?php endif; // categories only count ?>
       </p>
 <?php endif; // No tags but there is categories ?>

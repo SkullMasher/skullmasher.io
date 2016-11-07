@@ -4,8 +4,8 @@
  */
 
 .btn {
-  display: block;
-  margin: $small-value;
+  display: inline-block;
+  margin: $tiny-value;
   padding: $small-value;
   text-align: center;
   background-color: $base-color-link;
@@ -26,6 +26,13 @@
 .btn--inline {
   display: inline-block;
   margin: $tiny-value;
+}
+
+.btn--centered {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $large-value;
+  padding-left: $large-value;
 }
 
 // Color variant
@@ -53,9 +60,8 @@
   }
 }
 
-.btn--show-all-articles {
+.btn--top-spaced {
   margin-top: $large-value;
-  margin-bottom: $medium-value;
 }
 
 .btn--contact-mail {

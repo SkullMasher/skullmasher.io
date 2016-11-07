@@ -7,10 +7,14 @@
     flex: 1;
     padding-right: 0;
     padding-left: $large-value;
-    padding-bottom: $small-value;
   }
 }
 
+@media (min-width: $small) {
+  .last-articles {
+    padding-bottom: $large-plus-value;
+  }
+}
 
 @media (min-width: $large) {
   .last-articles {
@@ -45,6 +49,7 @@
   }
 
   .last-articles__article-container {
+    margin-bottom: 0;
     padding-right: 0;
 
     &:last-of-type .article-separator {

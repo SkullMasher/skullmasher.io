@@ -17,7 +17,7 @@
  */
 global $post;
 // Number of posts that gets shown on the front page.
-$number_posts = 10;
+$number_posts = 6;
 $recent_posts_args = array(
   'numberposts' => $number_posts,
   'post_status' => publish
@@ -57,7 +57,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="content-sidebar o-wrapper">
-    <div class="last-articles">
+    <div class="last-articles flex-container-v">
       <div class="last-articles__heading-container">
         <h3 class="last-articles__heading">Les <?php echo $number_posts ?> derniers Articles</h3>
         <span class="last-articles__heading-trail"></span>
@@ -70,7 +70,7 @@ get_header(); ?>
   }
 
   endforeach; wp_reset_postdata(); ?>
-      <a href="<?php echo get_permalink(get_page_by_title('blog')) ?>" class="btn btn--rounded btn--show-all-articles" role="button">Consulter tous les articles</a>
+        <a href="<?php echo get_permalink(get_page_by_title('blog')) ?>" class="btn btn--rounded btn--centered btn--top-spaced" role="button">Consulter tous les articles</a>
     </div>
     <?php get_sidebar('homepage') ?>
   </div>

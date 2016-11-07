@@ -1,4 +1,4 @@
-<aside class="sidebar main-sidebar">
+<aside class="sidebar main-sidebar flex-container-v">
   <p class="whoami">Je suis Florian "Skullmasher" Ledru et j'ai 24ans. Je suis un freelancer depuis juin 2016 qui exerce en région parisienne et partout sur la toile. Passionnée d'informatique, j'ai choisis de faire le web mon travail car c'est un outil très accessible et construit à partir de technologies libre à son coeur. Pour en savoir plus consulter la page à propos.</p>
   <p class="skulled-separator">
     <span class="skulled-separator__line"></span>
@@ -6,7 +6,7 @@
     <span class="skulled-separator__line"></span>
   </p>
   <p>Vous souhaitez travailler avec moi ? Une question ? On en discute autour d'un verre ? Je serais ravie d'échanger avec vous.</p>
-  <a href="#" class="btn btn--contact-mail" role="button">
+  <a href="#" class="btn btn--centered btn--top-spaced" role="button">
     <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
     <p>florian@skullmasher.io</p>
   </a>
