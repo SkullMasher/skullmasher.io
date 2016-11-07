@@ -3,25 +3,25 @@
   padding-bottom: $large-value;
 }
 
-.page-footer__column {
-  background-color: $alpha-background;
-  margin-bottom: $medium-value;
-}
-
-@media (min-width: $tiny) {
   .page-footer__column {
-    margin-bottom: auto;
+    background-color: $alpha-background;
+    margin-bottom: $medium-value;
   }
-}
 
-.page-footer__item {
-  background-color: $alpha-background;
-  margin-bottom: $small-value;
-}
+  @media (min-width: $tiny) {
+    .page-footer__column {
+      margin-bottom: auto;
+    }
+  }
 
-.keypages__title {
-  margin-bottom: $small-value;
-}
+  .page-footer__item {
+    background-color: $alpha-background;
+    margin-bottom: $small-value;
+  }
+
+  .keypages__title {
+    margin-bottom: $small-value;
+  }
 
 .widget-colophon {
   margin-bottom: $tiny-value;
