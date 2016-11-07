@@ -1,19 +1,29 @@
 .last-articles {
   padding: $small-value;
 }
+
 @media (min-width: $tiny) {
   .last-articles {
-    padding-right: $large-value;
+    flex: 1;
+    padding-right: 0;
     padding-left: $large-value;
     padding-bottom: $small-value;
   }
 }
 
+
+@media (min-width: $large) {
+  .last-articles {
+    padding-top: $large-value;
+  }
+
+}
+
   .last-articles__heading-container {
     display: flex;
     align-items: center;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .last-articles__heading {
@@ -23,9 +33,19 @@
 
   .last-articles__heading-trail {
     display: none;
-    flex-grow: 1;
-    height: 2px;
+    flex: 1;
+    height: 1px;
     background-color: $base_color;
+  }
+
+  @media(min-width:$small) {
+    .last-articles__heading-trail {
+      display: block;
+    }
+  }
+
+  .last-articles__article-container {
+    padding-right: $large-value;
   }
 
   .last-articles__date {

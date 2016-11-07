@@ -21,5 +21,14 @@
 @media (min-width: $small) {
   .main-sidebar {
     width: 400px;
+    margin-top: 3.8rem; // FAT MAGIC NUMBER for design purpose of course
+    margin-bottom: auto;
+    border-top: 1px solid $base-color;
+  }
+}
+
+@media (min-width: $large) {
+  .main-sidebar {
+    margin-top: 6.7rem; // MAGIC NUMBER off by one magical pixel (╯°□°）╯︵ ┻━┻
   }
 }

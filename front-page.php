@@ -56,7 +56,7 @@ get_header(); ?>
       <p class="promotional-skill__text">Bien trop souvent des utilisateurs se retrouve seul face à la gestion de leur site web. Tous logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard choisissez un responsable capable de vous diriger dans la conduite du changement de votre site web et assurer sa pérénité.</p>
     </div>
   </div>
-  <div class="content-sidebar">
+  <div class="content-sidebar o-wrapper">
     <div class="last-articles">
       <div class="last-articles__heading-container">
         <h3 class="last-articles__heading">Les <?php echo $number_posts ?> derniers Articles</h3>

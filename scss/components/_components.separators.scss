@@ -1,9 +1,5 @@
 .article-separator {
   margin: 1.5em 0;
-
-  &:last-of-type {
-    display: none;
-  }
 }
 
 .skulled-separator {
@@ -12,7 +8,7 @@
 }
 
 .skulled-separator__line {
-  flex-grow: 1;
+  flex: 1;
   height: 2px;
   background-color: $base-color;
 }
