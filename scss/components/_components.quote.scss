@@ -1,0 +1,13 @@
+.quote blockquote:before {
+  color: rgba(68, 163, 64, .75);
+}
+
+@media (max-width: $small) and (min-width: ($tiny + 1)) {
+  .quote blockquote {
+    padding-left: 0;
+  }
+
+  .quote blockquote:before {
+    display: none;
+  }
+}
