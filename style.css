@@ -3151,6 +3151,12 @@ img.wp-smiley {
   padding-bottom: 4rem;
 }
 
+@media (min-width: 768px) {
+  .page-footer .has-gutter > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
 .page-footer__column {
   background-color: #202020;
   margin-bottom: 2rem;
@@ -3165,6 +3171,12 @@ img.wp-smiley {
 .page-footer__item {
   background-color: #202020;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .page-footer__item {
+    margin-bottom: 2rem;
+  }
 }
 
 .keypages__title {

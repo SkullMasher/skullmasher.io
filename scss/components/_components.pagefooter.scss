@@ -3,6 +3,12 @@
   padding-bottom: $large-value;
 }
 
+@media (min-width: $small) {
+  .page-footer .has-gutter > *:not(:first-child) {
+    margin-left: $medium-value;
+  }
+}
+
   .page-footer__column {
     background-color: $alpha-background;
     margin-bottom: $medium-value;
@@ -17,6 +23,12 @@
   .page-footer__item {
     background-color: $alpha-background;
     margin-bottom: $small-value;
+  }
+
+  @media (min-width: $small) {
+    .page-footer__item {
+      margin-bottom: $medium-value;
+    }
   }
 
   .keypages__title {
