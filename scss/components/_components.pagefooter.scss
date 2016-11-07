@@ -3,20 +3,26 @@
   padding-bottom: $large-value;
 }
 
-.page-footer__item {
+.page-footer__column {
   background-color: $alpha-background;
   margin-bottom: $medium-value;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: $tiny) {
-  .page-footer__item {
-    margin-bottom: 0;
+  .page-footer__column {
+    margin-bottom: auto;
   }
+}
+
+.page-footer__item {
+  background-color: $alpha-background;
+  margin-bottom: $small-value;
 }
 
 .keypages__title {
   margin-bottom: $small-value;
+}
+
+.widget-colophon {
+  margin-bottom: $tiny-value;
 }

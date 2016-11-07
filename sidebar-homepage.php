@@ -10,7 +10,7 @@
     <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
     <p>florian@skullmasher.io</p>
   </a>
-  <div class="social">
+  <div class="social social--contained">
     <div class="social__twitter">
       <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
     </div>

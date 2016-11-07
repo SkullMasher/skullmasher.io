@@ -1,7 +1,17 @@
+/**
+ * The social bar is automaticaly centered if in a flex container
+ */
+
 .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: $small-value;
+  margin-bottom: $small-value;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social--contained {
   width: 250px;
-  margin: $small-value auto;
 }

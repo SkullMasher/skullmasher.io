@@ -2816,12 +2816,21 @@ img.wp-smiley {
   margin-left: 1rem;
 }
 
+/**
+ * The social bar is automaticaly centered if in a flex container
+ */
 .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social--contained {
   width: 250px;
-  margin: 1rem auto;
 }
 
 /**
@@ -3138,23 +3147,28 @@ img.wp-smiley {
   padding-bottom: 4rem;
 }
 
-.page-footer__item {
+.page-footer__column {
   background-color: #202020;
   margin-bottom: 2rem;
 }
 
-.page-footer__item:last-child {
-  margin-bottom: 0;
+@media (min-width: 544px) {
+  .page-footer__column {
+    margin-bottom: auto;
+  }
 }
 
-@media (min-width: 544px) {
-  .page-footer__item {
-    margin-bottom: 0;
-  }
+.page-footer__item {
+  background-color: #202020;
+  margin-bottom: 1rem;
 }
 
 .keypages__title {
   margin-bottom: 1rem;
+}
+
+.widget-colophon {
+  margin-bottom: 0.5rem;
 }
 
 .quote blockquote:before {
