@@ -24,7 +24,7 @@
         <?php get_sidebar('colophon'); ?>
       </div>
     </div>
-    <a class="btn btn--centered btn--top-spaced" href="#top">Retour en haut de page</a>
+    <a class="btn btn--large btn--centered btn--top-spaced" href="#top">Retour en haut de page</a>
 </footer>
 
 <?php wp_footer(); ?>

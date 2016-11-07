@@ -2725,9 +2725,11 @@ img.wp-smiley {
  *
  */
 .btn {
-  display: inline-block;
   margin: 0.5rem;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
   text-align: center;
   background-color: #44a340;
   color: #fff;
@@ -2740,20 +2742,21 @@ img.wp-smiley {
   font-weight: bold;
 }
 
-.btn--rounded {
-  border-radius: 3px;
+.btn--large {
+  margin: 2rem;
+  padding-top: 2rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-bottom: 2rem;
 }
 
-.btn--inline {
-  display: inline-block;
-  margin: 0.5rem;
+.btn--rounded {
+  border-radius: 3px;
 }
 
 .btn--centered {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 4rem;
-  padding-left: 4rem;
 }
 
 .btn--lightgrey {
@@ -2782,24 +2785,6 @@ img.wp-smiley {
 
 .btn--top-spaced {
   margin-top: 4rem;
-}
-
-.btn--contact-mail {
-  margin-top: 2rem;
-}
-
-@media (min-width: 544px) {
-  .btn--contact-mail {
-    margin-right: 6rem;
-    margin-left: 6rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .btn--contact-mail {
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
 }
 
 .btn--back-to-top {

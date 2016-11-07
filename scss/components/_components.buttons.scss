@@ -4,9 +4,11 @@
  */
 
 .btn {
-  display: inline-block;
   margin: $tiny-value;
-  padding: $small-value;
+  padding-top: $small-value;
+  padding-right: $large-value;
+  padding-bottom: $small-value;
+  padding-left: $large-value;
   text-align: center;
   background-color: $base-color-link;
   color: $alpha-color;
@@ -19,20 +21,22 @@
   }
 }
 
-.btn--rounded {
-  border-radius: 3px;
+// Size variant
+.btn--large {
+  margin: $medium-value;
+  padding-top: $medium-value;
+  padding-right: $large-plus-value;
+  padding-left: $large-plus-value;
+  padding-bottom: $medium-value;
 }
 
-.btn--inline {
-  display: inline-block;
-  margin: $tiny-value;
+.btn--rounded {
+  border-radius: 3px;
 }
 
 .btn--centered {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $large-value;
-  padding-left: $large-value;
 }
 
 // Color variant
@@ -62,24 +66,6 @@
 
 .btn--top-spaced {
   margin-top: $large-value;
-}
-
-.btn--contact-mail {
-  margin-top: $medium-value;
-}
-
-@media (min-width: $tiny) {
-  .btn--contact-mail {
-    margin-right: $large-plus-value;
-    margin-left: $large-plus-value;
-  }
-}
-
-@media(min-width:$small) {
-  .btn--contact-mail {
-    margin-right: $medium-value;
-    margin-left: $medium-value;
-  }
 }
 
 .btn--back-to-top {
