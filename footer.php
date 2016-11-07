@@ -11,7 +11,7 @@
 
 ?>
 </div><!-- #content -->
-<footer class="page-footer band--darkgrey" role="contentinfo">
+<footer class="page-footer band--darkgrey flex-container-v" role="contentinfo">
     <p class="nota-bene o-box o-box--medium txtcenter"><strong>Skullmasher.io</strong> est une société basée en France affilié au régime auto-entrepreneur. <strong>Numéro siren : 793553488</strong></p>
     <div class="autogrid has-gutter o-wrapper o-wrapper--large">
       <div class="keypages page-footer__item o-box o-box--alpha-background">
@@ -24,7 +24,7 @@
         <?php get_sidebar('colophon'); ?>
       </div>
     </div>
-    <a class="btn btn--back-to-top" href="#top">Retour en haut de page</a>
+    <a class="btn btn--centered btn--top-spaced" href="#top">Retour en haut de page</a>
 </footer>
 
 <?php wp_footer(); ?>
