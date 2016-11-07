@@ -1,5 +1,5 @@
 .article-separator {
-  margin: 1.5em 0;
+  margin: $medium-plus-value 0;
 }
 
 .skulled-separator {
@@ -7,15 +7,15 @@
   align-items: center;
 }
 
-.skulled-separator__line {
-  flex: 1;
-  height: 2px;
-  background-color: $base-color;
-}
+  .skulled-separator__line {
+    flex: 1;
+    height: 2px;
+    background-color: $base-color;
+  }
 
-.skulled-separator__image {
-  margin-top: 0;
-  margin-right: $small-value;
-  margin-bottom: 0;
-  margin-left: $small-value;
-}
+  .skulled-separator__image {
+    margin-top: 0;
+    margin-right: $small-value;
+    margin-bottom: 0;
+    margin-left: $small-value;
+  }

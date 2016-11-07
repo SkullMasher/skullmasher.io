@@ -39,7 +39,7 @@ get_header(); ?>
         <?php echo file_get_contents(get_template_directory() .'/img/share.svg') ?>
         <h2 class="promotional-skill__title o-media-content">Former et Partager</h2>
       </header>
-      <p class="promotional-skill__text">Demander une formation sur votre solution Wordpress. Découvrez votre site Wordpress par la pratique. Le web est composé de technologie libre et open-source en son coeur, le partage des connaissances en fait partis intégrante. Retrouvez toutes les astuces et tutoriaux web sur le blog.</p>
+      <p class="promotional-skill__text">Demander une formation sur votre solution Wordpress. Découvrez votre site par la pratique. Le web est composé de technologie libre et open-source en son coeur, le partage des connaissances en fait partis intégrante. Retrouvez toutes les astuces et tutoriaux web sur le blog.</p>
     </div>
     <div class="promotional-skill">
       <header class="promotional-skill__header o-media">
