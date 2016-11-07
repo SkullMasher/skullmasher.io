@@ -45,10 +45,16 @@
   }
 
   .last-articles__article-container {
-    padding-right: $large-value;
+    padding-right: 0;
 
     &:last-of-type .article-separator {
       display: none;
+    }
+  }
+
+  @media (min-width: $tiny) {
+    .last-articles__article-container {
+      padding-right: $large-value;
     }
   }
 

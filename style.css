@@ -2941,11 +2941,17 @@ img.wp-smiley {
 }
 
 .last-articles__article-container {
-  padding-right: 4rem;
+  padding-right: 0;
 }
 
 .last-articles__article-container:last-of-type .article-separator {
   display: none;
+}
+
+@media (min-width: 544px) {
+  .last-articles__article-container {
+    padding-right: 4rem;
+  }
 }
 
 @media (min-width: 1200px) {
