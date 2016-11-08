@@ -2628,7 +2628,6 @@ img.wp-smiley {
 
 .category-nav__link {
   padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 .tag-nav {
@@ -2903,14 +2902,14 @@ img.wp-smiley {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .blog-sidebar {
     width: 400px;
   }
 }
 
 .post-list {
-  /*display: flex;*/
+  /*padding: $small-value;*/
 }
 
 .post-list__item {
@@ -3356,6 +3355,18 @@ pre {
 
 @media (min-width: 1024px) {
   .content-sidebar--medium {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content-sidebar--extra-large {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-sidebar--large {
     display: flex;
   }
 }

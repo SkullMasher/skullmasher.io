@@ -15,6 +15,18 @@
   }
 }
 
+@media (min-width: $extra-large) {
+  .content-sidebar--extra-large {
+    display: flex;
+  }
+}
+
+@media (min-width: $large) {
+  .content-sidebar--large {
+    display: flex;
+  }
+}
+
 .blog-content {
   flex: 1;
 }

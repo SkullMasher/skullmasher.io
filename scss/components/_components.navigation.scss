@@ -91,11 +91,6 @@
   }
 }
 
-@media (min-width: 35em) { // 560px
-  .primary-menu {
-  }
-}
-
 // Blog Category list
 .category-nav {
   background-color: $beta-background;
@@ -103,7 +98,6 @@
 
 .category-nav__link {
   padding-right: $small-value;
-  padding-left: $small-value;
 }
 
 // Blog Tag list

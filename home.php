@@ -15,9 +15,9 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="content-sidebar--medium o-wrapper">
+      <div class="content-sidebar--extra-large o-wrapper o-wrapper--large">
         <div class="blog-content">
-          <div class="post-list grid-2">
+          <div class="post-list grid-2-small-1">
 <?php
 
 if ( have_posts() ) :
