@@ -4,6 +4,21 @@
   padding-bottom: $medium-value;
   padding-left: $tiny-value;
 }
+
+@media (min-width: $tiny) {
+  .pagination {
+    padding-top: $medium-plus-value;
+    padding-bottom: $medium-plus-value;
+  }
+}
+
+@media (min-width: $small) {
+  .pagination {
+    padding-top: $large-value;
+    padding-bottom: $large-value;
+  }
+}
+
 .pagination .nav-links {
   display: flex;
   justify-content: center;

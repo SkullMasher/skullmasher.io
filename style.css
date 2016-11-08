@@ -3048,6 +3048,20 @@ img.wp-smiley {
   padding-left: 0.5rem;
 }
 
+@media (min-width: 544px) {
+  .pagination {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
 .pagination .nav-links {
   display: flex;
   justify-content: center;
