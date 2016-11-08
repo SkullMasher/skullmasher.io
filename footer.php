@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="band--tiled-background flex-container-v">
+    <div class="band--tiled-gradient-background flex-container-v">
       <a class="btn btn--large btn--centered btn--extra-spaced" href="#top">Retour en haut de page</a>
     </div>
 </footer>
