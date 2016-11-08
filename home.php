@@ -15,7 +15,9 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="o-wrapper post-list grid-2">
+      <div class="content-sidebar o-wrapper">
+        <div>
+          <div class="o-wrapper post-list grid-2">
 <?php
 
 if ( have_posts() ) :
@@ -37,7 +39,7 @@ else :
   get_template_part( 'template-parts/content-blog', 'none' );
 
 endif; ?>
-  </div>
+      </div>
 <?php the_posts_pagination( array(
     'mid_size' => 2,
     'prev_text' => __( '', 'textdomain' ),
@@ -49,11 +51,13 @@ endif; ?>
    */
   $cats = get_categories(['orderby'   => 'id']);
   if (is_array($cats)): ?>
-    <nav class="o-wrapper o-box category-nav flex-container">
+    <nav class="category-nav o-wrapper o-box">
       <h3 class="category-nav__title">Articles par catégories</h3>
+      <div class="grid-4 has-gutter">
 <?php foreach ($cats as $cat): ?>
-      <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+        <a class="btn btn--top-spaced category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach ?>
+      </div>
     </nav>
 <?php endif ?>
 <?php
@@ -62,19 +66,20 @@ endif; ?>
    */
   $tags = get_tags(['orderby'   => 'id']);
   if (is_array($tags)): ?>
-    <nav class="o-wrapper o-box tag-nav">
-      <h3 class="tag-nav__title">Articles par tags</h3>
-      <div class="tag-nav__list">
+        <nav class="o-wrapper o-box tag-nav">
+          <h3 class="tag-nav__title">Articles par tags</h3>
+          <div class="tag-nav__list">
 <?php foreach ($tags as $tag): ?>
-      <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+          <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
 <?php endforeach ?>
-      </div>
-    </nav>
+          </div>
+        </nav>
 <?php endif ?>
-
+        </div>
+        <?php get_sidebar('blog'); ?>
+      </div><!-- Content next to Sidebar -->
     </main><!-- #main -->
   </div><!-- #primary -->
 
 <?php
-get_sidebar('blog');
 get_footer();
