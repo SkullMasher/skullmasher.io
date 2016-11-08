@@ -2927,6 +2927,18 @@ img.wp-smiley {
   color: #e71d36;
 }
 
+.sticky {
+  flex: 0 0 auto;
+  width: calc(100% - .01px);
+  padding-left: 4rem;
+}
+
+@media (min-width: 544px) {
+  .sticky {
+    padding-left: 12rem;
+  }
+}
+
 .last-articles {
   padding: 1rem;
 }
