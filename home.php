@@ -15,7 +15,7 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="o-wrapper post-list flex-container">
+      <div class="o-wrapper post-list grid-2">
 <?php
 
 if ( have_posts() ) :
