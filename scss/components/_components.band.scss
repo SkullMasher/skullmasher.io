@@ -17,5 +17,9 @@
 }
 
 .band--tiled-background {
-  background-image: url("img/skullmasherio-tile.png");
+  background-image: linear-gradient(rgba(22,22,22,1), rgba(0,0,0,0)), url("img/skullmasherio-tile.png");
+}
+
+.band--gradient {
+
 }

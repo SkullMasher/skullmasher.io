@@ -2613,7 +2613,7 @@ img.wp-smiley {
 }
 
 .band--tiled-background {
-  background-image: url("img/skullmasherio-tile.png");
+  background-image: linear-gradient(#161616, transparent), url("img/skullmasherio-tile.png");
 }
 
 /**
@@ -2758,6 +2758,18 @@ img.wp-smiley {
   padding-bottom: 2rem;
 }
 
+.btn--spaced {
+  margin: 4rem;
+}
+
+.btn--extra-spaced {
+  margin: 8rem;
+}
+
+.btn--top-spaced {
+  margin-top: 4rem;
+}
+
 .btn--rounded {
   border-radius: 3px;
 }
@@ -2789,17 +2801,6 @@ img.wp-smiley {
 
 .btn--darkgrey:hover {
   background-color: #090909;
-}
-
-.btn--top-spaced {
-  margin-top: 4rem;
-}
-
-.btn--back-to-top {
-  margin-top: 4rem;
-  margin-right: 2rem;
-  margin-bottom: 0;
-  margin-left: 2rem;
 }
 
 .article-separator {
@@ -3152,7 +3153,6 @@ img.wp-smiley {
 
 .page-footer {
   color: #fff;
-  padding-bottom: 4rem;
 }
 
 @media (min-width: 768px) {

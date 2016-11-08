@@ -30,9 +30,23 @@
   padding-bottom: $medium-value;
 }
 
+.btn--spaced {
+  margin: $large-value;
+}
+
+.btn--extra-spaced {
+  margin: $extra-large-value;
+}
+
+.btn--top-spaced {
+  margin-top: $large-value;
+}
+
 .btn--rounded {
   border-radius: 3px;
 }
+
+
 
 .btn--centered {
   margin-right: auto;
@@ -62,15 +76,4 @@
   &:hover {
     background-color: darken($gamma-background, 5);
   }
-}
-
-.btn--top-spaced {
-  margin-top: $large-value;
-}
-
-.btn--back-to-top {
-  margin-top: $large-value;
-  margin-right: $medium-value;
-  margin-bottom: 0;
-  margin-left: $medium-value;
 }
