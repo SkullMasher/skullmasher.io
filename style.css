@@ -2472,14 +2472,17 @@ img.wp-smiley {
 
 @media (min-width: 41.6em) {
   .site-nav {
-    /* Totaly not a magic number since it's the number of the beast */
+    /* Totaly not a MAGIC NUMBER since it's the number of the beast */
     width: 666px;
   }
 }
 
 .site-nav__home {
   display: block;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
   text-transform: uppercase;
   font-family: hack;
   font-size: 2.4rem;
@@ -2627,6 +2630,8 @@ img.wp-smiley {
  */
 .site-branding {
   padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (max-width: 768px) and (min-width: 545px) {
@@ -2648,8 +2653,6 @@ img.wp-smiley {
   margin-right: auto;
   margin-left: auto;
   padding-top: 0rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
   color: #fff;
 }
 
@@ -2659,10 +2662,24 @@ img.wp-smiley {
   }
 }
 
-@media (min-width: 768px) {
-  .site-description {
-    width: 370px;
-  }
+.blog-description {
+  width: 342px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.blog-description__title {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.blog-description__lodr {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .promotional-skills {

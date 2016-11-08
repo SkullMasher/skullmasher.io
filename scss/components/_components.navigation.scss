@@ -13,14 +13,17 @@
 
 @media (min-width: 41.6em) { // 666px
   .site-nav {
-    /* Totaly not a magic number since it's the number of the beast */
+    /* Totaly not a MAGIC NUMBER since it's the number of the beast */
     width: 666px;
   }
 }
 
   .site-nav__home {
     display: block;
-    padding: $small-value;
+    padding-top: $small-value;
+    padding-right: $small-value;
+    padding-bottom: 0;
+    padding-left: $small-value;
     text-transform: uppercase;
     font-family: hack;
     font-size: $h2-size;
@@ -98,10 +101,6 @@
   background-color: $beta-background;
 }
 
-.category-nav--single > a {
-
-}
-
 .category-nav__link {
   display: block;
 }
@@ -109,10 +108,6 @@
 // Blog Tag list
 .tag-nav {
   background-color: $beta-background;
-}
-
-.tag-nav--single {
-
 }
 
 .tag-nav__list {

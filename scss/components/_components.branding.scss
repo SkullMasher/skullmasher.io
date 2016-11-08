@@ -6,6 +6,8 @@
 
 .site-branding {
   padding-bottom: $medium-value;
+  padding-right: $small-value;
+  padding-left: $small-value;
 }
 
 @media (max-width: $small) and (min-width: ($tiny + 1)) {
@@ -28,22 +30,34 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 0rem;
-  padding-right: $small-value;
-  padding-left: $small-value;
   color: $alpha-color;
 }
 
-@media (min-width: 370px) { // 370px
+@media (min-width: 370px) {
   .site-description {
     width: 370px;
   }
 }
 
-@media (min-width: $small) {
-  .site-description {
-    width: 370px;
-  }
+.blog-description {
+  width: 342px; // not MAGIC NUMBER cuz there's 42 in it
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $small-value;
+  padding-left: $small-value;
+  padding-bottom: $medium-value;
 }
+
+  .blog-description__title {
+    margin-bottom: 0;
+    color: $alpha-color;
+  }
+
+  .blog-description__lodr {
+    color: $alpha-color;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
 // Promotional skills
 .promotional-skills {
