@@ -2905,11 +2905,39 @@ img.wp-smiley {
 .post-list__item {
   margin: 0;
   padding: 1rem;
-  background-color: transparent;
+  background-color: #eeeeee;
 }
 
 .post-list__title a {
   text-decoration: none;
+}
+
+.post-list__meta {
+  justify-content: space-between;
+}
+
+.sticky {
+  flex: 0 0 auto;
+  width: calc(100% - .01px);
+  padding-left: 4rem;
+  background-color: #44a340;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.sticky a {
+  color: #fff;
+}
+
+.sticky a:hover {
+  color: #e71d36;
+  text-shadow: none;
+}
+
+@media (min-width: 544px) {
+  .sticky {
+    padding-left: 12rem;
+  }
 }
 
 .post-list .has-post-thumbnail {
@@ -2919,24 +2947,12 @@ img.wp-smiley {
   text-shadow: 0px 0px 5px #000;
 }
 
-.post-list .has-post-thumbnail .post-list__title > a {
+.post-list .has-post-thumbnail a {
   color: #fff;
 }
 
-.post-list .has-post-thumbnail .post-list__title > a:hover {
+.post-list .has-post-thumbnail a:hover {
   color: #e71d36;
-}
-
-.sticky {
-  flex: 0 0 auto;
-  width: calc(100% - .01px);
-  padding-left: 4rem;
-}
-
-@media (min-width: 544px) {
-  .sticky {
-    padding-left: 12rem;
-  }
 }
 
 .last-articles {

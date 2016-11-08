@@ -5,12 +5,40 @@
   .post-list__item {
     margin: 0;
     padding: $small-value;
-    background-color: transparent;
+    background-color: $beta-background;
   }
 
   .post-list__title a {
     text-decoration: none;
   }
+
+  .post-list__meta {
+    justify-content: space-between;
+  }
+
+.sticky {
+  flex: 0 0 auto; // full width
+  width: calc(100% - .01px); // full width
+  padding-left: $large-value;
+  background-color: $base-color-link;
+  color: $alpha-color;
+  text-shadow: 0px 0px 5px #000;
+
+  a {
+    color: $alpha-color;
+
+    &:hover {
+      color: $base-color-link-hover;
+      text-shadow: none;
+    }
+  }
+}
+
+@media (min-width: $tiny) {
+  .sticky {
+    padding-left: $extra-large-plus-value;
+  }
+}
 
 .post-list .has-post-thumbnail {
   background-position: center;
@@ -18,23 +46,11 @@
   color: $alpha-color;
   text-shadow: 0px 0px 5px #000;
 
-  .post-list__title > a {
+  a {
     color: $alpha-color;
 
     &:hover {
       color: $base-color-link-hover;
     }
-  }
-}
-
-.sticky {
-  flex: 0 0 auto; // full width
-  width: calc(100% - .01px); // full width
-  padding-left: $large-value;
-}
-
-@media (min-width: $tiny) {
-  .sticky {
-    padding-left: $extra-large-plus-value;
   }
 }

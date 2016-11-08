@@ -95,7 +95,7 @@ function skullmasher_io_post_publish_date() {
 		esc_html( get_the_date('j F Y') )
 	);
 
-	echo 'Publié le ' . $time_string; // WPCS: XSS OK.
+	echo 'Publié le ' . $time_string . ' '; // WPCS: XSS OK.
 
 }
 endif;
