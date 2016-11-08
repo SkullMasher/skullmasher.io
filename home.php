@@ -15,9 +15,9 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="content-sidebar o-wrapper">
-        <div>
-          <div class="o-wrapper post-list grid-2">
+      <div class="content-sidebar--medium o-wrapper">
+        <div class="blog-content">
+          <div class="post-list grid-2">
 <?php
 
 if ( have_posts() ) :
@@ -51,11 +51,11 @@ endif; ?>
    */
   $cats = get_categories(['orderby'   => 'id']);
   if (is_array($cats)): ?>
-    <nav class="category-nav o-wrapper o-box">
+    <nav class="category-nav o-box">
       <h3 class="category-nav__title">Articles par catégories</h3>
-      <div class="grid-4 has-gutter">
+      <div class="flex-container">
 <?php foreach ($cats as $cat): ?>
-        <a class="btn btn--top-spaced category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+        <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach ?>
       </div>
     </nav>
@@ -66,7 +66,7 @@ endif; ?>
    */
   $tags = get_tags(['orderby'   => 'id']);
   if (is_array($tags)): ?>
-        <nav class="o-wrapper o-box tag-nav">
+        <nav class="o-box tag-nav">
           <h3 class="tag-nav__title">Articles par tags</h3>
           <div class="tag-nav__list">
 <?php foreach ($tags as $tag): ?>

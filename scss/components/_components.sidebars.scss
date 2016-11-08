@@ -9,6 +9,7 @@
   padding-bottom: $small-value;
   padding-left: $small-value;
   background-color: $alpha-color;
+  margin-bottom: auto;
 }
 
 @media (min-width: $tiny) {
@@ -19,16 +20,21 @@
 }
 
 @media (min-width: $small) {
-  .main-sidebar {
+  .home-sidebar {
     width: 400px;
     margin-top: 3.9rem; // FAT MAGIC NUMBER for design purpose of course
-    margin-bottom: auto;
     border-top: 1px solid $base-color;
   }
 }
 
 @media (min-width: $large) {
-  .main-sidebar {
-    margin-top: 6.8rem; // MAGIC NUMBER off by one magical pixel (╯°□°）╯︵ ┻━┻
+  .home-sidebar {
+    margin-top: 6.8rem; // UBER FAT MAGIC NUMBER off by one magical pixel (╯°□°）╯︵ ┻━┻
+  }
+}
+
+@media (min-width: $medium) {
+  .blog-sidebar {
+    width: 400px;
   }
 }

@@ -2387,6 +2387,10 @@ img.wp-smiley {
   margin-left: auto;
 }
 
+.o-wrapper--medium {
+  max-width: 1300px;
+}
+
 .o-wrapper--large {
   max-width: 88.889em;
 }
@@ -2875,6 +2879,7 @@ img.wp-smiley {
   padding-bottom: 1rem;
   padding-left: 1rem;
   background-color: #fff;
+  margin-bottom: auto;
 }
 
 @media (min-width: 544px) {
@@ -2885,17 +2890,22 @@ img.wp-smiley {
 }
 
 @media (min-width: 768px) {
-  .main-sidebar {
+  .home-sidebar {
     width: 400px;
     margin-top: 3.9rem;
-    margin-bottom: auto;
     border-top: 1px solid #262626;
   }
 }
 
 @media (min-width: 1200px) {
-  .main-sidebar {
+  .home-sidebar {
     margin-top: 6.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-sidebar {
+    width: 400px;
   }
 }
 
@@ -3342,6 +3352,16 @@ pre {
   .content-sidebar {
     display: flex;
   }
+}
+
+@media (min-width: 1024px) {
+  .content-sidebar--medium {
+    display: flex;
+  }
+}
+
+.blog-content {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.map.css */

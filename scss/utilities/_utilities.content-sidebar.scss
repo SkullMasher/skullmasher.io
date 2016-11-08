@@ -8,3 +8,13 @@
     display: flex;
   }
 }
+
+@media (min-width: $medium) {
+  .content-sidebar--medium {
+    display: flex;
+  }
+}
+
+.blog-content {
+  flex: 1;
+}
