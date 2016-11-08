@@ -45,11 +45,36 @@
     font-weight: bold;
 }
 
+@media (min-width: $tiny) {
+  .prev:before {
+      content: '< Précedant';
+  }
+}
+
+@media (min-width: $small) {
+  .prev:before {
+      content: '< Articles Précedant';
+  }
+}
+
 .next:after {
     content: '>';
     font-weight: bold;
     padding-left: 2px;
 }
+
+@media (min-width: $tiny) {
+  .next:after {
+      content: 'Suivant >';
+  }
+}
+
+@media (min-width: $small) {
+  .next:after {
+      content: 'Articles Suivant >';
+  }
+}
+
 .current, .dots {
   background-color: transparent;
   color: $base-color;

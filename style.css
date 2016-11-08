@@ -3089,10 +3089,34 @@ img.wp-smiley {
   font-weight: bold;
 }
 
+@media (min-width: 544px) {
+  .prev:before {
+    content: '< Précedant';
+  }
+}
+
+@media (min-width: 768px) {
+  .prev:before {
+    content: '< Articles Précedant';
+  }
+}
+
 .next:after {
   content: '>';
   font-weight: bold;
   padding-left: 2px;
+}
+
+@media (min-width: 544px) {
+  .next:after {
+    content: 'Suivant >';
+  }
+}
+
+@media (min-width: 768px) {
+  .next:after {
+    content: 'Articles Suivant >';
+  }
 }
 
 .current, .dots {
