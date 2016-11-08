@@ -534,7 +534,7 @@ body {
   background-color: #fafafa;
   color: #262626;
   font-family: lato, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {
@@ -562,7 +562,7 @@ details,
 figure {
   margin-top: 0.75em;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1, .h1-like {
@@ -2612,6 +2612,10 @@ img.wp-smiley {
   background-color: #161616;
 }
 
+.band--tiled-background {
+  background-image: url("img/skullmasherio-tile.png");
+}
+
 /**
  * BRANDING
  *
@@ -2860,7 +2864,7 @@ img.wp-smiley {
 @media (min-width: 768px) {
   .main-sidebar {
     width: 400px;
-    margin-top: 3.8rem;
+    margin-top: 3.9rem;
     margin-bottom: auto;
     border-top: 1px solid #262626;
   }
@@ -2868,7 +2872,7 @@ img.wp-smiley {
 
 @media (min-width: 1200px) {
   .main-sidebar {
-    margin-top: 6.7rem;
+    margin-top: 6.8rem;
   }
 }
 
