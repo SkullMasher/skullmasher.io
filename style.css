@@ -2584,6 +2584,10 @@ input[type="submit"]:hover {
   margin-bottom: 0;
 }
 
+.search-field {
+  max-width: 230px;
+}
+
 /**
  * NAVIGATION
  *
