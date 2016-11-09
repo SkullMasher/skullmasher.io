@@ -2864,7 +2864,8 @@ img.wp-smiley {
 }
 
 .social--contained {
-  width: 250px;
+  width: 260px;
+  justify-content: space-between;
 }
 
 /**

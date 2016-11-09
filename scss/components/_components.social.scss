@@ -13,5 +13,6 @@
 }
 
 .social--contained {
-  width: 250px;
+  width: 260px; // MAGIC NUMBER
+  justify-content: space-between;
 }
