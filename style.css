@@ -2909,13 +2909,20 @@ img.wp-smiley {
 }
 
 .post-list {
-  /*padding: $small-value;*/
+  /*align-items: stretch;*/
 }
 
 .post-list__item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 1rem;
   background-color: #eeeeee;
+}
+
+.post-list__title {
+  flex: 1;
+  margin-bottom: 1rem;
 }
 
 .post-list__title a {

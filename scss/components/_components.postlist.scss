@@ -1,15 +1,22 @@
 .post-list {
-  /*padding: $small-value;*/
+  /*align-items: stretch;*/
 }
 
   .post-list__item {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: $small-value;
     background-color: $beta-background;
   }
 
-  .post-list__title a {
-    text-decoration: none;
+  .post-list__title {
+    flex: 1;
+    margin-bottom: $small-value;
+
+    a {
+        text-decoration: none;
+    }
   }
 
   .post-list__meta {
