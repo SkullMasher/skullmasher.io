@@ -45,6 +45,8 @@ endif; ?>
     'prev_text' => __( '', 'textdomain' ),
     'next_text' => __( '', 'textdomain' ),
 ) ); ?>
+    <div class="band--lightgrey">
+      <div class="o-wrapper o-wrapper--medium grid-2-small-1">
 <?php
   /**
    * List the categories of the blog
@@ -53,7 +55,7 @@ endif; ?>
   if (is_array($cats)): ?>
     <nav class="category-nav o-box">
       <h3 class="category-nav__title">Articles par catégories</h3>
-      <div class="flex-container">
+      <div class="category-nav__list flex-container">
 <?php foreach ($cats as $cat): ?>
         <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach ?>
@@ -68,16 +70,17 @@ endif; ?>
   if (is_array($tags)): ?>
         <nav class="o-box tag-nav">
           <h3 class="tag-nav__title">Articles par tags</h3>
-          <div class="tag-nav__list">
+          <div class="tag-nav__list flex-container">
 <?php foreach ($tags as $tag): ?>
-          <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+          <a class="btn btn--white tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
 <?php endforeach ?>
           </div>
         </nav>
 <?php endif ?>
+          </div>
         </div>
-        <?php get_sidebar('blog'); ?>
       </div><!-- Content next to Sidebar -->
+      <?php get_sidebar('blog'); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 

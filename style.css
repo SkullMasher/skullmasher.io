@@ -2388,7 +2388,7 @@ img.wp-smiley {
 }
 
 .o-wrapper--medium {
-  max-width: 1300px;
+  max-width: 72.222em;
 }
 
 .o-wrapper--large {
@@ -2493,6 +2493,16 @@ img.wp-smiley {
   padding-bottom: 2rem;
 }
 
+.btn--white {
+  background-color: #fff;
+  color: #262626;
+}
+
+.btn--white:hover {
+  background-color: #fcfcfc;
+  color: #44a340;
+}
+
 .btn--spaced {
   margin: 4rem;
 }
@@ -2503,15 +2513,6 @@ img.wp-smiley {
 
 .btn--top-spaced {
   margin-top: 4rem;
-}
-
-.btn--rounded {
-  border-radius: 3px;
-}
-
-.btn--centered {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .btn--lightgrey {
@@ -2536,6 +2537,15 @@ img.wp-smiley {
 
 .btn--darkgrey:hover {
   background-color: #090909;
+}
+
+.btn--rounded {
+  border-radius: 3px;
+}
+
+.btn--centered {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /**
@@ -2622,21 +2632,8 @@ img.wp-smiley {
   }
 }
 
-.category-nav {
-  background-color: #eeeeee;
-}
-
-.category-nav__link {
-  padding-right: 1rem;
-}
-
-.tag-nav {
-  background-color: #eeeeee;
-}
-
+.category-nav__list,
 .tag-nav__list {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -2651,16 +2648,16 @@ img.wp-smiley {
 }
 
 .tag-nav__link {
-  display: inline-block;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #fff;
-  color: #262626;
-  text-decoration: none;
+  /*display: inline-block;
+    padding: $small-value;
+    margin: $tiny-value;
+    background-color: $alpha-color;
+    color: $base-color;
+    text-decoration: none;*/
 }
 
 .tag-nav__link:hover {
-  color: #44a340;
+  /*color: $base-color-link;*/
 }
 
 .menu-keypages-container > ul {

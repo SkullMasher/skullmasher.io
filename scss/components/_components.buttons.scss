@@ -30,6 +30,17 @@
   padding-bottom: $medium-value;
 }
 
+//Color Variant
+.btn--white {
+  background-color: $alpha-color;
+  color: $base-color;
+
+  &:hover {
+    background-color: darken($alpha-color, 1);
+    color: $base-color-link;
+  }
+}
+
 // Margin variant
 .btn--spaced {
   margin: $large-value;
@@ -41,15 +52,6 @@
 
 .btn--top-spaced {
   margin-top: $large-value;
-}
-
-.btn--rounded {
-  border-radius: 3px;
-}
-
-.btn--centered {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 // Color variant
@@ -75,4 +77,15 @@
   &:hover {
     background-color: darken($gamma-background, 5);
   }
+}
+
+// Other variant
+.btn--rounded {
+  border-radius: 3px;
+}
+
+.btn--centered {
+  // Needs to be in a flex container
+  margin-right: auto;
+  margin-left: auto;
 }

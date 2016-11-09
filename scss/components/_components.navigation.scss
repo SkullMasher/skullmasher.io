@@ -91,48 +91,35 @@
   }
 }
 
-// Blog Category list
-.category-nav {
-  background-color: $beta-background;
-}
-
-.category-nav__link {
-  padding-right: $small-value;
-}
-
-// Blog Tag list
-.tag-nav {
-  background-color: $beta-background;
-}
-
+// Category and tag list
+.category-nav__list,
 .tag-nav__list {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-.tag-nav__list--single {
-  justify-content: flex-start;
-  line-height: 1;
-}
-
-.tag-nav__title {
-  padding-right: $small-value;
-  padding-left: $small-value;
-}
-
-.tag-nav__link {
-  display: inline-block;
-  padding: $small-value;
-  margin: $tiny-value;
-  background-color: $alpha-color;
-  color: $base-color;
-  text-decoration: none;
-
-  &:hover {
-    color: $base-color-link;
+// Blog Tag list
+  .tag-nav__list--single {
+    justify-content: flex-start;
+    line-height: 1;
   }
-}
+
+  .tag-nav__title {
+    padding-right: $small-value;
+    padding-left: $small-value;
+  }
+
+  .tag-nav__link {
+    /*display: inline-block;
+    padding: $small-value;
+    margin: $tiny-value;
+    background-color: $alpha-color;
+    color: $base-color;
+    text-decoration: none;*/
+
+    &:hover {
+      /*color: $base-color-link;*/
+    }
+  }
 
 // Key pages navigation list
 .menu-keypages-container > ul {
