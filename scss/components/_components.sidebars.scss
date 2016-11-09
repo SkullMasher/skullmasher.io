@@ -33,8 +33,13 @@
   }
 }
 
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: $large-value;
+}
+
 @media (min-width: $extra-large) {
-  .blog-sidebar {
-    width: 400px;
-  }
+  .blog-sidebar { width: 400px; }
 }

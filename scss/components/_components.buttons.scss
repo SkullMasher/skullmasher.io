@@ -22,6 +22,11 @@
 }
 
 // Size variant
+.btn--small {
+  padding-right: $small-value;
+  padding-left: $small-value;
+}
+
 .btn--large {
   margin: $medium-value;
   padding-top: $medium-value;

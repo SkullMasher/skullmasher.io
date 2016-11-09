@@ -72,7 +72,7 @@ endif; ?>
           <h3 class="tag-nav__title">Articles par tags</h3>
           <div class="tag-nav__list flex-container">
 <?php foreach ($tags as $tag): ?>
-          <a class="btn btn--white tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+          <a class="btn btn--white btn--small tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
 <?php endforeach ?>
           </div>
         </nav>

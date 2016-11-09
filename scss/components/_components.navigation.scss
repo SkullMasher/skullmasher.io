@@ -97,6 +97,13 @@
   justify-content: center;
 }
 
+.category-nav__title,
+.tag-nav__title {
+  text-align: center;
+}
+
+
+
 // Blog Tag list
   .tag-nav__list--single {
     justify-content: flex-start;

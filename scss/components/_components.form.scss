@@ -1,0 +1,28 @@
+// All input must have a background and a border
+input {
+  background-color: $alpha-color;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  padding-top: $tiny-value;
+  padding-right: $small-value;
+  padding-bottom: $tiny-value;
+  padding-left: $small-value;
+  /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);*/
+}
+
+input[type="submit"] {
+  background-color: #ddd;
+  padding-top: $tiny-value;
+  padding-right: $small-value;
+  padding-bottom: $tiny-value;
+  padding-left: $small-value;
+
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+// Search field on the blog sidebar
+.blog-sidebar .widget-title {
+  margin-bottom: 0;
+}
