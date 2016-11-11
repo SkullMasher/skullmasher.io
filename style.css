@@ -2686,6 +2686,10 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+.category-nav__link {
+  vertical-align: middle;
+}
+
 .tag-nav__list--single {
   justify-content: flex-start;
   line-height: 1;
@@ -2694,19 +2698,6 @@ input[type="submit"]:hover {
 .tag-nav__title {
   padding-right: 1rem;
   padding-left: 1rem;
-}
-
-.tag-nav__link {
-  /*display: inline-block;
-    padding: $small-value;
-    margin: $tiny-value;
-    background-color: $alpha-color;
-    color: $base-color;
-    text-decoration: none;*/
-}
-
-.tag-nav__link:hover {
-  /*color: $base-color-link;*/
 }
 
 .menu-keypages-container > ul {
@@ -3256,6 +3247,16 @@ input[type="submit"]:hover {
 .article__share a {
   text-decoration: none;
   padding-left: 1.5rem;
+}
+
+article .category-webdev:before {
+  display: inline-block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  margin-right: 0.5rem;
+  vertical-align: text-bottom;
+  background-image: url("img/develop-tiny.svg");
 }
 
 .hire-me {

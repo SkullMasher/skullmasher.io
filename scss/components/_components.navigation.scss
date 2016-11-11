@@ -106,7 +106,10 @@
   text-align: center;
 }
 
-
+// Category list
+.category-nav__link {
+  vertical-align: middle;
+}
 
 // Blog Tag list
   .tag-nav__list--single {
@@ -117,19 +120,6 @@
   .tag-nav__title {
     padding-right: $small-value;
     padding-left: $small-value;
-  }
-
-  .tag-nav__link {
-    /*display: inline-block;
-    padding: $small-value;
-    margin: $tiny-value;
-    background-color: $alpha-color;
-    color: $base-color;
-    text-decoration: none;*/
-
-    &:hover {
-      /*color: $base-color-link;*/
-    }
   }
 
 // Key pages navigation list

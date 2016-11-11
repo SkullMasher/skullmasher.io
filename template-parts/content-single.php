@@ -49,7 +49,7 @@ $cats = get_the_category();
 <?php if (!empty($tags) && !empty($cats)) : ?>
       <p>Consulter les articles
 <?php foreach ($tags as $tag) : ?>
-        <a class="tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+        <a class="btn btn--white btn--small tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
 <?php endforeach;
 if (count($cats) > 1): ?>
           dans les catégories
