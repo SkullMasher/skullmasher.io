@@ -41,11 +41,13 @@
   <div class="o-wrapper site-branding">
     <h1 class="site-description"><?php echo $description; ?></h1>
   </div>
-<?php else: ?>
+<?php elseif( $description_blog ): ?>
   <div class="blog-description">
     <h1 class="blog-description__title"><?php echo $description_blog; ?></h1>
     <h2 class="blog-description__lodr">Hello There c'est Skull'</h2>
   </div>
+<?php else : ?>
+  <div class="no-page-title"></div>
 <?php endif; ?>
 </header>
 <div id="content" class="site-content">

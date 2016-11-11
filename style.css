@@ -2618,6 +2618,10 @@ input[type="submit"]:hover {
   text-decoration: none;
 }
 
+.single-post .site-nav__home {
+  padding-bottom: 1rem;
+}
+
 .site-nav__site-name {
   display: none;
 }
