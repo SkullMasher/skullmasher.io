@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1"
-	 id="Layer_1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-131.4 188.9 165.9 175.8" enable-background="new -131.4 188.9 165.9 175.8" xml:space="preserve">
-<g id="g48">
-	<polygon id="polygon50" fill="#B3B3B3" points="-118.4,326.3 -48.7,364.6 21.4,325.8 34.5,217.5 -48.8,188.9 -131.4,218 	"/>
-	<polygon id="polygon52" fill="#A6120D" points="-48.9,355.5 14,320.6 26.2,223.7 -48.9,198.1 	"/>
-	<polygon id="polygon54" fill="#DD1B16" points="-49,355.5 -49,198.1 -122.2,224.2 -111,321.1 	"/>
-	<path id="path56" fill="#F2F2F2" d="M-28.3,281.9l-20.7,9.7h-21.8L-81,317.2l-19.1,0.4l51.1-113.7L-28.3,281.9z M-30.3,277
-		l-18.6-36.7L-64,276.4H-49L-30.3,277z"/>
-	<polygon id="polygon58" fill="#B3B3B3" points="-31.5,276.4 -48.9,276.4 -49,291.5 -24.9,291.5 -13.7,317.5 4.5,317.9 -49,203.8 
-		-48.8,240.3 	"/>
-</g>
-</svg>
+<svg enable-background="new -131.4 188.9 165.9 175.8" viewBox="-131.4 188.9 165.9 175.8" xmlns="http://www.w3.org/2000/svg"><path d="m-118.4 326.3l69.7 38.3 70.1-38.8 13.1-108.3-83.3-28.6-82.6 29.1z" fill="#b3b3b3"/><path d="m-48.9 355.5l62.9-34.9 12.2-96.9-75.1-25.6z" fill="#a6120d"/><path d="m-49 355.5v-157.4l-73.2 26.1 11.2 96.9z" fill="#dd1b16"/><path d="m-28.3 281.9l-20.7 9.7h-21.8l-10.2 25.6-19.1.4 51.1-113.7zm-2-4.9l-18.6-36.7-15.1 36.1h15z" fill="#f2f2f2"/><path d="m-31.5 276.4h-17.4l-.1 15.1h24.1l11.2 26 18.2.4-53.5-114.1.2 36.5z" fill="#b3b3b3"/></svg>

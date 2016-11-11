@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="0 0 183.3 195.2" xml:space="preserve">
-<rect x="85.4" y="142.8" transform="matrix(0.744 -0.6682 0.6682 0.744 -66.868 131.1244)" width="104.5" height="20.1"/>
-<rect x="52.3" y="70.3" transform="matrix(0.744 -0.6682 0.6682 0.744 -44.3568 87.1573)" width="78.5" height="62.3"/>
-<polyline points="170,110.6 141.5,98.4 83.1,150.8 92.3,180.5 "/>
-<rect x="14.4" y="67.6" transform="matrix(0.744 -0.6682 0.6682 0.744 -32.1994 63.4125)" width="104.5" height="12.3"/>
-<rect x="29.3" y="5.6" transform="matrix(0.744 -0.6682 0.6682 0.744 -18.4755 36.0848)" width="17.2" height="73.2"/>
-<polyline points="19.8,9.2 0,0 7,20.7 "/>
-</svg>
+<svg viewBox="0 0 183.3 195.2" xmlns="http://www.w3.org/2000/svg"><path d="m85.4 142.8h104.5v20.1h-104.5z" transform="matrix(.744 -.6682 .6682 .744 -66.868 131.1244)"/><path d="m52.3 70.3h78.5v62.3h-78.5z" transform="matrix(.744 -.6682 .6682 .744 -44.3568 87.1573)"/><path d="m170 110.6l-28.5-12.2-58.4 52.4 9.2 29.7"/><path d="m14.4 67.6h104.5v12.3h-104.5z" transform="matrix(.744 -.6682 .6682 .744 -32.1994 63.4125)"/><path d="m29.3 5.6h17.2v73.2h-17.2z" transform="matrix(.744 -.6682 .6682 .744 -18.4755 36.0848)"/><path d="m19.8 9.2l-19.8-9.2 7 20.7"/></svg>
