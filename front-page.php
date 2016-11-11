@@ -30,7 +30,7 @@ get_header(); ?>
     <div class="promotional-skills o-wrapper o-wrapper--huge">
       <div class="promotional-skill">
         <header class="promotional-skill__header o-media">
-          <?php echo file_get_contents(get_template_directory() .'/img/develop.svg') ?>
+          <?php echo file_get_contents(get_template_directory() .'/img/wordpress.svg') ?>
           <h2 class="promotional-skill__title o-media-content">Concevoir avec Wordpress</h2>
         </header>
         <p class="promotional-skill__text">Dans le monde de la gestion de contenu web, Wordpress est bien souvent la solution la plus maitrisée par les utilisateurs. Si à l'avenir votre site vitrine devient un site e-comerce, Wordpress répondra à ce besoin.</p>
