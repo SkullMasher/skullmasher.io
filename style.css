@@ -3057,19 +3057,6 @@ input[type="submit"]:hover {
   padding-right: 1rem;
 }
 
-.last-articles__heading-trail {
-  display: none;
-  flex: 1;
-  height: 1px;
-  background-color: #262626;
-}
-
-@media (min-width: 768px) {
-  .last-articles__heading-trail {
-    display: block;
-  }
-}
-
 .last-articles__article-container {
   margin-bottom: 0;
   padding-right: 0;

@@ -35,19 +35,6 @@
     padding-right: $small-value
   }
 
-  .last-articles__heading-trail {
-    display: none;
-    flex: 1;
-    height: 1px;
-    background-color: $base_color;
-  }
-
-  @media(min-width:$small) {
-    .last-articles__heading-trail {
-      display: block;
-    }
-  }
-
   .last-articles__article-container {
     margin-bottom: 0;
     padding-right: 0;

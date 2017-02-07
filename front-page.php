@@ -62,7 +62,6 @@ get_header(); ?>
     <div class="last-articles flex-container-v">
       <div class="last-articles__heading-container">
         <h3 class="last-articles__heading">Les <?php echo $number_posts ?> derniers Articles</h3>
-        <span class="last-articles__heading-trail"></span>
       </div>
   <?php foreach( $recent_posts as $post ) :
 
