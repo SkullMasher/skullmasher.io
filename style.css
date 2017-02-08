@@ -3388,6 +3388,10 @@ article .category-webdev:before {
   margin-bottom: 4rem;
 }
 
+.search-entry-footer {
+  margin-top: 2rem;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
