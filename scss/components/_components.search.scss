@@ -7,6 +7,8 @@
  .search-content {
    max-width: 800px;
    padding-top: $medium-value;
+   padding-right: $medium-value;
+   padding-left: $medium-value;
    margin-right: auto;
    margin-left: auto;
  }
@@ -16,6 +18,10 @@
   margin-bottom: $large-value;
 }
 
-.search-entry-footer {
-  margin-top: $medium-value;
+.search-read-more__link {
+  text-transform: none;
+
+  &:hover {
+    text-transform: underline;
+  }
 }

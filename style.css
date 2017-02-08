@@ -2897,6 +2897,10 @@ input[type="submit"]:hover {
   margin-left: 1rem;
 }
 
+.search-result-separator {
+  margin: 1rem;
+}
+
 /**
  * The social bar is automaticaly centered if in a flex container
  */
@@ -3379,6 +3383,8 @@ article .category-webdev:before {
 .search-content {
   max-width: 800px;
   padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -3388,8 +3394,12 @@ article .category-webdev:before {
   margin-bottom: 4rem;
 }
 
-.search-entry-footer {
-  margin-top: 2rem;
+.search-read-more__link {
+  text-transform: none;
+}
+
+.search-read-more__link:hover {
+  text-transform: underline;
 }
 
 /* Text meant only for screen readers. */

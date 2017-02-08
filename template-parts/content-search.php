@@ -19,8 +19,11 @@
 		</div>
 		<?php endif; ?>
 	</header>
-
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div>
+  <div class="search-read-more">
+    <a class="search-read-more__link" href="<?php get_permalink() ?>">Lire l'article </a>
+  </div>
+  <hr>
 </article><!-- #post-## -->
