@@ -1,0 +1,17 @@
+/**
+ * SEARCH
+ *
+ * Search Pages result
+ */
+
+ .search-content {
+   max-width: 800px;
+   padding-top: $medium-value;
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+.no-results {
+  margin-top: $large-value;
+  margin-bottom: $large-value;
+}

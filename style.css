@@ -3371,6 +3371,23 @@ article .category-webdev:before {
   }
 }
 
+/**
+ * SEARCH
+ *
+ * Search Pages result
+ */
+.search-content {
+  max-width: 800px;
+  padding-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.no-results {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);

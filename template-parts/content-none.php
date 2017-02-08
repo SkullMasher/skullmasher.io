@@ -10,8 +10,8 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'skullmasher-io' ); ?></h1>
+	<header>
+		<h1 class="page-title"><?php esc_html_e( 'Pas de résultat trouvé', 'skullmasher-io' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -22,13 +22,13 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'skullmasher-io' ); ?></p>
+			<p><?php esc_html_e( 'Vous pouvez effectuer une nouvelle recherche avec d\'autres mots clef.', 'skullmasher-io' ); ?></p>
 			<?php
 				get_search_form();
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'skullmasher-io' ); ?></p>
+			<p><?php esc_html_e( 'Vous pouvez effectuer une nouvelle recherche avec d\'autres mots clef.', 'skullmasher-io' ); ?></p>
 			<?php
 				get_search_form();
 
