@@ -2964,7 +2964,14 @@ input[type="submit"]:hover {
 }
 
 .sidebar--search {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .sidebar--search {
+    width: 400px;
+  }
 }
 
 .post-list {
@@ -3434,7 +3441,7 @@ pre {
   }
 }
 
-.blog-content {
+.blog-content, .search-content {
   flex: 1;
 }
 

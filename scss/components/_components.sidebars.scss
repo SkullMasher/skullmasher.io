@@ -47,5 +47,10 @@
 }
 
 .sidebar--search {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $medium) {
+  .sidebar--search { width: 400px; }
 }
