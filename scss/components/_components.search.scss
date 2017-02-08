@@ -18,10 +18,7 @@
   margin-bottom: $large-value;
 }
 
-.search-read-more__link {
-  text-transform: none;
-
-  &:hover {
-    text-transform: underline;
-  }
+.search-read-more {
+  margin-top: $small-value;
+  margin-left: $medium-value;
 }

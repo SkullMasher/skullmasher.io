@@ -23,7 +23,7 @@
 		<?php the_excerpt(); ?>
 	</div>
   <div class="search-read-more">
-    <a class="search-read-more__link" href="<?php get_permalink() ?>">Lire l'article </a>
+    <a class="search-read-more__link btn" href="<?php get_permalink() ?>">Lire l'article &#8594;</a>
   </div>
-  <hr>
+  <hr class="search-result-separator">
 </article><!-- #post-## -->

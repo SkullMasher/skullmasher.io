@@ -2898,7 +2898,10 @@ input[type="submit"]:hover {
 }
 
 .search-result-separator {
-  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  margin-right: 16.66%;
+  margin-left: 16.66%;
 }
 
 /**
@@ -3394,12 +3397,9 @@ article .category-webdev:before {
   margin-bottom: 4rem;
 }
 
-.search-read-more__link {
-  text-transform: none;
-}
-
-.search-read-more__link:hover {
-  text-transform: underline;
+.search-read-more {
+  margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 /* Text meant only for screen readers. */
