@@ -2783,7 +2783,7 @@ input[type="submit"]:hover {
 }
 
 .blog-description {
-  width: 342px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding-right: 1rem;
@@ -2800,6 +2800,12 @@ input[type="submit"]:hover {
   color: #fff;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media (min-width: 465px) {
+  .blog-description {
+    width: 465px;
+  }
 }
 
 .promotional-skills {
@@ -2955,6 +2961,10 @@ input[type="submit"]:hover {
   .blog-sidebar {
     width: 400px;
   }
+}
+
+.sidebar--search {
+  width: 400px;
 }
 
 .post-list {

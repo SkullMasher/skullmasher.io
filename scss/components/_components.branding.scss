@@ -40,7 +40,7 @@
 }
 
 .blog-description {
-  width: 342px; // not MAGIC NUMBER cuz there's 42 in it
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding-right: $small-value;
@@ -58,6 +58,13 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+@media (min-width: 465px) {
+  .blog-description {
+    width: 465px; // MAGIC NUMBER
+  }
+}
+
 
 // Promotional skills
 .promotional-skills {

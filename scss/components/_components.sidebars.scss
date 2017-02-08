@@ -22,17 +22,18 @@
 @media (min-width: $small) {
   .home-sidebar {
     width: 400px;
-    margin-top: 3.9rem; // FAT MAGIC NUMBER for design purpose of course
+    margin-top: 3.9rem; // fat MAGIC NUMBER for design purpose of course
     border-top: 1px solid $base-color;
   }
 }
 
 @media (min-width: $large) {
   .home-sidebar {
-    margin-top: 6.8rem; // UBER FAT MAGIC NUMBER off by one magical pixel (╯°□°）╯︵ ┻━┻
+    margin-top: 6.8rem; // uber fat MAGIC NUMBER
   }
 }
 
+// Need refactor
 .blog-sidebar {
   display: flex;
   flex-direction: column;
@@ -42,4 +43,8 @@
 
 @media (min-width: $extra-large) {
   .blog-sidebar { width: 400px; }
+}
+
+.sidebar--search {
+  width: 400px;
 }

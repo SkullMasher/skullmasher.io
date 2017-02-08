@@ -47,7 +47,7 @@ get_header(); ?>
           <?php echo file_get_contents(get_template_directory() .'/img/develop.svg') ?>
           <h2 class="promotional-skill__title o-media-content">Développer et Déployer</h2>
         </header>
-        <p class="promotional-skill__text">Adaptation des maquettes aux écrans responsive pour refleter au mieux la vision du web designer. Dévelopement back-office avec PHP et NodeJS. Application iOS et Android hybride avec Cordova (Phonegap). Instalation et déploiement de votre site web en Python, Ruby, PHP, NodeJS sur Linux. Contactez moi pour dicuter de votre projet.</p>
+        <p class="promotional-skill__text">Adaptation des maquettes aux écrans responsive pour refleter au mieux la vision du web designer. Dévelopement back-office avec PHP et NodeJS. Application mobile iOS et Android hybride avec Cordova (Phonegap). Instalation et déploiement de votre site web en Python, Ruby, PHP, NodeJS sur Linux. Contactez moi pour dicuter de votre projet.</p>
       </div>
       <div class="promotional-skill">
         <header class="promotional-skill__header o-media">
