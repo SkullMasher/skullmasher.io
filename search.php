@@ -41,7 +41,7 @@ get_header(); ?>
 
 		endif; ?>
         </div>
-        <?php get_sidebar('blog'); ?>
+        <?php get_sidebar('search'); ?>
       </div>
 		</main><!-- #main -->
 	</section><!-- #primary -->

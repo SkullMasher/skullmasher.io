@@ -114,6 +114,16 @@ function skullmasher_io_widgets_init() {
   ));
 
   register_sidebar( array(
+    'id'            => 'search',
+    'name'          => esc_html__( 'Search', 'skullmasher-io' ),
+    'description'   => esc_html__( 'Search sidebar.', 'skullmasher-io' ),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h4 class="widget-title">',
+    'after_title'   => '</h4>',
+  ));
+
+  register_sidebar( array(
     'id'            => 'keypages',
     'name'          => esc_html__( 'Footer key pages', 'skullmasher-io' ),
     'description'   => esc_html__( 'Footer key pages list.', 'skullmasher-io' ),

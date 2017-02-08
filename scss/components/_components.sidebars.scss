@@ -19,6 +19,7 @@
   }
 }
 
+// need refactor to BEM
 @media (min-width: $small) {
   .home-sidebar {
     width: 400px;
@@ -33,7 +34,7 @@
   }
 }
 
-// Need refactor
+// Need refactor BEM
 .blog-sidebar {
   display: flex;
   flex-direction: column;
