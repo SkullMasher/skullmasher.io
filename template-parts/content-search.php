@@ -26,4 +26,4 @@
     <a class="search-read-more__link btn" href="<?php get_permalink() ?>">Lire l'article &#8594;</a>
   </div>
   <hr class="search-result-separator">
-</article><!-- #post-## -->
+</article>

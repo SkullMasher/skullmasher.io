@@ -3402,6 +3402,24 @@ article .category-webdev:before {
   margin-left: 2rem;
 }
 
+/**
+ * 404
+ *
+ * Rverything 404 related
+ */
+.error-404 {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.error-404__title {
+  text-align: center;
+}
+
+.the-dreaded-word {
+  display: block;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
