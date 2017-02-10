@@ -2,3 +2,22 @@
     margin-top: $small-value;
     margin-bottom: $medium-value;
   }
+
+// Used in portfolio page
+.project-types {
+  margin-bottom: $medium-value;
+}
+.project-types__title, .project-types__description {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.website-showcase {
+  background-color: $alpha-color;
+  padding: $small-plus-value;
+}
+
+.website-showcase__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}

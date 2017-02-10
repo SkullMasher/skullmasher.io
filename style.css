@@ -573,32 +573,32 @@ h1, .h1-like {
 }
 
 h2, .h2-like {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-family: lato, sans-serif;
   color: #44a340;
   font-weight: normal;
 }
 
 h3, .h3-like {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   color: #44a340;
   font-weight: normal;
 }
 
 h4, .h4-like {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #44a340;
   font-weight: normal;
 }
 
 h5, .h5-like {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #44a340;
   font-weight: normal;
 }
 
 h6, .h6-like {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #44a340;
   font-weight: normal;
 }
@@ -2632,7 +2632,7 @@ input[type="submit"]:hover {
   padding-left: 1rem;
   text-transform: uppercase;
   font-family: hack;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-decoration: none;
 }
 
@@ -3339,6 +3339,25 @@ article .category-webdev:before {
 .page__header {
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+.project-types {
+  margin-bottom: 2rem;
+}
+
+.project-types__title, .project-types__description {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.website-showcase {
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.website-showcase__title {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .page-footer {
