@@ -44,7 +44,7 @@
 <?php elseif( $description_blog ): ?>
   <div class="blog-description">
     <h1 class="blog-description__title"><?php echo $description_blog; ?></h1>
-    <h2 class="blog-description__lodr">Tutoriels informatiques et actualités geek</h2>
+    <h2 class="blog-description__lodr h4-like">Tutoriels informatiques et actualités geek</h2>
   </div>
 <?php endif; ?>
 </header>

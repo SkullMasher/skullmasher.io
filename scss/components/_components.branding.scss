@@ -59,12 +59,11 @@
     margin-bottom: 0;
   }
 
-@media (min-width: 465px) {
+@media (min-width: 480px) {
   .blog-description {
-    width: 465px; // MAGIC NUMBER
+    width: 480px; // MAGIC NUMBER
   }
 }
-
 
 // Promotional skills
 .promotional-skills {

@@ -1708,6 +1708,7 @@ img.wp-smiley {
 .wp-caption-text {
   margin: 1em 0;
   text-align: center;
+  font-style: italic;
 }
 
 .gallery {
@@ -2818,9 +2819,9 @@ input[type="submit"]:hover {
   margin-bottom: 0;
 }
 
-@media (min-width: 465px) {
+@media (min-width: 480px) {
   .blog-description {
-    width: 465px;
+    width: 480px;
   }
 }
 
