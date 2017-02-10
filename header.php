@@ -26,7 +26,7 @@
 <header id="top" class="page-header" role="banner">
 <?php $description_blog = 'Blogmasher !'; ?>
 <?php else : ?>
-<header id="top" class="page-header" role="banner">
+<header id="top" class="page-header page-header--single-page" role="banner">
 <?php endif; ?>
   <nav class="o-wrapper site-nav" role="navigation">
     <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg')?><span class="site-nav__site-name"><?php bloginfo( 'name' ); ?></span></a>
@@ -46,8 +46,6 @@
     <h1 class="blog-description__title"><?php echo $description_blog; ?></h1>
     <h2 class="blog-description__lodr">Tutoriels informatiques et actualités geek</h2>
   </div>
-<?php else : ?>
-  <div class="no-page-title"></div>
 <?php endif; ?>
 </header>
 <div id="content" class="site-content">

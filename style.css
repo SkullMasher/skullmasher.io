@@ -2467,6 +2467,10 @@ img.wp-smiley {
   color: #fff;
 }
 
+.page-header--single-page {
+  padding-bottom: 1rem;
+}
+
 /**
  * BUTTONS
  *
