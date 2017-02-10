@@ -2476,6 +2476,7 @@ img.wp-smiley {
  *
  */
 .btn {
+  position: relative;
   margin: 0.5rem;
   padding-top: 1rem;
   padding-right: 4rem;
@@ -2485,11 +2486,22 @@ img.wp-smiley {
   background-color: #44a340;
   color: #fff;
   text-decoration: none;
+  box-shadow: #666 0 2px 5px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
   background-color: #3c9139;
   color: #fff;
+  box-shadow: #999 0 2px 5px;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+.btn:active {
+  top: 2px;
 }
 
 .btn--small {
@@ -2560,6 +2572,10 @@ img.wp-smiley {
   margin-left: auto;
 }
 
+.btn--no-box-shadow {
+  box-shadow: none;
+}
+
 input {
   background-color: #fff;
   border: 2px solid #ddd;
@@ -2604,7 +2620,6 @@ input[type="submit"]:hover {
 
 @media (min-width: 41.6em) {
   .site-nav {
-    /* Totaly not a MAGIC NUMBER since it's the number of the beast */
     width: 666px;
   }
 }
@@ -2650,6 +2665,7 @@ input[type="submit"]:hover {
   padding-right: 1rem;
   padding-left: 1rem;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 .primary-menu a:hover {
@@ -2671,9 +2687,6 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 32em) {
-  .primary-menu a {
-    font-size: 2rem;
-  }
   .primary-menu .menu-item:last-child {
     display: block;
   }

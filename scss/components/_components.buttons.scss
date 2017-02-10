@@ -4,6 +4,7 @@
  */
 
 .btn {
+  position: relative;
   margin: $tiny-value;
   padding-top: $small-value;
   padding-right: $large-value;
@@ -13,10 +14,21 @@
   background-color: $base-color-link;
   color: $alpha-color;
   text-decoration: none;
+  box-shadow: #666 0 2px 5px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     background-color: darken($base-color-link, 5);
     color: $alpha-color;
+    box-shadow: #999 0 2px 5px;
+  }
+
+  &:focus {
+    color: $alpha-color; // Prevent the default anchor tag color
+  }
+
+  &:active {
+    top: 2px;
   }
 }
 
@@ -92,4 +104,8 @@
   // Needs to be in a flex container
   margin-right: auto;
   margin-left: auto;
+}
+
+.btn--no-box-shadow {
+  box-shadow: none;
 }
