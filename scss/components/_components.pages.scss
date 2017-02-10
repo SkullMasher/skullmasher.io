@@ -7,9 +7,16 @@
 .project-types {
   margin-bottom: $medium-value;
 }
+
 .project-types__title, .project-types__description {
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.project-types__list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: $small-value;
 }
 
 .website-showcase {
@@ -17,7 +24,11 @@
   padding: $small-plus-value;
 }
 
-.website-showcase__title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  .website-showcase__item {
+    /*margin-bottom: $large-value;*/
+  }
+
+  .website-showcase__title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }

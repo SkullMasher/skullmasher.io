@@ -1,5 +1,15 @@
-.article-separator {
+.separator {
   margin: $medium-plus-value 0;
+}
+
+.separator--trimed {
+  margin-right: 16.66%;
+  margin-left: 16.66%;
+}
+
+.separator--search-result {
+  margin-top: $medium-value;
+  margin-bottom: 0;
 }
 
 .skulled-separator {
@@ -19,10 +29,3 @@
     margin-bottom: 0;
     margin-left: $small-value;
   }
-
-.search-result-separator {
-  margin-top: $medium-value;
-  margin-bottom: 0;
-  margin-right: 16.66%;
-  margin-left: 16.66%;
-}

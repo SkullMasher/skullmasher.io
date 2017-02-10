@@ -25,5 +25,5 @@
   <div class="search-read-more">
     <a class="search-read-more__link btn" href="<?php get_permalink() ?>">Lire l'article &#8594;</a>
   </div>
-  <hr class="search-result-separator">
+  <hr class="separator separator--trimed">
 </article>

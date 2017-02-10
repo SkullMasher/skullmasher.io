@@ -13,5 +13,5 @@
   <?php skullmasher_io_post_date(); ?>
 <?php endif; ?>
 <?php the_title( '<h3 class="last-articles__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
-  <hr class="article-separator">
+  <hr class="separator">
 </article>

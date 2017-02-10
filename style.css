@@ -2891,8 +2891,18 @@ input[type="submit"]:hover {
   padding-left: 1rem;
 }
 
-.article-separator {
+.separator {
   margin: 3rem 0;
+}
+
+.separator--trimed {
+  margin-right: 16.66%;
+  margin-left: 16.66%;
+}
+
+.separator--search-result {
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .skulled-separator {
@@ -2911,13 +2921,6 @@ input[type="submit"]:hover {
   margin-right: 1rem;
   margin-bottom: 0;
   margin-left: 1rem;
-}
-
-.search-result-separator {
-  margin-top: 2rem;
-  margin-bottom: 0;
-  margin-right: 16.66%;
-  margin-left: 16.66%;
 }
 
 /**
@@ -3350,9 +3353,19 @@ article .category-webdev:before {
   margin-top: 0;
 }
 
+.project-types__list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
 .website-showcase {
   background-color: #fff;
   padding: 1.5rem;
+}
+
+.website-showcase__item {
+  /*margin-bottom: $large-value;*/
 }
 
 .website-showcase__title {
