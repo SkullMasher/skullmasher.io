@@ -4,12 +4,14 @@
 
   .article__heading {
     padding-top: $small-value;
-    padding-right: $small-value;
-    padding-bottom: 0;
-    padding-left: $small-value;
+    padding-right: 0;
+    padding-bottom: $medium-plus-value;
+    padding-left: 0;
   }
 
   .article__title {
+    padding-right: $small-value;
+    padding-left: $small-value;
     text-align: center;
   }
 
@@ -20,7 +22,16 @@
     padding-left: $small-value;
   }
 
+  @media (min-width: $tiny) {
+    .article__content {
+      padding-right: $medium-value;
+      padding-left: $medium-value;
+    }
+  }
+
   .article__date {
+    padding-right: $small-value;
+    padding-left: $small-value;
     font-size: 1.6rem;
   }
 

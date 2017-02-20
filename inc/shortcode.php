@@ -29,3 +29,19 @@ EOL;
 }
 add_shortcode( 'worktogether', 'worktogether_shortcode' );
 
+// Return a ui element that show all the ways to contact me
+function thesocialnetwork_shortcode() {
+  $crypted_mail  = antispambot('florian@skullmasher.io', 1);
+
+$worktogether = <<<EOL
+<div class="contact-me">
+  <a href="mailto:$crypted_mail" class="btn btn--centered btn--top-spaced" role="button">Mail</a>
+  <a href="https://twitter.com/skullm4sher">Twitter</a>
+  <a href="https://steamcommunity.com/id/skullmasher/">Steam</a>
+</div>
+EOL;
+
+  return $worktogether;
+}
+add_shortcode( 'worktogether', 'worktogether_shortcode' );
+

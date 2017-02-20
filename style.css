@@ -3248,12 +3248,14 @@ input[type="submit"]:hover {
 
 .article__heading {
   padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0;
-  padding-left: 1rem;
+  padding-right: 0;
+  padding-bottom: 3rem;
+  padding-left: 0;
 }
 
 .article__title {
+  padding-right: 1rem;
+  padding-left: 1rem;
   text-align: center;
 }
 
@@ -3264,7 +3266,16 @@ input[type="submit"]:hover {
   padding-left: 1rem;
 }
 
+@media (min-width: 544px) {
+  .article__content {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 .article__date {
+  padding-right: 1rem;
+  padding-left: 1rem;
   font-size: 1.6rem;
 }
 
