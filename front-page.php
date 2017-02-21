@@ -54,7 +54,7 @@ get_header(); ?>
           <?php echo file_get_contents(get_template_directory() .'/img/server.svg') ?>
           <h2 class="promotional-skill__title o-media-content">Maintenir des Solutions&nbsp;Web</h2>
         </header>
-        <p class="promotional-skill__text">Bien trop souvent des utilisateurs se retrouve seul face à la gestion de leur site web. Tous logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard choisissez un responsable capable de vous diriger dans la conduite du changement de votre site web et assurer sa pérénité.</p>
+        <p class="promotional-skill__text">Bien trop souvent des utilisateurs se retrouve seul face à la gestion de leur site web. Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard choisissez un responsable capable de vous diriger dans la conduite du changement de votre site web et assurer sa pérénité.</p>
       </div>
     </div>
   </div>
