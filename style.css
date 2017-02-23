@@ -3481,6 +3481,21 @@ article .category-webdev:before {
   display: block;
 }
 
+/**
+ * ARCHIVES
+ *
+ * List articles in a specific category and tags
+ */
+.archive-header {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.archive-article {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
