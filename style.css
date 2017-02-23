@@ -2657,7 +2657,8 @@ input[type="submit"]:hover {
   display: flex;
   margin: 0;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .primary-menu a {
@@ -2681,13 +2682,19 @@ input[type="submit"]:hover {
   display: none;
 }
 
-@media (min-width: 25em) {
+/*
+ * Showing the first item of the menu when there is enough space
+ */
+@media (min-width: 27em) {
   .primary-menu .menu-item:first-child {
     display: block;
   }
 }
 
-@media (min-width: 32em) {
+/*
+ * Showing the last item of the menu when there is enough space
+ */
+@media (min-width: 33em) {
   .primary-menu .menu-item:last-child {
     display: block;
   }

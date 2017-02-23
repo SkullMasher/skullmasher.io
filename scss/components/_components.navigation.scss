@@ -51,7 +51,8 @@
   display: flex;
   margin: 0;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   a {
     padding-top: $medium-value;
@@ -75,7 +76,10 @@
   }
 }
 
-@media (min-width: 25em) { // 400px
+/*
+ * Showing the first item of the menu when there is enough space
+ */
+@media (min-width: 27em) {
   .primary-menu {
     .menu-item:first-child {
       display: block;
@@ -83,7 +87,10 @@
   }
 }
 
-@media (min-width: 32em) { // 480px
+/*
+ * Showing the last item of the menu when there is enough space
+ */
+@media (min-width: 33em) {
   .primary-menu {
     .menu-item:last-child {
       display: block;
