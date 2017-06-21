@@ -27,7 +27,7 @@
             <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
           </div>
           <div class="social__youtube">
-            <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/youtube.svg') ?></a>
+            <a href="https://www.youtube.com/user/SkullM4sher/videos"><?php echo file_get_contents(get_template_directory(). '/img/youtube.svg') ?></a>
           </div>
           <div class="social__github">
             <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat_white.svg') ?></a>
