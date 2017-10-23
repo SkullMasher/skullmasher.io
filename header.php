@@ -48,4 +48,5 @@
   </div>
 <?php endif; ?>
 </header>
+<canvas id="canvas" class="canvas"></canvas>
 <div id="content" class="site-content">

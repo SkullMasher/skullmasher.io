@@ -2464,12 +2464,21 @@ img.wp-smiley {
  *
  */
 .page-header {
+  position: relative;
   background-image: url("img/skullmasherio-tile.png");
   color: #fff;
 }
 
 .page-header--single-page {
   padding-bottom: 1rem;
+}
+
+.canvas {
+  display: none;
+  background-color: #161616;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 /**
