@@ -63,7 +63,7 @@ bs.watch(appPath.appFolderPath + appPath.sassFolderName + '**/*.scss', function 
   if (event === 'change') {
     sass.render({
       file: appPath.appFolderPath + appPath.sassFolderName + 'style.scss',
-      outputStyle: 'expanded',
+      outputStyle: 'compressed',
       outFile: appPath.appFolderPath + appPath.cssFolderName + 'style.css',
       sourceMap: appPath.appFolderPath + appPath.cssFolderName + 'style.map.css'
     }, function (error, result) {
