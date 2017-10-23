@@ -1,4 +1,6 @@
-var greetingMessage = function () {
+'use strict'
+
+var greetingMessage = function greetingMessage () {
   console.log('  #####   ')
   console.log(' #######  ')
   console.log('#  ###  # ' + ' Hello There')
@@ -10,50 +12,51 @@ var greetingMessage = function () {
 }
 
 // Canvas Support & positionning
-const canvas = document.querySelector('#canvas')
-const header = document.querySelector('header')
+var canvas = document.querySelector('#canvas')
+var header = document.querySelector('header')
 
-const isCanvasSupported = () => { // Thx modernizr
+var isCanvasSupported = function isCanvasSupported () {
+  // Thx modernizr
   var kek = document.createElement('canvas')
   return !!(kek.getConelemtext && kek.getContext('2d'))
 }
 
-const prepareCanvas = () => {
+var prepareCanvas = function prepareCanvas () {
   canvas.style.display = 'block'
   header.style.backgroundImage = 'initial'
 }
 
 // Helper function
-const random = (min, max) => {
+var random = function random (min, max) {
   return Math.floor(Math.random() * (max - min) + min)
 }
 
 // Canvas size
-const canvasHeight = document.querySelector('header').clientHeight
+var canvasHeight = document.querySelector('header').clientHeight
 // const canvasHeight = 300
 
 // set context of the canvas 2d or webGL
-const ctx = canvas.getContext('2d', {alpha: true})
+var ctx = canvas.getContext('2d', { alpha: true })
 
 // Colors
-const rectColor = 'rgba(38,38,38,1)'
+var rectColor = 'rgba(38,38,38,1)'
 
-const colorPool = [
-  // { r: 38, g: 38, b: 38 }, // main grey color
-  { r: 54, g: 54, b: 54 }, // lighter grey color
-  { r: 69, g: 163, b: 64 } // matrix green grey color
-]
+var colorPool = [
+// { r: 38, g: 38, b: 38 }, // main grey color
+{ r: 54, g: 54, b: 54 }, // lighter grey color
+  { r: 69, g: 163, b: 64 // matrix green grey color
+  }]
 // const rectHighlight = 'rgba(68,163,64,1)'
 
 // Square Dimension
-const squareD = 6
+var squareD = 6
 
 // spacing beetween squares
-const spacing = 2
+var spacing = 2
 
 // Initialize some squares helper methods and variables
-let squaresLength = 0
-const squares = []
+var squaresLength = 0
+var squares = []
 
 /*
  * Instead of doing a count on each square object we check if the lucky number
@@ -62,7 +65,7 @@ const squares = []
  * of total squares on the screen is reach.
  * The god Count is used by the square.breath prototype function.
  */
-let godCount = 0
+var godCount = 0
 
 function Square (x, y, opacity, opacityAccel) {
   this.x = x
@@ -88,7 +91,7 @@ Square.prototype.breath = function () {
 
   if (this.squareIsBreathing) {
     ctx.clearRect(this.x, this.y, squareD, squareD)
-    ctx.fillStyle = `rgba(69,163,64,${this.opacity})`
+    ctx.fillStyle = 'rgba(69,163,64,' + this.opacity + ')'
     ctx.fillRect(this.x, this.y, squareD, squareD)
     this.opacity += this.opacityAccel // Make it glow !
   }
@@ -106,8 +109,11 @@ Square.prototype.breath = function () {
 }
 
 // Fill the canvas with squares
-let fillCanvas = () => {
-  let i, j, x, y
+var fillCanvas = function fillCanvas () {
+  var i = void 0,
+    j = void 0,
+    x = void 0,
+    y = void 0
   j = i = 1
   x = y = 0
 
@@ -117,9 +123,9 @@ let fillCanvas = () => {
   ctx.fillStyle = rectColor // Default squares color
 
   while (y < canvas.height) {
-    y = (spacing * i) + (squareD * (i - 1)) // Vertical line
+    y = spacing * i + squareD * (i - 1) // Vertical line
     while (x < canvas.width) {
-      x = (spacing * j) + (squareD * (j - 1)) // Horizontal line
+      x = spacing * j + squareD * (j - 1) // Horizontal line
       squares.push(new Square(x, y)) // Store all the squares coordinates
       j++
     }
@@ -129,13 +135,13 @@ let fillCanvas = () => {
   y = i = 0
 
   // Draw all the rectangle from stores coordinates
-  squares.forEach((sqr) => {
+  squares.forEach(function (sqr) {
     sqr.draw()
   })
   squaresLength = squares.length
 }
 
-let init = () => {
+var init = function init () {
   canvas.width = innerWidth
   canvas.height = canvasHeight
 
@@ -143,16 +149,18 @@ let init = () => {
 }
 
 // Animaiton
-let animate = () => {
-  squares.forEach((sqr) => {
+var animate = function animate () {
+  squares.forEach(function (sqr) {
     sqr.breath()
   })
-  if (godCount === squaresLength) { godCount = 0 }
+  if (godCount === squaresLength) {
+    godCount = 0
+  }
   godCount++
   requestAnimationFrame(animate)
 }
 
-addEventListener('DOMContentLoaded', (event) => {
+addEventListener('DOMContentLoaded', function (event) {
   greetingMessage()
   if (isCanvasSupported) {
     prepareCanvas()
