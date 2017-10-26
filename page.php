@@ -19,8 +19,11 @@ get_header(); ?>
 
 			<?php
 			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
+        if (get_the_title() === 'Devis') {
+          get_template_part( 'template-parts/content-devis', 'page' );
+        } else {
+				  get_template_part( 'template-parts/content', 'page' );
+        }
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
