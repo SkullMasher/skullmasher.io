@@ -41,62 +41,72 @@
         <button class="btn btn--rounded btn--disabled">NON</button>
       </div>
       <div>
-        <p>
-          <input type="checkbox" name="businessCard"><label for="businessCard">J'ai besoin d'une carte de visite</label>
-        </p>
-        <p>
-          <input type="checkbox" name="flyers"><label for="businessCard">J'ai besoin d'un flyer</label>
-        </p>
-        <p>Hors frait d'impression</p>
+        <div class="devis-toggle">
+          <input type="checkbox" id="businessCard" class="toggle">
+          <label for="businessCard" class="toggle-label">Toggle</label>
+          <p class="devis-toggle__label">J'ai besoin d'une carte de visite</p>
+        </div>
+        <div class="devis-toggle">
+          <input type="checkbox" id="flyer" class="toggle">
+          <label for="flyer" class="toggle-label">Toggle</label>
+          <p class="devis-toggle__label">J'ai besoin d'un flyer</p>
+        </div>
+        <p><small>Frait d'impression non pris en charge.</small></p>
       </div>
 
     </div>
     <div class="devis-steps">
       <h2>3. Blog</h2>
       <p><label for="">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</label></p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
+      </div>
     </div>
     <div class="devis-steps">
       <h2>4. Newsletter</h2>
       <p>Souhaitez-vous une newsletter ?</p>
       <p><label for="">Comprend l'ajout de la fonctionalité plus le design et le code d'un modèle de mail sur mesure.</label></p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
+      </div>
     </div>
     <div class="devis-steps">
       <h2>5. Social</h2>
       <p><label for="">Souhaitez-vous intégrer le fil d'actualité, les avis ou recommendation d'un de vos réseaux sociaux sur votre site ?</label></p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
+      </div>
     </div>
     <div class="devis-steps">
       <h2>6. Formation</h2>
       <p>Souhaitez-vous intégrer le fil d'actualité, les avis ou recommendation d'un de vos réseaux sociaux sur votre site ?</p>
       <p><label for="">Comprend 30€ de frait de déplacement à Paris et benlieue. Possibilité de faire la formation en ligne (skype, discord...)</label></p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded ">NON</button>
+      </div>
     </div>
     <div class="devis-steps">
       <h2>7. Hébergement et nom de domaine</h2>
       <p>Possédez-vous déjà votre hébergement et nom de domaines ?</p>
       <p><label for="">Accompagnement dans le choix de votre nom de domaine et hébergeur web.</label></p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
+      </div>
     </div>
     <div class="devis-steps">
       <h2>8. Maintenance, Support et assistance</h2>
       <p>Avez vous besoin d'une personne responsable de la maintenance du site ?</p>
       <p><label for="">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard choisissez un responsable capable de vous diriger dans la conduite du changement de votre site web et assurer sa pérénité.
 <a href="#">En savoir plus sur la l'offre de maintenance</a>.</label></p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
+      </div>
     </div>
     <div class="devis-steps">
       <h2>9. Validation</h2>
