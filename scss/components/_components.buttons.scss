@@ -16,6 +16,7 @@
   text-decoration: none;
   box-shadow: #666 0 2px 5px;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  border: 0;
 
   &:hover {
     background-color: darken($base-color-link, 5);

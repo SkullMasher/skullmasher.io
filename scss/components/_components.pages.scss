@@ -20,6 +20,12 @@
   height: 50px;
 }
 
+.devis-choices {
+  display: flex;
+  justify-content: space-between;
+  padding: $small-value;
+  background-color: $beta-background;
+}
 
 // Used in portfolio page
 .project-types {

@@ -9,6 +9,22 @@ var greetingMessage = function () {
   console.log('  # # #   ')
 }
 
+/*
+ * Devis page
+ */
+
+let initDevis = () => {
+  const designCount = document.getElementById('designCount')
+
+  designCount.addEventListener('input', (event) => {
+    designCount.nextElementSibling.textContent = designCount.value
+  })
+}
+
+/*
+ * Canvas
+ */
+
 // Canvas Support & positionning
 const canvas = document.querySelector('#canvas')
 const header = document.querySelector('header')
@@ -64,6 +80,9 @@ const squares = []
  */
 let godCount = 0
 
+/*
+ * Square Object
+ */
 function Square (x, y, opacity, opacityAccel) {
   this.x = x
   this.y = y
@@ -135,7 +154,7 @@ let fillCanvas = () => {
   squaresLength = squares.length
 }
 
-let init = () => {
+let initCanvas = () => {
   canvas.width = innerWidth
   canvas.height = canvasHeight
 
@@ -156,11 +175,13 @@ addEventListener('DOMContentLoaded', (event) => {
   greetingMessage()
   if (isCanvasSupported) {
     prepareCanvas()
-    init()
+    initCanvas()
     animate()
   }
+
+  initDevis()
 })
 
 addEventListener('resize', (event) => {
-  init()
+  initCanvas()
 })

@@ -21,11 +21,11 @@
       <p class="devis-question">Combien de maquette de page avez-vous besoin ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-body">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minumum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+        <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minumum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
       </div>
-      <div class="o-wrapper o-wrapper--centered">
-        <input id="templateNumber" name="templateNumber" type="range" min="2" max="10" value="2">
-        <p class="txtcenter">2</p>
+      <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
+        <input id="designCount" name="designCount" type="range" min="2" max="10" value="2">
+        <p class="txtcenter h4-like">2</p>
         <p class="txtcenter">Design de pages</p>
       </div>
     </div>
@@ -36,8 +36,9 @@
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
         <p class="o-media-body">Jusqu'à 3 proposition de logos.</p>
       </div>
-      <div>
-        <p>radio OUI NON</p>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded">OUI</button>
+        <button class="btn btn--rounded btn--disabled">NON</button>
       </div>
       <div>
         <p>

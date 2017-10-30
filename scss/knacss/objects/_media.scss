@@ -8,6 +8,10 @@
   min-width: 0; /* avoid min-width:auto */
 }
 
+.o-media-figure {
+  margin-right: 1em;
+}
+
 /* Media variants */
 .o-media--reverse {
   flex-direction: row-reverse;
