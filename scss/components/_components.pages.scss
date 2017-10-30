@@ -9,13 +9,27 @@
 }
 
 .devis-question {
-  margin-bottom: $large-value;
-}
-.devis-tips {
+  font-size: $h3-size;
   margin-bottom: $large-value;
 }
 
-.devis-tips .light-bulb {
+.devis-tips {
+  margin-bottom: $large-value;
+
+  > figure {
+    margin-top: 0;
+  }
+
+  > p {
+    margin-top: 0;
+  }
+}
+
+.devis-tips--centered-v {
+  align-items: center;
+}
+
+.devis-tips .light-bulb, .devis-tips .validate,  {
   width: 50px;
   height: 50px;
 }
@@ -41,6 +55,13 @@
  margin-left: $medium-value;
 }
 
+.devis-action {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: $large-value;
+}
+
+// MOVE ME LATER
 // Toggle https://codepen.io/callmenick/pen/eempxv <- My man !
 $toggle-knob-d: 2.5rem;
 $toggle-knob-r: $toggle-knob-d/2;

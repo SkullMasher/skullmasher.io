@@ -34,7 +34,7 @@
       <p class="devis-question">Avez-vous un logo ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-body">Jusqu'à 3 proposition de logos.</p>
+        <p class="o-media-body">Nous pouvons vous proposer Jusqu'à 3 proposition de logos.</p>
       </div>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded ">OUI</button>
@@ -57,62 +57,74 @@
     </div>
     <div class="devis-steps">
       <h2>3. Blog</h2>
-      <p><label for="">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</label></p>
+      <p class="devis-question">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</p>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded">NON</button>
+      </div>
+      <div class="devis-toggle">
+        <input type="checkbox" id="flyer" class="toggle">
+        <label for="flyer" class="toggle-label">Toggle</label>
+        <p class="devis-toggle__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
       </div>
     </div>
     <div class="devis-steps">
       <h2>4. Newsletter</h2>
-      <p>Souhaitez-vous une newsletter ?</p>
-      <p><label for="">Comprend l'ajout de la fonctionalité plus le design et le code d'un modèle de mail sur mesure.</label></p>
+      <p class="devis-question">Souhaitez-vous une newsletter ?</p>
+      <p></p>
+      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+        <p class="o-media-content">Comprend l'ajout de la fonctionalité avec le design et le code d'un modèle de mail sur mesure.</p>
+      </div>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded">NON</button>
       </div>
     </div>
     <div class="devis-steps">
-      <h2>5. Social</h2>
-      <p><label for="">Souhaitez-vous intégrer le fil d'actualité, les avis ou recommendation d'un de vos réseaux sociaux sur votre site ?</label></p>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
+      <h2>5. Formation</h2>
+      <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
+      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+        <p class="o-media-content">Comprend 30€ de frait de déplacement à Paris et benlieue. Possibilité de faire la formation en ligne (skype, discord...)</p>
       </div>
-    </div>
-    <div class="devis-steps">
-      <h2>6. Formation</h2>
-      <p>Souhaitez-vous intégrer le fil d'actualité, les avis ou recommendation d'un de vos réseaux sociaux sur votre site ?</p>
-      <p><label for="">Comprend 30€ de frait de déplacement à Paris et benlieue. Possibilité de faire la formation en ligne (skype, discord...)</label></p>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded ">NON</button>
       </div>
     </div>
     <div class="devis-steps">
-      <h2>7. Hébergement et nom de domaine</h2>
-      <p>Possédez-vous déjà votre hébergement et nom de domaines ?</p>
-      <p><label for="">Accompagnement dans le choix de votre nom de domaine et hébergeur web.</label></p>
+      <h2>6. Hébergement et nom de domaine</h2>
+      <p class="devis-question">Possédez-vous déjà votre hébergement et nom de domaines ?</p>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded">NON</button>
       </div>
     </div>
     <div class="devis-steps">
-      <h2>8. Maintenance, Support et assistance</h2>
-      <p>Avez vous besoin d'une personne responsable de la maintenance du site ?</p>
-      <p><label for="">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard choisissez un responsable capable de vous diriger dans la conduite du changement de votre site web et assurer sa pérénité.
-<a href="#">En savoir plus sur la l'offre de maintenance</a>.</label></p>
+      <h2>7. Maintenance, Support et assistance</h2>
+      <p class="devis-question">Avez vous besoin d'une personne responsable de la maintenance du site ?</p>
+      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+        <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard choisissez un responsable capable de vous diriger à la gestion de votre site web et assurer sa pérénitée.
+<a href="#">En savoir plus sur la l'offre de maintenance</a>.</p>
+      </div>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded">NON</button>
       </div>
     </div>
     <div class="devis-steps">
-      <h2>9. Validation</h2>
-      <p>Déploiement du site, tests et retour.</p>
-      <p><a href="#" class="btn">Générer le PDF</a><a href="#" class="btn">Demander un rendez-vous</a></p>
-      <p>Pour en savoir plus concernant cette prestation <a href="#">Consulter la FAQ</a></p>
+      <h2>8. Validation</h2>
+      <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/validate.svg')?></figure>
+        <p class="o-media-content">Déploiement du site, tests et retour.</p>
+      </div>
+      <div class="devis-action">
+        <a href="#" class="btn">Générer le PDF</a><a href="#" class="btn">Demander un rendez-vous</a>
+      </div>
+      <p></p>
+      <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a></p>
     </div>
     <div id="faq" class="">
       <h2>FAQ</h2>
@@ -126,8 +138,8 @@
         <li>Recommandation configuration nom de domaine et hébergeur: une demi journée.</li>
         <li>Déploiement du site, test et retour: 1 à 2 jours.</li>
       </ul>
-      <h3>Comment je peux réduire le temps de dévellopement de mon site web ?</h3>
-      <p>Les réponses à ces quelques question m'aide à réduire le temps de dévellopement de votre projet web mais aussi de corespondre plus précisement à vos attente.</p>
+      <h3>Comment puis-je réduire le temps de dévellopement de mon projet web ?</h3>
+      <p>Les réponses à ces quelques question m'aide à réduire le temps de dévellopement de votre projet web mais aussi de corespondre plus précisement à vos attentes.</p>
       <ul>
         <li>Quelles sont les sites web qui vous inspire ?</li>
         <li>Avez-vous déjà des élements graphique (photo, pictogramme...) ?</li>
