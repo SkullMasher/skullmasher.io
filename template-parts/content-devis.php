@@ -15,28 +15,39 @@
     <p>Design sur mesure, compatible téléphonne et tablette.</p>
 	</header>
 
-	<div class="page__content">
-    <div class="devis-steps">
-      <h2>1. Nombre de templates de pages</h2>
-      <p>Combien de template de page avez-vous besoin ?</p>
-      <p>Une template de page peut être réutilisées sur plusieurs page. Comprend au minumum une template "page d'accueil" et une "page standard". Animation dynamique comprise !</p>
-      <p>
-        <label class="disclaimer" for="templateNumber">ex: page d'accueil, prestations, page standard</label>
-      </p>
-      <p>
-        <input id="templateNumber" name="templateNumber" type="range" min="2" max="10">
-      </p>
+	<div class="page-devis">
+    <div class="devis-steps flex-container-v">
+      <h2>1. Maquette de pages</h2>
+      <p class="devis-question">Combien de maquette de page avez-vous besoin ?</p>
+      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+        <p class="o-media-body">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minumum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+      </div>
+      <div class="o-wrapper o-wrapper--centered">
+        <input id="templateNumber" name="templateNumber" type="range" min="2" max="10" value="2">
+        <p class="txtcenter">2</p>
+        <p class="txtcenter">Design de pages</p>
+      </div>
     </div>
     <div class="devis-steps">
-      <h2>2. Logo</h2>
-      <p>Avez-vous un logo et une phrase d'accroche ?</p>
-      <p>Une template de page peut être réutilisées sur plusieurs page. Comprend au minumum une template "page d'accueil" et une "page standard". Animation dynamique comprise !</p>
-      <p>
-        <label class="disclaimer" for="templateNumber">ex: Développement Web et Admininstration Système en Freelance</label>
-      </p>
-      <p>
-        *radio input OUI ou NON*
-      </p>
+      <h2>2. Branding</h2>
+      <p class="devis-question">Avez-vous un logo ?</p>
+      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+        <p class="o-media-body">Jusqu'à 3 proposition de logos.</p>
+      </div>
+      <div>
+        <p>radio OUI NON</p>
+      </div>
+      <div>
+        <p>
+          <input type="checkbox" name="businessCard"><label for="businessCard">J'ai besoin d'une carte de visite</label>
+        </p>
+        <p>
+          <input type="checkbox" name="flyers"><label for="businessCard">J'ai besoin d'un flyer</label>
+        </p>
+        <p>Hors frait d'impression</p>
+      </div>
 
     </div>
     <div class="devis-steps">
@@ -96,7 +107,7 @@
       <h2>FAQ</h2>
       <h3>Combien de temps pour développer mon site ? </h3>
       <ul>
-        <li>Design: 2 à 3 jours de design par page avec retour.</li>
+        <li>Design: 2 à 3 jours de par page avec retour.</li>
         <li>Logo: 2 à 3 jours avec retour.</li>
         <li>Dévelopement des pages: 2 à 3 jours de code par page.</li>
         <li>Newsletter: 4 jours. Design et intégration avec retour.</li>
@@ -104,7 +115,14 @@
         <li>Recommandation configuration nom de domaine et hébergeur: une demi journée.</li>
         <li>Déploiement du site, test et retour: 1 à 2 jours.</li>
       </ul>
-      <p>Facteur qui aide à réduire le temps de développement de votre site web: Quelles sont les sites web qui vous inspire ? Avez-vous déjà des élements graphique (photo, pictogramme...)? Avez-vous deja rédiger votre contenu textuel ? Quelles sont vos mots clef ?</p>
+      <h3>Comment je peux réduire le temps de dévellopement de mon site web ?</h3>
+      <p>Les réponses à ces quelques question m'aide à réduire le temps de dévellopement de votre projet web mais aussi de corespondre plus précisement à vos attente.</p>
+      <ul>
+        <li>Quelles sont les sites web qui vous inspire ?</li>
+        <li>Avez-vous déjà des élements graphique (photo, pictogramme...) ?</li>
+        <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
+        <li>Quelles sont vos mots clef ?</li>
+      </ul>
       <h3>Mon site sera t-il présent sur google (SEO) ?</h3>
       <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le SEO de votre site sera optimisé par le plugin wordpress "the SEO Framework".</p>
       <h3>Comment ce passe la gestion de mon site ?</h3>

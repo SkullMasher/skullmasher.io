@@ -22,6 +22,10 @@ input[type="submit"] {
   }
 }
 
+input[type="range"] {
+  border: 0;
+}
+
 // Search field on the blog sidebar
 .blog-sidebar .widget-title {
   margin-bottom: 0;

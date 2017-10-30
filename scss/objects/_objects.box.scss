@@ -42,6 +42,14 @@
   padding: $ultra-large-value;
 }
 
+/* Positioned variants
+   ========================================================================== */
+.o-box--centered {
+  // Needs a flex container
+  margin: auto;
+}
+
+
 /* Color variants
    ========================================================================== */
 
