@@ -33,6 +33,14 @@
   }
 }
 
+// State variant
+.btn--disabled {
+  border: 1px solid #999;
+  background-color: #fff;
+  color: #444;
+  box-shadow: initial;
+}
+
 // Size variant
 .btn--small {
   padding-right: $small-value;

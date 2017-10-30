@@ -37,7 +37,7 @@
         <p class="o-media-body">Jusqu'à 3 proposition de logos.</p>
       </div>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded">OUI</button>
+        <button class="btn btn--rounded ">OUI</button>
         <button class="btn btn--rounded btn--disabled">NON</button>
       </div>
       <div>
