@@ -21,6 +21,13 @@ let initDevis = () => {
   })
 }
 
+const devisChoices = document.querySelectorAll('.devis-choices button');
+[].forEach.call(devisChoices, (choice) => {
+  choice.addEventListener('click', (event) => {
+    console.log(event)
+  }, false)
+})
+
 /*
  * Canvas
  */
