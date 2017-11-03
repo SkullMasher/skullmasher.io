@@ -29,16 +29,17 @@ let initDevis = () => {
   }
 }
 
-const devisChoices = document.querySelectorAll('.devis-choices button');
+const devisChoices = document.querySelectorAll('.devis-choices button')
 if (devisChoices != null) {
-  [].forEach.call(devisChoices, (choice) => {
+  // Use foreach from arrays methods on NodeList
+  Array.prototype.forEach.call(devisChoices, (choice) => {
     choice.addEventListener('click', (event) => {
-      event.target.classList.toggle('btn--disabled')
+      choice.classList.toggle('btn--disabled')
 
-      if (event.target.nextElementSibling === null) {
-        event.target.previousElementSibling.classList.toggle('btn--disabled')
+      if (choice.nextElementSibling === null) {
+        choice.previousElementSibling.classList.toggle('btn--disabled')
       } else {
-        event.target.nextElementSibling.classList.toggle('btn--disabled')
+        choice.nextElementSibling.classList.toggle('btn--disabled')
       }
     }, false)
   })
