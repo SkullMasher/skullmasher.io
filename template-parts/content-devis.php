@@ -13,9 +13,9 @@
 	<header class="page__header band band--lightgrey">
     <div class="o-box o-wrapper o-wrapper--small">
       <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
-      <p>Design sur mesure, compatible téléphone et tablette.</p>
       <div class="flex-container-v">
-        <p>Simulez le prix de votre projet web votre projet web en 7 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant l'étape de validation.</p>
+        <p>Simulez le prix de votre projet web votre projet web en 7 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant la dernière étape de validation.</p>
+        <p>Design sur mesure, compatible téléphone et tablette.</p>
         <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
           <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
           <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</span></p>
@@ -64,8 +64,10 @@
       </div>
       <div>
         <div class="devis-toggle">
-          <input type="checkbox" id="businessCard" class="toggle">
-          <label for="businessCard" class="toggle-label">Toggle</label>
+          <div>
+            <input type="checkbox" id="businessCard" class="toggle">
+            <label for="businessCard" class="toggle-label">Toggle</label>
+          </div>
           <p class="devis-toggle__label">J'ai besoin d'une carte de visite</p>
         </div>
         <div class="devis-toggle">
