@@ -35,13 +35,17 @@ if (devisChoices != null) {
   Array.prototype.forEach.call(devisChoices, (choice) => {
     choice.addEventListener('click', (event) => {
       choice.classList.toggle('btn--disabled')
-
+      // Toggles the Sibling
       if (choice.nextElementSibling === null) {
         choice.previousElementSibling.classList.toggle('btn--disabled')
       } else {
         choice.nextElementSibling.classList.toggle('btn--disabled')
       }
     }, false)
+
+    if (!choice.classList.contains('btn--disabled')) {
+      // TODO: Find what user choosed in parents element
+    }
   })
 }
 
