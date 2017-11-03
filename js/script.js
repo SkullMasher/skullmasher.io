@@ -14,17 +14,25 @@ var greetingMessage = function () {
  */
 
 let initDevis = () => {
-  const designCount = document.getElementById('designCount')
+  // Hide the noJS warning
+  const warningNOJS = document.getElementById('warningNOJS')
+  if (warningNOJS != null) {
+    warningNOJS.remove()
+  }
 
-  designCount.addEventListener('input', (event) => {
-    designCount.nextElementSibling.textContent = designCount.value
-  })
+  // Show the range input current value
+  const designCount = document.getElementById('designCount')
+  if (designCount != null) {
+    designCount.addEventListener('input', (event) => {
+      designCount.nextElementSibling.textContent = designCount.value
+    })
+  }
 }
 
 const devisChoices = document.querySelectorAll('.devis-choices button');
 [].forEach.call(devisChoices, (choice) => {
   choice.addEventListener('click', (event) => {
-    console.log(event)
+    console.log(event.target.classList.toggle('btn--disabled'))
   }, false)
 })
 
@@ -180,13 +188,13 @@ let animate = () => {
 
 addEventListener('DOMContentLoaded', (event) => {
   greetingMessage()
+  initDevis()
   if (isCanvasSupported) {
     prepareCanvas()
     initCanvas()
     animate()
   }
 
-  initDevis()
 })
 
 addEventListener('resize', (event) => {

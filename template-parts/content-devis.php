@@ -13,6 +13,10 @@
 	<header class="page__header">
     <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
     <p>Design sur mesure, compatible téléphone et tablette.</p>
+    <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
+      <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
+      <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</span></p>
+    </div>
 	</header>
 
 	<div class="page-devis">
@@ -25,7 +29,7 @@
       </div>
       <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
         <input id="designCount" name="designCount" type="range" min="2" max="10" value="2">
-        <p class="txtcenter h4-like">2</p>
+        <p class="txtcenter h1-like">2</p>
         <p class="txtcenter">Design de pages</p>
       </div>
     </div>
@@ -156,6 +160,8 @@
       <h3>Comment se passe la gestion de mon site ?</h3>
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
     </div>
+    <hr>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <?php
       the_content();
 
