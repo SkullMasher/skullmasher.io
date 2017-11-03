@@ -30,11 +30,19 @@ let initDevis = () => {
 }
 
 const devisChoices = document.querySelectorAll('.devis-choices button');
-[].forEach.call(devisChoices, (choice) => {
-  choice.addEventListener('click', (event) => {
-    console.log(event.target.classList.toggle('btn--disabled'))
-  }, false)
-})
+if (devisChoices != null) {
+  [].forEach.call(devisChoices, (choice) => {
+    choice.addEventListener('click', (event) => {
+      event.target.classList.toggle('btn--disabled')
+
+      if (event.target.nextElementSibling === null) {
+        event.target.previousElementSibling.classList.toggle('btn--disabled')
+      } else {
+        event.target.nextElementSibling.classList.toggle('btn--disabled')
+      }
+    }, false)
+  })
+}
 
 /*
  * Canvas

@@ -39,6 +39,11 @@
   background-color: #fff;
   color: #444;
   box-shadow: initial;
+
+  &:focus {
+    background-color: #fff;
+    color: #444; // Prevent the default anchor tag color
+  }
 }
 
 // Size variant
