@@ -9,17 +9,35 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('o-box o-wrapper o-wrapper--small'); ?>>
-	<header class="page__header">
-    <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
-    <p>Design sur mesure, compatible téléphone et tablette.</p>
-    <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
-      <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
-      <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</span></p>
+<article id="post-<?php the_ID(); ?>" <?php post_class('band--lightgrey'); ?>>
+	<header class="page__header band band--lightgrey">
+    <div class="o-box o-wrapper o-wrapper--small">
+      <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
+      <p>Design sur mesure, compatible téléphone et tablette.</p>
+      <div class="flex-container-v">
+        <p>Simulez le prix de votre projet web votre projet web en 7 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant l'étape de validation.</p>
+        <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
+          <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
+          <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</span></p>
+        </div>
+        <a href="#start" class="btn btn--large btn--centered btn--spaced">C'est partis !</a>
+      </div>
     </div>
-	</header>
-
-	<div class="page-devis">
+  </header>
+  <nav class="devis-nav" id="start">
+    <div class="devis-cost">
+      <p><span class="devis-cost__price">9001</span><span class="devis-cost__curency">€</span></p>
+    </div>
+    <div class="devis-time o-media">
+      <figure class="devis-time__figure o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
+      <div class="devis-time__content o-media-content">
+        <p class="devis-time__average"><span class="devis-time__days">10</span> jours</p>
+        <p><span class="devis-time__days-min">8</span> à <span class="devis-time__days-max">12</span>jours</p>
+      </div>
+    </div>
+    <!-- <progress value="0.5">70 %</progress> -->
+  </nav>
+	<div class="page-devis o-box o-wrapper o-wrapper--small">
     <div class="devis-steps flex-container-v">
       <h2>1. Maquette de pages</h2>
       <p class="devis-question">Combien de page avez-vous besoin ?</p>
@@ -29,7 +47,7 @@
       </div>
       <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
         <input id="designCount" name="designCount" type="range" min="2" max="10" value="2">
-        <p class="txtcenter h1-like">2</p>
+        <p class="txtcenter h1-like"><strong>2</strong></p>
         <p class="txtcenter">Design de pages</p>
       </div>
     </div>
@@ -161,6 +179,7 @@
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
     </div>
     <hr>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <?php
       the_content();

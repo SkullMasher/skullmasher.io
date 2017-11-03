@@ -24,7 +24,7 @@ let initDevis = () => {
   const designCount = document.getElementById('designCount')
   if (designCount != null) {
     designCount.addEventListener('input', (event) => {
-      designCount.nextElementSibling.textContent = designCount.value
+      designCount.nextElementSibling.firstChild.textContent = designCount.value
     })
   }
 }
