@@ -6,10 +6,85 @@ let initDevis = () => {
   const warningNOJS = document.getElementById('warningNOJS')
   warningNOJS.remove()
 
-  // Show the range input current value
+  const $price = document.querySelector('devis-cost__price')
+  const $averageTime = document.querySelector('devis-time__days')
+  const $averageTimeMin = document.querySelector('devis-time__days-min')
+  const $averageTimeMax = document.querySelector('devis-time__days-max')
+
+  const price = 2250
+  const averageTime = 10
+  const averageTimeMin = 8
+  const averageTimeMax = 12
+
+  // devis rates & time. Rates are for a single day.
+  const RatesAndTime = [
+    { // design
+      rate: 300,
+      time: {
+        min: 2,
+        max: 3
+      }
+    },
+    { // branding
+      rate: 300,
+      time: {
+        min: 2,
+        max: 3
+      },
+      businessCard: {
+        rate: 300,
+        time: 2
+      },
+      flyer: {
+        rate: 300,
+        time: 2
+      }
+    },
+    { // frontEnd
+      rate: 300,
+      time: {
+        min: 2,
+        max: 4
+      },
+      feed: {
+        rate: 150,
+        time: 1
+      }
+    },
+    { // newsLetter
+      rate: 300,
+      time: 4
+    },
+    { // teaching
+      rate: 280,
+      time: 1
+    },
+    { // hosting
+      rate: 150,
+      time: 1
+    },
+    { // support
+      rate: 600,
+      time: 1,
+      publish: {
+        rate: 600,
+        time: 1
+      }
+    },
+    { // deployement
+      rate: 500,
+      time: {
+        min: 1,
+        max: 2
+      }
+    }
+  ]
+
+  // Show the range input current value & add update nav
   const maquetteCount = document.getElementById('maquetteCount')
   maquetteCount.addEventListener('input', (event) => {
     maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
+    // update nav
   })
 
   // fix the devis navbar
@@ -27,50 +102,6 @@ let initDevis = () => {
     }
   })
 
-  // devis rates & time. Rates are for a single day.
-  const RatesAndTime = {
-    design: {
-      rates: 300,
-      time: {
-        min: 2,
-        max: 3
-      }
-    },
-    branding: {
-      rates: 300,
-      time: {
-        min: 2,
-        max: 3
-      }
-    },
-    frontEnd: {
-      rates: 300,
-      time: {
-        min: 2,
-        max: 4
-      }
-    },
-    newsLetter: {
-      rates: 300,
-      time: 4
-    },
-    feed: {
-      rates: 150,
-      time: 1
-    },
-    hosting: {
-      rates: 150,
-      time: 1
-    },
-    deployement: {
-      rates: 500,
-      time: {
-        min: 1,
-        max: 2
-      }
-    }
-  }
-
   const devisChoices = document.querySelectorAll('.devis-choices button')
   // Use foreach from arrays methods on NodeList
   Array.prototype.forEach.call(devisChoices, (choice) => {
@@ -86,6 +117,7 @@ let initDevis = () => {
 
     if (!choice.classList.contains('btn--disabled')) {
       // TODO: Find what user choosed in parents element
+      console.log(choice)
     }
   })
 }
