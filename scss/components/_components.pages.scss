@@ -72,22 +72,24 @@
   background-color: $content-background;
 }
 
-.devis-toggle {
+.devis-switch {
   display: flex;
   margin: $medium-value;
   align-items: center;
-
-  > p {
-    margin-top: 0;
-  }
 }
 
-.devis-toggle__label {
+.devis-switch__input {
+  width: 70px; /* MAGIC NUMBER Length of the switch */
+}
+
+.devis-switch__label {
+  margin-top: 0;
  margin-left: $medium-value;
 }
 
 .devis-action {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: $large-value;
 }

@@ -63,17 +63,17 @@
         <button class="btn btn--rounded btn--disabled">NON</button>
       </div>
       <div>
-        <div class="devis-toggle">
-          <div>
+        <div class="devis-switch">
+          <div class="devis-switch__input">
             <input type="checkbox" id="businessCard" class="toggle">
             <label for="businessCard" class="toggle-label">Toggle</label>
           </div>
-          <p class="devis-toggle__label">J'ai besoin d'une carte de visite</p>
+          <p class="devis-switch__label">J'ai besoin d'une carte de visite</p>
         </div>
-        <div class="devis-toggle">
+        <div class="devis-switch">
           <input type="checkbox" id="flyer" class="toggle">
           <label for="flyer" class="toggle-label">Toggle</label>
-          <p class="devis-toggle__label">J'ai besoin d'un flyer</p>
+          <p class="devis-switch__label">J'ai besoin d'un flyer</p>
         </div>
         <p><small>Frais d'impression non pris en charge.</small></p>
       </div>
@@ -86,10 +86,12 @@
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded">NON</button>
       </div>
-      <div class="devis-toggle">
-        <input type="checkbox" id="socialNetwork" class="toggle">
-        <label for="socialNetwork" class="toggle-label">Toggle</label>
-        <p class="devis-toggle__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
+      <div class="devis-switch">
+        <div class="devis-switch__input">
+          <input type="checkbox" id="socialNetwork" class="toggle">
+          <label for="socialNetwork" class="toggle-label">Toggle</label>
+        </div>
+        <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
       </div>
     </div>
     <div class="devis-steps" id="newsletter">
@@ -130,16 +132,18 @@
       <p class="devis-question">Avez vous besoin d'une personne responsable de la maintenance du site ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur l'offre de maintenance. <a href="#">En savoir plus sur la l'offre de maintenance</a>.</p>
+        <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#">l'offre de maintenance</a>.</p>
       </div>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
         <button class="btn btn--rounded btn--disabled">OUI</button>
         <button class="btn btn--rounded">NON</button>
       </div>
-      <div class="devis-toggle">
-        <input type="checkbox" id="maintainWebsite" class="toggle">
-        <label for="maintainWebsite" class="toggle-label">Toggle</label>
-        <p class="devis-toggle__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
+      <div class="devis-switch">
+        <div class="devis-switch__input">
+          <input type="checkbox" id="maintainWebsite" class="toggle">
+          <label for="maintainWebsite" class="toggle-label">Toggle</label>
+        </div>
+        <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
       </div>
     </div>
     <div class="devis-steps" id="validate">
@@ -152,7 +156,7 @@
         <a href="#" class="btn">Générer le PDF</a><a href="#" class="btn">Demander un rendez-vous</a>
       </div>
       <p></p>
-      <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a></p>
+      <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a>.</p>
     </div>
     <div id="faq" class="">
       <h2>FAQ</h2>
