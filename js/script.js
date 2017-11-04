@@ -10,46 +10,6 @@ var greetingMessage = function () {
 }
 
 /*
- * Devis page
- */
-
-let initDevis = () => {
-  // Hide the noJS warning
-  const warningNOJS = document.getElementById('warningNOJS')
-  if (warningNOJS != null) {
-    warningNOJS.remove()
-  }
-
-  // Show the range input current value
-  const maquetteCount = document.getElementById('maquetteCount')
-  if (maquetteCount != null) {
-    maquetteCount.addEventListener('input', (event) => {
-      maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
-    })
-  }
-}
-
-const devisChoices = document.querySelectorAll('.devis-choices button')
-if (devisChoices != null) {
-  // Use foreach from arrays methods on NodeList
-  Array.prototype.forEach.call(devisChoices, (choice) => {
-    choice.addEventListener('click', (event) => {
-      choice.classList.toggle('btn--disabled')
-      // Toggles the Sibling
-      if (choice.nextElementSibling === null) {
-        choice.previousElementSibling.classList.toggle('btn--disabled')
-      } else {
-        choice.nextElementSibling.classList.toggle('btn--disabled')
-      }
-    }, false)
-
-    if (!choice.classList.contains('btn--disabled')) {
-      // TODO: Find what user choosed in parents element
-    }
-  })
-}
-
-/*
  * Canvas
  */
 
@@ -201,13 +161,11 @@ let animate = () => {
 
 addEventListener('DOMContentLoaded', (event) => {
   greetingMessage()
-  initDevis()
   if (isCanvasSupported) {
     prepareCanvas()
     initCanvas()
     animate()
   }
-
 })
 
 addEventListener('resize', (event) => {
