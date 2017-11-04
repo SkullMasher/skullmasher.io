@@ -21,10 +21,10 @@ let initDevis = () => {
   }
 
   // Show the range input current value
-  const designCount = document.getElementById('designCount')
-  if (designCount != null) {
-    designCount.addEventListener('input', (event) => {
-      designCount.nextElementSibling.firstChild.textContent = designCount.value
+  const maquetteCount = document.getElementById('maquetteCount')
+  if (maquetteCount != null) {
+    maquetteCount.addEventListener('input', (event) => {
+      maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
     })
   }
 }
