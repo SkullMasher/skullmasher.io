@@ -20,7 +20,7 @@
           <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
           <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</span></p>
         </div>
-        <a href="#start" class="btn btn--large btn--centered btn--spaced">C'est partis !</a>
+        <a href="#start" class="btn btn--large btn--centered btn--spaced">C'est parti !</a>
       </div>
     </div>
   </header>
