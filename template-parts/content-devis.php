@@ -162,14 +162,15 @@
       <h2>FAQ</h2>
       <h3>Combien de temps pour développer mon site ? </h3>
       <ul>
-        <li>Design : 2 à 3 jours de par page avec retour.</li>
-        <li>Logo : 2 à 3 jours avec retour.</li>
+        <li>Design : 2 à 3 jours de par page.</li>
+        <li>Logo : 2 à 3 jours</li>
         <li>Dévelopement des pages : 2 à 3 jours de code par page.</li>
         <li>Newsletter : 4 jours. Design et intégration avec retour.</li>
         <li>Intégration d'un réseaux social/fil d'actualité : Une demi-journée.</li>
         <li>Recommandation configuration nom de domaine et hébergeur : une demi journée.</li>
         <li>Déploiement du site, tests et retour : 1 à 2 jours.</li>
       </ul>
+      <p><strong>3 retours maximum</strong> pour chaque étape du projet.</p>
       <h3>Comment puis-je réduire le temps de développement de mon projet web ?</h3>
       <p>Les réponses à ces quelques questions m'aide à réduire le temps de dévellopement de votre projet web et à correspondre précisément à vos attentes.</p>
       <ol>
@@ -178,8 +179,8 @@
         <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
         <li>Quels sont vos mots clés ?</li>
       </ol>
-      <h3>Mon site sera t-il présent sur google (SEO) ?</h3>
-      <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le SEO de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
+      <h3>Mon site sera t-il présent sur google (<abbr title="Search engine optimization">SEO</abbr>) ?</h3>
+      <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
       <h3>Comment se passe la gestion de mon site ?</h3>
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
     </div>

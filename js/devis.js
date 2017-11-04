@@ -27,6 +27,50 @@ let initDevis = () => {
     }
   })
 
+  // devis rates & time. Rates are for a single day.
+  const RatesAndTime = {
+    design: {
+      rates: 300,
+      time: {
+        min: 2,
+        max: 3
+      }
+    },
+    branding: {
+      rates: 300,
+      time: {
+        min: 2,
+        max: 3
+      }
+    },
+    frontEnd: {
+      rates: 300,
+      time: {
+        min: 2,
+        max: 4
+      }
+    },
+    newsLetter: {
+      rates: 300,
+      time: 4
+    },
+    feed: {
+      rates: 150,
+      time: 1
+    },
+    hosting: {
+      rates: 150,
+      time: 1
+    },
+    deployement: {
+      rates: 500,
+      time: {
+        min: 1,
+        max: 2
+      }
+    }
+  }
+
   const devisChoices = document.querySelectorAll('.devis-choices button')
   // Use foreach from arrays methods on NodeList
   Array.prototype.forEach.call(devisChoices, (choice) => {
