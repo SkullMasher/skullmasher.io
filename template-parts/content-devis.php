@@ -38,9 +38,9 @@
     <!-- <progress value="0.5">70 %</progress> -->
   </nav>
 	<section class="page-devis o-box o-wrapper o-wrapper--small">
-    <div class="devis-steps flex-container-v">
+    <div class="devis-steps flex-container-v" id="maquette">
       <h2>1. Maquette de pages</h2>
-      <p class="devis-question" id="maquette">Combien de page avez-vous besoin ?</p>
+      <p class="devis-question">Combien de page avez-vous besoin ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
         <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
@@ -51,8 +51,8 @@
         <p class="txtcenter">Design de pages</p>
       </div>
     </div>
-    <div class="devis-steps">
-      <h2>2. Branding</h2>
+    <div class="devis-steps" id="branding">
+      <h2>2. Image de marque</h2>
       <p class="devis-question">Avez-vous un logo ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
@@ -79,7 +79,7 @@
       </div>
 
     </div>
-    <div class="devis-steps">
+    <div class="devis-steps" id="blog">
       <h2>3. Blog</h2>
       <p class="devis-question">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</p>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
@@ -92,7 +92,7 @@
         <p class="devis-toggle__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
       </div>
     </div>
-    <div class="devis-steps">
+    <div class="devis-steps" id="newsletter">
       <h2>4. Newsletter</h2>
       <p class="devis-question">Souhaitez-vous une newsletter ?</p>
       <p></p>
@@ -105,7 +105,7 @@
         <button class="btn btn--rounded">NON</button>
       </div>
     </div>
-    <div class="devis-steps">
+    <div class="devis-steps" id="teaching">
       <h2>5. Formation</h2>
       <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
@@ -117,7 +117,7 @@
         <button class="btn btn--rounded ">NON</button>
       </div>
     </div>
-    <div class="devis-steps">
+    <div class="devis-steps" id="hosting">
       <h2>6. Hébergement et nom de domaine</h2>
       <p class="devis-question">Possédez-vous déjà votre hébergement et nom de domaines ?</p>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
@@ -125,7 +125,7 @@
         <button class="btn btn--rounded">NON</button>
       </div>
     </div>
-    <div class="devis-steps">
+    <div class="devis-steps" id="support">
       <h2>7. Maintenance, Support et assistance</h2>
       <p class="devis-question">Avez vous besoin d'une personne responsable de la maintenance du site ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
@@ -142,7 +142,7 @@
         <p class="devis-toggle__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
       </div>
     </div>
-    <div class="devis-steps">
+    <div class="devis-steps" id="validate">
       <h2>8. Validation</h2>
       <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/validate.svg')?></figure>
