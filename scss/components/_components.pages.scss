@@ -11,6 +11,8 @@
   background-color: $alpha-color;
   font-size: $h1-size;
   text-align: center;
+  box-shadow: #666 0 0px 0px;
+  transition: box-shadow 0.2s ease;
 
   .svg-stopwatch {
     width: 50px;
