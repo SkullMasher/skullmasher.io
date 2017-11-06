@@ -18,7 +18,7 @@
         <p>Design sur mesure, compatible téléphone et tablette.</p>
         <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
           <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
-          <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</span></p>
+          <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</p>
         </div>
         <a href="#start" class="btn btn--large btn--centered btn--spaced">C'est parti !</a>
       </div>
@@ -26,7 +26,7 @@
   </header>
   <nav class="devis-nav" id="start">
     <div class="devis-cost">
-      <p><span class="devis-cost__price">9001</span><span class="devis-cost__curency">€</span></p>
+      <p><span class="devis-cost__price">2250</span><span class="devis-cost__curency">€</span></p>
     </div>
     <div class="devis-time o-media">
       <figure class="devis-time__figure o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
@@ -153,7 +153,7 @@
         <p class="o-media-content">Déploiement du site, tests et retour.</p>
       </div>
       <div class="devis-action">
-        <a href="#" class="btn">Générer le PDF</a><a href="#" class="btn">Demander un rendez-vous</a>
+        <button class="btn">Voir le PDF</button><button class="btn">Télécharger le PDF</button>
       </div>
       <p></p>
       <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a>.</p>
