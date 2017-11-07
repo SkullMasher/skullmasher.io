@@ -101,6 +101,15 @@
  margin-left: $medium-value;
 }
 
+.devis-ready {
+  background-color: #fff;
+  margin-top: $large-value;
+  margin-bottom: $large-value;
+  padding-top: $large-value;
+  padding-bottom: $large-value;
+
+}
+
 .devis-action {
   display: flex;
   flex-wrap: wrap;

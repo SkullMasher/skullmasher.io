@@ -38,131 +38,137 @@
     </div>
     <!-- <progress value="0.5">70 %</progress> -->
   </nav>
-	<section class="page-devis o-box o-wrapper o-wrapper--small">
-    <div class="devis-steps flex-container-v" id="maquette">
-      <h2>1. Maquette de pages</h2>
-      <p class="devis-question">Combien de page avez-vous besoin ?</p>
-      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+	<section class="page-devis">
+    <div class="o-box o-wrapper o-wrapper--small">
+      <div class="devis-steps flex-container-v" id="maquette">
+        <h2>1. Maquette de pages</h2>
+        <p class="devis-question">Combien de page avez-vous besoin ?</p>
+        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+        </div>
+        <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
+          <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
+          <p class="txtcenter h1-like"><strong>2</strong></p>
+          <p class="txtcenter">Design de pages</p>
+        </div>
       </div>
-      <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
-        <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
-        <p class="txtcenter h1-like"><strong>2</strong></p>
-        <p class="txtcenter">Design de pages</p>
+      <div class="devis-steps" id="branding">
+        <h2>2. Image de marque</h2>
+        <p class="devis-question">Avez-vous besoin d'un logo ?</p>
+        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
+        </div>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
+        </div>
+        <div>
+          <div class="devis-switch">
+            <div class="devis-switch__input">
+              <input type="checkbox" id="businessCard" class="toggle">
+              <label for="businessCard" class="toggle-label">Toggle</label>
+            </div>
+            <p class="devis-switch__label">J'ai besoin d'une carte de visite</p>
+          </div>
+          <div class="devis-switch">
+            <input type="checkbox" id="flyer" class="toggle">
+            <label for="flyer" class="toggle-label">Toggle</label>
+            <p class="devis-switch__label">J'ai besoin d'un flyer</p>
+          </div>
+          <p><small>Frais d'impression non pris en charge.</small></p>
+        </div>
       </div>
-    </div>
-    <div class="devis-steps" id="branding">
-      <h2>2. Image de marque</h2>
-      <p class="devis-question">Avez-vous besoin d'un logo ?</p>
-      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
-      </div>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
-      </div>
-      <div>
+      <div class="devis-steps" id="blog">
+        <h2>3. Blog</h2>
+        <p class="devis-question">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</p>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
+        </div>
         <div class="devis-switch">
           <div class="devis-switch__input">
-            <input type="checkbox" id="businessCard" class="toggle">
-            <label for="businessCard" class="toggle-label">Toggle</label>
+            <input type="checkbox" id="socialNetwork" class="toggle">
+            <label for="socialNetwork" class="toggle-label">Toggle</label>
           </div>
-          <p class="devis-switch__label">J'ai besoin d'une carte de visite</p>
+          <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
+        </div>
+      </div>
+      <div class="devis-steps" id="newsletter">
+        <h2>4. Newsletter</h2>
+        <p class="devis-question">Souhaitez-vous une newsletter ?</p>
+        <p></p>
+        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-content">Comprend l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
+        </div>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
+        </div>
+      </div>
+      <div class="devis-steps" id="teaching">
+        <h2>5. Formation</h2>
+        <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
+        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne (skype, discord...)</p>
+        </div>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded ">NON</button>
+        </div>
+      </div>
+      <div class="devis-steps" id="hosting">
+        <h2>6. Hébergement et nom de domaine</h2>
+        <p class="devis-question">Possédez-vous déjà votre hébergement et nom de domaines ?</p>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
+        </div>
+      </div>
+      <div class="devis-steps" id="support">
+        <h2>7. Maintenance, Support et assistance</h2>
+        <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
+        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#">l'offre de maintenance</a>.</p>
+        </div>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
         <div class="devis-switch">
-          <input type="checkbox" id="flyer" class="toggle">
-          <label for="flyer" class="toggle-label">Toggle</label>
-          <p class="devis-switch__label">J'ai besoin d'un flyer</p>
+          <div class="devis-switch__input">
+            <input type="checkbox" id="maintainWebsite" class="toggle">
+            <label for="maintainWebsite" class="toggle-label">Toggle</label>
+          </div>
+          <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
         </div>
-        <p><small>Frais d'impression non pris en charge.</small></p>
       </div>
-
-    </div>
-    <div class="devis-steps" id="blog">
-      <h2>3. Blog</h2>
-      <p class="devis-question">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</p>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
-      </div>
-      <div class="devis-switch">
-        <div class="devis-switch__input">
-          <input type="checkbox" id="socialNetwork" class="toggle">
-          <label for="socialNetwork" class="toggle-label">Toggle</label>
+      <div class="devis-steps" id="validate">
+        <h2>8. Déploiement</h2>
+        <p class="devis-question">Souhaitez-vous que j'installe votre site sur votre hébergeur web ?</p>
+        <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
         </div>
-        <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
-      </div>
-    </div>
-    <div class="devis-steps" id="newsletter">
-      <h2>4. Newsletter</h2>
-      <p class="devis-question">Souhaitez-vous une newsletter ?</p>
-      <p></p>
-      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-content">Comprend l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
-      </div>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
-      </div>
-    </div>
-    <div class="devis-steps" id="teaching">
-      <h2>5. Formation</h2>
-      <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
-      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne (skype, discord...)</p>
-      </div>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded ">NON</button>
-      </div>
-    </div>
-    <div class="devis-steps" id="hosting">
-      <h2>6. Hébergement et nom de domaine</h2>
-      <p class="devis-question">Possédez-vous déjà votre hébergement et nom de domaines ?</p>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
-      </div>
-    </div>
-    <div class="devis-steps" id="support">
-      <h2>7. Maintenance, Support et assistance</h2>
-      <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
-      <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#">l'offre de maintenance</a>.</p>
-      </div>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
-      </div>
-      <div class="devis-switch">
-        <div class="devis-switch__input">
-          <input type="checkbox" id="maintainWebsite" class="toggle">
-          <label for="maintainWebsite" class="toggle-label">Toggle</label>
+        <div class="devis-choices o-wrapper o-wrapper--tiny">
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
-        <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
       </div>
     </div>
-    <div class="devis-steps" id="validate">
-      <h2>8. Déploiement</h2>
-      <p class="devis-question">Souhaitez-vous que j'installe votre site sur votre hébergeur web ?</p>
-      <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-        <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
-      </div>
-      <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded btn--disabled">OUI</button>
-        <button class="btn btn--rounded">NON</button>
+    <div class="devis-ready">
+      <div class="o-box o-wrapper o-wrapper--small">
+        <h2>Votre devis est pret !</h2>
+        <div class="devis-action">
+          <button class="btn">Télécharger le PDF</button><button class="btn">Prendre un rendez-vous</button>
+        </div>
       </div>
     </div>
-    <div class="devis-action">
-      <button class="btn">Voir le PDF</button><button class="btn">Télécharger le PDF</button>
-    </div>
-    <div id="faq" class="">
+    <div id="faq" class="o-box o-wrapper o-wrapper--small">
       <h2>FAQ</h2>
       <h3>Combien de temps pour développer mon site ? </h3>
       <ul>
