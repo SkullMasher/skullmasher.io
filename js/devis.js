@@ -78,6 +78,7 @@ let initDevis = () => {
   const $averageTime = document.querySelector('.devis-time__days')
   const $averageTimeMin = document.querySelector('.devis-time__days-min')
   const $averageTimeMax = document.querySelector('.devis-time__days-max')
+  const maquetteCount = document.getElementById('maquetteCount')
 
   // Init default price and time
   $price.textContent = 0
@@ -96,24 +97,30 @@ let initDevis = () => {
   RatesAndTime.forEach((step, index) => {
     // Add to overall price if devis choice is enable
     let isChoiceEnable = false
+    let isRangeInput = false
     // avoid undefined devis choices (deployement step)
     if ($devisChoices[index]) {
       // Get only the YES button.
       if ($devisChoices[index].querySelector('button')) {
         // Get the enabled ones
         if (!$devisChoices[index].querySelector('button').classList.contains('btn--disabled')) {
-          console.log($devisChoices[index])
           isChoiceEnable = true
         }
       } else if ($devisChoices[index].querySelector('#maquetteCount')) {
         isChoiceEnable = true
+        isRangeInput = true
       }
     }
 
     if (isChoiceEnable === true) {
-      price += step.rate
-      $price.textContent = price
-      // If the object of min and max time
+      if (isRangeInput) {
+        price += step.rate * (maquetteCount.value)
+        $price.textContent = price
+      } else {
+        price += step.rate
+        $price.textContent = price
+      }
+      // If the object have a min or max time
       if (step.time.hasOwnProperty('min')) {
         averageTimeMin += step.time.min
         averageTimeMax += step.time.max
@@ -132,7 +139,6 @@ let initDevis = () => {
   $averageTime.textContent = averageTime
 
   // Show the range input current value & add update nav
-  const maquetteCount = document.getElementById('maquetteCount')
   maquetteCount.addEventListener('input', (event) => {
     maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
     // update nav
