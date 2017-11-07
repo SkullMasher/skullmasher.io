@@ -14,8 +14,9 @@
     <div class="o-box o-wrapper o-wrapper--small">
       <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
       <div class="flex-container-v">
-        <p>Simulez le prix de votre projet web votre projet web en 7 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant la dernière étape de validation.</p>
+        <p>Simulez le prix de votre projet web votre projet web en 8 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant la dernière étape de validation.</p>
         <p>Design sur mesure, compatible téléphone et tablette.</p>
+        <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a>.</p>
         <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
           <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
           <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</p>
@@ -53,14 +54,14 @@
     </div>
     <div class="devis-steps" id="branding">
       <h2>2. Image de marque</h2>
-      <p class="devis-question">Avez-vous un logo ?</p>
+      <p class="devis-question">Avez-vous besoin d'un logo ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
         <p class="o-media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
       </div>
       <div class="devis-choices o-wrapper o-wrapper--tiny">
-        <button class="btn btn--rounded ">OUI</button>
-        <button class="btn btn--rounded btn--disabled">NON</button>
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
       </div>
       <div>
         <div class="devis-switch">
@@ -129,7 +130,7 @@
     </div>
     <div class="devis-steps" id="support">
       <h2>7. Maintenance, Support et assistance</h2>
-      <p class="devis-question">Avez vous besoin d'une personne responsable de la maintenance du site ?</p>
+      <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
       <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
         <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
         <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#">l'offre de maintenance</a>.</p>
@@ -147,16 +148,19 @@
       </div>
     </div>
     <div class="devis-steps" id="validate">
-      <h2>8. Validation</h2>
+      <h2>8. Déploiement</h2>
+      <p class="devis-question">Souhaitez-vous que j'installe votre site sur votre hébergeur web ?</p>
       <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
-        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/validate.svg')?></figure>
-        <p class="o-media-content">Déploiement du site, tests et retour.</p>
+        <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+        <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
       </div>
-      <div class="devis-action">
-        <button class="btn">Voir le PDF</button><button class="btn">Télécharger le PDF</button>
+      <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <button class="btn btn--rounded btn--disabled">OUI</button>
+        <button class="btn btn--rounded">NON</button>
       </div>
-      <p></p>
-      <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a>.</p>
+    </div>
+    <div class="devis-action">
+      <button class="btn">Voir le PDF</button><button class="btn">Télécharger le PDF</button>
     </div>
     <div id="faq" class="">
       <h2>FAQ</h2>
@@ -181,6 +185,7 @@
       </ol>
       <h3>Mon site sera t-il présent sur google (<abbr title="Search engine optimization">SEO</abbr>) ?</h3>
       <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
+      <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3>Comment se passe la gestion de mon site ?</h3>
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
     </div>
