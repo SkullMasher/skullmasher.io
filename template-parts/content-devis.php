@@ -46,7 +46,7 @@
         <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
       </div>
       <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
-        <input id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
+        <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
         <p class="txtcenter h1-like"><strong>2</strong></p>
         <p class="txtcenter">Design de pages</p>
       </div>
