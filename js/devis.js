@@ -7,7 +7,7 @@ let initDevis = () => {
   warningNOJS.remove()
 
   // devis rates & time
-  const RatesAndTime = [
+  const ratesAndTime = [
     { // design&code for pages
       rate: 500,
       time: {
@@ -97,23 +97,29 @@ let initDevis = () => {
   }
   refreshDevisNav() // run on page load to set the default value
 
-  let updateDevisNav = (index) => {
+  let updateDevisNav = (index, substract = false) => {
     if (index === 0) { // input range
-      frontEndCost = RatesAndTime[index].rate * maquetteCount.value
+      frontEndCost = ratesAndTime[index].rate * maquetteCount.value
       averageTimeMin -= frontEndTimeMin
       averageTimeMax -= frontEndTimeMax
-      frontEndTimeMin = RatesAndTime[index].time.min * maquetteCount.value
-      frontEndTimeMax = RatesAndTime[index].time.max * maquetteCount.value
+      frontEndTimeMin = ratesAndTime[index].time.min * maquetteCount.value
+      frontEndTimeMax = ratesAndTime[index].time.max * maquetteCount.value
       averageTimeMin += frontEndTimeMin
       averageTimeMax += frontEndTimeMax
       averageTime()
       refreshDevisNav()
     } else {
-      console.log($devisChoices[index])
+      if (substract) { // the index needs to substract his rates & time
+        price -= ratesAndTime[index].rate
+        refreshDevisNav()
+      } else { // Just add the damn price and time
+        price += ratesAndTime[index].rate
+        refreshDevisNav()
+      }
     }
 
 /*
-    RatesAndTime.forEach((step, index) => {
+    ratesAndTime.forEach((step, index) => {
       // Add to overall price if devis choice is enable
       let isChoiceEnable = false
       let isRangeInput = false
@@ -188,24 +194,26 @@ let initDevis = () => {
   // Add click handling on devis-choice question
   Array.prototype.forEach.call(devisChoicesButtons, (choice, index) => {
     choice.addEventListener('click', (event) => {
+      // Change the state of the current button being clicked
       choice.classList.toggle('btn--disabled')
-      // Toggles the Sibling
-      if (choice.nextElementSibling === null) {
-        choice.previousElementSibling.classList.toggle('btn--disabled')
+
+      // Defined index to pass in the devisNav
+
+      if (choice.nextElementSibling === null) { // Toggles the Sibling
+        // Toggle the state of the YES button & update the devisNav
+        if (choice.previousElementSibling.classList.toggle('btn--disabled')) {
+          updateDevisNav(Math.ceil(index / 2), true) // substract
+        } else {
+          updateDevisNav(Math.ceil(index / 2))
+        }
       } else {
-        choice.nextElementSibling.classList.toggle('btn--disabled')
-        if (choice.nextElementSibling.classList.contains('btn--disabled')) {
-          // Find index of this devis-choice question and pass it to the update nav funtion
-          // Index devided by two because the loop is on all the buttons
-          // Index add 1 because 0 is the range input
+        // Toggle the state of the NO button
+        if (choice.nextElementSibling.classList.toggle('btn--disabled')) {
           updateDevisNav(index / 2 + 1)
+        } else {
+          updateDevisNav(index / 2 + 1, true) // Substract
         }
       }
-
-      // if (!choice.classList.contains('btn--disabled')) {
-      //   // Find index of this devis-choice question and pass it to the update nav funtion
-      //   // updateDevisNav()
-      // }
     })
 
   })
