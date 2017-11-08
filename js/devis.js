@@ -109,7 +109,7 @@ let initDevis = () => {
       averageTime()
       refreshDevisNav()
     } else {
-
+      console.log($devisChoices[index])
     }
 
 /*
@@ -185,8 +185,8 @@ let initDevis = () => {
 
   // Use foreach from arrays methods on NodeList
   const devisChoicesButtons = document.querySelectorAll('.devis-choices button')
-
-  Array.prototype.forEach.call(devisChoicesButtons, (choice) => {
+  // Add click handling on devis-choice question
+  Array.prototype.forEach.call(devisChoicesButtons, (choice, index) => {
     choice.addEventListener('click', (event) => {
       choice.classList.toggle('btn--disabled')
       // Toggles the Sibling
@@ -194,13 +194,20 @@ let initDevis = () => {
         choice.previousElementSibling.classList.toggle('btn--disabled')
       } else {
         choice.nextElementSibling.classList.toggle('btn--disabled')
+        if (choice.nextElementSibling.classList.contains('btn--disabled')) {
+          // Find index of this devis-choice question and pass it to the update nav funtion
+          // Index devided by two because the loop is on all the buttons
+          // Index add 1 because 0 is the range input
+          updateDevisNav(index / 2 + 1)
+        }
       }
-    }, false)
 
-    if (!choice.classList.contains('btn--disabled')) {
-      // TODO: Find what user choosed in parents element
-      // console.log(choice)
-    }
+      // if (!choice.classList.contains('btn--disabled')) {
+      //   // Find index of this devis-choice question and pass it to the update nav funtion
+      //   // updateDevisNav()
+      // }
+    })
+
   })
 
   // fix the devis navbar
