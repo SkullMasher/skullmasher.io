@@ -80,87 +80,89 @@ let initDevis = () => {
   const $averageTimeMax = document.querySelector('.devis-time__days-max')
   const maquetteCount = document.getElementById('maquetteCount')
 
-  // Init default price and time
-  $price.textContent = 0
-  $averageTime.textContent = 0
-  $averageTimeMin.textContent = 0
-  $averageTimeMax.textContent = 0
-
-  // There's always 500€ of deployement
+  // default value of website cost
   let price = 500
-  let maquettePrice = 0
-  let averageTime = 0
-  let averageTimeMin = 0
-  let averageTimeMax = 0
+  let frontEndCost = 1000
+  let averageTime = 14
+  let averageTimeMin = 10
+  let averageTimeMax = 18
+  // set the default values
+  $price.textContent = price + frontEndCost
+  $averageTime.textContent = averageTime
+  $averageTimeMin.textContent = averageTimeMin
+  $averageTimeMax.textContent = averageTimeMax
 
-  // init rates and time based on HTML
-  RatesAndTime.forEach((step, index) => {
-    // Add to overall price if devis choice is enable
-    let isChoiceEnable = false
-    let isRangeInput = false
-    let isDeployement = false
-    // avoid undefined devis choices (deployement step)
-    if ($devisChoices[index]) {
-      // Get only the YES button.
-      if ($devisChoices[index].querySelector('button')) {
-        // Get the enabled ones
-        if (!$devisChoices[index].querySelector('button').classList.contains('btn--disabled')) {
+
+
+  let setRatesAndTime = () => {
+    // init rates and time based on HTML
+    RatesAndTime.forEach((step, index) => {
+      // Add to overall price if devis choice is enable
+      let isChoiceEnable = false
+      let isRangeInput = false
+      let isDeployement = false
+      // avoid undefined devis choices (deployement step)
+      if ($devisChoices[index]) {
+        // Get only the YES button.
+        if ($devisChoices[index].querySelector('button')) {
+          // Get the enabled ones
+          if (!$devisChoices[index].querySelector('button').classList.contains('btn--disabled')) {
+            isChoiceEnable = true
+          }
+        } else if ($devisChoices[index].querySelector('#maquetteCount')) {
           isChoiceEnable = true
+          isRangeInput = true
         }
-      } else if ($devisChoices[index].querySelector('#maquetteCount')) {
-        isChoiceEnable = true
-        isRangeInput = true
+      } else {
+        isDeployement = true
       }
-    } else {
-      isDeployement = true
-    }
 
-    if (isChoiceEnable === true) {
-      if (isRangeInput) {
-        price += step.rate * (maquetteCount.value)
+      if (isChoiceEnable === true) {
+        if (isRangeInput) {
+          price += step.rate * (maquetteCount.value)
+          $price.textContent = price
+
+          averageTimeMin += step.time.min * maquetteCount.value
+          averageTimeMax += step.time.max * maquetteCount.value
+          $averageTimeMin.textContent = averageTimeMin
+          $averageTimeMax.textContent = averageTimeMax
+        } else {
+          price += step.rate
+          $price.textContent = price
+          // If the object have a min or max time
+          if (step.time.hasOwnProperty('min')) {
+            averageTimeMin += step.time.min
+            averageTimeMax += step.time.max
+            $averageTimeMin.textContent = averageTimeMin
+            $averageTimeMax.textContent = averageTimeMax
+          } else {
+            averageTimeMin += step.time
+            averageTimeMax += step.time
+            $averageTimeMin.textContent = averageTimeMin
+            $averageTimeMax.textContent = averageTimeMax
+          }
+        }
+      }
+
+      if (isDeployement) {
+        price += step.rate
         $price.textContent = price
-
         averageTimeMin += step.time.min * maquetteCount.value
         averageTimeMax += step.time.max * maquetteCount.value
         $averageTimeMin.textContent = averageTimeMin
         $averageTimeMax.textContent = averageTimeMax
-      } else {
-        price += step.rate
-        $price.textContent = price
-        // If the object have a min or max time
-        if (step.time.hasOwnProperty('min')) {
-          averageTimeMin += step.time.min
-          averageTimeMax += step.time.max
-          $averageTimeMin.textContent = averageTimeMin
-          $averageTimeMax.textContent = averageTimeMax
-        } else {
-          averageTimeMin += step.time
-          averageTimeMax += step.time
-          $averageTimeMin.textContent = averageTimeMin
-          $averageTimeMax.textContent = averageTimeMax
-        }
       }
-    }
+    })
+    // Average the time after each min and max step have been added
+    averageTime = Math.ceil((averageTimeMax + averageTimeMin) / 2)
+    $averageTime.textContent = averageTime
 
-    if (isDeployement) {
-      price += step.rate
-      $price.textContent = price
-      averageTimeMin += step.time.min * maquetteCount.value
-      averageTimeMax += step.time.max * maquetteCount.value
-      $averageTimeMin.textContent = averageTimeMin
-      $averageTimeMax.textContent = averageTimeMax
-    }
-  })
-  // Average the time after each min and max step have been added
-  averageTime = Math.ceil((averageTimeMax + averageTimeMin) / 2)
-  $averageTime.textContent = averageTime
-
-  // Show the range input current value & add update nav
-  maquetteCount.addEventListener('input', (event) => {
-    maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
-    // update nav
-
-  })
+    // Show the range input current value & add update nav
+    maquetteCount.addEventListener('input', (event) => {
+      maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
+      // update nav
+    })
+  }
 
   // fix the devis navbar
   const devisNav = document.querySelector('.devis-nav')
