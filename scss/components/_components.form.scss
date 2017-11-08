@@ -22,6 +22,20 @@ input[type="range"]::-moz-range-thumb {
   background-color: $base-color-link;
 }
 
+input[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: $base-color-link;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 15px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: $base-color-link;
+}
+
 input[type="submit"] {
   background-color: #ddd;
   padding-top: $tiny-value;
