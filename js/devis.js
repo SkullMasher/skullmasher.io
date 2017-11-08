@@ -86,16 +86,22 @@ let initDevis = () => {
   let averageTime = 14
   let averageTimeMin = 10
   let averageTimeMax = 18
-  // set the default values
-  $price.textContent = price + frontEndCost
-  $averageTime.textContent = averageTime
-  $averageTimeMin.textContent = averageTimeMin
-  $averageTimeMax.textContent = averageTimeMax
 
+  let refreshDevisNav = () => {
+    $price.textContent = price + frontEndCost
+    $averageTime.textContent = averageTime
+    $averageTimeMin.textContent = averageTimeMin
+    $averageTimeMax.textContent = averageTimeMax
+  }
+  refreshDevisNav() // run on page load to set the default value
 
+  let updateDevisNav = (index) => {
+    if (index === 0) { // input range
+      frontEndCost = RatesAndTime[index].rate * maquetteCount.value
+      refreshDevisNav()
+    }
 
-  let setRatesAndTime = () => {
-    // init rates and time based on HTML
+/*
     RatesAndTime.forEach((step, index) => {
       // Add to overall price if devis choice is enable
       let isChoiceEnable = false
@@ -156,27 +162,14 @@ let initDevis = () => {
     // Average the time after each min and max step have been added
     averageTime = Math.ceil((averageTimeMax + averageTimeMin) / 2)
     $averageTime.textContent = averageTime
-
-    // Show the range input current value & add update nav
-    maquetteCount.addEventListener('input', (event) => {
-      maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
-      // update nav
-    })
+*/
   }
 
-  // fix the devis navbar
-  const devisNav = document.querySelector('.devis-nav')
-  const TopOfDevisNav = devisNav.offsetTop
-
-  addEventListener('scroll', (event) => {
-    // detect if the window has been scrolled past the devis-nav
-    if (scrollY >= TopOfDevisNav) {
-      devisNav.classList.add('devis-nav--fixed')
-      document.body.style.paddingTop = `${devisNav.offsetHeight}px`
-    } else {
-      devisNav.classList.remove('devis-nav--fixed')
-      document.body.style.paddingTop = `0px`
-    }
+  // Show the range input current value & update nav
+  maquetteCount.addEventListener('input', (event) => {
+    maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
+    // update nav
+    updateDevisNav(0)
   })
 
   // Use foreach from arrays methods on NodeList
@@ -196,6 +189,21 @@ let initDevis = () => {
     if (!choice.classList.contains('btn--disabled')) {
       // TODO: Find what user choosed in parents element
       // console.log(choice)
+    }
+  })
+
+  // fix the devis navbar
+  const devisNav = document.querySelector('.devis-nav')
+  const TopOfDevisNav = devisNav.offsetTop
+
+  addEventListener('scroll', (event) => {
+    // detect if the window has been scrolled past the devis-nav
+    if (scrollY >= TopOfDevisNav) {
+      devisNav.classList.add('devis-nav--fixed')
+      document.body.style.paddingTop = `${devisNav.offsetHeight}px`
+    } else {
+      devisNav.classList.remove('devis-nav--fixed')
+      document.body.style.paddingTop = `0px`
     }
   })
 }
