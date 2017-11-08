@@ -111,9 +111,23 @@ let initDevis = () => {
     } else {
       if (substract) { // the index needs to substract his rates & time
         price -= ratesAndTime[index].rate
+        if (ratesAndTime[index].time.hasOwnProperty('min')) {
+          averageTimeMin -= ratesAndTime[index].time.min
+          averageTimeMax -= ratesAndTime[index].time.max
+        } else {
+          averageTimeMin -= ratesAndTime[index].time
+          averageTimeMax -= ratesAndTime[index].time
+        }
         refreshDevisNav()
       } else { // Just add the damn price and time
         price += ratesAndTime[index].rate
+        if (ratesAndTime[index].time.hasOwnProperty('min')) {
+          averageTimeMin += ratesAndTime[index].time.min
+          averageTimeMax += ratesAndTime[index].time.max
+        } else {
+          averageTimeMin += ratesAndTime[index].time
+          averageTimeMax += ratesAndTime[index].time
+        }
         refreshDevisNav()
       }
     }
