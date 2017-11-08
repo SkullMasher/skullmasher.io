@@ -81,15 +81,17 @@ let initDevis = () => {
   const maquetteCount = document.getElementById('maquetteCount')
 
   // default value of website cost
-  let price = 500
+  let price = 0
   let frontEndCost = 1000
-  let averageTime = 14
-  let averageTimeMin = 10
-  let averageTimeMax = 18
+  let frontEndTimeMin = 5 * 2
+  let frontEndTimeMax = 9 * 2
+  let averageTimeMin = frontEndTimeMin
+  let averageTimeMax = frontEndTimeMax
+  let averageTime = () => Math.ceil((averageTimeMin + averageTimeMax) / 2)
 
   let refreshDevisNav = () => {
     $price.textContent = price + frontEndCost
-    $averageTime.textContent = averageTime
+    $averageTime.textContent = averageTime()
     $averageTimeMin.textContent = averageTimeMin
     $averageTimeMax.textContent = averageTimeMax
   }
@@ -98,7 +100,16 @@ let initDevis = () => {
   let updateDevisNav = (index) => {
     if (index === 0) { // input range
       frontEndCost = RatesAndTime[index].rate * maquetteCount.value
+      averageTimeMin -= frontEndTimeMin
+      averageTimeMax -= frontEndTimeMax
+      frontEndTimeMin = RatesAndTime[index].time.min * maquetteCount.value
+      frontEndTimeMax = RatesAndTime[index].time.max * maquetteCount.value
+      averageTimeMin += frontEndTimeMin
+      averageTimeMax += frontEndTimeMax
+      averageTime()
       refreshDevisNav()
+    } else {
+
     }
 
 /*
