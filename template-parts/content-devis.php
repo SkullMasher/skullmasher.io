@@ -153,7 +153,7 @@
       </div>
       <div class="devis-steps" id="validate">
         <h2>8. Déploiement</h2>
-        <p class="devis-question">Souhaitez-vous que je sois responsable de l'instalation de votre site web sur votre hébergeur web ?</p>
+        <p class="devis-question">Souhaitez-vous que je sois responsable de l'instalation de votre site web ?</p>
         <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
