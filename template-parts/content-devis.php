@@ -64,7 +64,7 @@
           <button class="btn btn--rounded btn--disabled">OUI</button>
           <button class="btn btn--rounded">NON</button>
         </div>
-        <div>
+        <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
               <input type="checkbox" id="businessCard" class="toggle">
@@ -87,12 +87,14 @@
           <button class="btn btn--rounded btn--disabled">OUI</button>
           <button class="btn btn--rounded">NON</button>
         </div>
-        <div class="devis-switch">
-          <div class="devis-switch__input">
-            <input type="checkbox" id="socialNetwork" class="toggle">
-            <label for="socialNetwork" class="toggle-label">Toggle</label>
+        <div class="devis-step__option">
+          <div class="devis-switch">
+            <div class="devis-switch__input">
+              <input type="checkbox" id="socialNetwork" class="toggle">
+              <label for="socialNetwork" class="toggle-label">Toggle</label>
+            </div>
+            <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
           </div>
-          <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
         </div>
       </div>
       <div class="devis-steps" id="newsletter">
@@ -122,7 +124,7 @@
       </div>
       <div class="devis-steps" id="hosting">
         <h2>6. Hébergement et nom de domaine</h2>
-        <p class="devis-question">Possédez-vous déjà votre hébergement et nom de domaines ?</p>
+        <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <button class="btn btn--rounded btn--disabled">OUI</button>
           <button class="btn btn--rounded">NON</button>
@@ -139,12 +141,14 @@
           <button class="btn btn--rounded btn--disabled">OUI</button>
           <button class="btn btn--rounded">NON</button>
         </div>
-        <div class="devis-switch">
-          <div class="devis-switch__input">
-            <input type="checkbox" id="maintainWebsite" class="toggle">
-            <label for="maintainWebsite" class="toggle-label">Toggle</label>
+        <div class="devis-step__option">
+          <div class="devis-switch">
+            <div class="devis-switch__input">
+              <input type="checkbox" id="maintainWebsite" class="toggle">
+              <label for="maintainWebsite" class="toggle-label">Toggle</label>
+            </div>
+            <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
           </div>
-          <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
         </div>
       </div>
       <div class="devis-steps" id="validate">
@@ -194,11 +198,11 @@
       <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3>Comment se passe la gestion de mon site ?</h3>
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
+      <hr>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
-    <hr>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <?php
       the_content();
 

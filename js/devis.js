@@ -21,13 +21,15 @@ let initDevis = () => {
         min: 2,
         max: 3
       },
-      businessCard: {
-        rate: 300,
-        time: 2
-      },
-      flyer: {
-        rate: 300,
-        time: 2
+      option: {
+        businessCard: {
+          rate: 300,
+          time: 2
+        },
+        flyer: {
+          rate: 300,
+          time: 2
+        }
       }
     },
     { // blog
@@ -36,9 +38,11 @@ let initDevis = () => {
         min: 2,
         max: 4
       },
-      feed: {
-        rate: 150,
-        time: 1
+      option: {
+        feed: {
+          rate: 150,
+          time: 1
+        }
       }
     },
     { // newsLetter
@@ -59,9 +63,11 @@ let initDevis = () => {
     { // support
       rate: 600,
       time: 1,
-      publish: {
-        rate: 600,
-        time: 1
+      option: {
+        publish: {
+          rate: 600,
+          time: 1
+        }
       }
     },
     { // deployement
@@ -136,8 +142,7 @@ let initDevis = () => {
   // Show the range input current value & update nav
   maquetteCount.addEventListener('input', (event) => {
     maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
-    // update nav
-    updateDevisNav(0)
+    updateDevisNav(0) // Update nav
   })
 
   // Use foreach from arrays methods on NodeList
@@ -148,12 +153,10 @@ let initDevis = () => {
       // Change the state of the current button being clicked
       choice.classList.toggle('btn--disabled')
 
-      // Defined index to pass in the devisNav
-
       if (choice.nextElementSibling === null) { // Toggles the Sibling
         // Toggle the state of the YES button & update the devisNav
         if (choice.previousElementSibling.classList.toggle('btn--disabled')) {
-          updateDevisNav(Math.ceil(index / 2), true) // substract
+          updateDevisNav(Math.ceil(index / 2), true) // Substract
         } else {
           updateDevisNav(Math.ceil(index / 2))
         }
@@ -167,6 +170,10 @@ let initDevis = () => {
       }
     })
   })
+
+  // if (ratesAndTime[index].hasOwnProperty('option')) {
+  //   console.log(choice.parentElement.nextElementSibling)
+  // }
 
   // fix the devis navbar
   const devisNav = document.querySelector('.devis-nav')
