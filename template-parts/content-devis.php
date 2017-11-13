@@ -67,13 +67,13 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="businessCard" class="toggle">
+              <input type="checkbox" id="businessCard" class="toggle" data-choiceid="1" data-optionid="0">
               <label for="businessCard" class="toggle-label">Toggle</label>
             </div>
             <p class="devis-switch__label">J'ai besoin d'une carte de visite</p>
           </div>
           <div class="devis-switch">
-            <input type="checkbox" id="flyer" class="toggle">
+            <input type="checkbox" id="flyer" class="toggle" data-choiceid="1" data-optionid="0">
             <label for="flyer" class="toggle-label">Toggle</label>
             <p class="devis-switch__label">J'ai besoin d'un flyer</p>
           </div>
@@ -90,7 +90,7 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="socialNetwork" class="toggle">
+              <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
               <label for="socialNetwork" class="toggle-label">Toggle</label>
             </div>
             <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
@@ -144,7 +144,7 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="maintainWebsite" class="toggle">
+              <input type="checkbox" id="maintainWebsite" class="toggle" data-choiceid="6" data-optionid="0">
               <label for="maintainWebsite" class="toggle-label">Toggle</label>
             </div>
             <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>

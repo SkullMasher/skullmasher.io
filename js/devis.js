@@ -21,16 +21,16 @@ let initDevis = () => {
         min: 2,
         max: 3
       },
-      option: {
-        businessCard: {
+      option: [
+        {
           rate: 300,
           time: 2
         },
-        flyer: {
+        {
           rate: 300,
           time: 2
         }
-      }
+      ]
     },
     { // blog
       rate: 500,
@@ -38,12 +38,12 @@ let initDevis = () => {
         min: 2,
         max: 4
       },
-      option: {
-        feed: {
+      option: [
+        {
           rate: 150,
           time: 1
         }
-      }
+      ]
     },
     { // newsLetter
       rate: 300,
@@ -63,12 +63,12 @@ let initDevis = () => {
     { // support
       rate: 600,
       time: 1,
-      option: {
-        publish: {
+      option: [
+        {
           rate: 600,
-          time: 1
+          time: 0
         }
-      }
+      ]
     },
     { // deployement
       rate: 500,
@@ -95,15 +95,15 @@ let initDevis = () => {
   let averageTimeMax = frontEndTimeMax
   let averageTime = () => Math.ceil((averageTimeMin + averageTimeMax) / 2)
 
-  let refreshDevisNav = () => {
+  let setDevisNavText = () => {
     $price.textContent = price + frontEndCost
     $averageTime.textContent = averageTime()
     $averageTimeMin.textContent = averageTimeMin
     $averageTimeMax.textContent = averageTimeMax
   }
-  refreshDevisNav() // run on page load to set the default value
-
-  let updateDevisNav = (index, substract = false) => {
+  setDevisNavText() // run on page load to set the default value
+  // Set the devis price and time based on user choice
+  let updateDevisNav = (index, substract = false, toggle = false) => {
     if (index === 0) { // input range
       frontEndCost = ratesAndTime[index].rate * maquetteCount.value
       averageTimeMin -= frontEndTimeMin
@@ -113,7 +113,7 @@ let initDevis = () => {
       averageTimeMin += frontEndTimeMin
       averageTimeMax += frontEndTimeMax
       averageTime()
-      refreshDevisNav()
+      setDevisNavText()
     } else {
       if (substract) { // the index needs to substract his rates & time
         price -= ratesAndTime[index].rate
@@ -124,7 +124,7 @@ let initDevis = () => {
           averageTimeMin -= ratesAndTime[index].time
           averageTimeMax -= ratesAndTime[index].time
         }
-        refreshDevisNav()
+        setDevisNavText()
       } else { // Just add the damn price and time
         price += ratesAndTime[index].rate
         if (ratesAndTime[index].time.hasOwnProperty('min')) {
@@ -134,7 +134,7 @@ let initDevis = () => {
           averageTimeMin += ratesAndTime[index].time
           averageTimeMax += ratesAndTime[index].time
         }
-        refreshDevisNav()
+        setDevisNavText()
       }
     }
   }
@@ -142,7 +142,7 @@ let initDevis = () => {
   // Show the range input current value & update nav
   maquetteCount.addEventListener('input', (event) => {
     maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
-    updateDevisNav(0) // Update nav
+    updateDevisNav(0)
   })
 
   // Use foreach from arrays methods on NodeList
@@ -167,6 +167,46 @@ let initDevis = () => {
         } else {
           updateDevisNav(index / 2 + 1, true) // Substract
         }
+      }
+    })
+  })
+
+  let updateDevisNavToggle = (index, optionIndex, substract) => {
+    console.log(ratesAndTime[index].option[optionIndex])
+    if (substract) { // the index needs to substract his rates & time
+      price -= ratesAndTime[index].option[optionIndex].rate
+      if (ratesAndTime[index].option[optionIndex].time.hasOwnProperty('min')) {
+        averageTimeMin -= ratesAndTime[index].option[optionIndex].time.min
+        averageTimeMax -= ratesAndTime[index].option[optionIndex].time.max
+      } else {
+        averageTimeMin -= ratesAndTime[index].option[optionIndex].time
+        averageTimeMax -= ratesAndTime[index].option[optionIndex].time
+      }
+      setDevisNavText()
+    } else { // Just add the damn price and time
+      price += ratesAndTime[index].option[optionIndex].rate
+      if (ratesAndTime[index].option[optionIndex].time.hasOwnProperty('min')) {
+        averageTimeMin += ratesAndTime[index].option[optionIndex].time.min
+        averageTimeMax += ratesAndTime[index].option[optionIndex].time.max
+      } else {
+        averageTimeMin += ratesAndTime[index].option[optionIndex].time
+        averageTimeMax += ratesAndTime[index].option[optionIndex].time
+      }
+      setDevisNavText()
+    }
+  }
+
+  const devisToggleOptions = document.querySelectorAll('.toggle')
+  console.log(devisToggleOptions)
+  Array.prototype.forEach.call(devisToggleOptions, (toggle) => {
+    toggle.addEventListener('change', (event) => {
+      // console.log(toggle.dataset.choiceid)
+      // console.log(toggle.id)
+
+      if (toggle.checked) {
+        updateDevisNavToggle(toggle.dataset.choiceid, toggle.dataset.optionid)
+      } else {
+        updateDevisNavToggle(toggle.dataset.choiceid, toggle.dataset.optionid, true)
       }
     })
   })
