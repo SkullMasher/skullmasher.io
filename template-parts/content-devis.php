@@ -174,10 +174,10 @@
     </div>
     <div id="faq" class="o-box o-wrapper o-wrapper--small">
       <h2>FAQ</h2>
-      <h3>Combien de temps pour développer mon site ? </h3>
+      <h3>Combien de temps pour développer mon site ?</h3>
       <ul>
         <li>Design : 2 à 3 jours de par page.</li>
-        <li>Logo : 2 à 3 jours</li>
+        <li>Logo : 2 à 3 jours.</li>
         <li>Dévelopement des pages : 2 à 3 jours de code par page.</li>
         <li>Newsletter : 4 jours. Design et intégration avec retour.</li>
         <li>Intégration d'un réseaux social/fil d'actualité : Une demi-journée.</li>
