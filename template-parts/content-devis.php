@@ -33,7 +33,7 @@
       <figure class="devis-time__figure o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
       <div class="devis-time__content o-media-content">
         <p class="devis-time__average"><span class="devis-time__days">10</span> jours</p>
-        <p><span class="devis-time__days-min">8</span> à <span class="devis-time__days-max">12</span>jours</p>
+        <p><span class="devis-time__days-min">8</span> à <span class="devis-time__days-max">12</span> jours</p>
       </div>
     </div>
     <!-- <progress value="0.5">70 %</progress> -->

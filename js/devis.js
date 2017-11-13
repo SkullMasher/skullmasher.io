@@ -108,8 +108,13 @@ let initDevis = () => {
       frontEndCost = ratesAndTime[index].rate * maquetteCount.value
       averageTimeMin -= frontEndTimeMin
       averageTimeMax -= frontEndTimeMax
-      frontEndTimeMin = ratesAndTime[index].time.min * maquetteCount.value
-      frontEndTimeMax = ratesAndTime[index].time.max * maquetteCount.value
+      if (maquetteCount.value > 5) {
+        frontEndTimeMin = Math.ceil((ratesAndTime[index].time.min * maquetteCount.value) / 1.15)
+        frontEndTimeMax = Math.ceil((ratesAndTime[index].time.max * maquetteCount.value) / 1.15)
+      } else {
+        frontEndTimeMin = ratesAndTime[index].time.min * maquetteCount.value
+        frontEndTimeMax = ratesAndTime[index].time.max * maquetteCount.value
+      }
       averageTimeMin += frontEndTimeMin
       averageTimeMax += frontEndTimeMax
       averageTime()
