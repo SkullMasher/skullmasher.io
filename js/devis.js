@@ -22,11 +22,11 @@ let initDevis = () => {
         max: 3
       },
       option: [
-        {
+        { // businessCard
           rate: 300,
           time: 2
         },
-        {
+        { // flyer
           rate: 300,
           time: 2
         }
@@ -177,7 +177,6 @@ let initDevis = () => {
   })
 
   let updateDevisNavToggle = (index, optionIndex, substract) => {
-    console.log(ratesAndTime[index].option[optionIndex])
     if (substract) { // the index needs to substract his rates & time
       price -= ratesAndTime[index].option[optionIndex].rate
       if (ratesAndTime[index].option[optionIndex].time.hasOwnProperty('min')) {
@@ -202,11 +201,9 @@ let initDevis = () => {
   }
 
   const devisToggleOptions = document.querySelectorAll('.toggle')
-  console.log(devisToggleOptions)
   Array.prototype.forEach.call(devisToggleOptions, (toggle) => {
     toggle.addEventListener('change', (event) => {
-      // console.log(toggle.dataset.choiceid)
-      // console.log(toggle.id)
+      console.log(toggle)
 
       if (toggle.checked) {
         updateDevisNavToggle(toggle.dataset.choiceid, toggle.dataset.optionid)
@@ -215,10 +212,6 @@ let initDevis = () => {
       }
     })
   })
-
-  // if (ratesAndTime[index].hasOwnProperty('option')) {
-  //   console.log(choice.parentElement.nextElementSibling)
-  // }
 
   // fix the devis navbar
   const devisNav = document.querySelector('.devis-nav')

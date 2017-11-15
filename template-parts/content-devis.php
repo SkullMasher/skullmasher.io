@@ -70,12 +70,12 @@
               <input type="checkbox" id="businessCard" class="toggle" data-choiceid="1" data-optionid="0">
               <label for="businessCard" class="toggle-label">J'ai besoin d'une carte de visite.</label>
             </div>
-            <p class="devis-switch__label">J'ai besoin d'une carte de visite</p>
+            <p class="devis-switch__label">J'ai besoin d'une carte de visite <span class="badge badge--disabled">+300€ 2jours</span></p>
           </div>
           <div class="devis-switch">
             <input type="checkbox" id="flyer" class="toggle" data-choiceid="1" data-optionid="0">
             <label for="flyer" class="toggle-label">J'ai besoin d'un flyer.</label>
-            <p class="devis-switch__label">J'ai besoin d'un flyer.</p>
+            <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2jours</span></p>
           </div>
           <p><small>Frais d'impression non pris en charge.</small></p>
         </div>
@@ -147,7 +147,7 @@
               <input type="checkbox" id="maintainWebsite" class="toggle" data-choiceid="6" data-optionid="0">
               <label for="maintainWebsite" class="toggle-label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</label>
             </div>
-            <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</p>
+            <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site. <span class="badge"></span></p>
           </div>
         </div>
       </div>
