@@ -39,7 +39,7 @@ let initDevis = () => {
         max: 4
       },
       option: [
-        {
+        { // feed
           rate: 150,
           time: 1
         }
@@ -62,9 +62,9 @@ let initDevis = () => {
     },
     { // support
       rate: 600,
-      time: 1,
+      time: 0,
       option: [
-        {
+        { // maintainWebsite
           rate: 600,
           time: 0
         }
@@ -203,11 +203,14 @@ let initDevis = () => {
   const devisToggleOptions = document.querySelectorAll('.toggle')
   Array.prototype.forEach.call(devisToggleOptions, (toggle) => {
     toggle.addEventListener('change', (event) => {
-      console.log(toggle)
+      console.log(toggle.parentElement.nextElementSibling.querySelector('.badge'))
 
+      // toggle style of the price label & update the devis nav
       if (toggle.checked) {
+        toggle.parentElement.nextElementSibling.querySelector('.badge').classList.toggle('badge--disabled')
         updateDevisNavToggle(toggle.dataset.choiceid, toggle.dataset.optionid)
       } else {
+        toggle.parentElement.nextElementSibling.querySelector('.badge').classList.toggle('badge--disabled')
         updateDevisNavToggle(toggle.dataset.choiceid, toggle.dataset.optionid, true)
       }
     })

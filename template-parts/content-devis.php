@@ -70,12 +70,14 @@
               <input type="checkbox" id="businessCard" class="toggle" data-choiceid="1" data-optionid="0">
               <label for="businessCard" class="toggle-label">J'ai besoin d'une carte de visite.</label>
             </div>
-            <p class="devis-switch__label">J'ai besoin d'une carte de visite <span class="badge badge--disabled">+300€ 2jours</span></p>
+            <p class="devis-switch__label">J'ai besoin d'une carte de visite <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
           <div class="devis-switch">
-            <input type="checkbox" id="flyer" class="toggle" data-choiceid="1" data-optionid="0">
-            <label for="flyer" class="toggle-label">J'ai besoin d'un flyer.</label>
-            <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2jours</span></p>
+            <div class="devis-switch__input">
+              <input type="checkbox" id="flyer" class="toggle" data-choiceid="1" data-optionid="0">
+              <label for="flyer" class="toggle-label">J'ai besoin d'un flyer.</label>
+            </div>
+            <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
           <p><small>Frais d'impression non pris en charge.</small></p>
         </div>
@@ -93,14 +95,13 @@
               <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
               <label for="socialNetwork" class="toggle-label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</label>
             </div>
-            <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</p>
+            <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux. <span class="badge badge--disabled">+150€ 1 jour</span></p>
           </div>
         </div>
       </div>
       <div class="devis-steps" id="newsletter">
         <h2>4. Newsletter</h2>
         <p class="devis-question">Souhaitez-vous une newsletter ?</p>
-        <p></p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Comprend l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
@@ -147,7 +148,7 @@
               <input type="checkbox" id="maintainWebsite" class="toggle" data-choiceid="6" data-optionid="0">
               <label for="maintainWebsite" class="toggle-label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</label>
             </div>
-            <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site. <span class="badge"></span></p>
+            <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site. <span class="badge badge--disabled">+600€ par an</span></p>
           </div>
         </div>
       </div>
