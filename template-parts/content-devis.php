@@ -25,11 +25,14 @@
     </div>
   </header>
   <nav class="devis-nav" id="start">
-    <div class="devis-cost">
-      <p><span class="devis-cost__price">1000</span><span class="devis-cost__curency">€</span></p>
+    <div class="devis-cost o-media">
+      <figure class="devis-cost__figure"><?php echo file_get_contents(get_template_directory() .'/img/piggy-bank.svg') ?></figure>
+      <div class="devis-cost__content o-media-content">
+        <p><span class="devis-cost__price">1250</span><span class="devis-cost__curency">€</span></p>
+      </div>
     </div>
     <div class="devis-time o-media">
-      <figure class="devis-time__figure o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
+      <figure class="devis-time__figure"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
       <div class="devis-time__content o-media-content">
         <p class="devis-time__average"><span class="devis-time__days">14</span> jours</p>
         <p><span class="devis-time__days-min">10</span> à <span class="devis-time__days-max">18</span> jours</p>
@@ -47,6 +50,7 @@
           <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
         <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
+          <p class="txtcenter badge"><span>500€</span> <span>5 à 9 jours</span></p>
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
           <p class="txtcenter h1-like"><strong>2</strong></p>
           <p class="txtcenter">Design de pages</p>
@@ -216,6 +220,7 @@
       <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
     <?php
       the_content();

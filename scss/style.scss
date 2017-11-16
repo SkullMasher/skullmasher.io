@@ -51,6 +51,7 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "components/components.canvas";
 @import "components/components.buttons";
 @import "components/components.badges";
+@import "components/components.toggle";
 @import "components/components.form";
 @import "components/components.navigation";
 @import "components/components.band";
@@ -74,9 +75,9 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "components/components.archive";
 
 // UTILITIES
+@import "utilities/utilities.flexbox";
+@import "utilities/utilities.svg";
 @import "utilities/utilities.warning";
 @import "utilities/utilities.screen-reader";
 @import "utilities/utilities.pre-code";
 @import "utilities/utilities.content-sidebar";
-@import "utilities/utilities.toggle";
-@import "utilities/utilities.flexbox";

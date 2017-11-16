@@ -9,7 +9,7 @@ let initDevis = () => {
   // devis rates & time
   const ratesAndTime = [
     { // design&code for pages
-      rate: 500,
+      rate: 625,
       time: {
         min: 5,
         max: 9
@@ -87,7 +87,7 @@ let initDevis = () => {
 
   // default value of website cost
   let price = 0
-  let frontEndCost = 1000
+  let frontEndCost = 1250
   let frontEndTimeMin = 5 * 2
   let frontEndTimeMax = 9 * 2
   let averageTimeMin = frontEndTimeMin
