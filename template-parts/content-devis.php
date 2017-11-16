@@ -44,10 +44,10 @@
     <div class="o-box o-wrapper o-wrapper--small">
       <div class="devis-steps flex-container-v" id="maquette">
         <h2>1. Maquette de pages</h2>
-        <p class="devis-question">Combien de page avez-vous besoin ?</p>
+        <p class="devis-question">Combien de maquettes avez-vous besoin ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Vous pouvez réutiliser la maquette de la page contact sur la page à propos et toute les autres pages. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+          <p class="o-media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du meme types. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
         <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
           <p class="txtcenter badge"><span>500€</span> <span>5 à 9 jours</span></p>
@@ -89,7 +89,7 @@
       </div>
       <div class="devis-steps" id="blog">
         <h2>3. Blog</h2>
-        <p class="devis-question">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</p>
+        <p class="devis-question">Avez-vous besoin de la fonctionnalité de blog, ou de fil d'actualités personalisée ?</p>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
             <button class="btn btn--rounded btn--disabled">OUI</button>
@@ -100,9 +100,9 @@
           <div class="devis-switch">
             <div class="devis-switch__input">
               <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
-              <label for="socialNetwork" class="toggle-label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux.</label>
+              <label for="socialNetwork" class="toggle-label">Je souhaite également intégrer les avis, les recommendations ou le fil d'actualité d'un de mes réseaux sociaux.</label>
             </div>
-            <p class="devis-switch__label">Je souhaite également intégrer le fil d'actualité, les avis ou les recommendations d'un de mes réseaux sociaux. <span class="badge badge--disabled">+150€ 1 jour</span></p>
+            <p class="devis-switch__label">Je souhaite également intégrer les avis, les recommendations ou le fil d'actualité d'un de mes réseaux sociaux.<span class="badge badge--disabled">+150€ 1 jour</span></p>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
         <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne (skype, discord...)</p>
+          <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
@@ -137,19 +137,24 @@
       <div class="devis-steps" id="hosting">
         <h2>6. Hébergement et nom de domaine</h2>
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
+        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+          <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="o-media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprend l'ajout et l'instalation d'une boite mail professionnel disponible sur tous vos périphérique (téléphonne, tablette) au besoin.</p>
+        </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
             <button class="btn btn--rounded btn--disabled">OUI</button>
             <button class="btn btn--rounded">NON</button>
           </div>
         </div>
+        <p><small>Frais d'hébergement non compris.</small></p>
       </div>
       <div class="devis-steps" id="support">
         <h2>7. Maintenance, Support et assistance</h2>
         <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#">l'offre de maintenance</a>.</p>
+          <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
@@ -185,8 +190,9 @@
     <div class="devis-ready">
       <div class="o-box o-wrapper o-wrapper--small">
         <h2>Votre devis est pret !</h2>
+        <p>Merci de prendre un rendez-vous pour conclure d'un prix final.</p>
         <div class="devis-action">
-          <button class="btn">Télécharger le PDF</button><button class="btn">Prendre un rendez-vous</button>
+          <button class="btn">Télécharger le devis <small>PDF</small></button><button class="btn">Prendre un rendez-vous</button>
         </div>
       </div>
     </div>
