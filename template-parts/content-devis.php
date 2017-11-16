@@ -8,7 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('band--lightgrey'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('page-devis band--lightgrey'); ?>>
 	<header class="page__header band band--lightgrey">
     <div class="o-box o-wrapper o-wrapper--small">
       <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>

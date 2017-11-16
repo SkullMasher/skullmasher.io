@@ -4,6 +4,10 @@
   }
 
 // Devis Page
+.page-devis {
+  margin-bottom: 0;
+  padding-bottom: $medium-value;
+}
 .devis-nav {
   display: flex;
   align-items: baseline;
