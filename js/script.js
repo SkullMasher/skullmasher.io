@@ -33,8 +33,8 @@ const random = (min, max) => {
 }
 
 // Canvas size
-const canvasHeight = document.querySelector('header').clientHeight
-// const canvasHeight = 300
+const canvasHeight = header.clientHeight
+const canvasWidth = header.clientWidth
 
 // set context of the canvas 2d or webGL
 const ctx = canvas.getContext('2d', {alpha: true})
@@ -143,7 +143,7 @@ let fillCanvas = () => {
 }
 
 let initCanvas = () => {
-  canvas.width = innerWidth
+  canvas.width = canvasWidth
   canvas.height = canvasHeight
 
   fillCanvas()
