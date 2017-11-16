@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('band--lightgrey'); ?>>
 	<header class="page__header band band--lightgrey">
     <div class="o-box o-wrapper o-wrapper--small">
@@ -27,13 +26,13 @@
   </header>
   <nav class="devis-nav" id="start">
     <div class="devis-cost">
-      <p><span class="devis-cost__price">2250</span><span class="devis-cost__curency">€</span></p>
+      <p><span class="devis-cost__price">1000</span><span class="devis-cost__curency">€</span></p>
     </div>
     <div class="devis-time o-media">
       <figure class="devis-time__figure o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
       <div class="devis-time__content o-media-content">
-        <p class="devis-time__average"><span class="devis-time__days">10</span> jours</p>
-        <p><span class="devis-time__days-min">8</span> à <span class="devis-time__days-max">12</span> jours</p>
+        <p class="devis-time__average"><span class="devis-time__days">14</span> jours</p>
+        <p><span class="devis-time__days-min">10</span> à <span class="devis-time__days-max">18</span> jours</p>
       </div>
     </div>
     <!-- <progress value="0.5">70 %</progress> -->
@@ -61,8 +60,10 @@
           <p class="o-media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -86,8 +87,10 @@
         <h2>3. Blog</h2>
         <p class="devis-question">Avez-vous besoin de créer des articles pour tenir à jour votre site ?</p>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -107,8 +110,10 @@
           <p class="o-media-content">Comprend l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
       </div>
       <div class="devis-steps" id="teaching">
@@ -119,16 +124,20 @@
           <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne (skype, discord...)</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded ">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
       </div>
       <div class="devis-steps" id="hosting">
         <h2>6. Hébergement et nom de domaine</h2>
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
       </div>
       <div class="devis-steps" id="support">
@@ -139,8 +148,10 @@
           <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#">l'offre de maintenance</a>.</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -160,8 +171,10 @@
           <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-          <button class="btn btn--rounded">NON</button>
+          <div class="flex-container flex-container--space-beetween">
+            <button class="btn btn--rounded btn--disabled">OUI</button>
+            <button class="btn btn--rounded">NON</button>
+          </div>
         </div>
       </div>
     </div>

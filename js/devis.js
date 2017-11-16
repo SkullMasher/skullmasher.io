@@ -79,7 +79,6 @@ let initDevis = () => {
     }
   ]
 
-  const $devisChoices = document.querySelectorAll('.devis-choices')
   const $price = document.querySelector('.devis-cost__price')
   const $averageTime = document.querySelector('.devis-time__days')
   const $averageTimeMin = document.querySelector('.devis-time__days-min')
@@ -102,6 +101,7 @@ let initDevis = () => {
     $averageTimeMax.textContent = averageTimeMax
   }
   setDevisNavText() // run on page load to set the default value
+
   // Set the devis price and time based on user choice
   let updateDevisNav = (index, substract = false, toggle = false) => {
     if (index === 0) { // input range
@@ -203,8 +203,6 @@ let initDevis = () => {
   const devisToggleOptions = document.querySelectorAll('.toggle')
   Array.prototype.forEach.call(devisToggleOptions, (toggle) => {
     toggle.addEventListener('change', (event) => {
-      console.log(toggle.parentElement.nextElementSibling.querySelector('.badge'))
-
       // toggle style of the price label & update the devis nav
       if (toggle.checked) {
         toggle.parentElement.nextElementSibling.querySelector('.badge').classList.toggle('badge--disabled')
