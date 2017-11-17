@@ -212,15 +212,17 @@
     <div class="devis-ready">
       <div class="o-box o-wrapper o-wrapper--small">
         <p class="h2-like">Votre devis est pret !</p>
-        <p>Merci de prendre un rendez-vous pour conclure d'un prix final.</p>
         <div class="devis-action">
-          <button class="btn">Télécharger le devis <small>PDF</small></button><button class="btn">Prendre un rendez-vous</button>
+          <button class="btn">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
+        </div>
+        <div class="devis-action">
+          <p><span>Ce devis vous interesse ?</span> Consulter les informations complémentaires avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un prix final.</p>
         </div>
       </div>
     </div>
     <div id="moreinfo" class="o-box o-wrapper o-wrapper--small">
       <h2>Informations Complémentaires</h2>
-      <h3>Mon site sera t-il présent sur google (<abbr title="Search engine optimization">SEO</abbr>) ?</h3>
+      <h3>Référencement et présence sur Google (<abbr title="Search engine optimization">SEO</abbr>)</h3>
       <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
       <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3 id="maintenance">Offre de maintenance</h3>
@@ -246,7 +248,7 @@
     <div class="devis-ready">
       <div class="o-box o-wrapper o-wrapper--small">
         <p class="h2-like">Établir un rendez-vous</p>
-        <form>
+        <form id="meetup">
           <div>
             <div>
               <label for="firstname">Prénom</label>
@@ -287,6 +289,7 @@
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
     <?php
       the_content();
