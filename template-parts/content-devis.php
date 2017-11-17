@@ -216,7 +216,7 @@
           <button class="btn">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
         </div>
         <div class="devis-action">
-          <p><span>Ce devis vous interesse ?</span> Consulter les informations complémentaires avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un prix final.</p>
+          <p><span>Ce devis vous interesse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un prix final.</p>
         </div>
       </div>
     </div>
