@@ -15,7 +15,8 @@
       <div class="flex-container-v">
         <p>Simulez le prix de votre projet web votre projet web en 8 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant la dernière étape de validation.</p>
         <p>Design sur mesure, compatible téléphone et tablette.</p>
-        <p>Pour en savoir plus concernant cette prestation <a href="#faq">Consulter la FAQ</a>.</p>
+        <p><strong>3 retours maximum</strong> pour chaque étape du projet.</p>
+        <p>Pour en savoir plus concernant cette prestation <a href="#moreinfo">Consulter les informations supplémentaires</a> en pied de pages.</p>
         <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
           <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
           <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</p>
@@ -189,26 +190,24 @@
     </div>
     <div class="devis-ready">
       <div class="o-box o-wrapper o-wrapper--small">
-        <h2>Votre devis est pret !</h2>
+        <p class="h2-like">Votre devis est pret !</p>
         <p>Merci de prendre un rendez-vous pour conclure d'un prix final.</p>
         <div class="devis-action">
           <button class="btn">Télécharger le devis <small>PDF</small></button><button class="btn">Prendre un rendez-vous</button>
         </div>
       </div>
     </div>
-    <div id="faq" class="o-box o-wrapper o-wrapper--small">
-      <h2>FAQ</h2>
-      <h3>Combien de temps pour développer mon site ?</h3>
+    <div id="moreinfo" class="o-box o-wrapper o-wrapper--small">
+      <h2>Informations Complémentaires</h2>
+      <h3>Mon site sera t-il présent sur google (<abbr title="Search engine optimization">SEO</abbr>) ?</h3>
+      <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
+      <p>Intégration de votre compte google analytics possible sans surcoup.</p>
+      <h3>Offre de maintenance</h3>
       <ul>
-        <li>Design : 2 à 3 jours de par page.</li>
-        <li>Logo : 2 à 3 jours.</li>
-        <li>Dévelopement des pages : 2 à 3 jours de code par page.</li>
-        <li>Newsletter : 4 jours. Design et intégration avec retour.</li>
-        <li>Intégration d'un réseaux social/fil d'actualité : Une demi-journée.</li>
-        <li>Recommandation configuration nom de domaine et hébergeur : une demi journée.</li>
-        <li>Déploiement du site, tests et retour : 1 à 2 jours.</li>
+        <li>La disponibilité a toute heures pour intervenir en urgences sur votre site, en cas de problemes (ex : panne mails , indisponibilités site web ).</li>
+        <li>Correction des failles de sécurités *https://www.exploit-db.com/webapps/*.</li>
+        <li>Mises à jour du site et des plugins aux versions suivante.</li>
       </ul>
-      <p><strong>3 retours maximum</strong> pour chaque étape du projet.</p>
       <h3>Comment puis-je réduire le temps de développement de mon projet web ?</h3>
       <p>Les réponses à ces quelques questions m'aide à réduire le temps de dévellopement de votre projet web et à correspondre précisément à vos attentes.</p>
       <ol>
@@ -217,9 +216,6 @@
         <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
         <li>Quels sont vos mots clés ?</li>
       </ol>
-      <h3>Mon site sera t-il présent sur google (<abbr title="Search engine optimization">SEO</abbr>) ?</h3>
-      <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
-      <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3>Comment se passe la gestion de mon site ?</h3>
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
       <hr>
