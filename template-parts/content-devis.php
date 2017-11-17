@@ -227,9 +227,10 @@
       <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3 id="maintenance">Offre de maintenance</h3>
       <ul>
-        <li>La disponibilité a toute heures pour intervenir en urgences sur votre site, en cas de problemes (ex : panne mails , indisponibilités site web ).</li>
-        <li>Correction des failles de sécurités *https://www.exploit-db.com/webapps/*.</li>
+        <li>Disponibilitée a toute heures pour intervenir en urgences sur votre site, en cas de problemes (ex : panne mails , indisponibilités site web).</li>
+        <li>Suivi et Corrections <a href="https://www.exploit-db.com/webapps/">des failles de sécurités</a>.</li>
         <li>Mises à jour du site et des plugins aux versions suivante.</li>
+        <li>Rétention et Sauvegarde heddomadaire du site.</li>
       </ul>
       <h3>Gestion de mon site</h3>
       <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs. Le livrable sera un thème wordpress créer à partir <a href="https://underscores.me/">du squelette</a> fourni par les dévelloppeurs et la communautée Wordpress.</p>
