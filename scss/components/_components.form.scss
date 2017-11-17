@@ -37,11 +37,12 @@ input[type="range"]::-ms-thumb {
 }
 
 input[type="submit"] {
-  background-color: #ddd;
   padding-top: $tiny-value;
   padding-right: $small-value;
   padding-bottom: $tiny-value;
   padding-left: $small-value;
+  background-color: $base-color-link;
+  color: #fff;
 
   &:hover {
     background-color: #eee;

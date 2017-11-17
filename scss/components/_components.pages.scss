@@ -58,13 +58,19 @@
   margin-bottom: $large-value;
 }
 
+.devis-step__priceinfo {
+  margin-bottom: $medium-value;
+  color: $base-color;
+  font-size: $h4-size;
+}
+
 .devis-question {
   font-size: $h3-size;
   margin-bottom: $large-value;
 }
 
 .devis-tips {
-  margin-bottom: $large-value;
+  margin-bottom: $medium-value;
 
   > figure {
     margin-top: 0;

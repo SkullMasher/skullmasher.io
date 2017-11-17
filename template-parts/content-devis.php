@@ -51,10 +51,10 @@
           <p class="o-media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du meme types. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
         <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
-          <p class="txtcenter badge"><span>500€</span> <span>5 à 9 jours</span></p>
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
           <p class="txtcenter h1-like"><strong>2</strong></p>
           <p class="txtcenter">Design de pages</p>
+          <p class="txtcenter"><span>650€</span> <span>5 à 9 jours par pages</span></p>
         </div>
       </div>
       <div class="devis-steps" id="branding">
@@ -63,6 +63,9 @@
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
+        </div>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
@@ -91,6 +94,9 @@
       <div class="devis-steps" id="blog">
         <h2>3. Blog</h2>
         <p class="devis-question">Avez-vous besoin de la fonctionnalité de blog, ou de fil d'actualités personalisée ?</p>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
+        </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
             <button class="btn btn--rounded btn--disabled">OUI</button>
@@ -114,6 +120,9 @@
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Comprend l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
         </div>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>300€</span> <span>3 à 4 jours</span></p>
+        </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
             <button class="btn btn--rounded btn--disabled">OUI</button>
@@ -127,6 +136,9 @@
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
+        </div>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
@@ -142,6 +154,9 @@
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprend l'ajout et l'instalation d'une boite mail professionnel disponible sur tous vos périphérique (téléphonne, tablette) au besoin.</p>
         </div>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
+        </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
             <button class="btn btn--rounded btn--disabled">OUI</button>
@@ -156,6 +171,9 @@
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
+        </div>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
@@ -180,6 +198,9 @@
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
         </div>
+        <div class="devis-step__priceinfo">
+          <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
+        </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
           <div class="flex-container flex-container--space-beetween">
             <button class="btn btn--rounded btn--disabled">OUI</button>
@@ -202,13 +223,18 @@
       <h3>Mon site sera t-il présent sur google (<abbr title="Search engine optimization">SEO</abbr>) ?</h3>
       <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
       <p>Intégration de votre compte google analytics possible sans surcoup.</p>
-      <h3>Offre de maintenance</h3>
+      <h3 id="maintenance">Offre de maintenance</h3>
       <ul>
         <li>La disponibilité a toute heures pour intervenir en urgences sur votre site, en cas de problemes (ex : panne mails , indisponibilités site web ).</li>
         <li>Correction des failles de sécurités *https://www.exploit-db.com/webapps/*.</li>
         <li>Mises à jour du site et des plugins aux versions suivante.</li>
       </ul>
-      <h3>Comment puis-je réduire le temps de développement de mon projet web ?</h3>
+      <h3>Gestion de mon site</h3>
+      <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs. Le livrable sera un thème wordpress créer à partir <a href="https://underscores.me/">du squelette</a> fourni par les dévelloppeurs et la communautée Wordpress.</p>
+      <h3>Livraison express</h3>
+      <p>Idéal pour les sites évenementiel, le livrable de cette prestation ne comprend pas d'interface de gestion pour changer son contenu et ce déploie plus rapidement et simplement.</p>
+      <p>Si vous avez besoin d'un site sous 10 jours avec design personalisé</p>
+      <h3>Réduire le temps de développement de mon projet web</h3>
       <p>Les réponses à ces quelques questions m'aide à réduire le temps de dévellopement de votre projet web et à correspondre précisément à vos attentes.</p>
       <ol>
         <li>Quelles sont les sites web qui vous inspirent ?</li>
@@ -216,9 +242,47 @@
         <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
         <li>Quels sont vos mots clés ?</li>
       </ol>
-      <h3>Comment se passe la gestion de mon site ?</h3>
-      <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs.</p>
-      <hr>
+    </div>
+    <div class="devis-ready">
+      <div class="o-box o-wrapper o-wrapper--small">
+        <p class="h2-like">Établir un rendez-vous</p>
+        <form>
+          <div>
+            <div>
+              <label for="firstname">Prénom</label>
+            </div>
+            <input type="text" name="firstname">
+          </div>
+          <div>
+            <div>
+              <label for="lastname">Nom</label>
+            </div>
+            <input type="text" name="lastname">
+          </div>
+          <div>
+            <div>
+              <label for="mail">Mail</label>
+            </div>
+            <input type="text" name="mail">
+          </div>
+          <div>
+            <div>
+              <label for="website">Site web (optionel)</label>
+            </div>
+            <input type="text" name="website">
+          </div>
+          <div>
+            <div>
+              <label for="projectinfo">Informations supplémentaire concernant votre projet</label>
+            </div>
+            <textarea></textarea>
+          </div>
+          <input class="btn btn--large" type="submit" name="submitproject" value="Envoyer mon projet !">
+        </form>
+      </div>
+    </div>
+    <div class="o-box o-wrapper o-wrapper--small">
+      <h4>Crédits graphique</h4>
       <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
