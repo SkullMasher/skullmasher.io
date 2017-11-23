@@ -228,17 +228,19 @@ let initDevis = () => {
       document.body.style.paddingTop = `0px`
     }
   })
+
+  const $generatePDF = document.querySelector('.devis-action button')
+  const pdfContent = document.querySelector('.pdf-content')
+
+  $generatePDF.addEventListener('click', (event) => {
+    pdfContent.style.display = 'block'
+    var pdf = new jsPDF
+    pdf.addHTML(pdfContent, function () {
+      pdf.save('test.pdf')
+      pdfContent.style.display = 'none'
+    })
+  })
 }
-
-// let generatePDF = () => {
-
-// }
-
-const $generatePDF = document.querySelector('.devis-action button')
-
-$generatePDF.addEventListener('click', (event) => {
-
-})
 
 addEventListener('DOMContentLoaded', (event) => {
   initDevis()

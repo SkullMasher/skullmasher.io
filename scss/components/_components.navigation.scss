@@ -4,7 +4,6 @@
  * Styles for navigations & Wordpress menus
  */
 
-// Specific Navigation styling
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +97,9 @@
   }
 }
 
-// Category and tag list
+/*
+ * Category and tag list
+ */
 .category-nav__list,
 .tag-nav__list {
   justify-content: center;
@@ -125,7 +126,9 @@
     padding-left: $small-value;
   }
 
-// Key pages navigation list
+/*
+ * Key pages navigation list
+ */
 .menu-keypages-container > ul {
   list-style: none;
   padding-left: 0;
@@ -139,3 +142,30 @@
     text-decoration: underline;
   }
 }
+
+/*
+ * Devis Nav
+ */
+.devis-nav {
+ display: flex;
+ align-items: baseline;
+ justify-content: space-around;
+ background-color: $alpha-color;
+ font-size: $h1-size;
+ text-align: center;
+ box-shadow: #666 0 0px 0px;
+ transition: box-shadow 0.2s ease;
+
+ .svg-stopwatch {
+   width: 50px;
+   height: 50px;
+ }
+}
+
+ .devis-nav--fixed {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1;
+   box-shadow: #666 0 2px 5px;
+ }

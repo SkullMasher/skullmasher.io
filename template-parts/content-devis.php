@@ -319,4 +319,7 @@
 			?>
 		</footer>
 	<?php endif; ?>
+  <div class="pdf-content">
+
+  </div>
 </article>

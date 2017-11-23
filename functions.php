@@ -162,12 +162,13 @@ function skullmasher_io_scripts() {
   wp_enqueue_style( 'skullmasher-io-style', get_stylesheet_uri() );
 
   // wp_enqueue_script( 'skullmasher-io-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-  wp_enqueue_script( 'skullmasher-io-navigation', get_template_directory_uri() . '/js/script.js', array(), '20171023', true );
+  wp_enqueue_script( 'skullmasher-io-main-script', get_template_directory_uri() . '/js/script.js', array(), '20171023', true );
 
   wp_enqueue_script( 'skullmasher-io-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
   if (get_the_title() === 'Devis') {
     wp_enqueue_script( 'skullmasher-io-devis', get_template_directory_uri() . '/js/devis.js', array(), '20171104', true );
+    wp_enqueue_script( 'skullmasher-io-html2canvas', get_template_directory_uri() . '/js/html2canvas.min.js', array(), '20171123', true );
     wp_enqueue_script( 'skullmasher-io-jspdf', get_template_directory_uri() . '/js/jspdf.min.js', array(), '20171029', true );
   }
 
