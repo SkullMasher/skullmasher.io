@@ -10,31 +10,33 @@ var greetingMessage = function () {
 }
 
 /*
+ * Helper function
+ */
+const random = (min, max) => {
+  return Math.floor(Math.random() * (max - min) + min)
+}
+
+const isCanvasSupported = () => { // Thx modernizr
+  var testCanvas = document.createElement('canvas')
+  return !!(testCanvas.getConelemtext && testCanvas.getContext('2d'))
+}
+
+/*
  * Canvas
  */
-
-// Canvas Support & positionning
 const canvas = document.querySelector('#canvas')
 const header = document.querySelector('header')
 
-const isCanvasSupported = () => { // Thx modernizr
-  var kek = document.createElement('canvas')
-  return !!(kek.getConelemtext && kek.getContext('2d'))
-}
+// Square Dimension
+const squareD = 6
+
+// spacing beetween squares
+const spacing = 2
 
 const prepareCanvas = () => {
   canvas.style.display = 'block'
   header.style.backgroundImage = 'initial'
 }
-
-// Helper function
-const random = (min, max) => {
-  return Math.floor(Math.random() * (max - min) + min)
-}
-
-// Canvas size
-const canvasHeight = header.clientHeight
-const canvasWidth = header.clientWidth
 
 // set context of the canvas 2d or webGL
 const ctx = canvas.getContext('2d', {alpha: true})
@@ -47,30 +49,19 @@ const colorPool = [
   { r: 54, g: 54, b: 54 }, // lighter grey color
   { r: 69, g: 163, b: 64 } // matrix green grey color
 ]
-// const rectHighlight = 'rgba(68,163,64,1)'
 
-// Square Dimension
-const squareD = 6
-
-// spacing beetween squares
-const spacing = 2
-
-// Initialize some squares helper methods and variables
 let squaresLength = 0
 const squares = []
 
 /*
- * Instead of doing a count on each square object we check if the lucky number
- * of the object match the number in the god count to have much better
- * performance. God count gets reset at the when it's egal to the number of
- * of total squares on the screen is reach.
- * The god Count is used by the square.breath prototype function.
+ * Check if the lucky number of the object match the number in the god count
+ * to have much better performance. God count gets reset at the when it's egal
+ * to the number of squares on the screen is reach. godCount is incremented by
+ * the requestAnimationFrame.
  */
 let godCount = 0
 
-/*
- * Square Object
- */
+// Square Object
 function Square (x, y, opacity, opacityAccel) {
   this.x = x
   this.y = y
@@ -113,7 +104,7 @@ Square.prototype.breath = function () {
 }
 
 // Fill the canvas with squares
-let fillCanvas = () => {
+const fillCanvas = () => {
   let i, j, x, y
   j = i = 1
   x = y = 0
@@ -142,7 +133,10 @@ let fillCanvas = () => {
   squaresLength = squares.length
 }
 
-let initCanvas = () => {
+const initCanvas = () => {
+  const canvasHeight = header.clientHeight
+  const canvasWidth = header.clientWidth
+
   canvas.width = canvasWidth
   canvas.height = canvasHeight
 
@@ -150,7 +144,7 @@ let initCanvas = () => {
 }
 
 // Animaiton
-let animate = () => {
+const animate = () => {
   squares.forEach((sqr) => {
     sqr.breath()
   })

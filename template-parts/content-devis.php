@@ -6,7 +6,6 @@
  *
  * @package skullmasher.io
  */
-
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('page-devis band--lightgrey'); ?>>
 	<header class="page__header band band--lightgrey">
