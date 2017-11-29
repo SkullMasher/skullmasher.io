@@ -66,10 +66,8 @@
           <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -96,10 +94,8 @@
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -122,10 +118,8 @@
           <p class="txtcenter"><span>300€</span> <span>3 à 4 jours</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
       </div>
       <div class="devis-steps" id="teaching">
@@ -139,10 +133,8 @@
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
       </div>
       <div class="devis-steps" id="hosting">
@@ -156,10 +148,8 @@
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
         <p><small>Frais d'hébergement non compris.</small></p>
       </div>
@@ -174,10 +164,8 @@
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -200,10 +188,8 @@
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
         </div>
         <div class="devis-choices o-wrapper o-wrapper--tiny">
-          <div class="flex-container flex-container--space-beetween">
-            <button class="btn btn--rounded btn--disabled">OUI</button>
-            <button class="btn btn--rounded">NON</button>
-          </div>
+          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--rounded">NON</button>
         </div>
       </div>
     </div>

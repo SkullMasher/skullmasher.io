@@ -57,6 +57,8 @@
   }
 
 .devis-choices {
+  display: flex;
+  justify-content: space-between;
   padding: $small-value;
   background-color: $content-background;
 }
