@@ -1,4 +1,12 @@
 .pdf-content {
-  display: none;
+  /*display: none;*/
   width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background-color: $content-background;
+}
+
+.pdf-container {
+  width: 1000px;
+  margin: 0 auto;
 }

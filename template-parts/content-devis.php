@@ -203,6 +203,14 @@
           <p><span>Ce devis vous interesse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un prix final.</p>
         </div>
       </div>
+      <div class="pdf-content">
+        <div class="pdf-container">
+          <header>
+            <p><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg')?><span><?php bloginfo( 'name' ); ?></span></p>
+            <p class="h1-like txtcenter">Devis site web</p>
+          </header>
+        </div>
+      </div>
     </div>
     <div id="moreinfo" class="o-box o-wrapper o-wrapper--small">
       <h2>Informations Complémentaires</h2>
@@ -303,7 +311,4 @@
 			?>
 		</footer>
 	<?php endif; ?>
-  <div class="pdf-content">
-
-  </div>
 </article>

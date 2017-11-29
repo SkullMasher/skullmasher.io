@@ -233,12 +233,19 @@ let initDevis = () => {
   const pdfContent = document.querySelector('.pdf-content')
 
   $generatePDF.addEventListener('click', (event) => {
+    let date = new Date()
+    let year = date.getFullYear()
+    let month = prefixZero(date.getMonth())
+    let day = prefixZero(date.getDate())
+    let hour = prefixZero(date.getHours())
+    let minutes = prefixZero(date.getMinutes())
+    let seconds = prefixZero(date.getSeconds())
+
     pdfContent.style.display = 'block'
-    var pdf = new jsPDF
-    pdf.addHTML(pdfContent, function () {
-      pdf.save('test.pdf')
-      pdfContent.style.display = 'none'
-    })
+    var pdf = new jsPDF()
+    pdf.text('Hello world!', 10, 10)
+    pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
+    pdfContent.style.display = 'none'
   })
 }
 

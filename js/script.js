@@ -21,6 +21,13 @@ const isCanvasSupported = () => { // Thx modernizr
   return !!(testCanvas.getConelemtext && testCanvas.getContext('2d'))
 }
 
+const prefixZero = (number) => { // transform 1 to 01
+  if (number < 10) {
+    return `0${number}`
+  }
+  return number
+}
+
 /*
  * Canvas
  */
