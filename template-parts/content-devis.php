@@ -8,7 +8,10 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('page-devis band--lightgrey'); ?>>
-	<header class="page__header band band--lightgrey">
+  <div class="warning txtcenter" id="warningNOJS">
+    <p>Merci d'activer javascript afin de profiter de toutes les fonctionalitée de cette page.</p>
+  </div>
+  <header class="page__header band band--lightgrey">
     <div class="o-box o-wrapper o-wrapper--small">
       <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
       <div class="flex-container-v">
@@ -16,10 +19,6 @@
         <p>Design sur mesure, compatible téléphone et tablette.</p>
         <p><strong>3 retours maximum</strong> pour chaque étape du projet.</p>
         <p>Pour en savoir plus concernant cette prestation <a href="#moreinfo">Consulter les informations supplémentaires</a> en pied de pages.</p>
-        <div class="warning o-media o-wrapper o-wrapper--tiny" id="warningNOJS">
-          <figure class="o-media-figure o-media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/warning.svg')?></figure>
-          <p class="o-media-content">Veuillez activer JavaScript pour utiliser cette page. La version no-JS arrive bientôt. Les devis sont créés coté client et l'interaction des boutons est en JS. J'étais préssé par le temps...</p>
-        </div>
         <a href="#start" class="btn btn--large btn--centered btn--spaced">C'est parti !</a>
       </div>
     </div>
