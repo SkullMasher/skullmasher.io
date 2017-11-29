@@ -230,7 +230,6 @@ let initDevis = () => {
   })
 
   const $generatePDF = document.querySelector('.devis-action button')
-  const pdfContent = document.querySelector('.pdf-content')
 
   $generatePDF.addEventListener('click', (event) => {
     let date = new Date()
@@ -241,11 +240,30 @@ let initDevis = () => {
     let minutes = prefixZero(date.getMinutes())
     let seconds = prefixZero(date.getSeconds())
 
-    pdfContent.style.display = 'block'
     var pdf = new jsPDF()
-    pdf.text('Hello world!', 10, 10)
+    // Fill with background color
+    pdf.setFillColor(250,250,250)
+    pdf.rect(0, 0, 210, 297, 'F')
+    // Text content
+    pdf.text(20, 20, 'Devis site web')
+    pdf.setFontSize(12)
+    pdf.text(20, 30, 'Florian Ledru')
+    pdf.text(20, 35, '06 25 97 05 61')
+    pdf.text(20, 40, 'N° SIREN : 793 553 448')
+    pdf.text(180, 30, `${prefixZero(day)}/${prefixZero(month)}/${year}`, null, null, 'right')
+    pdf.setFontSize(10)
+    pdf.text(20, 50, `Dispensé d’immatriculation au registre du commerce
+et des sociétés (RCS) et au répertoire des métiers
+(RM)`)
+    pdf.setFillColor(230,230,230)
+    pdf.rect(20, 70, 160, 15, 'F')
+    pdf.setFontSize(12)
+    pdf.text(40, 79, 'DÉSIGNATION')
+    pdf.text(110, 79, 'Qté')
+    pdf.text(130, 79, 'PU HT')
+    pdf.text(150, 79, 'TOTAL HT')
+    // Show a downlod prompt to client
     pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
-    pdfContent.style.display = 'none'
   })
 }
 
