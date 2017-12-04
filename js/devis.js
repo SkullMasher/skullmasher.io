@@ -214,7 +214,7 @@ let initDevis = () => {
     })
   })
 
-  // fix the devis navbar
+  // fix the devis navbar when scrolled past it
   const devisNav = document.querySelector('.devis-nav')
   const TopOfDevisNav = devisNav.offsetTop
 
@@ -250,7 +250,7 @@ let initDevis = () => {
     pdf.text(20, 30, 'Florian Ledru')
     pdf.text(20, 35, '06 25 97 05 61')
     pdf.text(20, 40, 'N° SIREN : 793 553 448')
-    pdf.text(180, 30, `${prefixZero(day)}/${prefixZero(month)}/${year}`, null, null, 'right')
+    pdf.text(180, 30, `${day}/${month}/${year}`, null, null, 'right')
     pdf.setFontSize(10)
     pdf.text(20, 50, `Dispensé d’immatriculation au registre du commerce
 et des sociétés (RCS) et au répertoire des métiers
