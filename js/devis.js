@@ -161,16 +161,16 @@ let initDevis = () => {
       if (choice.nextElementSibling === null) { // Toggles the Sibling
         // Toggle the state of the YES button & update the devisNav
         if (choice.previousElementSibling.classList.toggle('btn--disabled')) {
-          updateDevisNav(Math.ceil(index / 2), true) // Substract
-        } else {
           updateDevisNav(Math.ceil(index / 2))
+        } else {
+          updateDevisNav(Math.ceil(index / 2), true) // Substract
         }
       } else {
         // Toggle the state of the NO button
         if (choice.nextElementSibling.classList.toggle('btn--disabled')) {
-          updateDevisNav(index / 2 + 1)
-        } else {
           updateDevisNav(index / 2 + 1, true) // Substract
+        } else {
+          updateDevisNav(index / 2 + 1)
         }
       }
     })
