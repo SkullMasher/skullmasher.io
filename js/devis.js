@@ -232,6 +232,27 @@ let initDevis = () => {
   const $generatePDF = document.querySelector('.devis-action button')
 
   $generatePDF.addEventListener('click', (event) => {
+    const fillDevisTable = () => {
+      let height = 80 // height where the devis table text start
+      let lineHeight = 15
+      // find user choice
+      let userChoice = [
+        {
+          text: `Design et Intégration d'une maquette
+web sur mesure`,
+          quantity: maquetteCount,
+          unitPrice: ratesAndTime[0].rate,
+          totalPrice: frontEndCost
+        }
+      ]
+
+      userChoice.forEach((choice) => {
+        pdf.text(20, height += lineHeight, choice.text)
+      })
+      console.log(height += lineHeight)
+      lineHeight = 0
+    }
+
     let date = new Date()
     let year = date.getFullYear()
     let month = prefixZero(date.getMonth())
@@ -262,6 +283,7 @@ et des sociétés (RCS) et au répertoire des métiers
     pdf.text(110, 79, 'Qté')
     pdf.text(130, 79, 'PU HT')
     pdf.text(150, 79, 'TOTAL HT')
+    fillDevisTable() // Add line to devis table based on user choice
     // Show a downlod prompt to client
     pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
   })
