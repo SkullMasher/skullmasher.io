@@ -233,24 +233,32 @@ let initDevis = () => {
 
   $generatePDF.addEventListener('click', (event) => {
     const fillDevisTable = () => {
-      let height = 80 // height where the devis table text start
+      let height = 95 // height where the devis table text start
       let lineHeight = 15
       // find user choice
       let userChoice = [
         {
-          text: `Design et Intégration d'une maquette
-web sur mesure`,
-          quantity: maquetteCount,
+          text: "Design et Intégration d'une maquette\nweb sur mesure",
+          quantity: maquetteCount.value,
           unitPrice: ratesAndTime[0].rate,
           totalPrice: frontEndCost
         }
       ]
 
+      userChoice[3] = {
+        text: "trippin on music\nArt as Cartasis",
+        quantity: 6666,
+        unitPrice: 4266,
+        totalPrice: 7086
+      }
+
       userChoice.forEach((choice) => {
-        pdf.text(20, height += lineHeight, choice.text)
+        pdf.text(20, height, choice.text)
+        pdf.text(110, height, choice.quantity.toString())
+        pdf.text(130, height, choice.unitPrice.toString())
+        pdf.text(150, height, choice.totalPrice.toString())
+        height += lineHeight
       })
-      console.log(height += lineHeight)
-      lineHeight = 0
     }
 
     let date = new Date()
