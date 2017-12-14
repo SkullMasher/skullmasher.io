@@ -46,7 +46,7 @@
         <p class="devis-question">Combien de maquettes avez-vous besoin ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du meme types. Comprend au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+          <p class="o-media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du même types. Comprends au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
         <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
@@ -73,14 +73,14 @@
           <div class="devis-switch">
             <div class="devis-switch__input">
               <input type="checkbox" id="businessCard" class="toggle" data-choiceid="1" data-optionid="0">
-              <label for="businessCard" class="toggle-label">J'ai besoin d'une carte de visite.</label>
+              <label for="businessCard" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">J'ai besoin d'une carte de visite <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
           <div class="devis-switch">
             <div class="devis-switch__input">
               <input type="checkbox" id="flyer" class="toggle" data-choiceid="1" data-optionid="0">
-              <label for="flyer" class="toggle-label">J'ai besoin d'un flyer.</label>
+              <label for="flyer" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
@@ -89,7 +89,7 @@
       </div>
       <div class="devis-steps" id="blog">
         <h2>3. Blog</h2>
-        <p class="devis-question">Avez-vous besoin de la fonctionnalité de blog, ou de fil d'actualités personalisée ?</p>
+        <p class="devis-question">Avez-vous besoin de la fonctionnalité de blog, ou de fil d'actualités personalisé ?</p>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
@@ -101,9 +101,9 @@
           <div class="devis-switch">
             <div class="devis-switch__input">
               <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
-              <label for="socialNetwork" class="toggle-label">Je souhaite également intégrer les avis, les recommendations ou le fil d'actualité d'un de mes réseaux sociaux.</label>
+              <label for="socialNetwork" class="toggle-label"></label>
             </div>
-            <p class="devis-switch__label">Je souhaite également intégrer les avis, les recommendations ou le fil d'actualité d'un de mes réseaux sociaux.<span class="badge badge--disabled">+150€ 1 jour</span></p>
+            <p class="devis-switch__label">Je souhaite également intégrer les avis, les recommandations ou le fil d'actualité d'un de mes réseaux sociaux.<span class="badge badge--disabled">+150€ 1 jour</span></p>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
         <p class="devis-question">Souhaitez-vous une newsletter ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Comprend l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
+          <p class="o-media-content">Comprends l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>300€</span> <span>3 à 4 jours</span></p>
@@ -127,7 +127,7 @@
         <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Comprend 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
+          <p class="o-media-content">Comprends 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
@@ -142,7 +142,7 @@
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprend l'ajout et l'instalation d'une boite mail professionnel disponible sur tous vos périphérique (téléphonne, tablette) au besoin.</p>
+          <p class="o-media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une boite mail professionnel disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
@@ -158,7 +158,7 @@
         <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
         <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérénitée. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
+          <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérennité. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
@@ -171,7 +171,7 @@
           <div class="devis-switch">
             <div class="devis-switch__input">
               <input type="checkbox" id="maintainWebsite" class="toggle" data-choiceid="6" data-optionid="0">
-              <label for="maintainWebsite" class="toggle-label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site.</label>
+              <label for="maintainWebsite" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site. <span class="badge badge--disabled">+600€ par an</span></p>
           </div>
@@ -179,10 +179,10 @@
       </div>
       <div class="devis-steps" id="validate">
         <h2>8. Déploiement</h2>
-        <p class="devis-question">Souhaitez-vous que je sois responsable de l'instalation de votre site web ?</p>
+        <p class="devis-question">Souhaitez-vous que je sois responsable de l'installation de votre site web ?</p>
         <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="o-media-content">Assure la fonctionalité du site après instalation.</p>
+          <p class="o-media-content">Assure la fonctionnalité du site après installation.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
@@ -195,37 +195,37 @@
     </div>
     <div class="devis-ready">
       <div class="o-box o-wrapper o-wrapper--small">
-        <p class="h2-like">Votre devis est pret !</p>
+        <p class="h2-like">Votre devis est prêt !</p>
         <div class="devis-action">
           <button class="btn">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
         </div>
         <div class="devis-action">
-          <p><span>Ce devis vous interesse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un prix final.</p>
+          <p><span>Ce devis vous intéresse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un accord final.</p>
         </div>
       </div>
     </div>
     <div id="moreinfo" class="o-box o-wrapper o-wrapper--small">
       <h2>Informations Complémentaires</h2>
       <h3>Référencement et présence sur Google (<abbr title="Search engine optimization">SEO</abbr>)</h3>
-      <p>Nous établirons ensemble une stragégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
+      <p>Nous établirons ensemble une stratégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
       <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3 id="maintenance">Offre de maintenance</h3>
       <ul>
-        <li>Disponibilitée a toute heures pour intervenir en urgences sur votre site, en cas de problemes (ex : panne mails , indisponibilités site web).</li>
+        <li>Disponibilité a toute heures pour intervenir en urgences sur votre site, en cas de problèmes (ex : panne mails , indisponibilités site web).</li>
         <li>Suivi et Corrections <a href="https://www.exploit-db.com/webapps/">des failles de sécurités</a>.</li>
         <li>Mises à jour du site et des plugins aux versions suivante.</li>
-        <li>Rétention et Sauvegarde heddomadaire du site.</li>
+        <li>Rétention et Sauvegarde hebdomadaire du site.</li>
       </ul>
       <h3>Gestion de mon site</h3>
-      <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs. Le livrable sera un thème wordpress créer à partir <a href="https://underscores.me/">du squelette</a> fourni par les dévelloppeurs et la communautée Wordpress.</p>
+      <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs. Le livrable sera un thème wordpress créer à partir <a href="https://underscores.me/">du squelette</a> fourni par les développeurs et la communautée Wordpress.</p>
       <h3>Livraison express</h3>
-      <p>Idéal pour les sites évenementiel, le livrable de cette prestation ne comprend pas d'interface de gestion pour changer son contenu et ce déploie plus rapidement et simplement.</p>
-      <p>Si vous avez besoin d'un site sous 10 jours avec design personalisé</p>
+      <p>Idéal pour les sites événementiels, le livrable de cette prestation ne comprend pas d'interface de gestion pour changer son contenu et ce déploie plus rapidement et simplement.</p>
+      <p>Si vous avez besoin d'un site sous 10 jours ou moins avec design personnalisé</p>
       <h3>Réduire le temps de développement de mon projet web</h3>
-      <p>Les réponses à ces quelques questions m'aide à réduire le temps de dévellopement de votre projet web et à correspondre précisément à vos attentes.</p>
+      <p>Les réponses à ces quelques questions m'aident à réduire le temps de développement de votre projet web et à correspondre précisément à vos attentes.</p>
       <ol>
         <li>Quelles sont les sites web qui vous inspirent ?</li>
-        <li>Avez-vous déjà des éléments graphiques (photo, pictogramme...) ?</li>
+        <li>Avez-vous déjà des éléments graphiques (photos, pictogrammes...) ?</li>
         <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
         <li>Quels sont vos mots clés ?</li>
       </ol>
@@ -233,7 +233,15 @@
     <div class="devis-ready">
       <div class="o-box o-wrapper o-wrapper--small">
         <p class="h2-like">Établir un rendez-vous</p>
-        <form id="meetup">
+        <p>Formulaire de prise de rendez-vous n'est pas encore disponible.</p>
+        <p>Vous pouvez m'envoyer un mail accompagner des réponses à ces différentes questions.</p>
+        <div class="flex-container-v">
+          <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--centered btn--top-spaced" role="button">
+            <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
+            <p><?php echo antispambot('florian@skullmasher.io') ?></p>
+          </a>
+        </div>
+        <!-- <form id="meetup">
           <div>
             <div>
               <label for="firstname">Prénom</label>
@@ -265,11 +273,11 @@
             <textarea></textarea>
           </div>
           <input class="btn btn--large" type="submit" name="submitproject" value="Envoyer mon projet !">
-        </form>
+        </form> -->
       </div>
     </div>
     <div class="o-box o-wrapper o-wrapper--small">
-      <h4>Crédits graphique</h4>
+      <h4>Crédits graphiques</h4>
       <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
