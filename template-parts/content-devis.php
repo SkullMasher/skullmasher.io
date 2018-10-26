@@ -52,7 +52,7 @@
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
           <p class="txtcenter h1-like"><strong>2</strong></p>
           <p class="txtcenter">Design de pages</p>
-          <p class="txtcenter"><span>650€</span> <span>5 à 9 jours par pages</span></p>
+          <p class="txtcenter"><span>625€</span> <span>5 à 9 jours par pages</span></p>
         </div>
       </div>
       <div class="devis-steps" id="branding">
@@ -103,7 +103,7 @@
               <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
               <label for="socialNetwork" class="toggle-label"></label>
             </div>
-            <p class="devis-switch__label">Je souhaite également intégrer les avis, les recommandations ou le fil d'actualité d'un de mes réseaux sociaux.<span class="badge badge--disabled">+150€ 1 jour</span></p>
+            <p class="devis-switch__label">Je souhaite intégrer les avis, les recommandations ou le fil d'actualité d'un de mes réseaux sociaux.<span class="badge badge--disabled">+150€ 1 jour</span></p>
           </div>
         </div>
       </div>
