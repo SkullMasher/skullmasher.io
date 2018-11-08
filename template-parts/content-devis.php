@@ -84,7 +84,7 @@
             </div>
             <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
-          <p><small>Frais d'impression non pris en charge.</small></p>
+          <p>Frais d'impression non pris en charge.</p>
         </div>
       </div>
       <div class="devis-steps" id="blog">
@@ -151,7 +151,7 @@
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
-        <p><small>Frais d'hébergement non compris.</small></p>
+        <p>Frais d'hébergement non compris.</p>
       </div>
       <div class="devis-steps" id="support">
         <h2>7. Maintenance, Support et assistance</h2>

@@ -155,23 +155,25 @@ let initDevis = () => {
   // Add click handling on devis-choice question
   Array.prototype.forEach.call(devisChoicesButtons, (choice, index) => {
     choice.addEventListener('click', (event) => {
-      // Change the state of the current button being clicked
-      choice.classList.toggle('btn--disabled')
-
-      if (choice.nextElementSibling === null) { // Toggles the Sibling
-        // Toggle the state of the YES button & update the devisNav
-        if (choice.previousElementSibling.classList.toggle('btn--disabled')) {
-          updateDevisNav(Math.ceil(index / 2))
+      const updateBtnStyles = () => {
+        choice.classList.remove('btn--disabled') // current buttons
+        // update the sibling style
+        if (choice.nextElementSibling === null) {
+          choice.previousElementSibling.classList.add('btn--disabled')
         } else {
-          updateDevisNav(Math.ceil(index / 2), true) // Substract
+          choice.nextElementSibling.classList.add('btn--disabled')
         }
-      } else {
-        // Toggle the state of the NO button
-        if (choice.nextElementSibling.classList.toggle('btn--disabled')) {
-          updateDevisNav(index / 2 + 1, true) // Substract
+      }
+      // Update if a disabled button is clicked
+      if (choice.classList.contains('btn--disabled')) {
+        // Detect if yes or no
+        if (choice.nextElementSibling === null) {
+          updateDevisNav(Math.ceil(index / 2)) // YES is selected
         } else {
-          updateDevisNav(index / 2 + 1)
+          updateDevisNav(Math.ceil(index / 2 + 1), true) // Substract
         }
+        // Update buttons style
+        updateBtnStyles()
       }
     })
   })
@@ -246,7 +248,7 @@ let initDevis = () => {
       ]
 
       userChoice[3] = {
-        text: "trippin on music\nArt as Cartasis",
+        text: 'trippin on music\nArt as Cartasis',
         quantity: 6666,
         unitPrice: 4266,
         totalPrice: 7086
@@ -271,7 +273,7 @@ let initDevis = () => {
 
     var pdf = new jsPDF()
     // Fill with background color
-    pdf.setFillColor(250,250,250)
+    pdf.setFillColor(250, 250, 250)
     pdf.rect(0, 0, 210, 297, 'F')
     // Text content
     pdf.text(20, 20, 'Devis site web')
@@ -284,7 +286,7 @@ let initDevis = () => {
     pdf.text(20, 50, `Dispensé d’immatriculation au registre du commerce
 et des sociétés (RCS) et au répertoire des métiers
 (RM)`)
-    pdf.setFillColor(230,230,230)
+    pdf.setFillColor(230, 230, 230)
     pdf.rect(20, 70, 160, 15, 'F')
     pdf.setFontSize(12)
     pdf.text(40, 79, 'DÉSIGNATION')
