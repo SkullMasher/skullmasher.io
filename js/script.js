@@ -62,7 +62,7 @@ const squares = []
 
 /*
  * Check if the lucky number of the object match the number in the god count
- * to have much better performance. God count gets reset at the when it's egal
+ * to have much better performance. God count gets reset at the when it's egual
  * to the number of squares on the screen is reach. godCount is incremented by
  * the requestAnimationFrame.
  */
@@ -125,7 +125,7 @@ const fillCanvas = () => {
     y = (spacing * i) + (squareD * (i - 1)) // Vertical line
     while (x < canvas.width) {
       x = (spacing * j) + (squareD * (j - 1)) // Horizontal line
-      squares.push(new Square(x, y)) // Store all the squares coordinates
+      squares.push(new Square(x, y)) // Store all the squares object
       j++
     }
     j = x = 0
@@ -150,7 +150,7 @@ const initCanvas = () => {
   fillCanvas()
 }
 
-// Animaiton
+// Animation
 const animate = () => {
   squares.forEach((sqr) => {
     sqr.breath()
