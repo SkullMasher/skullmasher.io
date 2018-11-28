@@ -23,7 +23,7 @@ let appPath = {
 let isProxy = true
 
 // If isProxy is enable specify the path URL where the project files are
-let proxyURL = 'http://localhost/~skullmasher/skullmasher.io-wordpress/'
+let proxyURL = 'http://localhost/~skullmasher/skullmasherio/'
 
 /*
  * You should not have to edit stuff beyond this warning
