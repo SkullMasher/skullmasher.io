@@ -254,8 +254,15 @@ let initDevis = () => {
         totalPrice: 7086
       }
 
+      userChoice[4] = {
+        text: 'Coding this from spain',
+        quantity: 42,
+        unitPrice: 87,
+        totalPrice: 879
+      }
+
       userChoice.forEach((choice) => {
-        pdf.text(20, height, choice.text)
+        pdf.text(22, height, choice.text)
         pdf.text(110, height, choice.quantity.toString())
         pdf.text(130, height, choice.unitPrice.toString())
         pdf.text(150, height, choice.totalPrice.toString())
@@ -283,9 +290,7 @@ let initDevis = () => {
     pdf.text(20, 40, 'N° SIREN : 793 553 448')
     pdf.text(180, 30, `${day}/${month}/${year}`, null, null, 'right')
     pdf.setFontSize(10)
-    pdf.text(20, 50, `Dispensé d’immatriculation au registre du commerce
-et des sociétés (RCS) et au répertoire des métiers
-(RM)`)
+    pdf.text(20, 50, "Dispensé d'immatriculation au registre du commerce\net des sociétés (RCS) et au répertoire des métiers (RM)")
     pdf.setFillColor(230, 230, 230)
     pdf.rect(20, 70, 160, 15, 'F')
     pdf.setFontSize(12)
@@ -295,7 +300,8 @@ et des sociétés (RCS) et au répertoire des métiers
     pdf.text(150, 79, 'TOTAL HT')
     fillDevisTable() // Add line to devis table based on user choice
     // Show a downlod prompt to client
-    pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
+    pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
+    // pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
   })
 }
 
