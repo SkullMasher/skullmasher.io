@@ -31,7 +31,7 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
  * Wrapper..............Page constraint object.
  *
  * COMPONENTS
- * Buttons..............
+ * Buttons..............Click !
  *
  * UTILITIES
  * Screen reader........
@@ -47,34 +47,34 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "objects/objects.box";
 
 // COMPONENTS
-@import "components/components.pageheader";
-@import "components/components.canvas";
-@import "components/components.buttons";
-@import "components/components.badges";
-@import "components/components.toggle";
-@import "components/components.form";
-@import "components/components.navigation";
-@import "components/components.band";
-@import "components/components.branding";
-@import "components/components.separators";
-@import "components/components.social";
-@import "components/components.sidebars";
-@import "components/components.postlist";
-@import "components/components.lastarticles";
-@import "components/components.pagination";
-@import "components/components.articles";
-@import "components/components.categories";
-@import "components/components.tags";
-@import "components/components.hireme";
-@import "components/components.comments";
-@import "components/components.pages";
-@import "components/components.pagefooter";
-@import "components/components.devis";
-@import "components/components.pdf";
-@import "components/components.quote";
-@import "components/components.search";
-@import "components/components.404";
-@import "components/components.archive";
+@import "components/pageheader";
+@import "components/canvas";
+@import "components/buttons";
+@import "components/badges";
+@import "components/toggle";
+@import "components/form";
+@import "components/navigation";
+@import "components/band";
+@import "components/branding";
+@import "components/separators";
+@import "components/social";
+@import "components/sidebars";
+@import "components/postlist";
+@import "components/lastarticles";
+@import "components/pagination";
+@import "components/articles";
+@import "components/categories";
+@import "components/tags";
+@import "components/hireme";
+@import "components/comments";
+@import "components/pages";
+@import "components/pagefooter";
+@import "components/devis";
+@import "components/pdf";
+@import "components/quote";
+@import "components/search";
+@import "components/404";
+@import "components/archive";
 
 // UTILITIES
 @import "utilities/utilities.flexbox";
