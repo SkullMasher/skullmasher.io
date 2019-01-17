@@ -56,7 +56,7 @@
 }
 
 img.#{$kna-namespace}fl {
-  margin-right: $small-value;
+  margin-right: $spacer-small;
 }
 
 .#{$kna-namespace}fr {
@@ -64,12 +64,12 @@ img.#{$kna-namespace}fl {
 }
 
 img.#{$kna-namespace}fr {
-  margin-left: $small-value;
+  margin-left: $spacer-small;
 }
 
 img.#{$kna-namespace}fl,
 img.#{$kna-namespace}fr {
-  margin-bottom: $tiny-value;
+  margin-bottom: $spacer-tiny;
 }
 
 /* inline-block */

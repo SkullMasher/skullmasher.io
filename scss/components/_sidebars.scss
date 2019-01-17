@@ -4,18 +4,18 @@
  * Styles for sidebars & widgets
  */
 .sidebar {
-  padding-top: $medium-value;
-  padding-right: $small-value;
-  padding-bottom: $small-value;
-  padding-left: $small-value;
+  padding-top: $spacer-medium;
+  padding-right: $spacer-small;
+  padding-bottom: $spacer-small;
+  padding-left: $spacer-small;
   background-color: $alpha-color;
   margin-bottom: auto;
 }
 
 @media (min-width: $tiny) {
   .sidebar {
-    padding-right: $large-value;
-    padding-left: $large-value;
+    padding-right: $spacer-large;
+    padding-left: $spacer-large;
   }
 }
 
@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: $large-value;
+  padding-bottom: $spacer-large;
 }
 
 @media (min-width: $extra-large) {

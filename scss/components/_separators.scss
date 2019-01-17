@@ -8,7 +8,7 @@
 }
 
 .separator--search-result {
-  margin-top: $medium-value;
+  margin-top: $spacer-medium;
   margin-bottom: 0;
 }
 
@@ -25,7 +25,7 @@
 
   .skulled-separator__image {
     margin-top: 0;
-    margin-right: $small-value;
+    margin-right: $spacer-small;
     margin-bottom: 0;
-    margin-left: $small-value;
+    margin-left: $spacer-small;
   }

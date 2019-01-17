@@ -3,7 +3,7 @@ article .category-webdev:before {
   content: "";
   height: 20px;
   width: 20px;
-  margin-right: $tiny-value;
+  margin-right: $spacer-tiny;
   vertical-align: text-bottom;
   background-image: url("img/develop-tiny.svg");
 }

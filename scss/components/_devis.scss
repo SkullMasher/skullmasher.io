@@ -1,6 +1,6 @@
 .page-devis {
   margin-bottom: 0;
-  padding-bottom: $medium-value;
+  padding-bottom: $spacer-medium;
 }
 
   .devis-time__figure {
@@ -30,18 +30,18 @@
 }
 
   .devis-step__priceinfo {
-    margin-bottom: $medium-value;
+    margin-bottom: $spacer-medium;
     color: $base-color;
     font-size: $h4-size;
   }
 
 .devis-question {
   font-size: $h3-size;
-  margin-bottom: $large-value;
+  margin-bottom: $spacer-large;
 }
 
 .devis-tips {
-  margin-bottom: $medium-value;
+  margin-bottom: $spacer-medium;
 
   > figure {
     margin-top: 0;
@@ -59,17 +59,17 @@
 .devis-choices {
   display: flex;
   justify-content: space-between;
-  padding: $small-value;
+  padding: $spacer-small;
   background-color: $content-background;
 }
 
   .devis-choices__range {
-    margin-top: $small-value;
+    margin-top: $spacer-small;
   }
 
 .devis-switch {
   display: flex;
-  margin: $medium-value;
+  margin: $spacer-medium;
   align-items: center;
 }
 
@@ -79,15 +79,15 @@
 
   .devis-switch__label {
     margin-top: 0;
-   margin-left: $medium-value;
+   margin-left: $spacer-medium;
   }
 
 .devis-ready {
   background-color: #fff;
-  margin-top: $large-value;
-  margin-bottom: $large-value;
-  padding-top: $large-value;
-  padding-bottom: $large-value;
+  margin-top: $spacer-large;
+  margin-bottom: $spacer-large;
+  padding-top: $spacer-large;
+  padding-bottom: $spacer-large;
 
 }
 
@@ -95,6 +95,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: $large-value;
-  margin-bottom: $large-value;
+  margin-top: $spacer-large;
+  margin-bottom: $spacer-large;
 }

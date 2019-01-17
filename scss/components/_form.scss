@@ -3,10 +3,10 @@ input {
   background-color: $alpha-color;
   border: 2px solid #ddd;
   border-radius: 3px;
-  padding-top: $tiny-value;
-  padding-right: $small-value;
-  padding-bottom: $tiny-value;
-  padding-left: $small-value;
+  padding-top: $spacer-tiny;
+  padding-right: $spacer-small;
+  padding-bottom: $spacer-tiny;
+  padding-left: $spacer-small;
   /*box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);*/
 }
 
@@ -37,10 +37,10 @@ input[type="range"]::-ms-thumb {
 }
 
 input[type="submit"] {
-  padding-top: $tiny-value;
-  padding-right: $small-value;
-  padding-bottom: $tiny-value;
-  padding-left: $small-value;
+  padding-top: $spacer-tiny;
+  padding-right: $spacer-small;
+  padding-bottom: $spacer-tiny;
+  padding-left: $spacer-small;
   background-color: $base-color-link;
   color: #fff;
 

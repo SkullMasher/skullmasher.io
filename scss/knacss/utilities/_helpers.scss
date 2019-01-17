@@ -177,27 +177,27 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}mas {
-  margin: $small-value;
+  margin: $spacer-small;
 }
 
 .#{$kna-namespace}mam {
-  margin: $medium-value;
+  margin: $spacer-medium;
 }
 
 .#{$kna-namespace}mal {
-  margin: $large-value;
+  margin: $spacer-large;
 }
 
 .#{$kna-namespace}pas {
-  padding: $small-value;
+  padding: $spacer-small;
 }
 
 .#{$kna-namespace}pam {
-  padding: $medium-value;
+  padding: $spacer-medium;
 }
 
 .#{$kna-namespace}pal {
-  padding: $large-value;
+  padding: $spacer-large;
 }
 
 .#{$kna-namespace}mtn,
@@ -206,15 +206,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}mts {
-  margin-top: $small-value;
+  margin-top: $spacer-small;
 }
 
 .#{$kna-namespace}mtm {
-  margin-top: $medium-value;
+  margin-top: $spacer-medium;
 }
 
 .#{$kna-namespace}mtl {
-  margin-top: $large-value;
+  margin-top: $spacer-large;
 }
 
 .#{$kna-namespace}mrn,
@@ -223,15 +223,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}mrs {
-  margin-right: $small-value;
+  margin-right: $spacer-small;
 }
 
 .#{$kna-namespace}mrm {
-  margin-right: $medium-value;
+  margin-right: $spacer-medium;
 }
 
 .#{$kna-namespace}mrl {
-  margin-right: $large-value;
+  margin-right: $spacer-large;
 }
 
 .#{$kna-namespace}mbn,
@@ -240,15 +240,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}mbs {
-  margin-bottom: $small-value;
+  margin-bottom: $spacer-small;
 }
 
 .#{$kna-namespace}mbm {
-  margin-bottom: $medium-value;
+  margin-bottom: $spacer-medium;
 }
 
 .#{$kna-namespace}mbl {
-  margin-bottom: $large-value;
+  margin-bottom: $spacer-large;
 }
 
 .#{$kna-namespace}mln,
@@ -257,15 +257,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}mls {
-  margin-left: $small-value;
+  margin-left: $spacer-small;
 }
 
 .#{$kna-namespace}mlm {
-  margin-left: $medium-value;
+  margin-left: $spacer-medium;
 }
 
 .#{$kna-namespace}mll {
-  margin-left: $large-value;
+  margin-left: $spacer-large;
 }
 
 .#{$kna-namespace}mauto {
@@ -294,15 +294,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}pts {
-  padding-top: $small-value;
+  padding-top: $spacer-small;
 }
 
 .#{$kna-namespace}ptm {
-  padding-top: $medium-value;
+  padding-top: $spacer-medium;
 }
 
 .#{$kna-namespace}ptl {
-  padding-top: $large-value;
+  padding-top: $spacer-large;
 }
 
 .#{$kna-namespace}prn,
@@ -311,15 +311,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}prs {
-  padding-right: $small-value;
+  padding-right: $spacer-small;
 }
 
 .#{$kna-namespace}prm {
-  padding-right: $medium-value;
+  padding-right: $spacer-medium;
 }
 
 .#{$kna-namespace}prl {
-  padding-right: $large-value;
+  padding-right: $spacer-large;
 }
 
 .#{$kna-namespace}pbn,
@@ -328,15 +328,15 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}pbs {
-  padding-bottom: $small-value;
+  padding-bottom: $spacer-small;
 }
 
 .#{$kna-namespace}pbm {
-  padding-bottom: $medium-value;
+  padding-bottom: $spacer-medium;
 }
 
 .#{$kna-namespace}pbl {
-  padding-bottom: $large-value;
+  padding-bottom: $spacer-large;
 }
 
 .#{$kna-namespace}pln,
@@ -345,13 +345,13 @@ ul.unstyled {
 }
 
 .#{$kna-namespace}pls {
-  padding-left: $small-value;
+  padding-left: $spacer-small;
 }
 
 .#{$kna-namespace}plm {
-  padding-left: $medium-value;
+  padding-left: $spacer-medium;
 }
 
 .#{$kna-namespace}pll {
-  padding-left: $large-value;
+  padding-left: $spacer-large;
 }

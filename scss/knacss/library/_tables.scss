@@ -9,7 +9,7 @@ table,
   table-layout: fixed;
   border-collapse: collapse;
   vertical-align: top;
-  margin-bottom: $medium-value;
+  margin-bottom: $spacer-medium;
 }
 
 .#{$kna-namespace}table {
@@ -24,6 +24,6 @@ table,
 td,
 th {
   vertical-align: top;
-  min-width: $medium-value;
+  min-width: $spacer-medium;
   cursor: default;
 }

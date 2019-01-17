@@ -5,11 +5,11 @@
 
 .btn {
   position: relative;
-  margin: $tiny-value;
-  padding-top: $small-value;
-  padding-right: $large-value;
-  padding-bottom: $small-value;
-  padding-left: $large-value;
+  margin: $spacer-tiny;
+  padding-top: $spacer-small;
+  padding-right: $spacer-large;
+  padding-bottom: $spacer-small;
+  padding-left: $spacer-large;
   text-align: center;
   background-color: $base-color-link;
   color: $alpha-color;
@@ -48,16 +48,16 @@
 
 // Size variant
 .btn--small {
-  padding-right: $small-value;
-  padding-left: $small-value;
+  padding-right: $spacer-small;
+  padding-left: $spacer-small;
 }
 
 .btn--large {
-  margin: $medium-value;
-  padding-top: $medium-value;
+  margin: $spacer-medium;
+  padding-top: $spacer-medium;
   padding-right: $large-plus-value;
   padding-left: $large-plus-value;
-  padding-bottom: $medium-value;
+  padding-bottom: $spacer-medium;
 }
 
 //Color Variant
@@ -73,7 +73,7 @@
 
 // Margin variant
 .btn--spaced {
-  margin: $large-value;
+  margin: $spacer-large;
 }
 
 .btn--extra-spaced {
@@ -81,7 +81,7 @@
 }
 
 .btn--top-spaced {
-  margin-top: $large-value;
+  margin-top: $spacer-large;
 }
 
 // Color variant

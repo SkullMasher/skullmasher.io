@@ -6,19 +6,19 @@
 
  .search-content {
    max-width: 800px;
-   padding-top: $medium-value;
-   padding-right: $medium-value;
-   padding-left: $medium-value;
+   padding-top: $spacer-medium;
+   padding-right: $spacer-medium;
+   padding-left: $spacer-medium;
    margin-right: auto;
    margin-left: auto;
  }
 
 .no-results {
-  margin-top: $large-value;
-  margin-bottom: $large-value;
+  margin-top: $spacer-large;
+  margin-bottom: $spacer-large;
 }
 
 .search-read-more {
-  margin-top: $small-value;
-  margin-left: $medium-value;
+  margin-top: $spacer-small;
+  margin-left: $spacer-medium;
 }

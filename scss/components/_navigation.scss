@@ -18,10 +18,10 @@
 
   .site-nav__home {
     display: block;
-    padding-top: $small-value;
-    padding-right: $small-value;
+    padding-top: $spacer-small;
+    padding-right: $spacer-small;
     padding-bottom: 0;
-    padding-left: $small-value;
+    padding-left: $spacer-small;
     text-transform: uppercase;
     font-family: hack;
     font-size: $h2-size;
@@ -29,7 +29,7 @@
   }
 
   .single-post .site-nav__home {
-    padding-bottom: $small-value;
+    padding-bottom: $spacer-small;
   }
 
   .site-nav__site-name {
@@ -54,10 +54,10 @@
   flex-wrap: wrap;
 
   a {
-    padding-top: $medium-value;
-    padding-bottom: $medium-value;
-    padding-right: $small-value;
-    padding-left: $small-value;
+    padding-top: $spacer-medium;
+    padding-bottom: $spacer-medium;
+    padding-right: $spacer-small;
+    padding-left: $spacer-small;
     text-decoration: none;
     font-size: 2rem;
 
@@ -122,8 +122,8 @@
   }
 
   .tag-nav__title {
-    padding-right: $small-value;
-    padding-left: $small-value;
+    padding-right: $spacer-small;
+    padding-left: $spacer-small;
   }
 
 /*
@@ -135,7 +135,7 @@
 }
 
 .menu-keypages-container a {
-  padding: $tiny-value;
+  padding: $spacer-tiny;
   text-decoration: none;
 
   &:hover {

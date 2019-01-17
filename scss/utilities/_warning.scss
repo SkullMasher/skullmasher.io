@@ -8,8 +8,8 @@
 }
 
   .warning--scarybox {
-    margin-top: $medium-value;
-    padding: $medium-value;
+    margin-top: $spacer-medium;
+    padding: $spacer-medium;
     background-color: lighten($base-color, 5);
     color: $alpha-color;
     border: 3px solid $base-color-link-hover;

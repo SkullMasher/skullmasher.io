@@ -4,13 +4,13 @@
 
 @media (min-width: $small) {
   .page-footer .has-gutter > *:not(:first-child) {
-    margin-left: $medium-value;
+    margin-left: $spacer-medium;
   }
 }
 
   .page-footer__column {
     background-color: $alpha-background;
-    margin-bottom: $medium-value;
+    margin-bottom: $spacer-medium;
   }
 
   @media (min-width: $tiny) {
@@ -21,19 +21,19 @@
 
   .page-footer__item {
     background-color: $alpha-background;
-    margin-bottom: $small-value;
+    margin-bottom: $spacer-small;
   }
 
   @media (min-width: $small) {
     .page-footer__item {
-      margin-bottom: $medium-value;
+      margin-bottom: $spacer-medium;
     }
   }
 
   .keypages__title {
-    margin-bottom: $small-value;
+    margin-bottom: $spacer-small;
   }
 
 .widget-colophon {
-  margin-bottom: $tiny-value;
+  margin-bottom: $spacer-tiny;
 }

@@ -1,6 +1,6 @@
 .comments-area {
-  padding-right: $small-value;
-  padding-left: $small-value;
+  padding-right: $spacer-small;
+  padding-left: $spacer-small;
 }
 
 .comment-list {
@@ -22,15 +22,15 @@
 }
 
 .comment-body {
-  margin-bottom: $large-value;
+  margin-bottom: $spacer-large;
 }
 
 .children .comment-body {
-  margin-bottom: $medium-value;
+  margin-bottom: $spacer-medium;
 }
 
 .comment-respond {
-  padding-bottom: $large-value;
+  padding-bottom: $spacer-large;
 }
 
 .comment-form textarea,
@@ -41,8 +41,8 @@
 }
 
 .form-submit > input {
-  margin-top: $medium-value;
-  padding: $small-value;
+  margin-top: $spacer-medium;
+  padding: $spacer-small;
   background-color: $base-color-link;
   color: $alpha-color;
 }

@@ -1,8 +1,8 @@
 .pagination {
-  padding-top: $medium-value;
-  padding-right: $tiny-value;
-  padding-bottom: $medium-value;
-  padding-left: $tiny-value;
+  padding-top: $spacer-medium;
+  padding-right: $spacer-tiny;
+  padding-bottom: $spacer-medium;
+  padding-left: $spacer-tiny;
 }
 
 @media (min-width: $tiny) {
@@ -14,8 +14,8 @@
 
 @media (min-width: $small) {
   .pagination {
-    padding-top: $large-value;
-    padding-bottom: $large-value;
+    padding-top: $spacer-large;
+    padding-bottom: $spacer-large;
   }
 }
 
@@ -36,13 +36,13 @@
 }
 
 .post-navigation .nav-next {
-  padding-top: $medium-value;
+  padding-top: $spacer-medium;
 }
 
 /* Blog page navigation */
 .page-numbers {
-  margin-left: $tiny-value;
-  padding: $tiny-value;
+  margin-left: $spacer-tiny;
+  padding: $spacer-tiny;
   background-color: $base-color-link;
   color: $alpha-color;
   text-decoration: none;

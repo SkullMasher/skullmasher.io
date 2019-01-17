@@ -11,7 +11,7 @@
 
 .o-box {
   display: block; /* [1] */
-  padding: $small-value;
+  padding: $spacer-small;
 
   > :last-child {
     margin-bottom: 0;
@@ -27,19 +27,19 @@
 }
 
 .o-box--tiny {
-  padding: $tiny-value;
+  padding: $spacer-tiny;
 }
 
 .o-box--medium {
-  padding: $medium-value;
+  padding: $spacer-medium;
 }
 
 .o-box--large {
-  padding: $large-value;
+  padding: $spacer-large;
 }
 
 .o-box--huge {
-  padding: $ultra-large-value;
+  padding: $spacer-ultra-large;
 }
 
 /* Positioned variants
