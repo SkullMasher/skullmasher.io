@@ -43,8 +43,8 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "knacss/knacss";
 
 // OBJECT
-@import "objects/objects.wrapper";
-@import "objects/objects.box";
+@import "objects/wrapper";
+@import "objects/box";
 
 // COMPONENTS
 @import "components/pageheader";
@@ -77,9 +77,9 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "components/archive";
 
 // UTILITIES
-@import "utilities/utilities.flexbox";
-@import "utilities/utilities.svg";
-@import "utilities/utilities.warning";
-@import "utilities/utilities.screen-reader";
-@import "utilities/utilities.pre-code";
-@import "utilities/utilities.content-sidebar";
+@import "utilities/flexbox";
+@import "utilities/svg";
+@import "utilities/warning";
+@import "utilities/screen-reader";
+@import "utilities/pre-code";
+@import "utilities/content-sidebar";
