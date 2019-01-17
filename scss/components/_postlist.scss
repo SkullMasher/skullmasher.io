@@ -28,11 +28,11 @@
   width: calc(100% - .01px); // full width
   padding-left: $spacer-large;
   background-color: $base-color-link;
-  color: $alpha-color;
+  color: $white;
   text-shadow: 0px 0px 5px #000;
 
   a {
-    color: $alpha-color;
+    color: $white;
 
     &:hover {
       color: $base-color-link-hover;
@@ -50,11 +50,11 @@
 .post-list .has-post-thumbnail {
   background-position: center;
   background-size: cover;
-  color: $alpha-color;
+  color: $white;
   text-shadow: 0px 0px 5px #000;
 
   a {
-    color: $alpha-color;
+    color: $white;
 
     &:hover {
       color: $base-color-link-hover;

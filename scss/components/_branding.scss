@@ -30,7 +30,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 0rem;
-  color: $alpha-color;
+  color: $white;
 }
 
 @media (min-width: 370px) {
@@ -50,11 +50,11 @@
 
   .blog-description__title {
     margin-bottom: 0;
-    color: $alpha-color;
+    color: $white;
   }
 
   .blog-description__lodr {
-    color: $alpha-color;
+    color: $white;
     margin-top: 0;
     margin-bottom: 0;
   }

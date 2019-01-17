@@ -44,12 +44,12 @@
   margin-left: $spacer-tiny;
   padding: $spacer-tiny;
   background-color: $base-color-link;
-  color: $alpha-color;
+  color: $white;
   text-decoration: none;
 
   &:hover {
     background-color: darken($base-color-link, 5);
-    color: $alpha-color;
+    color: $white;
     font-weight: bold;
   }
 }
