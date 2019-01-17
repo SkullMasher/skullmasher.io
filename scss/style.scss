@@ -46,6 +46,14 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "objects/wrapper";
 @import "objects/box";
 
+// UTILITIES
+@import "utilities/flexbox";
+@import "utilities/svg";
+@import "utilities/warning";
+@import "utilities/screen-reader";
+@import "utilities/pre-code";
+@import "utilities/content-sidebar";
+
 // COMPONENTS
 @import "components/pageheader";
 @import "components/canvas";
@@ -75,11 +83,3 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "components/search";
 @import "components/404";
 @import "components/archive";
-
-// UTILITIES
-@import "utilities/flexbox";
-@import "utilities/svg";
-@import "utilities/warning";
-@import "utilities/screen-reader";
-@import "utilities/pre-code";
-@import "utilities/content-sidebar";
