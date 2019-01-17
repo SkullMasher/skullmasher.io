@@ -1,14 +1,9 @@
-/* ==========================================================================
-   #BOX
-   ========================================================================== */
-
 /**
  * The box object simply boxes off content. Extend with cosmetic styles in the
  * Components layer.
  *
  * 1. So we can apply the `.o-box` class to naturally-inline elements.
  */
-
 .o-box {
   display: block; /* [1] */
   padding: $spacer-small;
@@ -19,9 +14,7 @@
 
 }
 
-/* Size variants
-   ========================================================================== */
-
+// Size variants
 .o-box--flush {
   padding: 0;
 }
@@ -42,25 +35,13 @@
   padding: $spacer-ultra-large;
 }
 
-/* Positioned variants
-   ========================================================================== */
+// Positioned variants
 .o-box--centered {
   // Needs a flex container
   margin: auto;
 }
 
-
-/* Color variants
-   ========================================================================== */
-
-.o-box--content-background {
- background-color: $content-background;
-}
-
-.o-box--alpha-background {
- background-color: $alpha-background;
-}
-
-.o-box--beta-background {
- background-color: $beta-background;
+// Color variants
+.o-box--light {
+ background-color: $gray-100;
 }
