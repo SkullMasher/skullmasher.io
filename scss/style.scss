@@ -20,10 +20,14 @@ CSS on steroids with KNACSS from Alsacreations : https://github.com/alsacreation
 Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 */
 
-// INCLUDES
+// FONTS
 @import "font/lato";
-@import "knacss/knacss";
 
+// KNACSS
+@import "_config/variables";
+@import "_config/mixins";
+@import "../node_modules/knacss/sass/knacss.scss";
+/*
 // OBJECT
 @import "objects/wrapper";
 @import "objects/box";
@@ -65,3 +69,4 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 @import "utilities/screen-reader";
 @import "utilities/pre-code";
 @import "utilities/content-sidebar";
+*/
