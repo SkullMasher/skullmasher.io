@@ -86,26 +86,26 @@
 
 // Color variant
 .btn--lightgrey {
-  background-color: $beta-background;
+  background-color: $gray-200;
 
   &:hover {
-    background-color: darken($beta-background, 5);
+    background-color: darken($gray-200, 5);
   }
 }
 
 .btn--grey {
-  background-color: $alpha-background;
+  background-color: $gray-900;
 
   &:hover {
-    background-color: darken($alpha-background, 5);
+    background-color: darken($gray-900, 5);
   }
 }
 
 .btn--darkgrey {
-  background-color: $gamma-background;
+  background-color: $gray-950;
 
   &:hover {
-    background-color: darken($gamma-background, 5);
+    background-color: darken($gray-950, 5);
   }
 }
 
