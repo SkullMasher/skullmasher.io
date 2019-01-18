@@ -1,5 +1,8 @@
 .separator {
-  margin: $spacer-medium-plus 0;
+  margin-top: $spacer-medium-plus;
+  margin-right: 0;
+  margin-bottom: $spacer-medium-plus;
+  margin-left: 0;
 }
 
 .separator--trimed {
@@ -15,17 +18,18 @@
 .skulled-separator {
   display: flex;
   align-items: center;
-}
 
-  .skulled-separator__line {
+  &__line {
     flex: 1;
     height: 1px;
     background-color: $color-base;
   }
 
-  .skulled-separator__image {
+  &__image {
     margin-top: 0;
     margin-right: $spacer-small;
     margin-bottom: 0;
     margin-left: $spacer-small;
   }
+}
+

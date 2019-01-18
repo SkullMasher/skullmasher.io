@@ -1,5 +1,8 @@
 .last-articles {
-  padding: $spacer-small;
+  padding-top: $spacer-small;
+  padding-right: $spacer-small;
+  padding-bottom: $spacer-medium;
+  padding-left: $spacer-small;
 
   @include respond-to("tiny-up") {
     flex: 1;
@@ -14,6 +17,7 @@
   @include respond-to("large-up") {
     padding-top: $spacer-large;
   }
+
   &__heading-container {
     display: flex;
     align-items: center;
@@ -38,31 +42,16 @@
       padding-right: $spacer-extra-large;
     }
 
-    &:last-of-type .article-separator {
+    &:last-of-type .separator {
       display: none;
     }
   }
 
-
+  &__title {
+    @include font-size(h3);
+  }
 
   &__date {
-
-  }
-
-  &__title {
-    margin: 0;
-  }
-
-  &__title > a {
-    padding-top: $spacer-small;
-    padding-right: 0;
-    padding-bottom: $spacer-small;
-    padding-left: 0;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    color: $gray-600;
   }
 }
-

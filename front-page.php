@@ -71,7 +71,9 @@ get_header(); ?>
   }
 
   endforeach; wp_reset_postdata(); ?>
-        <a href="<?php echo get_permalink(get_page_by_title('blogmasher')) ?>" class="btn btn--rounded btn--centered btn--top-spaced" role="button">Consulter tous les articles</a>
+      <div class="flex-container mtl">
+        <a href="<?php echo get_permalink(get_page_by_title('blogmasher')) ?>" class="btn btn--success btn--big u-uppercase center" role="button">Voir tous les articles</a>
+      </div>
     </div>
     <?php get_sidebar('homepage') ?>
   </div>

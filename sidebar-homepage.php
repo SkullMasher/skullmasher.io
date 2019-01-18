@@ -6,18 +6,15 @@
     <span class="skulled-separator__line"></span>
   </p>
   <?php echo do_shortcode( '[worktogether]' ); ?>
-  <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--centered btn--top-spaced" role="button">
+  <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--success center mtm" role="button">
     <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
     <p><?php echo antispambot('florian@skullmasher.io') ?></p>
   </a>
-  <div class="social social--contained">
-    <div class="social__twitter">
+  <div class="social mtm">
+    <div class="mrl">
       <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
     </div>
-    <div class="social__youtube">
-      <a href="https://www.youtube.com/user/SkullM4sher/videos"><?php echo file_get_contents(get_template_directory(). '/img/youtube.svg') ?></a>
-    </div>
-    <div class="social__github">
+    <div class="">
       <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat.svg') ?></a>
     </div>
   </div>
