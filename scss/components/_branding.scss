@@ -64,56 +64,58 @@
 
 // Promotional skills
 .promotional-skills {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: $spacer-small;
+  padding-top: $spacer-medium;
+  padding-right: $spacer-small;
   padding-bottom: $spacer-medium;
-
-  @include respond-to("tiny-up") {
-    padding-top: $spacer-small;
-    padding-bottom: $spacer-medium;
-  }
+  padding-left: $spacer-small;
 
   @include respond-to("small-up") {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to("medium-up") {
+    padding-right: $spacer-medium;
+    padding-left: $spacer-medium;
+    grid-gap: $spacer-large;
+  }
+
+  @include respond-to("extra-large-up") {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .promotional-skill {
-  padding: $spacer-small;
-
-  @include respond-to("tiny-up") {
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @include respond-to("small-up") {
-    width: 50%;
-    padding: $spacer-small-plus;
-  }
-
-  @include respond-to("medium-up") {
-    padding-right: $spacer-large;
-    padding-left: $spacer-large;
-  }
-
-  @include respond-to("large-up") {
-    width: 25%;
-    padding: $spacer-medium;
-  }
-
   &__header {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-gap: $spacer-small;
     align-items: center;
-    hyphens: none;
+
+    @include respond-to("small-up") {
+      height: 78px;
+    }
 
     @include respond-to("medium-up") {
-      height: 72px; // MAGIC NUMBER
+      grid-template-columns: 50px 1fr;
     }
+
+    @include respond-to("large-up") {
+      grid-template-columns: 60px 1fr;
+    }
+  }
+
+  &__picto {
+
   }
 
   &__title {
     margin: 0;
-    padding-left: $spacer-small;
+    // padding-left: $spacer-small;
     font-size: 2.6rem;
     color: $link-color;
   }
+
 }

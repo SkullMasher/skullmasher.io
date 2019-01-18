@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section class="error-404 not-found o-wrapper">
+			<section class="error-404 not-found wrapper">
 				<header>
 					<h1 class="error-404__title"><span class="the-dreaded-word">404</span>Page non trouvé</h1>
 				</header>

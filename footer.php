@@ -13,7 +13,7 @@
 </div><!-- #content -->
 <footer class="page-footer band--darkgrey flex-container-v" role="contentinfo">
     <p class="nota-bene o-box o-box--medium txtcenter"><strong>Skullmasher.io</strong> est une société affiliée au régime auto-entrepreneur. <strong>Numéro siren : 793553488</strong></p>
-    <div class="autogrid has-gutter o-wrapper o-wrapper--large">
+    <div class="autogrid has-gutter wrapper wrapper--large">
       <div class="keypages page-footer__column o-box">
         <?php get_sidebar('keypages'); ?>
       </div>

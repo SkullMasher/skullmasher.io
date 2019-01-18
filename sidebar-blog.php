@@ -1,4 +1,4 @@
-<aside class="sidebar blog-sidebar o-wrapper o-wrapper--small">
+<aside class="sidebar blog-sidebar wrapper wrapper--small">
   <?php echo do_shortcode( '[whoami]' ); ?>
   <p class="skulled-separator">
     <span class="skulled-separator__line"></span>

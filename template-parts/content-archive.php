@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('archive-article o-wrapper o-wrapper--small'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('archive-article wrapper wrapper--small'); ?>>
 	<header class="archive-article__header">
 		<?php
 		if ( is_single() ) :

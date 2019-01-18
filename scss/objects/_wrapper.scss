@@ -5,38 +5,38 @@
  * Em for media queries based on https://zellwk.com/blog/media-query-units/
  */
 
-/*$wrapper-width: 1100px !default;*/
-/*$wrapper-width: 110rem !default;*/
-$wrapper-width: 61.111em !default;
-$wrapper-width-tiny: 500px !default; // 800px
-$wrapper-width-small: 800px !default; // 800px
-$wrapper-width-medium : 72.222em !default; // 1300px
-$wrapper-width-large: 88.889em !default; // 1600px
-$wrapper-width-huge: 100em !default; // 1800px
+ /*$wrapper-width: 1100px !default;*/
+ /*$wrapper-width: 110rem !default;*/
+ $wrapper-width: 61.111em !default;
+ $wrapper-width-tiny: 500px !default; // 800px
+ $wrapper-width-small: 800px !default; // 800px
+ $wrapper-width-medium : 72.222em !default; // 1300px
+ $wrapper-width-large: 88.889em !default; // 1600px
+ $wrapper-width-huge: 100em !default; // 1800px
 
-.o-wrapper {
+ .wrapper {
   max-width: $wrapper-width;
   margin-right: auto;
   margin-left: auto;
-}
 
-// Size Variants
-.o-wrapper--tiny {
-  max-width: $wrapper-width-tiny;
-}
+  // Size Variants
+  &--tiny {
+    max-width: $wrapper-width-tiny;
+  }
 
-.o-wrapper--small {
-  max-width: $wrapper-width-small;
-}
+  &--small {
+    max-width: $wrapper-width-small;
+  }
 
-.o-wrapper--medium {
-  max-width: $wrapper-width-medium;
-}
+  &--medium {
+    max-width: $wrapper-width-medium;
+  }
 
-.o-wrapper--large {
-  max-width: $wrapper-width-large;
-}
+  &--large {
+    max-width: $wrapper-width-large;
+  }
 
-.o-wrapper--huge {
-  max-width: $wrapper-width-huge;
+  &--huge {
+    max-width: $wrapper-width-huge;
+  }
 }

@@ -8,7 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('article o-wrapper o-wrapper--small'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('article wrapper wrapper--small'); ?>>
   <header class="article__heading">
     <div class="article__date">
       <?php skullmasher_io_posted_on_single(); ?>
@@ -81,7 +81,7 @@ else: ?>
         <a href="mailto:contact@example.com?&subject=<?php echo $encoded_article_title ?>&body=<?php echo $encoded_permalink ?>"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></a>
       </p>
     </div>
-    <div class="hire-me flex-container-v">
+    <div class="hire-me flex-container--column">
       <a href="<?php echo get_permalink(get_page_by_title('contact')->ID ) ?>" class="hire-me__link btn btn--large btn--rounded ">Vous avez aimé cet article ? <br>Engagez moi !</a>
     </div>
   </footer>

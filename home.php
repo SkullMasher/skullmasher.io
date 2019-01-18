@@ -15,7 +15,7 @@
 get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="content-sidebar--extra-large o-wrapper o-wrapper--huge">
+      <div class="content-sidebar--extra-large wrapper wrapper--huge">
         <div class="blog-content">
           <div class="post-list grid-2-small-1">
 <?php
@@ -46,7 +46,7 @@ endif; ?>
     'next_text' => __( '', 'textdomain' ),
 ) ); ?>
     <div class="band--lightgrey">
-      <div class="o-wrapper o-wrapper--medium grid-2-small-1">
+      <div class="wrapper wrapper--medium grid-2-small-1">
 <?php
   /**
    * List the categories of the blog

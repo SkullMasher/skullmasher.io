@@ -28,7 +28,7 @@
 <?php else : ?>
 <header id="top" class="page-header page-header--single-page" role="banner">
 <?php endif; ?>
-  <nav class="o-wrapper site-nav" role="navigation">
+  <nav class="wrapper site-nav" role="navigation">
     <a class="site-nav__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo.svg')?><span class="site-nav__site-name"><?php bloginfo( 'name' ); ?></span></a>
 <?php wp_nav_menu(array(
   'theme_location' => 'primary',
@@ -38,7 +38,7 @@
 )); ?>
   </nav>
 <?php if ( $description || is_customize_preview() ) : ?>
-  <div class="o-wrapper site-branding">
+  <div class="wrapper site-branding">
     <h1 class="site-description"><?php echo $description; ?></h1>
   </div>
 <?php elseif( $description_blog ): ?>

@@ -12,9 +12,9 @@
     <p>Merci d'activer javascript afin de profiter de toutes les fonctionalitée de cette page.</p>
   </div>
   <header class="page__header band band--lightgrey">
-    <div class="o-box o-wrapper o-wrapper--small">
+    <div class="o-box wrapper wrapper--small">
       <h1 class="page__title">Deviser un site vitrine ou blog, pour les particuliers et les entreprises locales.</h1>
-      <div class="flex-container-v">
+      <div class="flex-container--column">
         <p>Simulez le prix de votre projet web votre projet web en 8 étapes simple et rapide. Le PDF généré à la fin de la simulation de votre projet web est anonyme. Si vous souhaitez continuer votre projet avec ce site remplissez simplement le formulaire durant la dernière étape de validation.</p>
         <p>Design sur mesure, compatible téléphone et tablette.</p>
         <p><strong>3 retours maximum</strong> pour chaque étape du projet.</p>
@@ -40,15 +40,15 @@
     <!-- <progress value="0.5">70 %</progress> -->
   </nav>
 	<section class="page-devis">
-    <div class="o-box o-wrapper o-wrapper--small">
-      <div class="devis-steps flex-container-v" id="maquette">
+    <div class="o-box wrapper wrapper--small">
+      <div class="devis-steps flex-container--column" id="maquette">
         <h2>1. Maquette de pages</h2>
         <p class="devis-question">Combien de maquettes avez-vous besoin ?</p>
-        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du même types. Comprends au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
-        <div class="devis-choices flex-container-v o-wrapper o-wrapper--centered">
+        <div class="devis-choices flex-container--column wrapper wrapper--centered">
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
           <p class="txtcenter h1-like"><strong>2</strong></p>
           <p class="txtcenter">Design de pages</p>
@@ -58,14 +58,14 @@
       <div class="devis-steps" id="branding">
         <h2>2. Image de marque</h2>
         <p class="devis-question">Avez-vous besoin d'un logo ?</p>
-        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
@@ -93,7 +93,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
@@ -110,14 +110,14 @@
       <div class="devis-steps" id="newsletter">
         <h2>4. Newsletter</h2>
         <p class="devis-question">Souhaitez-vous une newsletter ?</p>
-        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Comprends l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>300€</span> <span>3 à 4 jours</span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
@@ -125,14 +125,14 @@
       <div class="devis-steps" id="teaching">
         <h2>5. Formation</h2>
         <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
-        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Comprends 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
@@ -140,14 +140,14 @@
       <div class="devis-steps" id="hosting">
         <h2>6. Hébergement et nom de domaine</h2>
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
-        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une boite mail professionnel disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
@@ -156,14 +156,14 @@
       <div class="devis-steps" id="support">
         <h2>7. Maintenance, Support et assistance</h2>
         <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
-        <div class="devis-tips o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérennité. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
@@ -180,21 +180,21 @@
       <div class="devis-steps" id="validate">
         <h2>8. Déploiement</h2>
         <p class="devis-question">Souhaitez-vous que je sois responsable de l'installation de votre site web ?</p>
-        <div class="devis-tips devis-tips--centered-v o-media o-wrapper o-wrapper--tiny">
+        <div class="devis-tips devis-tips--centered-v o-media wrapper wrapper--tiny">
           <figure class="o-media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="o-media-content">Assure la fonctionnalité du site après installation.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
         </div>
-        <div class="devis-choices o-wrapper o-wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny">
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
       </div>
     </div>
     <div class="devis-ready" id="download-devis">
-      <div class="o-box o-wrapper o-wrapper--small">
+      <div class="o-box wrapper wrapper--small">
         <p class="h2-like">Votre devis est prêt !</p>
         <div class="devis-action">
           <button class="btn">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
@@ -204,7 +204,7 @@
         </div>
       </div>
     </div>
-    <div id="moreinfo" class="o-box o-wrapper o-wrapper--small">
+    <div id="moreinfo" class="o-box wrapper wrapper--small">
       <h2>Informations Complémentaires</h2>
       <h3>Référencement et présence sur Google (<abbr title="Search engine optimization">SEO</abbr>)</h3>
       <p>Nous établirons ensemble une stratégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
@@ -231,11 +231,11 @@
       </ol>
     </div>
     <div class="devis-ready">
-      <div class="o-box o-wrapper o-wrapper--small">
+      <div class="o-box wrapper wrapper--small">
         <p class="h2-like">Établir un rendez-vous</p>
         <p>Formulaire de prise de rendez-vous n'est pas encore disponible.</p>
         <p>Vous pouvez m'envoyer un mail accompagner des réponses à ces différentes questions.</p>
-        <div class="flex-container-v">
+        <div class="flex-container--column">
           <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--centered btn--top-spaced" role="button">
             <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
             <p><?php echo antispambot('florian@skullmasher.io') ?></p>
@@ -276,7 +276,7 @@
         </form> -->
       </div>
     </div>
-    <div class="o-box o-wrapper o-wrapper--small">
+    <div class="o-box wrapper wrapper--small">
       <h4>Crédits graphiques</h4>
       <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

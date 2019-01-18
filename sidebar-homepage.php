@@ -1,4 +1,4 @@
-<aside class="sidebar home-sidebar flex-container-v">
+<aside class="sidebar home-sidebar flex-container--column">
   <?php echo do_shortcode( '[whoami]' ); ?>
   <p class="skulled-separator">
     <span class="skulled-separator__line"></span>

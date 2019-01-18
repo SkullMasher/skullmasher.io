@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('o-box o-wrapper o-wrapper--small'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('o-box wrapper wrapper--small'); ?>>
 	<header class="page__header">
 		<?php the_title( '<h1 class="page__title">', '</h1>' ); ?>
 	</header>
