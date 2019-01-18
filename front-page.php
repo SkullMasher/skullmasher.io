@@ -29,7 +29,7 @@ get_header(); ?>
   <div class="band band--lightgrey">
     <div class="promotional-skills o-wrapper o-wrapper--huge">
       <div class="promotional-skill">
-        <header class="promotional-skill__header o-media">
+        <header class="promotional-skill__header media">
           <?php echo file_get_contents(get_template_directory() .'/img/wordpress.svg') ?>
           <h2 class="promotional-skill__title o-media-content">Concevoir avec Wordpress</h2>
         </header>

@@ -1,5 +1,23 @@
 .page-footer {
   color: $white;
+
+  &__column {
+    background-color: $gray-900;
+    margin-bottom: $spacer-medium;
+
+    @include respond-to("tiny-up") {
+      margin-bottom: auto;
+    }
+  }
+
+  &__item {
+    background-color: $gray-900;
+    margin-bottom: $spacer-small;
+
+    @include respond-to("small-up") {
+      margin-bottom: $spacer-medium;
+    }
+  }
 }
 
 @media (min-width: $small) {
@@ -8,31 +26,10 @@
   }
 }
 
-  .page-footer__column {
-    background-color: $gray-900;
-    margin-bottom: $spacer-medium;
-  }
 
-  @media (min-width: $tiny) {
-    .page-footer__column {
-      margin-bottom: auto;
-    }
-  }
-
-  .page-footer__item {
-    background-color: $gray-900;
-    margin-bottom: $spacer-small;
-  }
-
-  @media (min-width: $small) {
-    .page-footer__item {
-      margin-bottom: $spacer-medium;
-    }
-  }
-
-  .keypages__title {
-    margin-bottom: $spacer-small;
-  }
+.keypages__title {
+  margin-bottom: $spacer-small;
+}
 
 .widget-colophon {
   margin-bottom: $spacer-tiny;

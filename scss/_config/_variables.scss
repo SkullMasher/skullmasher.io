@@ -132,7 +132,7 @@ $black    : #000 !default;
 
 $blue-300   : #5BC0DE !default;
 $blue-500   : #0275D8 !default;
-$green-500  : #5CB85C !default;
+$green-500  : #44a340 !default;
 $orange-500 : #F0AD4E !default;
 $red-500    : #D9534F !default;
 
@@ -160,10 +160,10 @@ $forms-color     : $gray-800;
 // ---------------
 
 // Component: links
-$link-color            : #44a340;
+$link-color            : $color-brand;
 $link-color-hover      : #e71d36;
-$link-decoration       : underline;
-$link-decoration-hover : underline;
+$link-decoration       : none;
+$link-decoration-hover : none;
 
 // Global border-radius
 $border-radius: 0 !default;

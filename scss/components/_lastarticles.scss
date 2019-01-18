@@ -1,70 +1,59 @@
 .last-articles {
   padding: $spacer-small;
-}
 
-@media (min-width: $tiny) {
-  .last-articles {
+  @include respond-to("tiny-up") {
     flex: 1;
     padding-right: 0;
     padding-left: $spacer-large;
   }
-}
 
-@media (min-width: $small) {
-  .last-articles {
+  @include respond-to("small-up") {
     padding-bottom: $spacer-large-plus;
   }
-}
 
-@media (min-width: $large) {
-  .last-articles {
+  @include respond-to("large-up") {
     padding-top: $spacer-large;
   }
-
-}
-
-  .last-articles__heading-container {
+  &__heading-container {
     display: flex;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
 
-  .last-articles__heading {
+  &__heading {
     margin: 0;
     padding-right: $spacer-small
   }
 
-  .last-articles__article-container {
+  &__article-container {
     margin-bottom: 0;
     padding-right: 0;
+
+    @include respond-to("tiny-up") {
+      padding-right: $spacer-large;
+    }
+
+    @include respond-to("large-up") {
+      padding-right: $spacer-extra-large;
+    }
 
     &:last-of-type .article-separator {
       display: none;
     }
   }
 
-  @media (min-width: $tiny) {
-    .last-articles__article-container {
-      padding-right: $spacer-large;
-    }
-  }
 
-  @media (min-width: $large) {
-    .last-articles__article-container {
-      padding-right: $spacer-extra-large;
-    }
-  }
 
-  .last-articles__date {
+  &__date {
 
   }
 
-  .last-articles__title {
+  &__title {
     margin: 0;
   }
 
-  .last-articles__title > a {
+  &__title > a {
     padding-top: $spacer-small;
     padding-right: 0;
     padding-bottom: $spacer-small;
@@ -75,3 +64,5 @@
       text-decoration: underline;
     }
   }
+}
+

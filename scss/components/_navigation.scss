@@ -8,15 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
 
-@media (min-width: 41.6em) { // 666px
-  .site-nav {
-    width: 666px; // Totaly not a MAGIC NUMBER since it's the number of the beast
-  }
-}
-
-  .site-nav__home {
+  &__home {
     display: block;
     padding-top: $spacer-small;
     padding-right: $spacer-small;
@@ -28,17 +21,26 @@
     text-decoration: none;
   }
 
-  .single-post .site-nav__home {
-    padding-bottom: $spacer-small;
-  }
-
-  .site-nav__site-name {
+  &__site-name {
     display: none;
   }
 
-  .site-nav__logo {
+  &__logo {
     vertical-align: middle;
   }
+}
+
+@media (min-width: 41.6em) { // 666px
+  .site-nav {
+    width: 666px; // The number of the beast !
+  }
+
+}
+
+.single-post .site-nav__home {
+  padding-bottom: $spacer-small;
+}
+
 
 // General Wordpress menu styling
 .menu-item > a {
@@ -60,8 +62,10 @@
     padding-left: $spacer-small;
     text-decoration: none;
     font-size: 2rem;
+    color: $white;
 
     &:hover {
+      color: $link-color-hover;
       text-decoration: underline;
     }
   }
@@ -75,9 +79,7 @@
   }
 }
 
-/*
- * Showing the first item of the menu when there is enough space
- */
+// Showing the first item of the menu when there is enough space
 @media (min-width: 27em) {
   .primary-menu {
     .menu-item:first-child {
@@ -86,9 +88,7 @@
   }
 }
 
-/*
- * Showing the last item of the menu when there is enough space
- */
+// Showing the last item of the menu when there is enough space
 @media (min-width: 33em) {
   .primary-menu {
     .menu-item:last-child {
@@ -116,15 +116,15 @@
 }
 
 // Blog Tag list
-  .tag-nav__list--single {
-    justify-content: flex-start;
-    line-height: 1;
-  }
+.tag-nav__list--single {
+  justify-content: flex-start;
+  line-height: 1;
+}
 
-  .tag-nav__title {
-    padding-right: $spacer-small;
-    padding-left: $spacer-small;
-  }
+.tag-nav__title {
+  padding-right: $spacer-small;
+  padding-left: $spacer-small;
+}
 
 /*
  * Key pages navigation list
@@ -160,12 +160,12 @@
    width: 50px;
    height: 50px;
  }
-}
 
- .devis-nav--fixed {
+ &--fixed {
    position: fixed;
    width: 100%;
    top: 0;
    z-index: 1;
    box-shadow: #666 0 2px 5px;
  }
+}

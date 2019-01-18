@@ -31,95 +31,95 @@
   &:active {
     top: 2px;
   }
-}
 
-// State variant
-.btn--disabled {
-  border: 1px solid #999;
-  background-color: #fff;
-  color: #444;
-  box-shadow: initial;
-
-  &:focus {
+  // State variant
+  &--disabled {
+    border: 1px solid #999;
     background-color: #fff;
-    color: #444; // Prevent the default anchor tag color
+    color: #444;
+    box-shadow: initial;
+
+    &:focus {
+      background-color: #fff;
+      color: #444; // Prevent the default anchor tag color
+    }
   }
-}
 
-// Size variant
-.btn--small {
-  padding-right: $spacer-small;
-  padding-left: $spacer-small;
-}
-
-.btn--large {
-  margin: $spacer-medium;
-  padding-top: $spacer-medium;
-  padding-right: $spacer-large-plus;
-  padding-left: $spacer-large-plus;
-  padding-bottom: $spacer-medium;
-}
-
-//Color Variant
-.btn--white {
-  background-color: $white;
-  color: $color-base;
-
-  &:hover {
-    background-color: darken($white, 1);
-    color: $link-color;
+  // Size variant
+  &--small {
+    padding-right: $spacer-small;
+    padding-left: $spacer-small;
   }
-}
 
-// Margin variant
-.btn--spaced {
-  margin: $spacer-large;
-}
-
-.btn--extra-spaced {
-  margin: $spacer-extra-large;
-}
-
-.btn--top-spaced {
-  margin-top: $spacer-large;
-}
-
-// Color variant
-.btn--lightgrey {
-  background-color: $gray-200;
-
-  &:hover {
-    background-color: darken($gray-200, 5);
+  &--large {
+    margin: $spacer-medium;
+    padding-top: $spacer-medium;
+    padding-right: $spacer-large-plus;
+    padding-left: $spacer-large-plus;
+    padding-bottom: $spacer-medium;
   }
-}
 
-.btn--grey {
-  background-color: $gray-900;
+  //Color Variant
+  &--white {
+    background-color: $white;
+    color: $color-base;
 
-  &:hover {
-    background-color: darken($gray-900, 5);
+    &:hover {
+      background-color: darken($white, 1);
+      color: $link-color;
+    }
   }
-}
 
-.btn--darkgrey {
-  background-color: $gray-950;
-
-  &:hover {
-    background-color: darken($gray-950, 5);
+  // Margin variant
+  &--spaced {
+    margin: $spacer-large;
   }
-}
 
-// Other variant
-.btn--rounded {
-  border-radius: 3px;
-}
+  &--extra-spaced {
+    margin: $spacer-extra-large;
+  }
 
-.btn--centered {
-  // Needs to be in a flex container
-  margin-right: auto;
-  margin-left: auto;
-}
+  &--top-spaced {
+    margin-top: $spacer-large;
+  }
 
-.btn--no-box-shadow {
-  box-shadow: none;
+  // Color variant
+  &--lightgrey {
+    background-color: $gray-200;
+
+    &:hover {
+      background-color: darken($gray-200, 5);
+    }
+  }
+
+  &--grey {
+    background-color: $gray-900;
+
+    &:hover {
+      background-color: darken($gray-900, 5);
+    }
+  }
+
+  &--darkgrey {
+    background-color: $gray-950;
+
+    &:hover {
+      background-color: darken($gray-950, 5);
+    }
+  }
+
+  // Other variant
+  &--rounded {
+    border-radius: 3px;
+  }
+
+  &--centered {
+    // Needs to be in a flex container
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &--no-box-shadow {
+    box-shadow: none;
+  }
 }

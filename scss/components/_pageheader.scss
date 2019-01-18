@@ -6,8 +6,8 @@
   position: relative;
   background-image: url('img/skullmasherio-tile.png');
   color: $white;
-}
 
-.page-header--single-page {
-  padding-bottom: $spacer-small;
+  &--single-page {
+    padding-bottom: $spacer-small;
+  }
 }

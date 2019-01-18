@@ -3,21 +3,18 @@
   padding-right: $spacer-tiny;
   padding-bottom: $spacer-medium;
   padding-left: $spacer-tiny;
-}
 
-@media (min-width: $tiny) {
-  .pagination {
-    padding-top: $spacer-medium-plus;
-    padding-bottom: $spacer-medium-plus;
+  @include respond-to("tiny-up") {
+      padding-top: $spacer-medium-plus;
+      padding-bottom: $spacer-medium-plus;
   }
-}
 
-@media (min-width: $small) {
-  .pagination {
+  @include respond-to("small-up") {
     padding-top: $spacer-large;
     padding-bottom: $spacer-large;
   }
 }
+
 
 .pagination .nav-links {
   display: flex;

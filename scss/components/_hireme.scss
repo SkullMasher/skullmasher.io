@@ -1,8 +1,8 @@
 .hire-me {
   margin-top: $spacer-large;
   margin-bottom: $spacer-large;
-}
 
-  .hire-me__link {
+  &_link {
     hyphens: initial;
   }
+}

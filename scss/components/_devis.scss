@@ -50,37 +50,37 @@
   > p {
     margin-top: 0;
   }
-}
 
-  .devis-tips--centered-v {
+  &--centered-v {
     align-items: center;
   }
+}
 
 .devis-choices {
   display: flex;
   justify-content: space-between;
   padding: $spacer-small;
   background-color: $gray-100;
-}
 
-  .devis-choices__range {
+  &__range {
     margin-top: $spacer-small;
   }
+}
 
 .devis-switch {
   display: flex;
   margin: $spacer-medium;
   align-items: center;
-}
 
-  .devis-switch__input {
+  &__input {
     width: 70px; /* MAGIC NUMBER Length of the switch */
   }
 
-  .devis-switch__label {
+  &__label {
     margin-top: 0;
    margin-left: $spacer-medium;
   }
+}
 
 .devis-ready {
   background-color: #fff;
