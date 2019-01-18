@@ -22,7 +22,7 @@
   }
 
   .devis-time__average {
-    font-size: $h1-size;
+    @include font-size(h1);
   }
 
 .devis-steps {

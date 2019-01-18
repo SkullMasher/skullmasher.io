@@ -24,7 +24,7 @@
     padding-left: $spacer-small;
     text-transform: uppercase;
     font-family: hack;
-    font-size: $h2-size;
+    @include font-size(h2);
     text-decoration: none;
   }
 
@@ -151,7 +151,7 @@
  align-items: baseline;
  justify-content: space-around;
  background-color: $white;
- font-size: $h1-size;
+ @include font-size(h1);
  text-align: center;
  box-shadow: #666 0 0px 0px;
  transition: box-shadow 0.2s ease;
