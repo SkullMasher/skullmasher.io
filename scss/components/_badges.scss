@@ -6,9 +6,9 @@
   white-space: nowrap;
   box-shadow: #666 0 2px 5px;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
 
-.badge--disabled {
-  background-color: #999;
-  box-shadow: #999 0 2px 5px;
+  &--disabled {
+    background-color: #999;
+    box-shadow: #999 0 2px 5px;
+  }
 }

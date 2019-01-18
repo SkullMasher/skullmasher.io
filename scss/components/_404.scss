@@ -1,14 +1,12 @@
 /**
  * 404
- *
- * Rverything 404 related
  */
 
 .error-404 {
   margin-top: $spacer-medium;
   margin-bottom: $spacer-large;
-}
 
-.error-404__title { text-align: center; }
+  &__title { text-align: center; }
+}
 
 .the-dreaded-word { display: block; }

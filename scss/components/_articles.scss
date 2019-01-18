@@ -1,49 +1,49 @@
 .article {
   background-color: $white;
-}
 
-  .article__heading {
+  &__heading {
     padding-top: $spacer-small;
     padding-right: 0;
     padding-bottom: $spacer-medium-plus;
     padding-left: 0;
   }
 
-  .article__title {
+  &__title {
     padding-right: $spacer-small;
     padding-left: $spacer-small;
     text-align: center;
   }
 
-  .article__content {
+  &__content {
     padding-top: 0;
     padding-right: $spacer-small;
     padding-bottom: $spacer-large;
     padding-left: $spacer-small;
   }
 
-  @media (min-width: $tiny) {
-    .article__content {
+  @include respond-to("tiny-up") {
+    &__content {
       padding-right: $spacer-medium;
       padding-left: $spacer-medium;
     }
   }
 
-  .article__date {
+  &__date {
     padding-right: $spacer-small;
     padding-left: $spacer-small;
     font-size: 1.6rem;
   }
 
-.article__share {
-  margin-top: $spacer-medium;
-}
+  &__share {
+    margin-top: $spacer-medium;
+  }
 
-  .article__share svg {
+  &__share svg {
     vertical-align: middle;
   }
 
-  .article__share a {
+  &__share a {
     text-decoration: none;
     padding-left: $spacer-small-plus;
   }
+}

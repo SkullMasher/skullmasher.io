@@ -6,24 +6,24 @@
 
 .band {
   background-color: $gray-900;
-}
 
-.band--lightgrey {
-  background-color: $gray-200;
-}
+  &--lightgrey {
+    background-color: $gray-200;
+  }
 
-.band--darkgrey {
-  background-color: $gray-950;
-}
+  &--darkgrey {
+    background-color: $gray-950;
+  }
 
-.band--white {
-  background-color: $white;
-}
+  &--white {
+    background-color: $white;
+  }
 
-.band--tiled-background {
-  background-image: url("img/skullmasherio-tile.png");
-}
+  &--tiled-background {
+    background-image: url("img/skullmasherio-tile.png");
+  }
 
-.band--tiled-gradient-background {
-  background-image: linear-gradient(rgba(22,22,22,1), rgba(0,0,0,0)), url("img/skullmasherio-tile.png");
+  &--tiled-gradient-background {
+    background-image: linear-gradient(rgba(22,22,22,1), rgba(0,0,0,0)), url("img/skullmasherio-tile.png");
+  }
 }

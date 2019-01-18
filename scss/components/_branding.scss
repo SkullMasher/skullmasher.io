@@ -4,25 +4,22 @@
  * Page description, title & tagline
  */
 
-.site-branding {
+ .site-branding {
   padding-bottom: $spacer-medium;
   padding-right: $spacer-small;
   padding-left: $spacer-small;
-}
 
-@media (max-width: $small) and (min-width: ($tiny + 1)) {
-  .site-branding {
+  @include respond-to("tiny-up") {
     padding-top: $spacer-small;
     padding-bottom: $spacer-medium-plus;
   }
-}
 
-@media (min-width: $small) {
-  .site-branding {
+  @include respond-to("small-up") {
     padding-top: $spacer-medium;
     padding-bottom: $spacer-large;
   }
 }
+
 
 
 .site-description {
@@ -46,18 +43,18 @@
   padding-right: $spacer-small;
   padding-left: $spacer-small;
   padding-bottom: $spacer-medium;
-}
 
-  .blog-description__title {
+  &__title {
     margin-bottom: 0;
     color: $white;
   }
 
-  .blog-description__lodr {
+  &__lodr {
     color: $white;
     margin-top: 0;
     margin-bottom: 0;
   }
+}
 
 @media (min-width: 480px) {
   .blog-description {
@@ -68,17 +65,13 @@
 // Promotional skills
 .promotional-skills {
   padding-bottom: $spacer-medium;
-}
 
-@media (min-width: $tiny) {
-  .promotional-skills {
+  @include respond-to("tiny-up") {
     padding-top: $spacer-small;
     padding-bottom: $spacer-medium;
   }
-}
 
-@media (min-width: $small) {
-  .promotional-skills {
+  @include respond-to("small-up") {
     display: flex;
     flex-wrap: wrap;
   }
@@ -86,49 +79,40 @@
 
 .promotional-skill {
   padding: $spacer-small;
-}
 
-@media (min-width: $tiny) {
-  .promotional-skill {
+  @include respond-to("tiny-up") {
     width: 85%;
     margin-right: auto;
     margin-left: auto;
   }
-}
 
-@media (min-width: $small) {
-  .promotional-skill {
+  @include respond-to("small-up") {
     width: 50%;
     padding: $spacer-small-plus;
   }
-}
 
-@media (min-width: $medium) {
-  .promotional-skill {
+  @include respond-to("medium-up") {
     padding-right: $spacer-large;
     padding-left: $spacer-large;
   }
-}
 
-@media (min-width: $large) {
-  .promotional-skill {
+  @include respond-to("large-up") {
     width: 25%;
     padding: $spacer-medium;
   }
-}
-  .promotional-skill__header {
+
+  &__header {
     align-items: center;
     hyphens: none;
-  }
 
-  @media (min-width: $medium) {
-    .promotional-skill__header {
+    @include respond-to("medium-up") {
       height: 72px; // MAGIC NUMBER
     }
   }
 
-  .promotional-skill__title {
+  &__title {
     margin: 0;
     padding-left: $spacer-small;
     font-size: 2.6rem;
   }
+}
