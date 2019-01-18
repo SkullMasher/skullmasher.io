@@ -5,7 +5,7 @@
   .article__heading {
     padding-top: $spacer-small;
     padding-right: 0;
-    padding-bottom: $medium-plus-value;
+    padding-bottom: $spacer-medium-plus;
     padding-left: 0;
   }
 
@@ -45,5 +45,5 @@
 
   .article__share a {
     text-decoration: none;
-    padding-left: $small-plus-value;
+    padding-left: $spacer-small-plus;
   }

@@ -13,7 +13,7 @@
 @media (max-width: $small) and (min-width: ($tiny + 1)) {
   .site-branding {
     padding-top: $spacer-small;
-    padding-bottom: $medium-plus-value;
+    padding-bottom: $spacer-medium-plus;
   }
 }
 
@@ -99,7 +99,7 @@
 @media (min-width: $small) {
   .promotional-skill {
     width: 50%;
-    padding: $small-plus-value;
+    padding: $spacer-small-plus;
   }
 }
 
