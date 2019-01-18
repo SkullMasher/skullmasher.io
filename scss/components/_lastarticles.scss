@@ -12,7 +12,7 @@
 
 @media (min-width: $small) {
   .last-articles {
-    padding-bottom: $large-plus-value;
+    padding-bottom: $spacer-large-plus;
   }
 }
 
@@ -52,7 +52,7 @@
 
   @media (min-width: $large) {
     .last-articles__article-container {
-      padding-right: $extra-large-value;
+      padding-right: $spacer-extra-large;
     }
   }
 

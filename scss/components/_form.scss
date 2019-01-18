@@ -19,21 +19,21 @@ input[type="range"]::-moz-range-thumb {
   width: 15px;
   height: 30px;
   border-radius: 5px;
-  background-color: $base-color-link;
+  background-color: $link-color;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   width: 15px;
   height: 30px;
   border-radius: 5px;
-  background-color: $base-color-link;
+  background-color: $link-color;
 }
 
 input[type="range"]::-ms-thumb {
   width: 15px;
   height: 30px;
   border-radius: 5px;
-  background-color: $base-color-link;
+  background-color: $link-color;
 }
 
 input[type="submit"] {
@@ -41,7 +41,7 @@ input[type="submit"] {
   padding-right: $spacer-small;
   padding-bottom: $spacer-tiny;
   padding-left: $spacer-small;
-  background-color: $base-color-link;
+  background-color: $link-color;
   color: #fff;
 
   &:hover {

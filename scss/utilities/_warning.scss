@@ -10,8 +10,8 @@
   .warning--scarybox {
     margin-top: $spacer-medium;
     padding: $spacer-medium;
-    background-color: lighten($base-color, 5);
+    background-color: lighten($color-base, 5);
     color: $white;
-    border: 3px solid $base-color-link-hover;
+    border: 3px solid $link-color-hover;
     border-radius: 5px;
   }

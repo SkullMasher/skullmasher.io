@@ -42,15 +42,15 @@ html {
 body {
   font-size: $base-font-size;
   background-color: $base-background;
-  color: $base-color;
+  color: $color-base;
   font-family: $font-stack-common;
   line-height: $line-height;
 }
 
 a {
-  color: $base-color-link;
+  color: $link-color;
   &:hover, &:focus, &:active {
-    color: $base-color-link-hover;
+    color: $link-color-hover;
   }
 }
 

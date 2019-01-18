@@ -43,12 +43,12 @@
 .page-numbers {
   margin-left: $spacer-tiny;
   padding: $spacer-tiny;
-  background-color: $base-color-link;
+  background-color: $link-color;
   color: $white;
   text-decoration: none;
 
   &:hover {
-    background-color: darken($base-color-link, 5);
+    background-color: darken($link-color, 5);
     color: $white;
     font-weight: bold;
   }
@@ -92,11 +92,11 @@
 
 .current, .dots {
   background-color: transparent;
-  color: $base-color;
+  color: $color-base;
 
   &:hover {
     background-color: transparent;
-    color: $base-color;
+    color: $color-base;
     font-weight: normal;
   }
 }

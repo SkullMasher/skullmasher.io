@@ -146,7 +146,7 @@ $color-inverse  : $gray-800;
 $color-ghost    : transparent;
 $color-muted    : $gray-200;
 
-$color-base      : $gray-900;
+$color-base      : #262626;
 $background-base : $gray-100;
 
 $forms-color     : $gray-800;
@@ -156,8 +156,8 @@ $forms-color     : $gray-800;
 // ---------------
 
 // Component: links
-$link-color            : $gray-800;
-$link-color-hover      : darken($link-color, 15%);
+$link-color            : #44a340;
+$link-color-hover      : #e71d36;
 $link-decoration       : underline;
 $link-decoration-hover : underline;
 
