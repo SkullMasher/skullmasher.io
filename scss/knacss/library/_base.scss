@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  font-size: $base-font-size;
+  font-size: $font-size-base;
   background-color: $base-background;
   color: $color-base;
   font-family: $font-stack-common;
@@ -89,13 +89,13 @@ h2, .#{$kna-namespace}h2-like {
 }
 
 h3, .#{$kna-namespace}h3-like {
-  font-size: $h3-size;
+  @include font-size(h3);
   color: $headings-color;
   font-weight: normal;
 }
 
 h4, .#{$kna-namespace}h4-like {
-  font-size: $h4-size;
+  @include font-size(h4);
   color: $headings-color;
   font-weight: normal;
 }

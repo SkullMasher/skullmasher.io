@@ -15,7 +15,7 @@
   }
 
   .devis-time__content {
-    font-size: $base-font-size;
+    font-size: $font-size-base;
     p {
       margin: 0;
     }
@@ -32,11 +32,11 @@
   .devis-step__priceinfo {
     margin-bottom: $spacer-medium;
     color: $color-base;
-    font-size: $h4-size;
+    @include font-size(h4);
   }
 
 .devis-question {
-  font-size: $h3-size;
+  @include font-size(h3);
   margin-bottom: $spacer-large;
 }
 
