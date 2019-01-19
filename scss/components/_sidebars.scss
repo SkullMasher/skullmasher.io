@@ -21,41 +21,36 @@
 
 .home-sidebar {
   box-shadow : 0 5px 14px rgba(0, 0, 0, 0.47), 0 9px 21px rgba(0, 0, 0, 0.22);
-}
 
-@media (min-width: $small) {
-  .home-sidebar {
+  @include respond-to("medium-up") {
     width: 400px;
     margin-top: 3.9rem; // fat MAGIC NUMBER for design purpose of course
     border-top: 1px solid $color-base;
   }
-}
 
-@media (min-width: $large) {
-  .home-sidebar {
+  @include respond-to("large-up") {
     margin-top: 6.8rem; // uber fat MAGIC NUMBER
   }
 }
 
-// Need refactor BEM
 .blog-sidebar {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: $spacer-large;
-}
 
-@media (min-width: $extra-large) {
-  .blog-sidebar { width: 400px; }
+  @include respond-to("extra-large-up") {
+    width: 400px;
+  }
 }
 
 .sidebar--search {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $medium) {
-  .sidebar--search { width: 400px; }
+  @include respond-to("medium-up") {
+    width: 400px;
+  }
 }
 
 .worktogether {

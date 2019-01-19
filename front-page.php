@@ -58,7 +58,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="content-sidebar wrapper">
+  <div class="content-sidebar--medium wrapper">
     <div class="last-articles flex-container--column">
       <div class="last-articles__heading-container">
         <h3 class="last-articles__heading">Les <?php echo $number_posts ?> derniers Articles</h3>
