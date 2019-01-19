@@ -6,7 +6,7 @@
 .sidebar {
   padding-top: $spacer-medium;
   padding-right: $spacer-small;
-  padding-bottom: $spacer-small;
+  padding-bottom: $spacer-medium;
   padding-left: $spacer-small;
   background-color: $white;
   margin-bottom: auto;
@@ -19,7 +19,10 @@
   }
 }
 
-// need refactor to BEM
+.home-sidebar {
+  box-shadow : 0 5px 14px rgba(0, 0, 0, 0.47), 0 9px 21px rgba(0, 0, 0, 0.22);
+}
+
 @media (min-width: $small) {
   .home-sidebar {
     width: 400px;
@@ -53,4 +56,8 @@
 
 @media (min-width: $medium) {
   .sidebar--search { width: 400px; }
+}
+
+.worktogether {
+  margin-bottom: $spacer-medium;
 }

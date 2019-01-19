@@ -6,11 +6,11 @@
     <span class="skulled-separator__line"></span>
   </p>
   <?php echo do_shortcode( '[worktogether]' ); ?>
-  <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--success center mtm" role="button">
+  <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--success center mbm" role="button">
     <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
     <p><?php echo antispambot('florian@skullmasher.io') ?></p>
   </a>
-  <div class="social mtm">
+  <div class="social">
     <div class="mrl">
       <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
     </div>

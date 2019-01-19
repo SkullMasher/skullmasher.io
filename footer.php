@@ -26,17 +26,14 @@
           <div class="social__twitter">
             <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
           </div>
-          <div class="social__youtube">
-            <a href="https://www.youtube.com/user/SkullM4sher/videos"><?php echo file_get_contents(get_template_directory(). '/img/youtube.svg') ?></a>
-          </div>
           <div class="social__github">
             <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat_white.svg') ?></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="band--tiled-gradient-background flex-container-v">
-      <a class="btn btn--large btn--centered btn--extra-spaced btn--no-box-shadow" href="#top">Retour en haut de page</a>
+    <div class="band--tiled-gradient-background flex-container ptl pbl">
+      <a class="btn btn--success btn--big center mtl mbl u-uppercase" href="#top">Retour en haut de page</a>
     </div>
 </footer>
 
