@@ -24,7 +24,7 @@
 <?php $description = get_bloginfo( 'description', 'display' ); ?>
 <?php elseif ( is_home() ) : ?>
 <header id="top" class="page-header" role="banner">
-<?php $description_blog = 'Blogmasher !'; ?>
+<?php $description_blog = 'Blogmasher'; ?>
 <?php else : ?>
 <header id="top" class="page-header page-header--single-page" role="banner">
 <?php endif; ?>

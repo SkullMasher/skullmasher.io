@@ -18,5 +18,4 @@
       <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat.svg') ?></a>
     </div>
   </div>
-<?php // dynamic_sidebar( 'homepage' ); ?>
 </aside>

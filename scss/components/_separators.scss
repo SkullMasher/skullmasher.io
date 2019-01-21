@@ -3,16 +3,16 @@
   margin-right: 0;
   margin-bottom: $spacer-medium-plus;
   margin-left: 0;
-}
 
-.separator--trimed {
-  margin-right: 16.66%;
-  margin-left: 16.66%;
-}
+  &--trimed {
+    margin-right: 16.66%;
+    margin-left: 16.66%;
+  }
 
-.separator--search-result {
-  margin-top: $spacer-medium;
-  margin-bottom: 0;
+  &--search-result {
+    margin-top: $spacer-medium;
+    margin-bottom: 0;
+  }
 }
 
 .skulled-separator {
@@ -30,6 +30,11 @@
     margin-right: $spacer-small;
     margin-bottom: 0;
     margin-left: $spacer-small;
+  }
+
+  &--trimed {
+    margin-right: 16.66%;
+    margin-left: 16.66%;
   }
 }
 

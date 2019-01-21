@@ -38,10 +38,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: $spacer-large;
-
-  @include respond-to("extra-large-up") {
-    width: 400px;
-  }
 }
 
 .sidebar--search {
