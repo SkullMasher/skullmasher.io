@@ -48,7 +48,7 @@ $cats = get_the_category();
 <?php if (!empty($tags) && !empty($cats)) : ?>
       <p>Consulter les articles
 <?php foreach ($tags as $tag) : ?>
-        <a class="btn btn--white btn--small tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
+        <a class="btn btn--small tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
 <?php endforeach;
 if (count($cats) > 1): ?>
           dans les catégories
@@ -56,14 +56,14 @@ if (count($cats) > 1): ?>
           dans la catégorie
 <?php endif;
 foreach ($cats as $cat) : ?>
-          <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+          <a class="btn btn--success category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach; ?>
       </p>
 <?php elseif (empty($tags) && !empty($cats)) : ?>
 <?php if (count($cats) > 1): ?>
       <p>Consulter les articles dans les catégories
 <?php foreach ($cats as $cat) : ?>
-      <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+      <a class="btn btn--success category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach;
 else: ?>
       <p>Consulter les articles dans la catégorie <a class="btn category-nav__link <?php echo 'category-' . $cats[0]->slug ?>" href="<?php echo get_category_link($cats[0]->term_id) ?>"><?php echo $cats[0]->name ?></a>
@@ -80,9 +80,6 @@ else: ?>
         <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encoded_permalink ?>" target="blank"><?php echo file_get_contents(get_template_directory() .'/img/facebook.svg') ?></a>
         <a href="mailto:contact@example.com?&subject=<?php echo $encoded_article_title ?>&body=<?php echo $encoded_permalink ?>"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></a>
       </p>
-    </div>
-    <div class="hire-me flex-container--column">
-      <a href="<?php echo get_permalink(get_page_by_title('contact')->ID ) ?>" class="hire-me__link btn btn--large btn--rounded ">Vous avez aimé cet article ? <br>Engagez moi !</a>
     </div>
   </footer>
 </article>
