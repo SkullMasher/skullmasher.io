@@ -105,6 +105,8 @@
  */
 .category-nav__list,
 .tag-nav__list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

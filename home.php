@@ -55,7 +55,7 @@ endif; ?>
   if (is_array($cats)): ?>
     <nav class="category-nav o-box">
       <h3 class="category-nav__title">Articles par catégories</h3>
-      <div class="category-nav__list flex-container">
+      <div class="category-nav__list">
 <?php foreach ($cats as $cat): ?>
         <a class="btn btn--success category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach ?>
@@ -70,7 +70,7 @@ endif; ?>
   if (is_array($tags)): ?>
         <nav class="o-box tag-nav">
           <h3 class="tag-nav__title">Articles par tags</h3>
-          <div class="tag-nav__list flex-container">
+          <div class="tag-nav__list">
 <?php foreach ($tags as $tag): ?>
           <a class="btn btn--white btn--small tag-nav__link <?php echo 'tag-' . $tag->slug ?>" href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name ?></a>
 <?php endforeach ?>
