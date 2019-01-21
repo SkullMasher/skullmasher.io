@@ -57,7 +57,7 @@ endif; ?>
       <h3 class="category-nav__title">Articles par catégories</h3>
       <div class="category-nav__list flex-container">
 <?php foreach ($cats as $cat): ?>
-        <a class="btn category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
+        <a class="btn btn--success category-nav__link <?php echo 'category-' . $cat->slug ?>" href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name ?></a>
 <?php endforeach ?>
       </div>
     </nav>

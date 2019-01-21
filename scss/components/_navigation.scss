@@ -115,10 +115,14 @@
 
 // Category list
 .category-nav__link {
-  vertical-align: middle;
+  margin: $spacer-small;
 }
 
-// Blog Tag list
+// Tag list
+.tag-nav__link {
+  margin: $spacer-tiny;
+}
+
 .tag-nav__list--single {
   justify-content: flex-start;
   line-height: 1;
