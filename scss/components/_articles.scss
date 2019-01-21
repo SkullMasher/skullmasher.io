@@ -9,9 +9,12 @@
   }
 
   &__title {
+    margin-top: $spacer-medium;
+    margin-bottom: $spacer-medium;
     padding-right: $spacer-small;
     padding-left: $spacer-small;
     text-align: center;
+    color: $link-color;
   }
 
   &__content {
