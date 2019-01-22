@@ -27,7 +27,8 @@
 
   &__heading {
     margin: 0;
-    padding-right: $spacer-small
+    padding-right: $spacer-small;
+    color: $color-base;
   }
 
   &__article-container {
