@@ -26,7 +26,8 @@ Some stuff taken of inuitcss : https://github.com/inuitcss/inuitcss
 // KNACSS
 @import "_config/variables";
 @import "_config/mixins";
-@import "../node_modules/knacss/sass/knacss.scss";
+@import "_config/titles";
+@import "../node_modules/knacss/sass/knacss";
 
 // OBJECT
 @import "objects/wrapper";
