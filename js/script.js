@@ -162,13 +162,13 @@ const animate = () => {
 
 addEventListener('DOMContentLoaded', (event) => {
   greetingMessage()
-  // if (isCanvasSupported) {
-  //   prepareCanvas()
-  //   initCanvas()
-  //   animate()
-  // }
+  if (isCanvasSupported) {
+    prepareCanvas()
+    initCanvas()
+    animate()
+  }
 })
 
 addEventListener('resize', (event) => {
-  // initCanvas()
+  initCanvas()
 })
