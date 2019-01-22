@@ -79,10 +79,10 @@ let initDevis = () => {
     }
   ]
 
-  const $price = document.querySelector('.devis-cost__price')
-  const $averageTime = document.querySelector('.devis-time__days')
-  const $averageTimeMin = document.querySelector('.devis-time__days-min')
-  const $averageTimeMax = document.querySelector('.devis-time__days-max')
+  const $price = document.querySelector('.js-devisCostPrice')
+  const $averageTime = document.querySelector('.js-devisTimeDays')
+  const $averageTimeMin = document.querySelector('.js-devisTimeDaysMin')
+  const $averageTimeMax = document.querySelector('.js-devisTimeDaysMax')
   const maquetteCount = document.getElementById('maquetteCount')
 
   // default value of website cost
@@ -217,7 +217,7 @@ let initDevis = () => {
   })
 
   // fix the devis navbar when scrolled past it
-  const devisNav = document.querySelector('.devis-nav')
+  const devisNav = document.querySelector('.js-devisNav')
   const TopOfDevisNav = devisNav.offsetTop
 
   addEventListener('scroll', (event) => {

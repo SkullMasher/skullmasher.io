@@ -1,21 +1,21 @@
 /* Media object */
-.o-media {
+.media {
   display: flex;
   align-items: flex-start;
 }
-.o-media-content {
+.media-content {
   flex: 1;
   min-width: 0; /* avoid min-width:auto */
 }
 
-.o-media-figure {
+.media-figure {
   margin-right: 1em;
 }
 
 /* Media variants */
-.o-media--reverse {
+.media--reverse {
   flex-direction: row-reverse;
 }
-.o-media-figure--center {
+.media-figure--center {
   align-self: center;
 }
