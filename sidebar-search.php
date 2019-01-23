@@ -7,8 +7,8 @@
   </p>
   <p>Vous souhaitez travailler avec moi ? Une question ? On en discute autour d'un verre ? Je serais ravie d'échanger avec vous.</p>
   <a href="#" class="btn btn--centered btn--top-spaced" role="button">
-    <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
-    <p>florian@skullmasher.io</p>
+    <div class="mbs"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
+    <p class="mbn"><?php echo antispambot('florian@skullmasher.io') ?></p>
   </a>
   <div class="social social--contained">
     <div class="social__twitter">

@@ -237,8 +237,8 @@
         <p>Vous pouvez m'envoyer un mail accompagner des réponses à ces différentes questions.</p>
         <div class="flex-container--column">
           <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--centered btn--top-spaced" role="button">
-            <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
-            <p><?php echo antispambot('florian@skullmasher.io') ?></p>
+            <div class="mbs"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
+            <p class="mbn"><?php echo antispambot('florian@skullmasher.io') ?></p>
           </a>
         </div>
         <!-- <form id="meetup">

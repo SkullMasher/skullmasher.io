@@ -18,6 +18,7 @@
 .skulled-separator {
   display: flex;
   align-items: center;
+  margin-bottom: $spacer-medium;
 
   &__line {
     flex: 1;

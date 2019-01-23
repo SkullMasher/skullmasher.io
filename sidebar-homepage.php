@@ -1,13 +1,16 @@
 <aside class="sidebar home-sidebar flex-container--column">
+  <picture class="mbs">
+    <img src="<?php echo get_bloginfo('template_url') ?>/img/IMG_20181203_002624.jpg">
+  </picture>
   <?php echo do_shortcode( '[whoami]' ); ?>
+  <?php echo do_shortcode( '[worktogether]' ); ?>
   <p class="skulled-separator">
     <span class="skulled-separator__line"></span>
     <?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo-tiny.svg')?>
     <span class="skulled-separator__line"></span>
   </p>
-  <?php echo do_shortcode( '[worktogether]' ); ?>
   <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--success center mbm" role="button">
-    <div class="btn__mailimage"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
+    <div class="mbs"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
     <p><?php echo antispambot('florian@skullmasher.io') ?></p>
   </a>
   <div class="social">
