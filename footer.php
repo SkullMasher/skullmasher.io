@@ -25,11 +25,11 @@
       <div>
         <?php get_sidebar('colophon'); ?>
         <div class="o-box social page-footer__item">
-          <div class="social__twitter">
-            <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
-          </div>
           <div class="social__github">
             <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat_white.svg') ?></a>
+          </div>
+          <div class="social__twitter">
+            <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
           </div>
         </div>
       </div>
