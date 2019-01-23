@@ -1,4 +1,4 @@
-<aside class="sidebar blog-sidebar">
+<aside id="contact" class="sidebar blog-sidebar">
   <div class="wrapper wrapper--small flex-container">
     <picture class="mbs txtcenter">
       <img class="w250p border--double" src="<?php echo get_bloginfo('template_url') ?>/img/florian-ledru-26.jpg">
