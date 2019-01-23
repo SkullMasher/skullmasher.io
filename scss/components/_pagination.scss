@@ -1,16 +1,14 @@
 .pagination {
-  padding-top: $spacer-medium;
+  padding-top: 0;
   padding-right: $spacer-tiny;
   padding-bottom: $spacer-medium;
   padding-left: $spacer-tiny;
 
   @include respond-to("tiny-up") {
-      padding-top: $spacer-medium-plus;
       padding-bottom: $spacer-medium-plus;
   }
 
   @include respond-to("small-up") {
-    padding-top: $spacer-large;
     padding-bottom: $spacer-large;
   }
 }

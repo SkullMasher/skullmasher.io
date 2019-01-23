@@ -4,8 +4,16 @@
   grid-gap: $spacer-small;
   padding-top: $spacer-small;
   padding-right: $spacer-small;
-  padding-bottom: 0;
+  padding-bottom: $spacer-medium;
   padding-left: $spacer-small;
+
+  @include respond-to("tiny-up") {
+      padding-bottom: $spacer-medium-plus;
+  }
+
+  @include respond-to("small-up") {
+    padding-bottom: $spacer-large;
+  }
 
   @include respond-to("medium-up") {
     grid-gap: $spacer-medium;
