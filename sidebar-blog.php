@@ -1,7 +1,7 @@
 <aside class="sidebar blog-sidebar">
   <div class="wrapper wrapper--small flex-container">
     <picture class="mbs txtcenter">
-      <img class="w250p" src="<?php echo get_bloginfo('template_url') ?>/img/florian-ledru-26.jpg">
+      <img class="w250p border--double" src="<?php echo get_bloginfo('template_url') ?>/img/florian-ledru-26.jpg">
     </picture>
     <div class="flex-item-fluid flex-container--column mrm mlm">
       <?php echo do_shortcode( '[whoami]' ); ?>

@@ -1,6 +1,6 @@
 <aside class="sidebar home-sidebar flex-container--column">
   <picture class="mbs">
-    <img src="<?php echo get_bloginfo('template_url') ?>/img/IMG_20181203_002624.jpg">
+    <img class="border--double" src="<?php echo get_bloginfo('template_url') ?>/img/IMG_20181203_002624.jpg">
   </picture>
   <?php echo do_shortcode( '[whoami]' ); ?>
   <?php echo do_shortcode( '[worktogether]' ); ?>
