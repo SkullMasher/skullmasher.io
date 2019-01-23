@@ -3,24 +3,20 @@
  *
  * Styles for sidebars & widgets
  */
-.sidebar {
+
+.home-sidebar {
   padding-top: $spacer-medium;
   padding-right: $spacer-small;
   padding-bottom: $spacer-medium;
   padding-left: $spacer-small;
   background-color: $white;
   margin-bottom: auto;
-}
+  box-shadow : 0 5px 14px rgba(0, 0, 0, 0.47), 0 9px 21px rgba(0, 0, 0, 0.22);
 
-@media (min-width: $tiny) {
-  .sidebar {
+  @include respond-to("tiny-up") {
     padding-right: $spacer-large;
     padding-left: $spacer-large;
   }
-}
-
-.home-sidebar {
-  box-shadow : 0 5px 14px rgba(0, 0, 0, 0.47), 0 9px 21px rgba(0, 0, 0, 0.22);
 
   @include respond-to("medium-up") {
     width: 400px;
@@ -38,7 +34,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: $spacer-large;
+  padding-right: 0;
   padding-bottom: $spacer-large;
+  padding-left: 0;
+
+  @include respond-to("tiny-up") {
+    padding-right: $spacer-medium;
+    padding-left: $spacer-medium;
+  }
 }
 
 .sidebar--search {
