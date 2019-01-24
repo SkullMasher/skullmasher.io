@@ -7,70 +7,72 @@ let initDevis = () => {
   warningNOJS.remove()
 
   // devis rates & time
-  const ratesAndTime = [
-    { // design&code for pages
+  const devisConstant = [
+    {
+      text: 'Design et Intégration d\'une maquette\nweb sur mesure',
       rate: 625,
       time: {
         min: 5,
         max: 9
       }
     },
-    { // branding
+    {
+      text: 'Logo',
       rate: 300,
       time: {
         min: 2,
         max: 3
       },
       option: [
-        { // businessCard
+        {
+          text: 'Carte de visite',
           rate: 300,
           time: 2
         },
-        { // flyer
+        {
+          text: 'Flyer',
           rate: 300,
           time: 2
         }
       ]
     },
-    { // blog
+    {
+      text: 'Foncionalitée de blogging',
       rate: 500,
       time: {
         min: 2,
         max: 4
       },
       option: [
-        { // feed
+        {
+          text: 'Intégration des recommendations clients',
+          rate: 150,
+          time: 1
+        },
+        {
+          text: 'Intégration d\'un fil d\'actualité issus d\'un réseau social',
           rate: 150,
           time: 1
         }
       ]
     },
-    { // newsLetter
-      rate: 300,
-      time: {
-        min: 3,
-        max: 4
-      }
-    },
-    { // teaching
+    {
+      text: 'Formation',
       rate: 280,
       time: 1
     },
-    { // hosting
+    {
+      text: 'Recommendation d\'hébergement web, mail et nom de domaine.',
       rate: 150,
       time: 1
     },
-    { // support
+    {
+      text: 'Mainteance, Support et Assistance',
       rate: 600,
-      time: 0,
-      option: [
-        { // maintainWebsite
-          rate: 600,
-          time: 0
-        }
-      ]
+      time: 0
     },
-    { // deployement
+    {
+      text: 'Déploiement du site',
       rate: 500,
       time: {
         min: 1,
@@ -105,15 +107,15 @@ let initDevis = () => {
   // Set the devis price and time based on user choice
   let updateDevisNav = (index, substract = false, toggle = false) => {
     if (index === 0) { // input range
-      frontEndCost = ratesAndTime[index].rate * maquetteCount.value
+      frontEndCost = devisConstant[index].rate * maquetteCount.value
       averageTimeMin -= frontEndTimeMin
       averageTimeMax -= frontEndTimeMax
       if (maquetteCount.value > 5) {
-        frontEndTimeMin = Math.ceil((ratesAndTime[index].time.min * maquetteCount.value) / 1.15)
-        frontEndTimeMax = Math.ceil((ratesAndTime[index].time.max * maquetteCount.value) / 1.15)
+        frontEndTimeMin = Math.ceil((devisConstant[index].time.min * maquetteCount.value) / 1.15)
+        frontEndTimeMax = Math.ceil((devisConstant[index].time.max * maquetteCount.value) / 1.15)
       } else {
-        frontEndTimeMin = ratesAndTime[index].time.min * maquetteCount.value
-        frontEndTimeMax = ratesAndTime[index].time.max * maquetteCount.value
+        frontEndTimeMin = devisConstant[index].time.min * maquetteCount.value
+        frontEndTimeMax = devisConstant[index].time.max * maquetteCount.value
       }
       averageTimeMin += frontEndTimeMin
       averageTimeMax += frontEndTimeMax
@@ -121,23 +123,23 @@ let initDevis = () => {
       setDevisNavText()
     } else {
       if (substract) { // the index needs to substract his rates & time
-        price -= ratesAndTime[index].rate
-        if (ratesAndTime[index].time.hasOwnProperty('min')) {
-          averageTimeMin -= ratesAndTime[index].time.min
-          averageTimeMax -= ratesAndTime[index].time.max
+        price -= devisConstant[index].rate
+        if (devisConstant[index].time.hasOwnProperty('min')) {
+          averageTimeMin -= devisConstant[index].time.min
+          averageTimeMax -= devisConstant[index].time.max
         } else {
-          averageTimeMin -= ratesAndTime[index].time
-          averageTimeMax -= ratesAndTime[index].time
+          averageTimeMin -= devisConstant[index].time
+          averageTimeMax -= devisConstant[index].time
         }
         setDevisNavText()
       } else { // Just add the damn price and time
-        price += ratesAndTime[index].rate
-        if (ratesAndTime[index].time.hasOwnProperty('min')) {
-          averageTimeMin += ratesAndTime[index].time.min
-          averageTimeMax += ratesAndTime[index].time.max
+        price += devisConstant[index].rate
+        if (devisConstant[index].time.hasOwnProperty('min')) {
+          averageTimeMin += devisConstant[index].time.min
+          averageTimeMax += devisConstant[index].time.max
         } else {
-          averageTimeMin += ratesAndTime[index].time
-          averageTimeMax += ratesAndTime[index].time
+          averageTimeMin += devisConstant[index].time
+          averageTimeMax += devisConstant[index].time
         }
         setDevisNavText()
       }
@@ -180,23 +182,23 @@ let initDevis = () => {
 
   let updateDevisNavToggle = (index, optionIndex, substract) => {
     if (substract) { // the index needs to substract his rates & time
-      price -= ratesAndTime[index].option[optionIndex].rate
-      if (ratesAndTime[index].option[optionIndex].time.hasOwnProperty('min')) {
-        averageTimeMin -= ratesAndTime[index].option[optionIndex].time.min
-        averageTimeMax -= ratesAndTime[index].option[optionIndex].time.max
+      price -= devisConstant[index].option[optionIndex].rate
+      if (devisConstant[index].option[optionIndex].time.hasOwnProperty('min')) {
+        averageTimeMin -= devisConstant[index].option[optionIndex].time.min
+        averageTimeMax -= devisConstant[index].option[optionIndex].time.max
       } else {
-        averageTimeMin -= ratesAndTime[index].option[optionIndex].time
-        averageTimeMax -= ratesAndTime[index].option[optionIndex].time
+        averageTimeMin -= devisConstant[index].option[optionIndex].time
+        averageTimeMax -= devisConstant[index].option[optionIndex].time
       }
       setDevisNavText()
     } else { // Just add the damn price and time
-      price += ratesAndTime[index].option[optionIndex].rate
-      if (ratesAndTime[index].option[optionIndex].time.hasOwnProperty('min')) {
-        averageTimeMin += ratesAndTime[index].option[optionIndex].time.min
-        averageTimeMax += ratesAndTime[index].option[optionIndex].time.max
+      price += devisConstant[index].option[optionIndex].rate
+      if (devisConstant[index].option[optionIndex].time.hasOwnProperty('min')) {
+        averageTimeMin += devisConstant[index].option[optionIndex].time.min
+        averageTimeMax += devisConstant[index].option[optionIndex].time.max
       } else {
-        averageTimeMin += ratesAndTime[index].option[optionIndex].time
-        averageTimeMax += ratesAndTime[index].option[optionIndex].time
+        averageTimeMin += devisConstant[index].option[optionIndex].time
+        averageTimeMax += devisConstant[index].option[optionIndex].time
       }
       setDevisNavText()
     }
@@ -242,7 +244,7 @@ let initDevis = () => {
         {
           text: "Design et Intégration d'une maquette\nweb sur mesure",
           quantity: maquetteCount.value,
-          unitPrice: ratesAndTime[0].rate,
+          unitPrice: devisConstant[0].rate,
           totalPrice: frontEndCost
         }
       ]

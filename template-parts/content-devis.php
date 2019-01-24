@@ -84,7 +84,7 @@
             </div>
             <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
-          <p>Frais d'impression non pris en charge.</p>
+          <p><em>Frais d'impression non pris en charge.</em></p>
         </div>
       </div>
       <div class="devis-steps" id="blog">
@@ -100,30 +100,23 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
+              <input type="checkbox" id="clientRecommendation" class="toggle" data-choiceid="2" data-optionid="0">
+              <label for="clientRecommendation" class="toggle-label"></label>
+            </div>
+            <p class="devis-switch__label">Je souhaite intégrer un module de recommandation client <span class="badge badge--disabled">+150€ 1 jour</span></p>
+          </div>
+        <div class="devis-step__option">
+          <div class="devis-switch">
+            <div class="devis-switch__input">
               <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
               <label for="socialNetwork" class="toggle-label"></label>
             </div>
-            <p class="devis-switch__label">Je souhaite intégrer les avis, les recommandations ou le fil d'actualité d'un de mes réseaux sociaux.<span class="badge badge--disabled">+150€ 1 jour</span></p>
+            <p class="devis-switch__label">Je souhaite ajouter le fil d'actualité d'un de mes réseaux sociaux <span class="badge badge--disabled">+150€ 1 jour</span></p>
           </div>
         </div>
       </div>
-      <div class="devis-steps" id="newsletter">
-        <h2>4. Newsletter</h2>
-        <p class="devis-question">Souhaitez-vous une newsletter ?</p>
-        <div class="devis-tips wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Comprends l'ajout de la fonctionnalité avec le design et le code d'un modèle de mail sur mesure.</p>
-        </div>
-        <div class="devis-step__priceinfo">
-          <p class="txtcenter"><span>300€</span> <span>3 à 4 jours</span></p>
-        </div>
-        <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
-        </div>
-      </div>
       <div class="devis-steps" id="teaching">
-        <h2>5. Formation</h2>
+        <h2>4. Formation</h2>
         <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
           <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
@@ -138,11 +131,11 @@
         </div>
       </div>
       <div class="devis-steps" id="hosting">
-        <h2>6. Hébergement et nom de domaine</h2>
+        <h2>5. Hébergement et nom de domaine</h2>
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
           <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une boite mail professionnel disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
+          <p class="media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une ou plusieurs<strong>boite mail professionnel</strong> disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
@@ -151,10 +144,10 @@
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
-        <p>Frais d'hébergement non compris.</p>
+        <p><em>Frais d'hébergement non compris.</em></p>
       </div>
       <div class="devis-steps" id="support">
-        <h2>7. Maintenance, Support et assistance</h2>
+        <h2>6. Maintenance, Support et assistance</h2>
         <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
           <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
@@ -167,18 +160,9 @@
           <button class="btn btn--rounded">NON</button>
           <button class="btn btn--rounded btn--disabled">OUI</button>
         </div>
-        <div class="devis-step__option">
-          <div class="devis-switch">
-            <div class="devis-switch__input">
-              <input type="checkbox" id="maintainWebsite" class="toggle" data-choiceid="6" data-optionid="0">
-              <label for="maintainWebsite" class="toggle-label"></label>
-            </div>
-            <p class="devis-switch__label">Je souhaite que vous soyez responsable de la publication et la mise en forme des nouvelles pages et nouveaux article sur mon site. <span class="badge badge--disabled">+600€ par an</span></p>
-          </div>
-        </div>
       </div>
       <div class="devis-steps" id="validate">
-        <h2>8. Déploiement</h2>
+        <h2>7. Déploiement</h2>
         <p class="devis-question">Souhaitez-vous que je sois responsable de l'installation de votre site web ?</p>
         <div class="devis-tips devis-tips--centered-v wrapper wrapper--tiny">
           <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
@@ -211,7 +195,7 @@
       <p>Intégration de votre compte google analytics possible sans surcoup.</p>
       <h3 id="maintenance">Offre de maintenance</h3>
       <ul>
-        <li>Disponibilité a toute heures pour intervenir en urgences sur votre site, en cas de problèmes (ex : panne mails , indisponibilités site web).</li>
+        <li>Disponibilité et Résolution des pannes ou problèmme dans un délai de 24h (ex : panne mails , indisponibilités site web)</li>
         <li>Suivi et Corrections <a href="https://www.exploit-db.com/webapps/">des failles de sécurités</a>.</li>
         <li>Mises à jour du site et des plugins aux versions suivante.</li>
         <li>Rétention et Sauvegarde hebdomadaire du site.</li>
