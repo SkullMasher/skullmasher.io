@@ -1,84 +1,84 @@
 /*
  * Devis page
  */
-let initDevis = () => {
+ let initDevis = () => {
   // Hide the noJS warning
   const warningNOJS = document.getElementById('warningNOJS')
   warningNOJS.remove()
 
   // devis rates & time
   const devisConstant = [
-    {
-      text: 'Design et Intégration d\'une maquette\nweb sur mesure',
-      rate: 625,
-      time: {
-        min: 5,
-        max: 9
-      }
+  {
+    text: 'Design et Intégration d\'une maquette\nweb sur mesure',
+    rate: 625,
+    time: {
+      min: 5,
+      max: 9
+    }
+  },
+  {
+    text: 'Logo',
+    rate: 300,
+    time: {
+      min: 2,
+      max: 3
     },
+    option: [
     {
-      text: 'Logo',
+      text: 'Carte de visite',
       rate: 300,
-      time: {
-        min: 2,
-        max: 3
-      },
-      option: [
-        {
-          text: 'Carte de visite',
-          rate: 300,
-          time: 2
-        },
-        {
-          text: 'Flyer',
-          rate: 300,
-          time: 2
-        }
-      ]
+      time: 2
     },
     {
-      text: 'Foncionalitée de blogging',
-      rate: 500,
-      time: {
-        min: 2,
-        max: 4
-      },
-      option: [
-        {
-          text: 'Intégration des recommendations clients',
-          rate: 150,
-          time: 1
-        },
-        {
-          text: 'Intégration d\'un fil d\'actualité issus d\'un réseau social',
-          rate: 150,
-          time: 1
-        }
-      ]
+      text: 'Flyer',
+      rate: 300,
+      time: 2
+    }
+    ]
+  },
+  {
+    text: 'Foncionalitée de blogging',
+    rate: 500,
+    time: {
+      min: 2,
+      max: 4
     },
+    option: [
     {
-      text: 'Formation',
-      rate: 280,
-      time: 1
-    },
-    {
-      text: 'Recommendation d\'hébergement web, mail et nom de domaine.',
+      text: 'Intégration des recommendations clients',
       rate: 150,
       time: 1
     },
     {
-      text: 'Mainteance, Support et Assistance',
-      rate: 600,
-      time: 0
-    },
-    {
-      text: 'Déploiement du site',
-      rate: 500,
-      time: {
-        min: 1,
-        max: 2
-      }
+      text: 'Intégration d\'un fil d\'actualité issus d\'un réseau social',
+      rate: 150,
+      time: 1
     }
+    ]
+  },
+  {
+    text: 'Formation',
+    rate: 280,
+    time: 1
+  },
+  {
+    text: 'Recommendation d\'hébergement web, mail et nom de domaine.',
+    rate: 150,
+    time: 1
+  },
+  {
+    text: 'Mainteance, Support et Assistance',
+    rate: 600,
+    time: 0
+  },
+  {
+    text: 'Déploiement du site',
+    rate: 500,
+    time: {
+      min: 1,
+      max: 2
+    }
+  }
   ]
 
   const $price = document.querySelector('.js-devisCostPrice')
@@ -110,6 +110,7 @@ let initDevis = () => {
       frontEndCost = devisConstant[index].rate * maquetteCount.value
       averageTimeMin -= frontEndTimeMin
       averageTimeMax -= frontEndTimeMax
+      // Less time needed with more than 5 templates
       if (maquetteCount.value > 5) {
         frontEndTimeMin = Math.ceil((devisConstant[index].time.min * maquetteCount.value) / 1.15)
         frontEndTimeMax = Math.ceil((devisConstant[index].time.max * maquetteCount.value) / 1.15)
@@ -122,7 +123,7 @@ let initDevis = () => {
       averageTime()
       setDevisNavText()
     } else {
-      if (substract) { // the index needs to substract his rates & time
+      if (substract) { // Substract rates & time at curent index
         price -= devisConstant[index].rate
         if (devisConstant[index].time.hasOwnProperty('min')) {
           averageTimeMin -= devisConstant[index].time.min
@@ -132,7 +133,7 @@ let initDevis = () => {
           averageTimeMax -= devisConstant[index].time
         }
         setDevisNavText()
-      } else { // Just add the damn price and time
+      } else { // Add the damn price and time
         price += devisConstant[index].rate
         if (devisConstant[index].time.hasOwnProperty('min')) {
           averageTimeMin += devisConstant[index].time.min
@@ -152,30 +153,20 @@ let initDevis = () => {
     updateDevisNav(0)
   })
 
-  // Use foreach from arrays methods on NodeList
   const devisChoicesButtons = document.querySelectorAll('.devis-choices button')
-  // Add click handling on devis-choice question
+  // Use foreach from arrays methods on NodeList
   Array.prototype.forEach.call(devisChoicesButtons, (choice, index) => {
-    choice.addEventListener('click', (event) => {
-      const updateBtnStyles = () => {
-        choice.classList.remove('btn--disabled') // current buttons
-        // update the sibling style
-        if (choice.nextElementSibling === null) {
-          choice.previousElementSibling.classList.add('btn--disabled')
-        } else {
-          choice.nextElementSibling.classList.add('btn--disabled')
+    const className = 'btn--success'
+    choice.addEventListener('click', (event) => { // click event to each buttons
+      if (!choice.classList.contains(className)) {
+        if (choice.nextElementSibling === null) { // YES is selected
+          updateDevisNav(Math.ceil(index / 2))
+          choice.previousElementSibling.classList.remove(className)
+        } else { // NO is selected
+          updateDevisNav(Math.ceil(index / 2 + 1), true)
+          choice.nextElementSibling.classList.remove(className)
         }
-      }
-      // Update if a disabled button is clicked
-      if (choice.classList.contains('btn--disabled')) {
-        // Detect if yes or no
-        if (choice.nextElementSibling === null) {
-          updateDevisNav(Math.ceil(index / 2)) // YES is selected
-        } else {
-          updateDevisNav(Math.ceil(index / 2 + 1), true) // Substract
-        }
-        // Update buttons style
-        updateBtnStyles()
+        choice.classList.add(className) // current buttons
       }
     })
   })
@@ -240,13 +231,14 @@ let initDevis = () => {
       let height = 95 // height where the devis table text start
       let lineHeight = 15
       // find user choice
+      console.log('userchoice here')
       let userChoice = [
-        {
-          text: "Design et Intégration d'une maquette\nweb sur mesure",
-          quantity: maquetteCount.value,
-          unitPrice: devisConstant[0].rate,
-          totalPrice: frontEndCost
-        }
+      {
+        text: "Design et Intégration d'une maquette\nweb sur mesure",
+        quantity: maquetteCount.value,
+        unitPrice: devisConstant[0].rate,
+        totalPrice: frontEndCost
+      }
       ]
 
       userChoice[3] = {
@@ -302,7 +294,7 @@ let initDevis = () => {
     pdf.text(150, 79, 'TOTAL HT')
     fillDevisTable() // Add line to devis table based on user choice
     // Show a downlod prompt to client
-    pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
+    // pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
     // pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
   })
 }

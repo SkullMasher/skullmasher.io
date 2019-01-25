@@ -66,8 +66,8 @@
           <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--success">NON</button>
+          <button class="btn">OUI</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -94,8 +94,8 @@
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--success">NON</button>
+          <button class="btn">OUI</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -126,8 +126,8 @@
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--success">NON</button>
+          <button class="btn">OUI</button>
         </div>
       </div>
       <div class="devis-steps" id="hosting">
@@ -141,8 +141,8 @@
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--success">NON</button>
+          <button class="btn">OUI</button>
         </div>
         <p><em>Frais d'hébergement non compris.</em></p>
       </div>
@@ -157,8 +157,8 @@
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--success">NON</button>
+          <button class="btn">OUI</button>
         </div>
       </div>
       <div class="devis-steps" id="validate">
@@ -172,8 +172,8 @@
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny">
-          <button class="btn btn--rounded">NON</button>
-          <button class="btn btn--rounded btn--disabled">OUI</button>
+          <button class="btn btn--success">NON</button>
+          <button class="btn">OUI</button>
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
       <div class="o-box wrapper wrapper--small">
         <p class="h2-like">Votre devis est prêt !</p>
         <div class="devis-action">
-          <button class="btn">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
+          <button class="btn btn--success">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
         </div>
         <div class="devis-action">
           <p><span>Ce devis vous intéresse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un accord final.</p>
@@ -220,7 +220,7 @@
         <p>Formulaire de prise de rendez-vous n'est pas encore disponible.</p>
         <p>Vous pouvez m'envoyer un mail accompagner des réponses à ces différentes questions.</p>
         <div class="flex-container--column">
-          <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--centered btn--top-spaced" role="button">
+          <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--success center" role="button">
             <div class="mbs"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
             <p class="mbn"><?php echo antispambot('florian@skullmasher.io') ?></p>
           </a>
@@ -290,7 +290,7 @@
 					'<span class="edit">',
 					'</span>',
           '',
-          'edit__link btn btn--inline btn--rounded'
+          'edit__link btn btn--primary'
 				);
 			?>
 		</footer>
