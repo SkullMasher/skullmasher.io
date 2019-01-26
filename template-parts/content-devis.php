@@ -72,14 +72,14 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="businessCard" class="toggle" data-choiceid="1" data-optionid="0">
+              <input type="checkbox" id="businessCard" class="toggle js-devisToggle" data-choiceid="1" data-optionid="0">
               <label for="businessCard" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">J'ai besoin d'une carte de visite <span class="badge badge--disabled">+300€ 2 jours</span></p>
           </div>
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="flyer" class="toggle" data-choiceid="1" data-optionid="0">
+              <input type="checkbox" id="flyer" class="toggle js-devisToggle" data-choiceid="1" data-optionid="0">
               <label for="flyer" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">J'ai besoin d'un flyer. <span class="badge badge--disabled">+300€ 2 jours</span></p>
@@ -100,7 +100,7 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="clientRecommendation" class="toggle" data-choiceid="2" data-optionid="0">
+              <input type="checkbox" id="clientRecommendation" class="toggle js-devisToggle" data-choiceid="2" data-optionid="0">
               <label for="clientRecommendation" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">Je souhaite intégrer un module de recommandation client <span class="badge badge--disabled">+150€ 1 jour</span></p>
@@ -108,7 +108,7 @@
         <div class="devis-step__option">
           <div class="devis-switch">
             <div class="devis-switch__input">
-              <input type="checkbox" id="socialNetwork" class="toggle" data-choiceid="2" data-optionid="0">
+              <input type="checkbox" id="socialNetwork" class="toggle js-devisToggle" data-choiceid="2" data-optionid="0">
               <label for="socialNetwork" class="toggle-label"></label>
             </div>
             <p class="devis-switch__label">Je souhaite ajouter le fil d'actualité d'un de mes réseaux sociaux <span class="badge badge--disabled">+150€ 1 jour</span></p>

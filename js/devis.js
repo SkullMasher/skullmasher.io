@@ -195,7 +195,7 @@
     }
   }
 
-  const devisToggleOptions = document.querySelectorAll('.toggle')
+  const devisToggleOptions = document.querySelectorAll('.js-devisToggle')
   Array.prototype.forEach.call(devisToggleOptions, (toggle) => {
     toggle.addEventListener('change', (event) => {
       // toggle style of the price label & update the devis nav
