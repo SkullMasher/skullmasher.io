@@ -154,8 +154,7 @@
   })
 
   const devisChoicesButtons = document.querySelectorAll('.js-devisChoices button')
-  // Use foreach from arrays methods on NodeList
-  Array.prototype.forEach.call(devisChoicesButtons, (choice, index) => {
+  devisChoicesButtons.forEach((choice, index) => {
     const className = 'btn--success'
     choice.addEventListener('click', (event) => { // click event to each buttons
       if (!choice.classList.contains(className)) {
@@ -196,7 +195,7 @@
   }
 
   const devisToggleOptions = document.querySelectorAll('.js-devisToggle')
-  Array.prototype.forEach.call(devisToggleOptions, (toggle) => {
+  devisToggleOptions.forEach((toggle) => {
     toggle.addEventListener('change', (event) => {
       // toggle style of the price label & update the devis nav
       if (toggle.checked) {
@@ -256,15 +255,25 @@
       let height = 95 // height where the devis table text start
       let lineHeight = 15
 
-      pdf.setFillColor(230, 230, 230)
-      pdf.rect(20, 70, 160, 15, 'F')
-      pdf.setFontSize(12)
-      pdf.text(40, 79, 'DÉSIGNATION')
-      pdf.text(110, 79, 'Qté')
-      pdf.text(130, 79, 'PU HT')
-      pdf.text(150, 79, 'TOTAL HT')
+      const tableHeader = () => {
+        pdf.setFillColor(230, 230, 230)
+        pdf.rect(20, 70, 160, 15, 'F')
+        pdf.setFontSize(12)
+        pdf.text(40, 79, 'DÉSIGNATION')
+        pdf.text(110, 79, 'Qté')
+        pdf.text(130, 79, 'PU HT')
+        pdf.text(150, 79, 'TOTAL HT')
+      }
+      tableHeader()
+
       // find user choice
-      console.log('userchoice here')
+      const $devisChoices = document.querySelectorAll('.js-devisChoices')
+      // console.log($devisChoices.values())
+      console.log(devisConstant.length)
+      console.log($devisChoices.length)
+      $devisChoices.forEach((choice, index) => {
+        console.log(index, choice)
+      })
       // let userChoice = [
       // {
       //   text: "Design et Intégration d'une maquette\nweb sur mesure",
@@ -300,7 +309,7 @@
     devisHeader()
     devisContent()
     // Show a downlod prompt to client
-    pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
+    // pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
     // pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
   })
 }

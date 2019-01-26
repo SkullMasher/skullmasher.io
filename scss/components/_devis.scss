@@ -91,6 +91,7 @@
   display: flex;
   justify-content: space-between;
   padding: $spacer-small;
+  margin-bottom: $spacer-medium;
   background-color: $gray-100;
 
   @include respond-to("small-up") {
@@ -104,16 +105,27 @@
 
 .devis-switch {
   display: flex;
-  margin: $spacer-medium;
   align-items: center;
+  margin-left: 0;
+  margin-bottom: $spacer-tiny;
+
+  @include respond-to("small-up") {
+    margin-left: $spacer-medium;
+    margin-bottom: $spacer-small;
+  }
 
   &__input {
     width: 70px; /* MAGIC NUMBER Length of the switch */
   }
 
   &__label {
+    flex: 1 1 0%;
     margin-top: 0;
-   margin-left: $spacer-medium;
+    margin-left: $spacer-small;
+
+    @include respond-to("small-up") {
+      margin-left: $spacer-small;
+    }
   }
 }
 
