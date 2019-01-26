@@ -227,74 +227,80 @@
   const $generatePDF = document.querySelector('.devis-action button')
 
   $generatePDF.addEventListener('click', (event) => {
-    const fillDevisTable = () => {
-      let height = 95 // height where the devis table text start
-      let lineHeight = 15
-      // find user choice
-      console.log('userchoice here')
-      let userChoice = [
-      {
-        text: "Design et Intégration d'une maquette\nweb sur mesure",
-        quantity: maquetteCount.value,
-        unitPrice: devisConstant[0].rate,
-        totalPrice: frontEndCost
-      }
-      ]
+    const date = new Date()
+    const year = date.getFullYear()
+    const month = prefixZero(date.getMonth()+1)
+    const day = prefixZero(date.getDate())
+    const hour = prefixZero(date.getHours())
+    const minutes = prefixZero(date.getMinutes())
+    const seconds = prefixZero(date.getSeconds())
 
-      userChoice[3] = {
-        text: 'trippin on music\nArt as Cartasis',
-        quantity: 6666,
-        unitPrice: 4266,
-        totalPrice: 7086
-      }
+    const pdf = new jsPDF()
 
-      userChoice[4] = {
-        text: 'Coding this from spain',
-        quantity: 42,
-        unitPrice: 87,
-        totalPrice: 879
-      }
-
-      userChoice.forEach((choice) => {
-        pdf.text(22, height, choice.text)
-        pdf.text(110, height, choice.quantity.toString())
-        pdf.text(130, height, choice.unitPrice.toString())
-        pdf.text(150, height, choice.totalPrice.toString())
-        height += lineHeight
-      })
+    const devisHeader = () => {
+      // Fill with background color
+      pdf.setFillColor(250, 250, 250)
+      pdf.rect(0, 0, 210, 297, 'F')
+      // Text content
+      pdf.text(20, 20, 'Devis site web')
+      pdf.setFontSize(12)
+      pdf.text(20, 30, 'Florian Ledru')
+      pdf.text(20, 35, '06 25 97 05 61')
+      pdf.text(20, 40, 'N° SIREN : 793 553 448')
+      pdf.text(180, 30, `${day}/${month}/${year}`, null, null, 'right')
+      pdf.setFontSize(10)
+      pdf.text(20, 50, "Dispensé d'immatriculation au registre du commerce\net des sociétés (RCS) et au répertoire des métiers (RM)")
     }
 
-    let date = new Date()
-    let year = date.getFullYear()
-    let month = prefixZero(date.getMonth())
-    let day = prefixZero(date.getDate())
-    let hour = prefixZero(date.getHours())
-    let minutes = prefixZero(date.getMinutes())
-    let seconds = prefixZero(date.getSeconds())
+    const devisContent = () => {
+      let height = 95 // height where the devis table text start
+      let lineHeight = 15
 
-    var pdf = new jsPDF()
-    // Fill with background color
-    pdf.setFillColor(250, 250, 250)
-    pdf.rect(0, 0, 210, 297, 'F')
-    // Text content
-    pdf.text(20, 20, 'Devis site web')
-    pdf.setFontSize(12)
-    pdf.text(20, 30, 'Florian Ledru')
-    pdf.text(20, 35, '06 25 97 05 61')
-    pdf.text(20, 40, 'N° SIREN : 793 553 448')
-    pdf.text(180, 30, `${day}/${month}/${year}`, null, null, 'right')
-    pdf.setFontSize(10)
-    pdf.text(20, 50, "Dispensé d'immatriculation au registre du commerce\net des sociétés (RCS) et au répertoire des métiers (RM)")
-    pdf.setFillColor(230, 230, 230)
-    pdf.rect(20, 70, 160, 15, 'F')
-    pdf.setFontSize(12)
-    pdf.text(40, 79, 'DÉSIGNATION')
-    pdf.text(110, 79, 'Qté')
-    pdf.text(130, 79, 'PU HT')
-    pdf.text(150, 79, 'TOTAL HT')
-    fillDevisTable() // Add line to devis table based on user choice
+      pdf.setFillColor(230, 230, 230)
+      pdf.rect(20, 70, 160, 15, 'F')
+      pdf.setFontSize(12)
+      pdf.text(40, 79, 'DÉSIGNATION')
+      pdf.text(110, 79, 'Qté')
+      pdf.text(130, 79, 'PU HT')
+      pdf.text(150, 79, 'TOTAL HT')
+      // find user choice
+      console.log('userchoice here')
+      // let userChoice = [
+      // {
+      //   text: "Design et Intégration d'une maquette\nweb sur mesure",
+      //   quantity: maquetteCount.value,
+      //   unitPrice: devisConstant[0].rate,
+      //   totalPrice: frontEndCost
+      // }
+      // ]
+
+      // userChoice[3] = {
+      //   text: 'trippin on music\nArt as Cartasis',
+      //   quantity: 6666,
+      //   unitPrice: 4266,
+      //   totalPrice: 7086
+      // }
+
+      // userChoice[4] = {
+      //   text: 'Coding this from spain',
+      //   quantity: 42,
+      //   unitPrice: 87,
+      //   totalPrice: 879
+      // }
+
+      // userChoice.forEach((choice) => {
+      //   pdf.text(22, height, choice.text)
+      //   pdf.text(110, height, choice.quantity.toString())
+      //   pdf.text(130, height, choice.unitPrice.toString())
+      //   pdf.text(150, height, choice.totalPrice.toString())
+      //   height += lineHeight
+      // })
+    }
+
+    devisHeader()
+    devisContent()
     // Show a downlod prompt to client
-    // pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
+    pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
     // pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
   })
 }
