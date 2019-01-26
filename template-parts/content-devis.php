@@ -66,8 +66,8 @@
           <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
-          <button class="btn btn--success">NON</button>
-          <button class="btn">OUI</button>
+          <button class="btn btn--big btn--success">NON</button>
+          <button class="btn btn--big">OUI</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -94,8 +94,8 @@
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
-          <button class="btn btn--success">NON</button>
-          <button class="btn">OUI</button>
+          <button class="btn btn--big btn--success">NON</button>
+          <button class="btn btn--big">OUI</button>
         </div>
         <div class="devis-step__option">
           <div class="devis-switch">
@@ -126,8 +126,8 @@
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
-          <button class="btn btn--success">NON</button>
-          <button class="btn">OUI</button>
+          <button class="btn btn--big btn--success">NON</button>
+          <button class="btn btn--big">OUI</button>
         </div>
       </div>
       <div class="devis-steps" id="hosting">
@@ -141,8 +141,8 @@
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
-          <button class="btn btn--success">NON</button>
-          <button class="btn">OUI</button>
+          <button class="btn btn--big btn--success">NON</button>
+          <button class="btn btn--big">OUI</button>
         </div>
         <p><em>Frais d'hébergement non compris.</em></p>
       </div>
@@ -157,8 +157,8 @@
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
-          <button class="btn btn--success">NON</button>
-          <button class="btn">OUI</button>
+          <button class="btn btn--big btn--success">NON</button>
+          <button class="btn btn--big">OUI</button>
         </div>
       </div>
       <div class="devis-steps" id="validate">
@@ -172,8 +172,8 @@
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
         </div>
         <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
-          <button class="btn btn--success">NON</button>
-          <button class="btn">OUI</button>
+          <button class="btn btn--big btn--success">NON</button>
+          <button class="btn btn--big">OUI</button>
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
       <div class="o-box wrapper wrapper--small">
         <p class="h2-like">Votre devis est prêt !</p>
         <div class="devis-action">
-          <button class="btn btn--success">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
+          <button class="btn btn--big btn--success">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
         </div>
         <div class="devis-action">
           <p><span>Ce devis vous intéresse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un accord final.</p>
