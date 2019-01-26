@@ -48,7 +48,7 @@
           <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du même types. Comprends au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
-        <div class="devis-choices flex-container--column wrapper wrapper--centered">
+        <div class="devis-choices flex-container--column wrapper wrapper--centered js-devisChoices">
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
           <p class="txtcenter h1-like"><strong>2</strong></p>
           <p class="txtcenter">Design de pages</p>
@@ -65,7 +65,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
         </div>
-        <div class="devis-choices wrapper wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
           <button class="btn btn--success">NON</button>
           <button class="btn">OUI</button>
         </div>
@@ -93,7 +93,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
-        <div class="devis-choices wrapper wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
           <button class="btn btn--success">NON</button>
           <button class="btn">OUI</button>
         </div>
@@ -125,7 +125,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
         </div>
-        <div class="devis-choices wrapper wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
           <button class="btn btn--success">NON</button>
           <button class="btn">OUI</button>
         </div>
@@ -140,7 +140,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
         </div>
-        <div class="devis-choices wrapper wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
           <button class="btn btn--success">NON</button>
           <button class="btn">OUI</button>
         </div>
@@ -156,7 +156,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
         </div>
-        <div class="devis-choices wrapper wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
           <button class="btn btn--success">NON</button>
           <button class="btn">OUI</button>
         </div>
@@ -171,7 +171,7 @@
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>
         </div>
-        <div class="devis-choices wrapper wrapper--tiny">
+        <div class="devis-choices wrapper wrapper--tiny js-devisChoices">
           <button class="btn btn--success">NON</button>
           <button class="btn">OUI</button>
         </div>

@@ -153,7 +153,7 @@
     updateDevisNav(0)
   })
 
-  const devisChoicesButtons = document.querySelectorAll('.devis-choices button')
+  const devisChoicesButtons = document.querySelectorAll('.js-devisChoices button')
   // Use foreach from arrays methods on NodeList
   Array.prototype.forEach.call(devisChoicesButtons, (choice, index) => {
     const className = 'btn--success'
