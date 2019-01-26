@@ -33,7 +33,7 @@
     <div class="devis-time">
       <figure class="devis-time__figure"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
       <div class="devis-time__content">
-        <p class="devis-time__average">~<span class="devis-time__days js-devisTimeDays">14</span> jours<a href="#">*</a></p>
+        <p class="devis-time__average">~<span class="devis-time__days js-devisTimeDays">14</span> jours<a href="#"><strong>*</strong></a></p>
         <p class="is-hidden"><small><span class="devis-time__days-min js-devisTimeDaysMin">10</span> à <span class="js-devisTimeDaysMax">18</span> jours</small></p>
       </div>
     </div>
@@ -45,8 +45,8 @@
         <h2>1. Maquette de pages</h2>
         <p class="devis-question">Combien de maquettes avez-vous besoin ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du même types. Comprends au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
+          <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="devis-tips__content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du même types. Comprends au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
         </div>
         <div class="devis-choices flex-container--column wrapper wrapper--centered js-devisChoices">
           <input class="devis-choices__range" id="maquetteCount" name="maquetteCount" type="range" min="2" max="10" value="2">
@@ -59,8 +59,8 @@
         <h2>2. Image de marque</h2>
         <p class="devis-question">Avez-vous besoin d'un logo ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
+          <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="devis-tips__body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>300€</span> <span>2 à 3 jours</span></p>
@@ -119,8 +119,8 @@
         <h2>4. Formation</h2>
         <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Comprends 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
+          <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="devis-tips__content">Comprends 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>280€</span> <span>1 jour</span></p>
@@ -134,8 +134,8 @@
         <h2>5. Hébergement et nom de domaine</h2>
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une ou plusieurs <strong>boite mail professionnel</strong> disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
+          <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="devis-tips__content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une ou plusieurs <strong>boite mail professionnel</strong> disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
@@ -150,8 +150,8 @@
         <h2>6. Maintenance, Support et assistance</h2>
         <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérennité. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
+          <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="devis-tips__content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérennité. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>600€</span> <span><strong>1 an</strong></span></p>
@@ -165,8 +165,8 @@
         <h2>7. Déploiement</h2>
         <p class="devis-question">Souhaitez-vous que je sois responsable de l'installation de votre site web ?</p>
         <div class="devis-tips devis-tips--centered-v wrapper wrapper--tiny">
-          <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Assure la fonctionnalité du site après installation.</p>
+          <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
+          <p class="devis-tips__content">Assure la fonctionnalité du site après installation.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>1 à 2 jours</span></p>

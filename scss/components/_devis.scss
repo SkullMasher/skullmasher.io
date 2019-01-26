@@ -35,6 +35,11 @@
     margin-top: 0;
     margin-right: 1rem;
     margin-bottom: 0;
+
+    @include respond-to("small-up") {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__content > p {
@@ -63,7 +68,14 @@
   margin-bottom: $spacer-medium;
 
   &__figure {
-    width: 40px;
+    margin-right: $spacer-small;
+    margin-bottom: 0;
+    width: 30px;
+
+    @include respond-to("small-up") {
+      margin-right: $spacer-medium;
+      width: 50px;
+    }
   }
 
   &__content {
@@ -80,6 +92,10 @@
   justify-content: space-between;
   padding: $spacer-small;
   background-color: $gray-100;
+
+  @include respond-to("small-up") {
+    padding: $spacer-medium;
+  }
 
   &__range {
     margin-top: $spacer-small;
