@@ -135,7 +135,7 @@
         <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
         <div class="devis-tips wrapper wrapper--tiny">
           <figure class="media-figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
-          <p class="media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une ou plusieurs<strong>boite mail professionnel</strong> disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
+          <p class="media-content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une ou plusieurs <strong>boite mail professionnel</strong> disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
         </div>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>150€</span> <span>1 jour</span></p>
