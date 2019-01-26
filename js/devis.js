@@ -62,7 +62,7 @@
     time: 1
   },
   {
-    text: 'Recommendation d\'hébergement web, mail et nom de domaine.',
+    text: 'Recommendation d\'hébergement web,\nmail et nom de domaine.',
     rate: 150,
     time: 1
   },
@@ -264,52 +264,48 @@
         pdf.text(130, 79, 'PU HT')
         pdf.text(150, 79, 'TOTAL HT')
       }
+
+      const tableBody = () => {
+        // find user choice
+        const $devisChoices = document.querySelectorAll('.js-devisChoices')
+        // console.log($devisChoices.values())
+        $devisChoices.forEach((choice, index) => {
+          // if (index === 1) { // How many templates
+          //     pdf.text(22, height, choice.text)
+          //     pdf.text(110, height, choice.quantity.toString())
+          //     pdf.text(130, height, choice.unitPrice.toString())
+          //     pdf.text(150, height, choice.totalPrice.toString())
+          //     height += lineHeight
+          // }
+
+          if (choice.lastElementChild.classList.contains('btn--success')) {
+            const txt = devisConstant[index].text
+            const quantity = () => {
+              if (devisConstant[index].time.hasOwnProperty('max')) {
+                return devisConstant[index].time.max
+              }
+
+              return devisConstant[index].time
+            }
+            const unitPrice = devisConstant[index].rate
+            const totalPrice = unitPrice * quantity()
+
+            pdf.text(22, height, txt)
+            pdf.text(110, height, quantity().toString())
+            pdf.text(130, height, unitPrice.toString())
+            pdf.text(150, height, totalPrice.toString())
+            height += lineHeight
+          }
+        })
+      }
       tableHeader()
-
-      // find user choice
-      const $devisChoices = document.querySelectorAll('.js-devisChoices')
-      // console.log($devisChoices.values())
-      console.log(devisConstant.length)
-      console.log($devisChoices.length)
-      $devisChoices.forEach((choice, index) => {
-        console.log(index, choice)
-      })
-      // let userChoice = [
-      // {
-      //   text: "Design et Intégration d'une maquette\nweb sur mesure",
-      //   quantity: maquetteCount.value,
-      //   unitPrice: devisConstant[0].rate,
-      //   totalPrice: frontEndCost
-      // }
-      // ]
-
-      // userChoice[3] = {
-      //   text: 'trippin on music\nArt as Cartasis',
-      //   quantity: 6666,
-      //   unitPrice: 4266,
-      //   totalPrice: 7086
-      // }
-
-      // userChoice[4] = {
-      //   text: 'Coding this from spain',
-      //   quantity: 42,
-      //   unitPrice: 87,
-      //   totalPrice: 879
-      // }
-
-      // userChoice.forEach((choice) => {
-      //   pdf.text(22, height, choice.text)
-      //   pdf.text(110, height, choice.quantity.toString())
-      //   pdf.text(130, height, choice.unitPrice.toString())
-      //   pdf.text(150, height, choice.totalPrice.toString())
-      //   height += lineHeight
-      // })
+      tableBody()
     }
 
     devisHeader()
     devisContent()
     // Show a downlod prompt to client
-    // pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
+    pdf.save(`DEVIS-site-web_skullmasherio_dev.pdf`)
     // pdf.save(`DEVIS-site-web_skullmasherio_${year}${month}${day}-${hour}${minutes}${seconds}.pdf`)
   })
 }
