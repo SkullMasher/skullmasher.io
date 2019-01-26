@@ -8,7 +8,7 @@
   align-items: baseline;
   justify-content: space-around;
   padding-top: $spacer-tiny;
-  padding-bottom: 0;
+  padding-bottom: $spacer-tiny;
   background-color: $white;
   text-align: center;
   font-style: italic;
@@ -24,10 +24,14 @@
   }
 }
 
-.devis-cost {
+.devis-cost,
+.devis-time {
+  display: flex;
   align-items: center;
 
   &__figure {
+    width: 30px;
+    height: 30px;
     margin-top: 0;
     margin-right: 1rem;
     margin-bottom: 0;
@@ -37,26 +41,6 @@
     margin-bottom: 0;
   }
 }
-
-.devis-time {
-  align-items: center;
-
-  &__figure {
-    margin-top: 0;
-    margin-right: 1rem;
-  }
-
-  &__figure {
-    margin-bottom: 0;
-  }
-
-  &__content {
-    p {
-      margin: 0;
-    }
-  }
-}
-
 
 .devis-steps {
   margin-bottom: $spacer-large-plus;

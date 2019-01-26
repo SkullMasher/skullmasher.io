@@ -24,15 +24,15 @@
     </div>
   </header>
   <nav class="devis-nav js-devisNav" id="start">
-    <div class="devis-cost media">
+    <div class="devis-cost">
       <figure class="devis-cost__figure"><?php echo file_get_contents(get_template_directory() .'/img/piggy-bank.svg') ?></figure>
       <div class="devis-cost__content">
         <p><span class="devis-cost__price js-devisCostPrice">1250</span><span class="devis-cost__curency">€</span></p>
       </div>
     </div>
-    <div class="devis-time media">
-      <figure class="devis-time__figure media-figure--center"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
-      <div class="devis-time__content media-content">
+    <div class="devis-time">
+      <figure class="devis-time__figure"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
+      <div class="devis-time__content">
         <p class="devis-time__average">~<span class="devis-time__days js-devisTimeDays">14</span> jours<a href="#">*</a></p>
         <p class="is-hidden"><small><span class="devis-time__days-min js-devisTimeDaysMin">10</span> à <span class="js-devisTimeDaysMax">18</span> jours</small></p>
       </div>
