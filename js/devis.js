@@ -2,10 +2,6 @@
  * Devis page
  */
  let initDevis = () => {
-  // Hide the noJS warning
-  const warningNOJS = document.getElementById('warningNOJS')
-  warningNOJS.remove()
-
   // devis rates & time
   const devisConstant = [
   {
@@ -96,7 +92,7 @@
   let averageTimeMax = frontEndTimeMax
   let averageTime = () => Math.ceil((averageTimeMin + averageTimeMax) / 2)
 
-  let setDevisNavText = () => {
+  const setDevisNavText = () => {
     $price.textContent = price + frontEndCost
     $averageTime.textContent = averageTime()
     $averageTimeMin.textContent = averageTimeMin
@@ -105,18 +101,19 @@
   setDevisNavText() // run on page load to set the default value
 
   // Set the devis price and time based on user choice
-  let updateDevisNav = (index, substract = false, toggle = false) => {
+  const updateDevisNav = (index, substract = false, toggle = false) => {
+    const maquetteCountVal = parseInt(maquetteCount.value)
     if (index === 0) { // input range
-      frontEndCost = devisConstant[index].rate * maquetteCount.value
+      frontEndCost = devisConstant[index].rate * maquetteCountVal
       averageTimeMin -= frontEndTimeMin
       averageTimeMax -= frontEndTimeMax
       // Less time needed with more than 5 templates
-      if (maquetteCount.value > 5) {
-        frontEndTimeMin = Math.ceil((devisConstant[index].time.min * maquetteCount.value) / 1.15)
-        frontEndTimeMax = Math.ceil((devisConstant[index].time.max * maquetteCount.value) / 1.15)
+      if (maquetteCountVal > 5) {
+        frontEndTimeMin = Math.ceil((devisConstant[index].time.min * maquetteCountVal) / 1.15)
+        frontEndTimeMax = Math.ceil((devisConstant[index].time.max * maquetteCountVal) / 1.15)
       } else {
-        frontEndTimeMin = devisConstant[index].time.min * maquetteCount.value
-        frontEndTimeMax = devisConstant[index].time.max * maquetteCount.value
+        frontEndTimeMin = devisConstant[index].time.min * maquetteCountVal
+        frontEndTimeMax = devisConstant[index].time.max * maquetteCountVal
       }
       averageTimeMin += frontEndTimeMin
       averageTimeMax += frontEndTimeMax
@@ -147,12 +144,43 @@
     }
   }
 
-  // Show the range input current value & update nav
-  maquetteCount.addEventListener('input', (event) => {
-    maquetteCount.nextElementSibling.firstChild.textContent = maquetteCount.value
-    updateDevisNav(0)
+  // Maquette count input code
+  let lastValidMaquetteCount = 2
+  const isMaquetteCountValueCorrect = () => {
+    const val = parseInt(maquetteCount.value)
+    const min = parseInt(maquetteCount.min)
+    const max = parseInt(maquetteCount.max)
+
+    if (val >= min && val <= max) {
+      lastValidMaquetteCount = val
+      updateDevisNav(0)
+      return true
+    } else {
+      // put back the default if the user typed something garbage
+      console.log('reset')
+      maquetteCount.value = lastValidMaquetteCount
+      updateDevisNav(0)
+      return false
+    }
+  }
+
+  maquetteCount.addEventListener('change', (event) => {
+    isMaquetteCountValueCorrect()
+  });
+
+  const $addTemplate = document.querySelector('.js-maquetteCountAdd')
+  $addTemplate.addEventListener('click', () => {
+    maquetteCount.value++
+    isMaquetteCountValueCorrect()
   })
 
+  const $subtractTemplate = document.querySelector('.js-maquetteCountSub')
+  $subtractTemplate.addEventListener('click', () => {
+    maquetteCount.value--
+    isMaquetteCountValueCorrect()
+  })
+
+  // Handle yes or no buttons
   const devisChoicesButtons = document.querySelectorAll('.js-devisChoices button')
   devisChoicesButtons.forEach((choice, index) => {
     const className = 'btn--success'
@@ -170,10 +198,11 @@
     })
   })
 
-  let updateDevisNavToggle = (index, optionIndex, substract) => {
+  // Handle the toggles after the yes or no button
+  const updateDevisNavToggle = (index, optionIndex, substract) => {
     if (substract) { // the index needs to substract his rates & time
       price -= devisConstant[index].option[optionIndex].rate
-      if (devisConstant[index].option[optionIndex].time.hasOwnProperty('min')) {
+      if (devisConstant[index].option[optionIndex].time.hasOœnProperty('min')) {
         averageTimeMin -= devisConstant[index].option[optionIndex].time.min
         averageTimeMax -= devisConstant[index].option[optionIndex].time.max
       } else {
@@ -181,7 +210,7 @@
         averageTimeMax -= devisConstant[index].option[optionIndex].time
       }
       setDevisNavText()
-    } else { // Just add the damn price and time
+    } else { // Just add the price and time
       price += devisConstant[index].option[optionIndex].rate
       if (devisConstant[index].option[optionIndex].time.hasOwnProperty('min')) {
         averageTimeMin += devisConstant[index].option[optionIndex].time.min
@@ -224,7 +253,6 @@
   })
 
   const $generatePDF = document.querySelector('.devis-action button')
-
   $generatePDF.addEventListener('click', (event) => {
     const date = new Date()
     const year = date.getFullYear()

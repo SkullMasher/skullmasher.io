@@ -98,8 +98,26 @@
     padding: $spacer-medium;
   }
 
-  &__range {
-    margin-top: $spacer-small;
+  &__maquette-count {
+    display: flex;
+    justify-content: center;
+    @include font-size('h1');
+    margin-bottom: $spacer-medium;
+
+    & > input {
+      width: 45px;
+      border-bottom: 2px solid $color-brand;
+      padding: 0;
+      margin: 0 $spacer-small;
+      background-color: transparent;
+      text-align: center;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
