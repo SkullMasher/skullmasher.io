@@ -1,7 +1,7 @@
 <aside id="contact" class="sidebar home-sidebar">
 <div class="wrapper wrapper--tiny flex-container--column">
   <picture class="mbs txtcenter">
-    <img class="w300p border--double" src="<?php echo get_bloginfo('template_url') ?>/img/IMG_20181203_002624.jpg">
+    <img class="w300p border--double" src="<?php echo get_bloginfo('template_url') ?>/img/florian-ledru-ordinateur.jpg">
   </picture>
   <?php echo do_shortcode( '[whoami]' ); ?>
   <?php echo do_shortcode( '[worktogether]' ); ?>
