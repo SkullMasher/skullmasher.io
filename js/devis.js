@@ -97,7 +97,6 @@
     $averageTime.textContent = averageTime()
     $averageTimeMin.textContent = averageTimeMin
     $averageTimeMax.textContent = averageTimeMax
-    console.log($averageTimeMax)
   }
   setDevisNavText() // run on page load to set the default value
 
