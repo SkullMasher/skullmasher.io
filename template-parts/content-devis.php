@@ -30,8 +30,7 @@
     <div class="devis-time">
       <figure class="devis-time__figure"><?php echo file_get_contents(get_template_directory() .'/img/stopwatch.svg') ?></figure>
       <div class="devis-time__content">
-        <p class="devis-time__average">~<span class="devis-time__days js-devisTimeDays">14</span> jours<a href="#"><strong>*</strong></a></p>
-        <p class="is-hidden"><small><span class="devis-time__days-min js-devisTimeDaysMin">10</span> à <span class="js-devisTimeDaysMax">18</span> jours</small></p>
+        <p class="devis-time__average">~<span class="devis-time__days js-devisTimeDays">14</span> jours<a href="#devtime"><strong>*</strong></a></p>
       </div>
     </div>
     <!-- <progress value="0.5">70 %</progress> -->
@@ -48,7 +47,7 @@
         <div class="devis-choices flex-container--column wrapper js-devisChoices">
           <div class="devis-choices__maquette-count">
             <p class="js-maquetteCountSub cursor-pointer"><strong>-</strong></p>
-            <input class="no-spinners" id="maquetteCount" name="maquetteCount" type="number" min="2" max="10" value="2" maxlength="2">
+            <input class="no-spinners" id="maquetteCount" name="maquetteCount" type="number" min="1" max="10" value="2" maxlength="2">
             <p class="js-maquetteCountAdd cursor-pointer"><strong>+</strong></p>
           </div>
           <p class="txtcenter">Design de pages</p>
@@ -190,9 +189,10 @@
       </div>
       <div id="moreinfo" class="o-box wrapper wrapper--small">
         <h2 class="mbm">Informations Complémentaires</h2>
-        <div class="mbm">
+        <div class="mbm" id="devtime">
           <h3>Réduire le temps de développement de mon projet web</h3>
 
+          <p>Ce devis peut prendre entre <strong class="js-devisTimeDaysMin">10</strong> et <strong class="js-devisTimeDaysMax">18</strong> jours.</p>
           <p>Les réponses à ces quelques questions m'aident à réduire le temps de développement de votre projet web et à correspondre précisément à vos attentes.</p>
           <ol>
             <li>Quelles sont les sites web qui vous inspirent ?</li>
@@ -212,7 +212,7 @@
             <li>Disponibilité et Résolution des pannes ou problèmme dans un délai de 24h (ex : panne mails , indisponibilités site web)</li>
             <li>Suivi et Corrections <a href="https://www.exploit-db.com/webapps/">des failles de sécurités</a>.</li>
             <li>Mises à jour du site et des plugins aux versions suivante.</li>
-            <li>Rétention et Sauvegarde hebdomadaire du site.</li>
+            <li>Rétention et Sauvegarde du site.</li>
           </ul>
         </div>
         <div class="mbm">
