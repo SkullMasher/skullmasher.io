@@ -184,35 +184,46 @@
             <button class="btn btn--big btn--success">Télécharger le devis <?php echo file_get_contents(get_template_directory() .'/img/pdf-file.svg')?></button>
           </div>
           <div class="devis-action">
-            <p><span>Ce devis vous intéresse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> avant de <a href="#meetup">Prendre un rendez-vous</a> et conclure d'un accord final.</p>
+            <p><span>Ce devis vous intéresse ?</span> Consulter les <a href="#moreinfo">informations complémentaires</a> pour en savoir plus.</p>
           </div>
         </div>
       </div>
       <div id="moreinfo" class="o-box wrapper wrapper--small">
-        <h2>Informations Complémentaires</h2>
-        <h3>Référencement et présence sur Google (<abbr title="Search engine optimization">SEO</abbr>)</h3>
-        <p>Nous établirons ensemble une stratégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
-        <p>Intégration de votre compte google analytics possible sans surcoup.</p>
-        <h3 id="maintenance">Offre de maintenance</h3>
-        <ul>
-          <li>Disponibilité et Résolution des pannes ou problèmme dans un délai de 24h (ex : panne mails , indisponibilités site web)</li>
-          <li>Suivi et Corrections <a href="https://www.exploit-db.com/webapps/">des failles de sécurités</a>.</li>
-          <li>Mises à jour du site et des plugins aux versions suivante.</li>
-          <li>Rétention et Sauvegarde hebdomadaire du site.</li>
-        </ul>
-        <h3>Gestion de mon site</h3>
-        <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs. Le livrable sera un thème wordpress créer à partir <a href="https://underscores.me/">du squelette</a> fourni par les développeurs et la communautée Wordpress.</p>
-        <h3>Livraison express</h3>
-        <p>Idéal pour les sites événementiels, le livrable de cette prestation ne comprend pas d'interface de gestion pour changer son contenu et ce déploie plus rapidement et simplement.</p>
-        <p>Si vous avez besoin d'un site sous 10 jours ou moins avec design personnalisé</p>
-        <h3>Réduire le temps de développement de mon projet web</h3>
-        <p>Les réponses à ces quelques questions m'aident à réduire le temps de développement de votre projet web et à correspondre précisément à vos attentes.</p>
-        <ol>
-          <li>Quelles sont les sites web qui vous inspirent ?</li>
-          <li>Avez-vous déjà des éléments graphiques (photos, pictogrammes...) ?</li>
-          <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
-          <li>Quels sont vos mots clés ?</li>
-        </ol>
+        <h2 class="mbm">Informations Complémentaires</h2>
+        <div class="mbm">
+          <h3>Réduire le temps de développement de mon projet web</h3>
+
+          <p>Les réponses à ces quelques questions m'aident à réduire le temps de développement de votre projet web et à correspondre précisément à vos attentes.</p>
+          <ol>
+            <li>Quelles sont les sites web qui vous inspirent ?</li>
+            <li>Avez-vous déjà des éléments graphiques (photos, pictogrammes...) ?</li>
+            <li>Avez-vous déjà rédigé votre contenu textuel ?</li>
+            <li>Quels sont vos mots clés ?</li>
+          </ol>
+        </div>
+        <div class="mbm">
+          <h3>Référencement et présence sur Google (<abbr title="Search engine optimization">SEO</abbr>)</h3>
+          <p>Nous établirons ensemble une stratégie d'url et de titre de page autour de vos mots clef principaux. Le <abbr title="Search engine optimization">SEO</abbr> de votre site sera optimisé par le plugin wordpress "The SEO Framework".</p>
+          <p>Intégration de votre compte google analytics possible sans surcoup.</p>
+        </div>
+        <div class="mbm">
+          <h3 id="maintenance">Offre de maintenance</h3>
+          <ul>
+            <li>Disponibilité et Résolution des pannes ou problèmme dans un délai de 24h (ex : panne mails , indisponibilités site web)</li>
+            <li>Suivi et Corrections <a href="https://www.exploit-db.com/webapps/">des failles de sécurités</a>.</li>
+            <li>Mises à jour du site et des plugins aux versions suivante.</li>
+            <li>Rétention et Sauvegarde hebdomadaire du site.</li>
+          </ul>
+        </div>
+        <div class="mbm">
+          <h3>Gestion de mon site</h3>
+          <p>Votre site est développé avec Wordpress, le gestionnaire de contenu le plus utilisé sur le web et souvent celui qui est le plus maîtrisé par les utilisateurs. Le livrable sera un thème wordpress créer à partir <a href="https://underscores.me/">du squelette</a> fourni par les développeurs et la communautée Wordpress.</p>
+        </div>
+        <div>
+          <h3>Livraison express</h3>
+          <p>Idéal pour les sites événementiels, le livrable de cette prestation ne comprend pas d'interface de gestion pour changer son contenu et ce déploie plus rapidement et simplement.</p>
+          <p>Si vous avez besoin d'un site sous 10 jours ou moins avec design personnalisé</p>
+        </div>
       </div>
       <div class="devis-ready">
         <div class="o-box wrapper wrapper--small">
@@ -256,17 +267,13 @@
             </div>
             <textarea></textarea>
           </div>
-          <input class="btn btn--large" type="submit" name="submitproject" value="Envoyer mon projet !">
+          <input class="btn btn--big" type="submit" name="submitproject" value="Envoyer mon projet !">
         </form> -->
       </div>
     </div>
     <div class="o-box wrapper wrapper--small">
       <h4>Crédits graphiques</h4>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
     <?php
     the_content();
