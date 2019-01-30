@@ -157,7 +157,6 @@
       return true
     } else {
       // put back the default if the user typed something garbage
-      console.log('reset')
       maquetteCount.value = lastValidMaquetteCount
       updateDevisNav(0)
       return false

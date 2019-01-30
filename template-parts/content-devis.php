@@ -46,9 +46,9 @@
         </div>
         <div class="devis-choices flex-container--column wrapper js-devisChoices">
           <div class="devis-choices__maquette-count">
-            <p class="js-maquetteCountSub btn btn--success"><strong>-</strong></p>
+            <button class="js-maquetteCountSub btn btn--success"><strong>-</strong></button>
             <input class="no-spinners" id="maquetteCount" name="maquetteCount" type="number" min="1" max="10" value="2" maxlength="2">
-            <p class="js-maquetteCountAdd btn btn--success"><strong>+</strong></p>
+            <button class="js-maquetteCountAdd btn btn--success"><strong>+</strong></button>
           </div>
           <p class="txtcenter">Design de pages</p>
           <p class="txtcenter mbn"><span>625€</span> <span>5 à 9 jours par pages</span></p>
