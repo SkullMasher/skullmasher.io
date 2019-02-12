@@ -17,12 +17,14 @@
  */
 global $post;
 // Number of posts that gets shown on the front page.
-$number_posts = 6;
+$number_posts = 4;
 $recent_posts_args = array(
   'numberposts' => $number_posts,
   'post_status' => publish
 );
 $recent_posts = wp_get_recent_posts($recent_posts_args, OBJECT);
+
+// var_dump($recent_posts);
 
 get_header(); ?>
 <main role="main">
