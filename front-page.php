@@ -17,7 +17,7 @@
  */
 global $post;
 // Number of posts that gets shown on the front page.
-$number_posts = 4;
+$number_posts = 5;
 $recent_posts_args = array(
   'numberposts' => $number_posts,
   'post_status' => publish
