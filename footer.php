@@ -11,7 +11,8 @@
 
 ?>
 </div><!-- #content -->
-<footer class="page-footer band--darkgrey flex-container-v" role="contentinfo">
+<footer class="page-footer" role="contentinfo">
+  <div class="band--darkgrey flex-container-v">
     <div class="nota-bene o-box o-box--medium txtcenter">
       <p class=""><strong>Skullmasher.io</strong> est une société affiliée au régime auto-entrepreneur. <strong>Numéro siren : 793553488</strong></p>
     </div>
@@ -37,6 +38,7 @@
     <div class="band--tiled-gradient-background flex-container ptl pbl">
       <a class="btn btn--success btn--big btn--no-box-shadow center mtl mbl u-uppercase" href="#top">Retour en haut de page</a>
     </div>
+  </div>
 </footer>
 
 <?php wp_footer(); ?>
