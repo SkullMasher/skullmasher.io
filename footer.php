@@ -8,9 +8,11 @@
  *
  * @package skullmasher.io
  */
-
 ?>
 </div><!-- #content -->
+<?php if ($pagename === 'portfolio' || $pagename === 'a-propos'): ?>
+<?php get_sidebar('blog'); ?>
+<?php endif ?>
 <footer class="page-footer" role="contentinfo">
   <div class="band--darkgrey flex-container-v">
     <div class="nota-bene o-box o-box--medium txtcenter">
