@@ -11,6 +11,10 @@
     <?php echo file_get_contents(get_template_directory() .'/img/skullmasherio-logo-tiny.svg')?>
     <span class="skulled-separator__line"></span>
   </p>
+  <a href="mailto:<?php echo antispambot('florian@skullmasher.io', 1) ?>" class="btn btn--success center mbm" role="button">
+    <div class="mbs"><?php echo file_get_contents(get_template_directory() .'/img/mail.svg') ?></div>
+    <p><?php echo antispambot('florian@skullmasher.io') ?></p>
+  </a>
   <div class="social">
     <div class="mrl">
       <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat.svg') ?></a>
