@@ -12,20 +12,9 @@
 
   &__item {
     background-color: $gray-900;
-    margin-bottom: $spacer-small;
-
-    @include respond-to("small-up") {
-      margin-bottom: $spacer-medium;
-    }
+    margin-bottom: $spacer-medium;
   }
 }
-
-@media (min-width: $small) {
-  .page-footer .has-gutter > *:not(:first-child) {
-    margin-left: $spacer-medium;
-  }
-}
-
 
 .keypages__title {
   margin-bottom: $spacer-small;

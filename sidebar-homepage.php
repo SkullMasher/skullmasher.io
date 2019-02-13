@@ -13,10 +13,10 @@
   </p>
   <div class="social">
     <div class="mrl">
-      <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
-    </div>
-    <div class="">
       <a href="https://github.com/SkullMasher"><?php echo file_get_contents(get_template_directory(). '/img/octocat.svg') ?></a>
+    </div>
+    <div>
+      <a href="https://twitter.com/skullm4sher"><?php echo file_get_contents(get_template_directory(). '/img/twitter-blue.svg') ?></a>
     </div>
   </div>
 </div>
