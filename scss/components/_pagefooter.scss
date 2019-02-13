@@ -1,22 +1,14 @@
 .page-footer {
   color: $white;
 
-  &__column {
-    background-color: $gray-900;
-    margin-bottom: $spacer-medium;
-
-    @include respond-to("tiny-up") {
-      margin-bottom: auto;
-    }
-  }
-
   &__item {
     background-color: $gray-900;
-    margin-bottom: $spacer-medium;
+    align-self: start;
   }
 }
 
 .keypages__title {
+  color: $white;
   margin-bottom: $spacer-small;
 }
 
