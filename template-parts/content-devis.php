@@ -147,7 +147,7 @@
         </div>
         <div class="devis-steps" id="support">
           <h2>6. Maintenance, Support et assistance</h2>
-          <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site ?</p>
+          <p class="devis-question">Avez-vous besoin d'une personne responsable de la maintenance du site&nbsp;?</p>
           <div class="devis-tips wrapper wrapper--tiny">
             <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
             <p class="devis-tips__content">Tout logiciel informatique à besoin d'une personne responsable de sa maintenance. Avant qu'il ne soit trop tard, choisissez un responsable capable gérer votre web et assurer sa pérennité. En savoir plus sur <a href="#maintenance">l'offre de maintenance</a>.</p>
