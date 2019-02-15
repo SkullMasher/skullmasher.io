@@ -39,7 +39,7 @@
     <div class="o-box wrapper wrapper--small">
       <div class="devis-steps flex-container--column" id="maquette">
         <h2>1. Maquette de pages</h2>
-        <p class="devis-question">Combien de maquettes avez-vous besoin ?</p>
+        <p class="devis-question">Combien de maquettes avez-vous besoin&nsbp;?</p>
         <div class="devis-tips wrapper wrapper--tiny">
           <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="devis-tips__content">Vous pouvez utiliser une maquette de pages pour créer autant de pages du même types. Comprends au minimum une maquette pour la page d'accueil et une maquette pour toutes les autres pages. <span class="animation-showoff">Animation dynamique comprise !</span></p>
@@ -56,7 +56,7 @@
       </div>
       <div class="devis-steps" id="branding">
         <h2>2. Image de marque</h2>
-        <p class="devis-question">Avez-vous besoin d'un logo ?</p>
+        <p class="devis-question">Avez-vous besoin d'un logo&nsbp;?</p>
         <div class="devis-tips wrapper wrapper--tiny">
           <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
           <p class="devis-tips__body">Je peux vous proposer jusqu'à trois design de logos différents.</p>
@@ -88,7 +88,7 @@
       </div>
       <div class="devis-steps" id="blog">
         <h2>3. Blog</h2>
-        <p class="devis-question">Avez-vous besoin de la fonctionnalité de blog, ou de fil d'actualités personalisé ?</p>
+        <p class="devis-question">Avez-vous besoin de la fonctionnalité de blog, ou de fil d'actualités personalisé&nsbp;?</p>
         <div class="devis-step__priceinfo">
           <p class="txtcenter"><span>500€</span> <span>2 à 4 jours</span></p>
         </div>
@@ -116,7 +116,7 @@
         </div>
         <div class="devis-steps" id="teaching">
           <h2>4. Formation</h2>
-          <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site ?</p>
+          <p class="devis-question">Souhaitez-vous une journée de formation pour apprendre à gérer votre site&nsbp;?</p>
           <div class="devis-tips wrapper wrapper--tiny">
             <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
             <p class="devis-tips__content">Comprends 30€ de frais de déplacement à Paris et banlieue. Possibilité de faire la formation en ligne.</p>
@@ -131,7 +131,7 @@
         </div>
         <div class="devis-steps" id="hosting">
           <h2>5. Hébergement et nom de domaine</h2>
-          <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine ?</p>
+          <p class="devis-question">Souhaitez-vous être accompagné dans le choix de votre hébergement et votre nom de domaine&nsbp;?</p>
           <div class="devis-tips wrapper wrapper--tiny">
             <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
             <p class="devis-tips__content">Hébergez votre site au juste prix en fonction de votre projet. Comprends l'ajout et l'installation d'une ou plusieurs <strong>boite mail professionnel</strong> disponible sur tous vos périphériques (téléphone, tablette) au besoin.</p>
@@ -162,7 +162,7 @@
         </div>
         <div class="devis-steps" id="validate">
           <h2>7. Déploiement</h2>
-          <p class="devis-question">Souhaitez-vous que je sois responsable de l'installation de votre site web ?</p>
+          <p class="devis-question">Souhaitez-vous que je sois responsable de l'installation de votre site web&nsbp;?</p>
           <div class="devis-tips devis-tips--centered-v wrapper wrapper--tiny">
             <figure class="devis-tips__figure"><?php echo file_get_contents(get_template_directory() .'/img/light-bulb.svg')?></figure>
             <p class="devis-tips__content">Assure la fonctionnalité du site après installation.</p>
