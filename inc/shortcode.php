@@ -12,7 +12,7 @@ function whoami_shortcode() {
   $about_url = site_url() . '/a-propos';
 
 $whoami = <<<EOL
-<p class="whoami">Florian "Skullmasher" Ledru, 26ans, freelance depuis juin 2016. Passionné d'informatique, j'ai choisis de faire du web mon travail car c'est un outil très accessible et construit à partir de technologies libre en son coeur.</p>
+<p class="whoami">Florian "Skullmasher" Ledru, 29ans, freelance depuis juin 2016. Passionné d'informatique, j'ai choisis de faire du web mon travail car c'est un outil très accessible et construit à partir de technologies libre en son coeur.</p>
 EOL;
 
   return $whoami;
