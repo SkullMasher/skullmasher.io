@@ -20,7 +20,7 @@ global $post;
 $number_posts = 5;
 $recent_posts_args = array(
   'numberposts' => $number_posts,
-  'post_status' => publish
+  'post_status' => 'publish'
 );
 $recent_posts = wp_get_recent_posts($recent_posts_args, OBJECT);
 
